@@ -1,0 +1,150 @@
+---
+title: "RF model select_young"
+author: "Carina Baskett"
+date: "5/9/2018"
+output: html_document
+---
+young leaf model selection for RF analysis of re-aligned chemistry data (the best!)
+started May 8, 2018
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(ggplot2)
+setwd("/Volumes/baskettc/Documents/")
+#will plot sorted importance scores and then output a vector with the number of features, model R^2, and SE of R^2
+imp_plot <- function(imp_file,results_file)
+{
+  imp <- read.csv(imp_file, sep = "\t", header=FALSE)
+  plot(V2~rownames(imp), data = imp)
+  results <- read.csv(results_file, sep = "\t", header=FALSE)
+  (r <- c(nrow(imp),as.numeric(as.character(results[24,1])),as.numeric(as.character(results[26,1]))))
+}
+
+#will make a new list of features to use in the next model, based on a cutoff of the importance file from last model
+new_list <- function(imp_file,cutoff,tag)
+{
+  imp <- read.csv(imp_file, sep = "\t", header=FALSE)
+  name <- as.character(paste(tag,".txt",sep=""))
+  write.table(imp[1:cutoff,1], name, sep = "\t", row.names = FALSE, quote=FALSE, col.names=FALSE )
+}
+
+extract_r2 <- function(results_file)
+{
+  results <- read.csv(results_file, sep = "\t", header=FALSE)
+  (as.numeric(as.character(results[24,1])))
+}
+extract_se <- function(results_file)
+{
+  results <- read.csv(results_file, sep = "\t", header=FALSE)
+  (as.numeric(as.character(results[26,1])))
+}
+
+```
+
+Model selection: young leaf chemistry
+```{r}
+
+feat_plot <- data.frame(matrix(NA, nrow = 1, ncol = 3))
+names(feat_plot) <- c("features","R^2","SE")
+
+#python /mnt/home/azodichr/GitHub/ML-Pipeline/ML_regression.py -df young_20180507 -alg RF -y_name conv -gs T -cv 5 -n 100 -tag chem -feat chem_list.txt
+
+feat_plot <- rbind(feat_plot,imp_plot("young_20180507_RF_chem_imp","young_20180507_RF_chem_results.txt"))
+#remove 20% (22 compounds; so keep 88) for first cut
+new_list("young_20180507_RF_chem_imp",88,"young_chem2")
+feat_plot <- na.omit(feat_plot)
+
+#special export of the first importance plot
+# imp <- read.csv("young_20180507_RF_chem_imp", sep = "\t", header=FALSE)
+# setEPS()
+# postscript("20180509_young_imp.eps")
+# par(mar=c(5,5,4,2))
+# plot(V2~rownames(imp), data = imp, xlab = "Feature rank", ylab = "Feature importance score (Gini index)", main = "A) young-leaf palatability ~ 110 peaks", cex.lab=1.75, cex.axis=1.75, cex.main=1.75, cex.sub=1.75)
+# dev.off()
+# rm(imp)
+
+feat_plot <- rbind(feat_plot,imp_plot("young_20180507_RF_chem2_imp","young_20180507_RF_chem2_results.txt"))
+#remove 22 again (keep 66)
+new_list("young_20180507_RF_chem2_imp",66,"young_chem3")
+
+feat_plot <- rbind(feat_plot,imp_plot("young_20180507_RF_chem3_imp","young_20180507_RF_chem3_results.txt"))
+#remove 22 again (keep 44)
+new_list("young_20180507_RF_chem3_imp",44,"young_chem4")
+
+feat_plot <- rbind(feat_plot,imp_plot("young_20180507_RF_chem4_imp","young_20180507_RF_chem4_results.txt"))
+#keep 30
+new_list("young_20180507_RF_chem4_imp",30,"young_chem5")
+
+#did a round of all this once, and the sweet spot was somewhere between 30 and 5, with peaks around 20 and 10, so I'll go through that area in more detail this time instead of focusing so much on <10
+
+feat_plot <- rbind(feat_plot,imp_plot("young_20180507_RF_chem5_imp","young_20180507_RF_chem5_results.txt"))
+#keep 27
+new_list("young_20180507_RF_chem5_imp",27,"young_chem6")
+
+#did a round of all this again, and the two peaks were at 27 and 11, so I'll go through that area in more detail this time again. I tested 28, 27, 25, 20, 16, 11, 10, 9...
+#another round I tried 27, 26, 20, 19, 16, 11, 10, and 11 wasn't nearly as good as the previous time
+
+feat_plot <- rbind(feat_plot,imp_plot("young_20180507_RF_chem6_imp","young_20180507_RF_chem6_results.txt"))
+#keep 25
+new_list("young_20180507_RF_chem6_imp",25,"young_chem7")
+
+feat_plot <- rbind(feat_plot,imp_plot("young_20180507_RF_chem7_imp","young_20180507_RF_chem7_results.txt"))
+#keep 20
+new_list("young_20180507_RF_chem7_imp",20,"young_chem8")
+
+feat_plot <- rbind(feat_plot,imp_plot("young_20180507_RF_chem8_imp","young_20180507_RF_chem8_results.txt"))
+#keep 14
+new_list("young_20180507_RF_chem8_imp",14,"young_chem9")
+ 
+feat_plot <- rbind(feat_plot,imp_plot("young_20180507_RF_chem9_imp","young_20180507_RF_chem9_results.txt"))
+#keep 12
+new_list("young_20180507_RF_chem9_imp",12,"young_chem10")
+ 
+feat_plot <- rbind(feat_plot,imp_plot("young_20180507_RF_chem10_imp","young_20180507_RF_chem10_results.txt"))
+#keep 10
+new_list("young_20180507_RF_chem10_imp",10,"young_chem11")
+
+feat_plot <- rbind(feat_plot,imp_plot("young_20180507_RF_chem11_imp","young_20180507_RF_chem11_results.txt"))
+#keep 6
+new_list("young_20180507_RF_chem11_imp",6,"young_chem12")
+
+feat_plot <- rbind(feat_plot,imp_plot("young_20180507_RF_chem12_imp","young_20180507_RF_chem12_results.txt"))
+#keep 4
+new_list("young_20180507_RF_chem12_imp",4,"young_chem13")
+
+feat_plot <- rbind(feat_plot,imp_plot("young_20180507_RF_chem13_imp","young_20180507_RF_chem13_results.txt"))
+
+#model 15 has the three compounds that were best for mature leaves
+#python /mnt/home/azodichr/GitHub/ML-Pipeline/ML_regression.py -df young_20180507 -alg RF -y_name conv -gs T -cv 5 -n 100 -tag chem15 -feat mature_chem13.txt
+imp_plot("young_20180507_RF_chem15_imp","young_20180507_RF_chem15_results.txt")
+
+feat_plot
+plot(`R^2` ~ features, data = feat_plot, xlab = "Number of features", ylab = expression("Model "~R^2), main = "B) Feature selection", cex.lab=1.75, cex.axis=1.75, cex.main=1.75, cex.sub=1.75)
+# setEPS()
+# postscript("20180509_young_chem_R.eps")
+# par(mar=c(5,5,4,2))
+# plot(`R^2` ~ features, data = feat_plot, xlab = "Number of features", ylab = expression("Model "~R^2), main = "B) Feature selection", cex.lab=1.75, cex.axis=1.75, cex.main=1.75, cex.sub=1.75)
+# dev.off()
+
+#the winner is 27 compounds! Model #6
+
+#actual v predicted plot for final model
+# setEPS()
+# postscript("20180509_young_chem_scores.eps")
+# par(mar=c(5,5,4,2))
+# plot(Y ~ Mean, data = read.csv("young_20180507_RF_chem6_scores.txt", sep = "\t", header=TRUE), xlab = "Predicted values", ylab = "Actual values", main = "C) Fit of best model", cex.lab=1.75, cex.axis=1.75, cex.main=1.75, cex.sub=1.75)
+# dev.off()
+
+rm(feat_plot)
+```
+
+
+Feature lists for "pop + chem" model that uses population and chemistry 
+```{r}
+x1 <- read.csv("young_chem6.txt", sep = "\t", header=FALSE)
+x2 <- read.csv("pop_list.txt", sep = "\t", header=FALSE)
+write.table(rbind(x1,x2), "young_chem_pop.txt" , sep = "\t", row.names = FALSE, quote=FALSE, col.names=FALSE )
+rm(x1,x2)
+
+#python /mnt/home/azodichr/GitHub/ML-Pipeline/ML_regression.py -df young_20180507 -alg RF -y_name conv -gs T -cv 5 -n 100 -tag chempop -feat young_chem_pop.txt
+```

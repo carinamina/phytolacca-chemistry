@@ -1,0 +1,151 @@
+---
+title: "RF results"
+author: "Carina Baskett"
+date: "5/17/2018"
+output: html_document
+---
+results for RF analysis of re-aligned chemistry data (the best!)
+started May 8, 2018
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(ggplot2)
+setwd("/Volumes/baskettc/Documents/")
+#will plot sorted importance scores and then output a vector with the number of features, model R^2, and SE of R^2
+imp_plot <- function(imp_file,results_file)
+{
+  imp <- read.csv(imp_file, sep = "\t", header=FALSE)
+  plot(V2~rownames(imp), data = imp)
+  results <- read.csv(results_file, sep = "\t", header=FALSE)
+  (r <- c(nrow(imp),as.numeric(as.character(results[24,1])),as.numeric(as.character(results[26,1]))))
+}
+
+extract_r2 <- function(results_file)
+{
+  results <- read.csv(results_file, sep = "\t", header=FALSE)
+  (as.numeric(as.character(results[24,1])))
+}
+extract_se <- function(results_file)
+{
+  results <- read.csv(results_file, sep = "\t", header=FALSE)
+  (as.numeric(as.character(results[26,1])))
+}
+
+```
+
+Table and plot of R^2 for models with different feature lists
+```{r}
+rsq <- data.frame(matrix(0, nrow = 6, ncol = 4))
+names(rsq) <- c("model","age","R2","SE")
+rsq$model <- rep(c("population","chemistry","chemistry+ population"),2)
+rsq$age <- c(rep("mature",3),rep("young",3))
+
+rsq[1,3] = extract_r2("mature_20180507_RF_pop_results.txt")
+rsq[1,4] = extract_se("mature_20180507_RF_pop_results.txt")
+rsq[2,3] = extract_r2("mature_20180507_RF_chem13_results.txt")
+rsq[2,4] = extract_se("mature_20180507_RF_chem13_results.txt")
+rsq[3,3] = extract_r2("mature_20180507_RF_chempop_results.txt")
+rsq[3,4] = extract_se("mature_20180507_RF_chempop_results.txt")
+rsq[4,3] = extract_r2("young_20180507_RF_pop_results.txt")
+rsq[4,4] = extract_se("young_20180507_RF_pop_results.txt")
+rsq[5,3] = extract_r2("young_20180507_RF_chem6_results.txt")
+rsq[5,4] = extract_se("young_20180507_RF_chem6_results.txt")
+rsq[6,3] = extract_r2("young_20180507_RF_chempop_results.txt")
+rsq[6,4] = extract_se("young_20180507_RF_chempop_results.txt")
+
+#plot R^2
+rsq$model <- gsub(" ", "\n", rsq$model)
+plot = ggplot(rsq,aes(x=model, y=R2, group = sort(rsq$age, decreasing = TRUE))) + geom_bar(stat = "identity", position = position_dodge(width =.9), aes(fill = age)) + scale_fill_manual(values=c("gray28","gray87")) + geom_errorbar(position = position_dodge(width =.9), aes(ymin=R2-SE, ymax=R2+SE),width=.2,size=.4,color="black") 
+vv=plot + xlab("Factors in model")+ylab(expression("Model "~R^2)) + theme_bw() + theme(panel.border = element_blank(), panel.grid.major = element_blank(), panel.grid.minor = element_blank(), axis.line = element_line(colour = "black")) + theme(text = element_text(size = 24)) + scale_x_discrete(limits=c("population","chemistry","chemistry+\npopulation"))
+vv
+# setEPS()
+# postscript("20180517_RF_results.eps")
+# vv + theme(legend.position = "none")
+# dev.off()
+# #this version has legend
+# setEPS()
+# postscript("20180517_RF_results_legend.eps")
+# vv + labs(fill="Leaf age")
+# dev.off()
+
+```
+
+Showing lists of best compounds and whether they are pos or neg correlated with palat
+```{r}
+rm(vv,plot,rsq, extract_r2, extract_se)
+#MATURE
+#chem only
+(chemlist.m <- read.csv("mature_20180507_RF_chem13_imp", sep = "\t", header=FALSE))
+imp_plot("mature_20180507_RF_chem13_imp","mature_20180507_RF_chem13_results.txt")
+
+#YOUNG
+#chem only
+(chemlist.y <- read.csv("young_20180507_RF_chem6_imp", sep = "\t", header=FALSE))
+imp_plot("young_20180507_RF_chem6_imp","young_20180507_RF_chem6_results.txt")
+```
+```{r}
+setwd("/Users/carina/Documents/R_working_directory")
+#write lists to local directory
+write.csv(chemlist.m, "20180517_imp_mature.csv", row.names = FALSE, quote=FALSE)
+#write lists to local directory
+write.csv(chemlist.y, "20180517_imp_young.csv", row.names = FALSE, quote=FALSE)
+
+chem <- read.csv("20180507_chem_abundant1percent.csv", header = TRUE)
+chem$X <- NULL
+levels(chem$region)<-c(levels(chem$region),"central")
+chem$region[is.na(chem$region)] <- "central"    
+str(chem[,1:14])
+chem$conv <- ifelse(chem$area > 0, chem$biomass/chem$area,0)
+#get this trimmed to just palatability (conv), id, and chemicals
+chem <- na.omit(chem[c(1,ncol(chem),6,9,14:(ncol(chem)-1))])
+chem.y <- droplevels(subset(chem, chem$age == "young"))
+chem.m <- droplevels(subset(chem, chem$age == "mature"))
+
+#subset by those compounds
+chem.y.RF <- data.frame(chem.y[,1:3],chem.y[,colnames(chem.y)%in%chemlist.y$V1])
+chem.m.RF <- data.frame(chem.m[,1:3],chem.m[,colnames(chem.m)%in%chemlist.m$V1])
+rm(chem, chem.m, chem.y)
+
+#table of importance scores, correlation slope, corr significance, importance scores with sign based on correlation sign, and finally the correlation with latitude of each compound. Not all of this is going in the table in the paper but i was curious
+
+#YOUNG
+chemlist.y$corr <- NA
+chemlist.y$sign <- NA
+chemlist.y$p <- NA
+chemlist.y$lat <- NA
+for (i in 1:nrow(chemlist.y)){
+    tst <- cor.test(chem.y.RF$conv, chem.y.RF[,colnames(chem.y.RF)==chemlist.y[i,1]])
+    #returns correlation slope
+    chemlist.y$corr[i] <- as.numeric(tst$estimate)
+    #returns sign of correlation slope
+    chemlist.y$sign[i] <- ifelse(as.numeric(tst$estimate) > 0, 1, -1)
+    #returns significance of correlation
+    chemlist.y$p[i] <- tst$p.value
+    tst_lat <- cor.test(chem.y.RF$lat, chem.y.RF[,colnames(chem.y.RF)==chemlist.y[i,1]])
+    chemlist.y$lat[i] <- as.numeric(tst_lat$estimate)
+}
+chemlist.y$importance <- chemlist.y$V2*chemlist.y$sign
+chemlist.y
+#interesting, several of the most important are positively correlated with palatability! but everything that is negatively correlated with palatability is also negatively correlated with latitude, as you'd expect
+
+#MATURE
+chemlist.m$corr <- NA
+chemlist.m$sign <- NA
+chemlist.m$p <- NA
+chemlist.m$lat <- NA
+for (i in 1:nrow(chemlist.m)){
+    tst <- cor.test(chem.m.RF$conv, chem.m.RF[,colnames(chem.m.RF)==chemlist.m[i,1]])
+    #returns correlation slope
+    chemlist.m$corr[i] <- as.numeric(tst$estimate)
+    #returns sign of correlation slope
+    chemlist.m$sign[i] <- ifelse(as.numeric(tst$estimate) > 0, 1, -1)
+    #returns significance of correlation
+    chemlist.m$p[i] <- tst$p.value
+    tst_lat <- cor.test(chem.m.RF$lat, chem.m.RF[,colnames(chem.m.RF)==chemlist.m[i,1]])
+    chemlist.m$lat[i] <- as.numeric(tst_lat$estimate)
+}
+chemlist.m$importance <- chemlist.m$V2*chemlist.m$sign
+chemlist.m
+
+```
+
