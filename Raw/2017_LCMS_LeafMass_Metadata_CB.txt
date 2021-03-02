@@ -1,0 +1,5 @@
+pos		plant position in greenhouse, also used as unique identifier
+
+age		leaf age (young=expanding or mature=expanded and toughened up)
+
+mass_mg		leaf mass in miligrams

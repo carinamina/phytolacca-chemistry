@@ -1,0 +1,18 @@
+Note: This dataset is generated from the Progenesis software that processes raw data from LC/MS samples. The samples were run July 27 2018. This was a re-run of the exact same samples run in December 2017 and February 2018, which were analyzed for CB's dissertation but showed a batch effect that was confounded with latitude. Unlike the Dec/Feb samples, we did a bit more processing in Progenesis before the excel sheet was exported:
+--Used a pooled sample from multiple "induced" plants (position 162) as a reference alignment for normalization
+--excluded peaks >7.5 retention time (thought to be just cell membrane lipids)
+--excluded blanks and fruits from peak picking process
+--Normalized to Telmisartan (4.75_514.2383n) in Progenesis, so all samples have the same abundance of this compound
+
+This dataset is organized transposed to how datasets are usually organized; the first column is the compound and all the other columns are the samples.
+
+Compound		individual compounds; information on mass and mass-to-charge ratio is included in name but cryptic to me
+
+XS2_072718_003	XS2=?	(same for all)
+		072718 = date samples were run (same for all)
+		003 = matches the LCMS_order column (NOT sample_order) in the LCMS_SampleKey file
+		Each row is the abundance of the compound in column 1.
+
+Remaining columns are samples; names only differ in the LCMS_order number
+
+Note that the last two columns are "blanks" with only the solvent (see the LCMS_SampleKey file)

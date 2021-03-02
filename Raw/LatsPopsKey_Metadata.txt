@@ -1,0 +1,3 @@
+pop	population where seeds were collected
+
+lat	latitude of population

@@ -1,0 +1,13 @@
+pop		population of origin; see LatsPopsKey.csv
+
+line		maternal line (nested in population)
+
+indiv		individual replicate (nested in population and line)
+
+age		leaf age (young=expanding or mature=expanded and toughened up)
+
+percent_N	percent nitrogen in leaf sample
+
+percent_C	percent carbon in leaf sample
+
+C_N		carbon:nitrogen ratio

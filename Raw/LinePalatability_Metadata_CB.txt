@@ -1,0 +1,13 @@
+pop		population of origin; see LatsPopsKey.csv
+
+line		maternal line (nested in population)
+
+lat		latitude of origin
+
+age		leaf age (young=expanding or mature=expanded and toughened up)
+
+biomass		average total biomass of caterpillars in a line-level replicate cup at the end of palatability experiment; a caterpillar that died before the experiment ended is included with biomass of 0
+
+surv		average total biomass of surviving caterpillars in a line-level replicate cup at the end of palatability experiment
+
+area		average leaf area consumed in a line-level replicate cup at the end of palatability experiment

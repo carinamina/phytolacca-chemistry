@@ -1,0 +1,15 @@
+LCMS_order	well in LCMS machine; differs from sample order because pooled samples and fruit samples were run but are not shown on this datasheet
+
+label		label written on tube analyzed. leafage_defensetype_ID_pop_line
+
+sample_order	randomized order of plant samples (pooled samples and fruit not shown); blanks at the bottom
+
+defense		whether plant was sampled before spide mite attack (con[stitutive]) or after attack (ind[uced])
+
+id		unique plant ID, also often called pos because it was position in the greenhouse
+
+age		leaf age; Y = young and expaning, M = mature and fully expanded/toughened up
+
+pop		population of origin; see LatsPopsKey.csv
+
+line		maternal line (nested in population)

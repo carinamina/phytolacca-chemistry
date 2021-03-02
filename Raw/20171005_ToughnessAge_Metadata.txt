@@ -1,0 +1,20 @@
+pos		position in greenhouse, used as unique identifier
+
+pop		population of origin; see LatsPopsKey.csv
+
+line		maternal line (nested in population)
+
+indiv		individual replicate (nested in population and line)
+
+mature1		toughness of first replicate mature leaf
+
+mature2		toughness of second replicate mature leaf
+
+young1		toughness of first replicate young leaf
+
+young2		toughness of second replicate young leaf
+
+
+Definitions:
+young leaf is defined as expanding; mature is expanded and toughened up.
+toughness is measured as grams of force required to pierce leaf
