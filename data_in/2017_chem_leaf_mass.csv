@@ -1,0 +1,515 @@
+pos,age,mass_mg
+1,young,1.42
+2,young,6.81
+3,young,4.73
+4,young,3.67
+5,young,2.61
+6,young,3.53
+7,young,10.2
+8,young,5.09
+9,young,3.94
+10,young,5
+11,young,1.58
+12,young,2.34
+13,young,6.7
+14,young,2.65
+15,young,3.83
+16,young,3.07
+17,young,7.68
+18,young,9.18
+19,young,13.23
+20,young,1.84
+21,young,12.68
+22,young,3.09
+23,young,6.21
+24,young,5.18
+25,young,5.06
+26,young,3.52
+27,young,10.94
+28,young,4.62
+29,young,1.56
+30,young,2.56
+31,young,1.72
+32,young,4.27
+33,young,23.18
+34,young,9.58
+35,young,1.88
+36,young,3.26
+37,young,2.31
+38,young,2.32
+39,young,2.75
+40,young,10.92
+41,young,3.8
+42,young,7.39
+43,young,2.25
+44,young,2.41
+45,young,2.67
+46,young,1.8
+47,young,2.14
+48,young,1.57
+49,young,3.91
+50,young,0.95
+51,young,4.99
+52,young,6.17
+53,young,4.2
+54,young,1.68
+55,young,2.28
+56,young,2.08
+57,young,2.58
+58,young,1.47
+59,young,1.59
+60,young,1.13
+61,young,1.78
+62,young,11.25
+63,young,1.29
+64,young,2.47
+65,young,9.6
+66,young,3.83
+67,young,3.1
+68,young,1.38
+69,young,0.78
+70,young,2.66
+71,young,2.48
+72,young,1.94
+73,young,1.48
+74,young,2.97
+75,young,1.4
+76,young,0.8
+77,young,1.63
+78,young,2.98
+79,young,2.61
+80,young,1.2
+81,young,2.97
+82,young,1.9
+83,young,1.5
+84,young,1.13
+85,young,1.23
+86,young,2.45
+87,young,3.41
+88,young,1.87
+89,young,2.88
+90,young,8.85
+91,young,8.68
+92,young,2.89
+93,young,1.69
+94,young,8.68
+95,young,2.29
+96,young,1.47
+97,young,1.77
+98,young,1.51
+99,young,9.96
+100,young,1.53
+101,young,1.77
+102,young,3.63
+103,young,3.54
+104,young,1.9
+105,young,3.02
+106,young,4.45
+107,young,5.55
+108,young,4.37
+109,young,1.96
+110,young,5.44
+111,young,4.51
+112,young,11.55
+113,young,5.41
+114,young,1.51
+115,young,2.51
+116,young,9.52
+117,young,0.82
+118,young,5.43
+119,young,2.94
+120,young,3.1
+121,young,2.73
+122,young,1.98
+123,young,1.99
+124,young,4.13
+125,young,3.39
+126,young,1.16
+127,young,2.33
+128,young,3.94
+129,young,2.54
+130,young,8.72
+131,young,1.92
+132,young,3.07
+133,young,1.57
+134,young,7.42
+135,young,2.83
+136,young,7.9
+137,young,3.11
+138,young,3.33
+139,young,3.37
+140,young,3.86
+141,young,1.28
+142,young,3.93
+143,young,4.27
+144,young,12.41
+145,young,1.57
+146,young,3.08
+147,young,2.23
+148,young,4.38
+149,young,3.05
+150,young,3.34
+151,young,1.42
+152,young,6.7
+153,young,10.02
+154,young,2.19
+155,young,1.38
+156,young,11.58
+157,young,1.1
+158,young,2.23
+159,young,2.41
+160,young,1.86
+162,young,4.32
+163,young,1.93
+164,young,1.51
+165,young,3.43
+166,young,5.67
+167,young,1.2
+168,young,8.01
+169,young,3.81
+170,young,4.38
+171,young,1.77
+172,young,2.33
+173,young,5.39
+174,young,5.91
+175,young,2.98
+176,young,1.85
+177,young,1.32
+178,young,4.7
+179,young,1.85
+180,young,3.47
+181,young,9.12
+182,young,7.79
+183,young,2.26
+184,young,1.62
+185,young,1.8
+186,young,1.2
+187,young,3.38
+188,young,2.5
+189,young,1.35
+190,young,10.23
+191,young,11.92
+192,young,1.6
+193,young,6.44
+194,young,4.06
+195,young,10.19
+196,young,3.14
+197,young,8.83
+198,young,4.83
+199,young,1.38
+200,young,1.68
+201,young,3.77
+202,young,9.1
+203,young,1.89
+204,young,4.2
+205,young,3.72
+206,young,5.48
+207,young,3.57
+208,young,9.49
+209,young,2.66
+210,young,8.1
+211,young,3.08
+212,young,1.77
+213,young,2.29
+214,young,0.97
+215,young,5.59
+216,young,0.91
+217,young,2.7
+218,young,5.58
+219,young,5.28
+220,young,1.15
+221,young,7.23
+222,young,6.04
+223,young,8.59
+224,young,1.32
+225,young,1
+226,young,9.12
+227,young,2.02
+228,young,7.15
+229,young,11.78
+230,young,7.85
+231,young,4.63
+232,young,1.02
+234,young,5.04
+235,young,4.68
+236,young,8.4
+237,young,9.54
+238,young,5.61
+239,young,1.68
+240,young,4.62
+242,young,1.79
+244,young,1.7
+245,young,2.97
+246,young,1.52
+247,young,13.16
+248,young,1.03
+249,young,1.56
+250,young,5.2
+251,young,4.32
+252,young,7.01
+253,young,6.23
+254,young,6.92
+255,young,7.94
+256,young,7.08
+257,young,2.16
+258,young,6.07
+259,young,4.6
+260,young,1.87
+261,young,3.62
+1,mature,6.67
+2,mature,11.06
+3,mature,7.26
+4,mature,3.98
+5,mature,9.18
+6,mature,5.4
+7,mature,9.56
+8,mature,11.35
+9,mature,9.82
+10,mature,15.76
+11,mature,13.05
+12,mature,9.22
+13,mature,9.85
+14,mature,6.45
+15,mature,4.13
+16,mature,6.55
+17,mature,5.84
+18,mature,9.93
+19,mature,8.54
+20,mature,5.35
+21,mature,11.45
+22,mature,7.58
+23,mature,10.56
+24,mature,10.47
+25,mature,11.39
+26,mature,10.13
+27,mature,11.83
+28,mature,10.43
+29,mature,11.47
+30,mature,9.53
+31,mature,3.83
+32,mature,13.19
+33,mature,10.57
+34,mature,10.36
+35,mature,9.02
+36,mature,6.6
+37,mature,10.23
+38,mature,11.38
+39,mature,5.74
+40,mature,9.96
+41,mature,9.8
+42,mature,5.63
+43,mature,5.73
+44,mature,9.72
+45,mature,6.82
+46,mature,6.32
+47,mature,9.37
+48,mature,8.18
+49,mature,7.3
+50,mature,5.41
+51,mature,6.32
+52,mature,13.21
+53,mature,12.97
+54,mature,4.51
+55,mature,4.19
+56,mature,6.63
+57,mature,10.07
+58,mature,8.21
+59,mature,8.97
+60,mature,10.17
+61,mature,12.89
+62,mature,9.12
+63,mature,6.82
+64,mature,11.39
+65,mature,7.83
+66,mature,10.34
+67,mature,2.99
+68,mature,5.15
+69,mature,6.62
+70,mature,10.69
+71,mature,12.34
+72,mature,6.86
+73,mature,10.02
+74,mature,8.77
+75,mature,8.91
+76,mature,4.52
+77,mature,4.98
+78,mature,9.26
+79,mature,6.92
+80,mature,4.37
+81,mature,12.41
+82,mature,10.61
+83,mature,5.98
+84,mature,5.21
+85,mature,8.45
+86,mature,13.32
+87,mature,11.47
+88,mature,4.61
+89,mature,4.25
+90,mature,7.58
+91,mature,6.46
+92,mature,7.87
+93,mature,9.63
+94,mature,8.67
+95,mature,8.69
+96,mature,6.87
+97,mature,8.24
+98,mature,12.53
+99,mature,7.67
+100,mature,8.3
+101,mature,6.02
+102,mature,9.14
+103,mature,5.47
+104,mature,4.83
+105,mature,9.41
+106,mature,6.25
+107,mature,6.54
+108,mature,7.92
+109,mature,7.52
+110,mature,13.2
+111,mature,9.48
+112,mature,7.56
+113,mature,10.82
+114,mature,5.55
+115,mature,7.99
+116,mature,10.12
+117,mature,5.52
+118,mature,11.8
+119,mature,10.12
+120,mature,12.81
+121,mature,9.78
+122,mature,11.29
+123,mature,6.26
+124,mature,5.75
+125,mature,7.26
+126,mature,5.91
+127,mature,5.16
+128,mature,11.98
+129,mature,6.27
+130,mature,7.64
+131,mature,4.72
+132,mature,9.98
+133,mature,6.05
+134,mature,13.16
+135,mature,7.29
+136,mature,9.25
+137,mature,7.29
+138,mature,7.02
+139,mature,10.25
+140,mature,4.34
+141,mature,6.19
+142,mature,14.11
+143,mature,10.33
+144,mature,7.09
+145,mature,8.14
+146,mature,5.96
+147,mature,7.2
+148,mature,9.74
+149,mature,9.7
+150,mature,5.55
+151,mature,5.03
+152,mature,11.36
+153,mature,5.79
+154,mature,8.85
+155,mature,7.46
+156,mature,9.02
+157,mature,7.29
+158,mature,8.52
+159,mature,8.1
+160,mature,5.15
+162,mature,12.1
+163,mature,6.5
+164,mature,7.41
+165,mature,11.27
+166,mature,13.78
+167,mature,7.13
+168,mature,10.87
+169,mature,8.11
+170,mature,10.16
+171,mature,11.15
+172,mature,11.52
+173,mature,10.35
+174,mature,11.7
+175,mature,6.16
+176,mature,9.5
+177,mature,5.88
+178,mature,14.37
+179,mature,10.63
+180,mature,14.5
+181,mature,7.08
+182,mature,11.78
+183,mature,13.74
+184,mature,7.98
+185,mature,5.46
+186,mature,6.76
+187,mature,6.34
+188,mature,7.97
+189,mature,5.3
+190,mature,10.01
+191,mature,5.98
+192,mature,8.07
+193,mature,11.28
+194,mature,10.02
+195,mature,13.78
+196,mature,4.7
+197,mature,9.01
+198,mature,8.9
+199,mature,4.84
+200,mature,4.75
+201,mature,10.14
+202,mature,9.56
+203,mature,5.31
+204,mature,8.33
+205,mature,9.66
+206,mature,10.04
+207,mature,8.2
+208,mature,11.1
+209,mature,8.03
+210,mature,8.22
+211,mature,8.1
+212,mature,4.77
+213,mature,6.86
+214,mature,5.35
+215,mature,9.05
+216,mature,10.32
+217,mature,6.67
+218,mature,10.94
+219,mature,11.76
+220,mature,4.88
+221,mature,8.53
+222,mature,9.43
+223,mature,6.93
+224,mature,6.12
+225,mature,6.3
+226,mature,10.21
+227,mature,11.24
+228,mature,11.2
+229,mature,8.87
+230,mature,9.9
+231,mature,10.19
+232,mature,6.87
+234,mature,11.15
+235,mature,6
+236,mature,9.43
+237,mature,11.57
+238,mature,3.56
+239,mature,6.52
+240,mature,10.7
+242,mature,10.97
+244,mature,9.94
+245,mature,12.27
+246,mature,13.04
+247,mature,11.79
+248,mature,8.31
+249,mature,9.46
+250,mature,8.44
+251,mature,7.29
+252,mature,9.61
+253,mature,11.17
+254,mature,12.24
+255,mature,7.9
+256,mature,11.37
+257,mature,9.63
+258,mature,10.76
+259,mature,10.17
+260,mature,8.39
+261,mature,9.58
