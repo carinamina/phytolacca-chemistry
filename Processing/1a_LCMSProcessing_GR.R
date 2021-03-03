@@ -1,94 +1,54 @@
 #chemistry data wrangling
-#did two steps in excel, such a cheater: deleted the pooled samples, all the normalised abundance columns and first two rows
-#this time I did not subtract blanks. The Dec blanks didn't align properly with telmisartan and Tony didn't think it was a good idea.
-library(plyr)
-library(dplyr)
-library(vegan)
 
-#results function
-lme_results <- function(lme_model)
-{
-  a<- hist((resid(lme_model) - mean(resid(lme_model), na.rm=T)) / sd(resid(lme_model), na.rm=T), freq=F); curve(dnorm, add = TRUE)
-  b<-qqnorm(lme_model)
-  c<-plot(lme_model)
-  d<-summary(lme_model)
-#  e<-intervals(lme_model)[1]
-  f<-anova(lme_model, type = "marginal", test = "F")
-  g<-nobs(lme_model)
-  
-  list(a,b,c,d,f,g)
-}
+#notes: see metadata for Telmisartan mass, which is different than last time (???); should be same abundance across all samples (check blanks)
+#how to use blanks? Remove compounds that are highest in blanks.
+#toss out all the "induced" data
+#then remove compounds that are zero in everything (??) Stuff that was only in induced samples.
+#how else can we have an abundance cutoff??
+library(tidyverse)
 
-#y = mx + b
-#intercept = v1 = intercept for mature leaves
-#lat = v2 = slope for mature leaves
-#ageyoung = v3 = difference in intercepts between ages; intercept for young = v1+v3
-#lat:ageyoung = v4 = difference in slopes between ages; slope for young = v2+v4
+raw = read.csv("Raw/20180727_LCMS_ReadyForR.csv", header=TRUE)
+#for some reason every other column is blank. There shouldn't be NAs otherwise; indeed this step just removes half the rows
+raw <- na.omit(raw)
 
-lme_slopes <- function(lme_model)
-{
-  b_mature = summary(lme_model)$coef$fixed[1]
-  m_mature = summary(lme_model)$coef$fixed[2]
-  b_young = summary(lme_model)$coef$fixed[1]+summary(lme_model)$coef$fixed[3]
-  m_young = summary(lme_model)$coef$fixed[2]+summary(lme_model)$coef$fixed[4]
-  coef <- as.vector(c(b_mature,m_mature,b_young,m_young))
-  names(coef) <- c("b_mature","m_mature","b_young","m_young")
-  slopes <- as.data.frame(t(coef))
-  return(slopes)
-}
-
-
-raw = read.csv("data_in/20180727_rerun_progenesis export_relativeabund.csv", header=TRUE)
-
+#change the first column (compounds) to row names and then remove it
 rownames(raw) <- raw[,1]
-# #remove retention times > 7:30 (lipids that are just part of the membranes)
-raw$retention <- as.numeric(read.table(text = rownames(raw), sep = "_", colClasses = "character")[,1])
-raw <- droplevels(subset(raw, raw$retention < 7.5))
-raw$retention <- NULL
+raw <- raw[,2:length(raw)]
 
-#cut out extraneous columns, including blanks at the beginning
-chem.df <- raw[,20:length(raw)]
-rm(raw)
+#transpose to columns as compounds and samples as rows
+raw <- as.data.frame(t(raw))
 
-#transpose to columns as compounds
-chem.df <- as.data.frame(t(chem.df))
+sample.df <- as.data.frame(rownames(raw))
+sample.df$LCMS_order <- as.numeric(substr(sample.df[,1], 12, 14))
 
-sample <- rownames(chem.df)
-sample.df <- as.data.frame(sample)
-sample.df$LCMS_order <- as.numeric(substr(sample, 12, 15))
-month <- ifelse(grepl("CB", sample, fixed=TRUE),"Dec","Jul")
-sample_month <- as.data.frame(cbind(sample.df, month))
-
-key <- read.csv("data_in/2018_jul_chem_key.csv", header=TRUE)
+key <- read.csv("Raw/20180727_LCMS_SampleKey.csv", header=TRUE)
 key <- left_join(sample.df, key, by="LCMS_order")
-#check BY HAND that the LCMS sequence matches the sample ID
-
-
-### what is this???
-# key$LCMS.sequence <- NULL
-# key$chem.label <- NULL
-# key$dilution <- ifelse(feb_key$dilution == "1:01",1,20)
-# key$dilution <- as.factor(feb_key$dilution)
-
-### maybe ???
-# key <- na.omit(key)
+rm(sample.df)
 
 #some of the bulk lines have the same number as non-bulk lines from those populations, so append a B to make them unique
-key$line <- ifelse(grepl("TT Bulk",key$pop, fixed=TRUE) | grepl("Gav Bulk",key$pop, fixed=TRUE), paste(key$line, "B"),key$line)
+key$line <- ifelse(grepl("Bulk",key$pop, fixed=TRUE) | grepl("bulk",key$pop, fixed=TRUE), paste(key$line, "B"),key$line)
 #Remove the bulk label so we know which population is which. Would be good to check someday these are no different
-key$pop <- revalue(key$pop, c("Val" = "Tiri","Tiri Bulk" = "Tiri", "Hwy 27 bulk" = "Hwy 27", "TT Bulk" = "TT", "Dalton Bulk" = "Dalton", "Gav Bulk" = "Gav")) 
+key$pop <- plyr::revalue(key$pop, c("Val" = "Tiri","Tiri Bulk" = "Tiri", "Hwy 27 bulk" = "Hwy 27", "TT Bulk" = "TT", "Dalton Bulk" = "Dalton", "Gav Bulk" = "Gav", "Whitehall Bulk" = "Whitehall","KBS Bulk" = "KBS")) 
 str(key)
-
-rm(sample_month, month, sample, sample.df)
-lat = read.csv("data_in/lats_long_names.csv", header = TRUE)
-key <- merge(key, lat)
-
-
-#add regional names
+#get latitude for each population
+lat = read.csv("Raw/LatsPopsKey.csv", header = TRUE)
+key <- left_join(key, lat, by = "pop")
+#get regional name for each population
 regions <- c("tropical", "tropical","tropical", "subtropical", "subtropical", "subtropical",NA,NA,NA,NA,NA,NA,NA, "temperate", "temperate", "temperate")
 regions <- cbind(regions, sort(unique(key$lat)))
 colnames(regions) <- c("region", "lat")
-key <- merge(key, regions, by = "lat")
+
+
+
+
+
+
+
+
+
+
+#stopped here...this only works if merging, but then the blanks are lost.
+abc <- left_join(key, regions, by = "lat")
 rm(regions,lat)
 
 con_key <- droplevels(subset(key, key$defense == "con"))
