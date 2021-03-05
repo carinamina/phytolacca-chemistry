@@ -187,6 +187,6 @@ normal <- cbind(normal[,1:2],normal[,3:ncol(normal)]/normal$mass_mg) %>% select(
 
 full <- inner_join(con_key[c("LCMS_ID","pos","age","pop","line","lat","region","biomass","surv","area")], normal, by = "LCMS_ID") %>% select(-LCMS_ID)
 
-write.csv(full, "Processing/LCMSprocessed_CB.csv",row.names=F)
+write.csv(full, "Processing/1a_out_LCMSprocessed_CB.csv",row.names=F)
 
 #rm(list=ls())
