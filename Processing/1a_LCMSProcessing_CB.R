@@ -2,7 +2,7 @@
 library(tidyverse)
 
 raw = read.csv("Raw/20180727_LCMS_ReadyForR.csv", header=TRUE)
-#for some reason every other column is blank. There shouldn't be NAs otherwise; indeed this step just removes half the rows
+#for some reason every other row is blank. There shouldn't be NAs otherwise; indeed this step just removes half the rows
 raw <- na.omit(raw)
 
 #change the first column (compounds) to row names and then remove it
@@ -17,7 +17,6 @@ raw <- as.data.frame(t(raw))
 # Create the LCMS_ID, which matches row names in chemistry dataset
 # Add latitude & region 
 # Add leaf mass data from another dataset
-# Add palatability data
 
 #gets rownames (what I call LCMS_ID) from chemistry dataset and extracts the LCMS_order to match up with the key
 sample.df <- as.data.frame(rownames(raw)) %>% dplyr::rename(LCMS_ID = "rownames(raw)" )
@@ -28,6 +27,7 @@ key <- left_join(sample.df, key, by="LCMS_order") %>% select(-c(LCMS_order))
 rm(sample.df)
 #break off the blanks because they don't survive upcoming mergers and subsetting
 blanks <- key %>% filter(label == "blank")
+key <- key %>% filter(label != "blank")
 
 
 # cleaning up population names, adding latitude and region
@@ -39,32 +39,16 @@ str(key)
 #get latitude for each population
 lat = read.csv("Raw/LatsPopsKey.csv", header = TRUE)
 key <- left_join(key, lat, by = "pop")
-#get regional name for each population
-regions <- c("tropical", "tropical","tropical", "subtropical", "subtropical", "subtropical",NA,NA,NA,NA,NA,NA,NA, "temperate", "temperate", "temperate")
-regions <- cbind(regions, sort(unique(key$lat)))
-colnames(regions) <- c("region", "lat")
-key <- merge(key, regions, by = "lat")
-rm(regions,lat)
-
+rm(lat)
 
 #add data on leaf mass
 leaf <- read.csv("Raw/2017_LCMS_LeafMass_RAW.csv", header=TRUE)
 leaf$pos_age <- as.factor(paste(leaf$pos, toupper(substr(leaf$age, 1, 1)), sep = "_"))
 key$pos_age <- as.factor(paste(key$pos, key$age, sep = "_"))
-key <- left_join(key, leaf[c("pos_age", "mass_mg")], by = "pos_age") %>% select(-pos_age)
+key <- left_join(key, leaf[c("pos_age", "mass_mg")], by = "pos_age")
 #check there are no NAs in leaf mass
 sum(is.na(key$mass_mg))
 rm(leaf)
-
-#add line-level palatability data
-palat <- na.omit(read.csv("Raw/LinePalatability.csv",header=T))
-palat$line_age <- paste(palat$line, toupper(substr(palat$age,1,1)),sep="_")
-key <- key %>% mutate(line_age = paste(paste(pop, line, sep="_"),age,sep="_") ) %>% left_join(palat[c("line_age","biomass","surv","area")], by = "line_age") %>% select(-c(line_age))
-rm(palat)
-#palatability metrics on a per-maternal line level. 
-#biomass is line mean of: ln(total biomass per cup) (counting dead cats as zero biomass), standardized by initial cat count and duration
-#area is line mean of: ln(cumulative area consumed per cup) over course of experiment, standardized by initial cat count and duration
-#survival is line mean of: number of survivors per cup
 
 #use only constitutive defense samples. Count how many plants per region and population
 con_key <- key %>% filter(defense == "con") %>% select(-defense)
@@ -184,9 +168,9 @@ normal <- cbind(normal[,1:2],normal[,3:ncol(normal)]/normal$mass_mg) %>% select(
 
 ##################################
 #join the chemistry data with the key and export
+con_key$age <- plyr::revalue(con_key$age, c("Y" = "young", "M" =  "mature"))
+full <- inner_join(con_key[c("LCMS_ID","pos","pop","line","age","lat","region")], normal, by = "LCMS_ID") %>% select(-LCMS_ID) %>% mutate(pos_age = paste(pos,age,sep="_"),.before=pos) %>% mutate(line_age=paste(paste(pop,line,sep="_"),age,sep="_"),.before=pos)
 
-full <- inner_join(con_key[c("LCMS_ID","pos","age","pop","line","lat","region","biomass","surv","area")], normal, by = "LCMS_ID") %>% select(-LCMS_ID)
-
-write.csv(full, "Processing/1a_out_LCMSprocessed_CB.csv",row.names=F)
+write.csv(full, "Processing/1a_out_LCMS_Indiv_CB.csv",row.names=F)
 
 #rm(list=ls())

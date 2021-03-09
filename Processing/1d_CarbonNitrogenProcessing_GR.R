@@ -1,50 +1,8 @@
-#chemistry data wrangling
-#start apr 22, 2018
+#carbon:nitrogen data wrangling
 #combined the KBS and main campus data in Excel
-library(dplyr)
-library(plyr)
-library(vegan)
-library(lme4) 
-#library(afex) #does not seem needed
-library(pbkrtest)
-library(MuMIn)
-#library(arm) #causes errors
-#library(effects) #is not there
-library(lsmeans)
-#library(car) #is not there
-library(nlme)
-library(bbmle)
-library(multcomp)
-#library(plyr) #seems duplicate
-library(ggplot2)
+library(tidyverse)
 
-lme_slopes <- function(lme_model)
-{
-  b_mature = summary(lme_model)$coef$fixed[1]
-  m_mature = summary(lme_model)$coef$fixed[2]
-  b_young = summary(lme_model)$coef$fixed[1]+summary(lme_model)$coef$fixed[3]
-  m_young = summary(lme_model)$coef$fixed[2]+summary(lme_model)$coef$fixed[4]
-  coef <- as.vector(c(b_mature,m_mature,b_young,m_young))
-  names(coef) <- c("b_mature","m_mature","b_young","m_young")
-  slopes <- as.data.frame(t(coef))
-  return(slopes)
-}
-
-lme_results <- function(lme_model)
-{
-  a<- hist((resid(lme_model) - mean(resid(lme_model), na.rm=T)) / sd(resid(lme_model), na.rm=T), freq=F); curve(dnorm, add = TRUE)
-  b<-qqnorm(lme_model)
-  c<-plot(lme_model)
-  d<-summary(lme_model)
-  #  e<-intervals(lme_model)[1]
-  f<-anova(lme_model, type = "marginal", test = "F")
-  g<-nobs(lme_model)
-  
-  list(a,b,c,d,f,g)
-}
-
-#setwd("/Users/carina/Documents/R_working_directory")
-cn = read.csv("data_in/all_CN_20180422.csv", header=TRUE)
+cn = read.csv("Raw/20180422_CarbonNitrogen_RAW.csv", header=TRUE)
 str(cn)
 
 # **pop** is the population  
@@ -64,17 +22,17 @@ cn$line_ID <- as.factor(paste(cn$pop,cn$line,sep="_"))
 cn$plant_ID <- as.factor(paste(cn$line_ID,cn$indiv,sep="_"))
 cn$pop_age <- as.factor(paste(cn$pop, cn$age, sep = "_"))
 
-lat = read.csv("data_in/lats_long_names.csv", header = TRUE)
-cn = merge(cn, lat)
+lat = read.csv("Raw/LatsPopsKey.csv", header = TRUE)
+cn = merge(cn, lat, by= "pop")
 
 #assigns regional names based on latitude. 3 tropical, 3 southernmost US, 3 central (based on 3 closest to mean of lowest and highest US) 3 northernmost US
 regions <- c("tropical", "tropical", "tropical", "southern", "southern", "southern", NA, NA, NA, NA, NA, NA, NA, "northern", "northern", "northern")
 regions <- cbind(regions, sort(unique(cn$lat)))
 colnames(regions) <- c("region", "lat")
-cn <- merge(cn, regions)
+cn <- merge(cn, regions, by = "lat")
 
 #get line-level C:N
-cn_line <- ddply(cn, c("region","line_ID","pop","lat", "age"), summarise,
+cn_line <- plyr::ddply(cn, c("region","line_ID","pop","lat", "age"), summarise,
                 C_N = mean(C_N),
                 percent_N = mean(percent_N),
                 percent_C = mean(percent_C) 
@@ -83,7 +41,7 @@ cn_line <- ddply(cn, c("region","line_ID","pop","lat", "age"), summarise,
 #add palatability data
 cn_line$line_age <- as.factor(paste(cn_line$line_ID, cn_line$age, sep = "_"))
 cn_line$line_ID <- NULL
-palat = read.csv("data_in/line_level_palatability.csv", header = TRUE)
+palat = read.csv("Raw/LinePalatability.csv", header = TRUE)
 palat$line_age = paste(palat$line, palat$age, sep="_")
 palat$X <- NULL
 palat$pop <- NULL
