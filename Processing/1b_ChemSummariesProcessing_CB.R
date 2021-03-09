@@ -18,7 +18,7 @@ NMDS.scree<-function(x,name) #where x is the name of the data frame variable
 
 ##Data import for NMDS: get chemicals, subset to young and mature
 
-chem <- read.csv("Processing/1a_out_LCMS_Indiv_CB.csv", header = TRUE)
+chem <- read.csv("Processing/1a_out_LCMS_Indiv.csv", header = TRUE)
 #use pop_line_age as unique identifier; they are not repeated
 length(unique(chem$line_age))
 str(chem[,1:9])
@@ -31,9 +31,11 @@ key <- chem[,1:8]
 
 #from chemistry matrix, calculate Shannon diversity, richness, and abundance for each sample
 chem.sums <- data.frame(row.names = row.names(chem.mat))
-#abundance is sum of all compound abundances
+#abundance is sum of all compound abundances. We really want log.abund, which is beautifully normally distributed
 chem.sums$abund <- rowSums(chem.mat)
 hist(chem.sums$abund)
+chem.sums$log.abund <- log(chem.sums$abund)
+hist(chem.sums$log.abund)
 #richness is number of compounds present. counts the number of zeroes in each row and subtracts from total to calculate richness
 chem.sums$richness <- ncol(chem.mat) - rowSums(chem.mat == 0)
 hist(chem.sums$richness)
@@ -74,10 +76,11 @@ chem.sums$line_age <- rownames(chem.sums)
 scores <- merge(chem.sums,scores, by = "line_age")
 scores <- merge(key, scores, by = "line_age")
 head(scores)
+scores$abund <- NULL
 
 write.csv(scores[c(2,1,3:ncol(scores))], file = "Processing/1b_out_ChemSummaries_Indiv.csv", row.names = FALSE )
 
 #some visualization for fun
-#qplot(lat, abund, data=scores, colour=age)
+qplot(lat, log.abund, data=scores, colour=age)
 
 rm(list=ls())

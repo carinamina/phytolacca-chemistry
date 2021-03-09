@@ -1,0 +1,547 @@
+"pos_age","line_age","pos","pop","line","age","lat","region","percent_N","percent_C","C_N"
+"1_mature","Bella_2_mature",1,"Bella",2,"mature",8.79,"tropical",3.737,36.726,9.827669253
+"2_mature","Bella_3_mature",2,"Bella",3,"mature",8.79,"tropical",2.101,26.23,12.48453118
+"3_mature","Bella_4_mature",3,"Bella",4,"mature",8.79,"tropical",4.324,38.74,8.959990749
+"4_mature","Bella_4_mature",4,"Bella",4,"mature",8.79,"tropical",2.327,35.497,15.25440481
+"5_mature","Bella_4_mature",5,"Bella",4,"mature",8.79,"tropical",4.002,35.986,8.992003998
+"6_mature","Bella_13_mature",6,"Bella",13,"mature",8.79,"tropical",3.682,36.011,9.780282455
+"7_mature","Bella_21_mature",7,"Bella",21,"mature",8.79,"tropical",2.181,31.021,14.22329207
+"8_mature","Bella_21_mature",8,"Bella",21,"mature",8.79,"tropical",4.277,39.12,9.146598083
+"9_mature","Bella_21_mature",9,"Bella",21,"mature",8.79,"tropical",1.256,34.75,27.66719745
+"10_mature","Bella_2_mature",10,"Bella",2,"mature",8.79,"tropical",1.8665,36.3737,19.48765068
+"11_mature","Bella_2_mature",11,"Bella",2,"mature",8.79,"tropical",1.467,36.1351,24.63197001
+"12_mature","Bella_2_mature",12,"Bella",2,"mature",8.79,"tropical",3.6038,37.4539,10.39289084
+"13_mature","Bella_3_mature",13,"Bella",3,"mature",8.79,"tropical",3.2153,39.3108,12.22616863
+"14_mature","Bella_3_mature",14,"Bella",3,"mature",8.79,"tropical",2.6479,32.0412,12.10060803
+"15_mature","Bella_3_mature",15,"Bella",3,"mature",8.79,"tropical",1.8333,34.3495,18.73643157
+"16_mature","Bella_13_mature",16,"Bella",13,"mature",8.79,"tropical",2.4056,37.0736,15.41137346
+"17_mature","Bella_13_mature",17,"Bella",13,"mature",8.79,"tropical",1.7759,34.43,19.38735289
+"18_mature","Bella_13_mature",18,"Bella",13,"mature",8.79,"tropical",2.0904,33.7442,16.14246077
+"19_young","Bella_2_young",19,"Bella",2,"young",8.79,"tropical",3.615,40.414,11.17952974
+"20_young","Bella_3_young",20,"Bella",3,"young",8.79,"tropical",3.727,39.77,10.67078079
+"21_young","Bella_4_young",21,"Bella",4,"young",8.79,"tropical",4.815,39.739,8.253167186
+"22_young","Bella_4_young",22,"Bella",4,"young",8.79,"tropical",3.328,37.456,11.25480769
+"23_young","Bella_4_young",23,"Bella",4,"young",8.79,"tropical",4.862,39.534,8.131221719
+"24_young","Bella_13_young",24,"Bella",13,"young",8.79,"tropical",4.058,36.311,8.948003943
+"25_young","Bella_21_young",25,"Bella",21,"young",8.79,"tropical",3.952,41.253,10.43851215
+"26_young","Bella_21_young",26,"Bella",21,"young",8.79,"tropical",3.346,39.534,11.81530185
+"27_young","Bella_21_young",27,"Bella",21,"young",8.79,"tropical",2.976,26.489,8.900873656
+"28_young","Bella_2_young",28,"Bella",2,"young",8.79,"tropical",4.5069,46.3536,10.28502962
+"29_young","Bella_2_young",29,"Bella",2,"young",8.79,"tropical",2.5357,40.3785,15.92400521
+"30_young","Bella_2_young",30,"Bella",2,"young",8.79,"tropical",5.1884,47.961,9.243890217
+"31_young","Bella_3_young",31,"Bella",3,"young",8.79,"tropical",4.6086,39.4178,8.553096385
+"32_young","Bella_3_young",32,"Bella",3,"young",8.79,"tropical",3.598,39.4984,10.9778766
+"33_young","Bella_3_young",33,"Bella",3,"young",8.79,"tropical",3.1249,39.0415,12.4936798
+"34_young","Bella_13_young",34,"Bella",13,"young",8.79,"tropical",4.0981,37.234,9.085673849
+"35_young","Bella_13_young",35,"Bella",13,"young",8.79,"tropical",5.2078,52.2956,10.04178348
+"36_young","Bella_13_young",36,"Bella",13,"young",8.79,"tropical",3.4807,37.9028,10.8894188
+"37_mature","Caesar_5_mature",37,"Caesar",5,"mature",39.4887,"north temperate",1.151,40.639,35.30755864
+"38_mature","Caesar_5_mature",38,"Caesar",5,"mature",39.4887,"north temperate",1.429,39.972,27.9720084
+"39_mature","Caesar_7_mature",39,"Caesar",7,"mature",39.4887,"north temperate",6.003,49.77,8.290354823
+"40_mature","Caesar_7_mature",40,"Caesar",7,"mature",39.4887,"north temperate",1.265,35.796,28.2972332
+"41_mature","Caesar_7_mature",41,"Caesar",7,"mature",39.4887,"north temperate",2.459,37.552,15.27124847
+"42_mature","Caesar_9_mature",42,"Caesar",9,"mature",39.4887,"north temperate",1.029,39.714,38.59475219
+"43_mature","Caesar_10_mature",43,"Caesar",10,"mature",39.4887,"north temperate",2.157,37.918,17.57904497
+"44_mature","Caesar_5_mature",44,"Caesar",5,"mature",39.4887,"north temperate",1.1223,36.1845,32.24137931
+"45_mature","Caesar_5_mature",45,"Caesar",5,"mature",39.4887,"north temperate",1.2718,39.3978,30.97798396
+"46_mature","Caesar_5_mature",46,"Caesar",5,"mature",39.4887,"north temperate",1.4789,40.7812,27.57536006
+"47_mature","Caesar_9_mature",47,"Caesar",9,"mature",39.4887,"north temperate",1.0425,33.8396,32.46004796
+"48_mature","Caesar_9_mature",48,"Caesar",9,"mature",39.4887,"north temperate",1.0064,35.3024,35.07790143
+"49_mature","Caesar_9_mature",49,"Caesar",9,"mature",39.4887,"north temperate",1.0594,33.9844,32.07891259
+"50_mature","Caesar_10_mature",50,"Caesar",10,"mature",39.4887,"north temperate",2.384,31.3053,13.13141779
+"51_mature","Caesar_10_mature",51,"Caesar",10,"mature",39.4887,"north temperate",2.8639,41.9048,14.63207514
+"52_mature","Caesar_10_mature",52,"Caesar",10,"mature",39.4887,"north temperate",2.9593,35.4218,11.96965499
+"53_young","Caesar_5_young",53,"Caesar",5,"young",39.4887,"north temperate",1.295,38.26,29.54440154
+"54_young","Caesar_5_young",54,"Caesar",5,"young",39.4887,"north temperate",1.203,35.709,29.68329177
+"55_young","Caesar_7_young",55,"Caesar",7,"young",39.4887,"north temperate",5.105,36.18,7.087561214
+"56_young","Caesar_7_young",56,"Caesar",7,"young",39.4887,"north temperate",2.006,36.044,17.96809571
+"57_young","Caesar_7_young",57,"Caesar",7,"young",39.4887,"north temperate",5.86,37.566,6.410580205
+"58_young","Caesar_9_young",58,"Caesar",9,"young",39.4887,"north temperate",1.156,38.179,33.02681661
+"59_young","Caesar_10_young",59,"Caesar",10,"young",39.4887,"north temperate",3.2,40.642,12.700625
+"60_young","Caesar_5_young",60,"Caesar",5,"young",39.4887,"north temperate",1.2152,38.8487,31.9689763
+"61_young","Caesar_5_young",61,"Caesar",5,"young",39.4887,"north temperate",1.0367,32.7066,31.54876049
+"62_young","Caesar_5_young",62,"Caesar",5,"young",39.4887,"north temperate",1.2133,39.2444,32.34517432
+"63_young","Caesar_9_young",63,"Caesar",9,"young",39.4887,"north temperate",1.5026,42.1794,28.0709437
+"64_young","Caesar_9_young",64,"Caesar",9,"young",39.4887,"north temperate",1.2806,40.0194,31.25050757
+"65_young","Caesar_9_young",65,"Caesar",9,"young",39.4887,"north temperate",1.4044,45.2043,32.18762461
+"66_young","Caesar_10_young",66,"Caesar",10,"young",39.4887,"north temperate",2.2938,25.2582,11.01150929
+"67_young","Caesar_10_young",67,"Caesar",10,"young",39.4887,"north temperate",3.8311,39.1449,10.21766594
+"68_young","Caesar_10_young",68,"Caesar",10,"young",39.4887,"north temperate",3.7894,40.6262,10.72101124
+"69_mature","Center Hill_1_mature",69,"Center Hill",1,"mature",36.06935,"temperate",1.316,40.967,31.12993921
+"70_mature","Center Hill_1_mature",70,"Center Hill",1,"mature",36.06935,"temperate",1.581,54.34,34.37065149
+"71_mature","Center Hill_1_mature",71,"Center Hill",1,"mature",36.06935,"temperate",1.528,41.155,26.93390052
+"72_mature","Center Hill_2_mature",72,"Center Hill",2,"mature",36.06935,"temperate",1.295,40.61,31.35598456
+"73_mature","Center Hill_2_mature",73,"Center Hill",2,"mature",36.06935,"temperate",1.734,48.55,28
+"74_mature","Center Hill_2_mature",74,"Center Hill",2,"mature",36.06935,"temperate",1.293,40.354,31.2095901
+"75_mature","Center Hill_3_mature",75,"Center Hill",3,"mature",36.06935,"temperate",1.31,41.71,31.84274809
+"76_mature","Center Hill_3_mature",76,"Center Hill",3,"mature",36.06935,"temperate",1.276,42.708,33.47021944
+"77_mature","Center Hill_3_mature",77,"Center Hill",3,"mature",36.06935,"temperate",1.455,39.61,27.22611684
+"78_mature","Center Hill_7_mature",78,"Center Hill",7,"mature",36.06935,"temperate",1.481,40.49,27.34233626
+"79_mature","Center Hill_7_mature",79,"Center Hill",7,"mature",36.06935,"temperate",1.237,31.96,25.83589329
+"80_mature","Center Hill_7_mature",80,"Center Hill",7,"mature",36.06935,"temperate",1.343,39.333,29.28741623
+"81_mature","Center Hill_8_mature",81,"Center Hill",8,"mature",36.06935,"temperate",3.001,43.77,14.58513829
+"82_mature","Center Hill_8_mature",82,"Center Hill",8,"mature",36.06935,"temperate",4.199,44.01,10.48059062
+"83_young","Center Hill_1_young",83,"Center Hill",1,"young",36.06935,"temperate",1.553,41.133,26.48615583
+"84_young","Center Hill_1_young",84,"Center Hill",1,"young",36.06935,"temperate",1.299,38.86,29.91454965
+"85_young","Center Hill_1_young",85,"Center Hill",1,"young",36.06935,"temperate",1.287,38.551,29.95415695
+"86_young","Center Hill_2_young",86,"Center Hill",2,"young",36.06935,"temperate",1.144,36.9,32.25611888
+"87_young","Center Hill_2_young",87,"Center Hill",2,"young",36.06935,"temperate",1.254,38.88,31.00239234
+"88_young","Center Hill_2_young",88,"Center Hill",2,"young",36.06935,"temperate",1.128,38.155,33.82535461
+"89_young","Center Hill_3_young",89,"Center Hill",3,"young",36.06935,"temperate",1.428,38.032,26.63305322
+"90_young","Center Hill_3_young",90,"Center Hill",3,"young",36.06935,"temperate",1.182,38.155,32.28003384
+"91_young","Center Hill_3_young",91,"Center Hill",3,"young",36.06935,"temperate",1.377,39.464,28.6594045
+"92_young","Center Hill_7_young",92,"Center Hill",7,"young",36.06935,"temperate",1.584,38.224,24.13131313
+"93_young","Center Hill_7_young",93,"Center Hill",7,"young",36.06935,"temperate",1.175,37.02,31.50978723
+"94_young","Center Hill_7_young",94,"Center Hill",7,"young",36.06935,"temperate",1.275,37.899,29.72470588
+"95_young","Center Hill_8_young",95,"Center Hill",8,"young",36.06935,"temperate",3.734,40.082,10.73433315
+"96_young","Center Hill_8_young",96,"Center Hill",8,"young",36.06935,"temperate",4.034,41.7,10.33639068
+"97_mature","Dalton_2_mature",97,"Dalton",2,"mature",34.670883,"temperate",1.558,39.993,25.66944801
+"98_mature","Dalton_2_mature",98,"Dalton",2,"mature",34.670883,"temperate",1.461,42.124,28.83230664
+"99_mature","Dalton_2_mature",99,"Dalton",2,"mature",34.670883,"temperate",1.802,49.018,27.20199778
+"100_mature","Dalton_4_mature",100,"Dalton",4,"mature",34.670883,"temperate",1.844,50.01,27.11930586
+"101_mature","Dalton_4_mature",101,"Dalton",4,"mature",34.670883,"temperate",1.208,40.802,33.77649007
+"102_mature","Dalton_4_mature",102,"Dalton",4,"mature",34.670883,"temperate",1.41,41.499,29.43191489
+"103_mature","Dalton_6_mature",103,"Dalton",6,"mature",34.670883,"temperate",1.381,41.317,29.91817524
+"104_mature","Dalton_6_mature",104,"Dalton",6,"mature",34.670883,"temperate",1.142,40.123,35.13397548
+"105_mature","Dalton_6_mature",105,"Dalton",6,"mature",34.670883,"temperate",0.952,30.392,31.92436975
+"106_mature","Dalton_8_mature",106,"Dalton",8,"mature",34.670883,"temperate",1.172,41.07,35.04266212
+"107_mature","Dalton_8_mature",107,"Dalton",8,"mature",34.670883,"temperate",1.573,41.857,26.60966306
+"108_mature","Dalton_8_mature",108,"Dalton",8,"mature",34.670883,"temperate",1.181,40.32,34.14394581
+"109_mature","Dalton_9_mature",109,"Dalton",9,"mature",34.670883,"temperate",1.294,43.297,33.45981453
+"110_mature","Dalton_9_mature",110,"Dalton",9,"mature",34.670883,"temperate",1.272,38.6,30.34669811
+"111_mature","Dalton_9_mature",111,"Dalton",9,"mature",34.670883,"temperate",1.534,41.693,27.17926988
+"112_mature","Dalton_9_mature",112,"Dalton",9,"mature",34.670883,"temperate",1.265,39.285,31.05533597
+"113_young","Dalton_2_young",113,"Dalton",2,"young",34.670883,"temperate",1.186,38.358,32.34232715
+"114_young","Dalton_2_young",114,"Dalton",2,"young",34.670883,"temperate",1.191,39.62,33.26616289
+"115_young","Dalton_2_young",115,"Dalton",2,"young",34.670883,"temperate",1.222,38.988,31.90507365
+"116_young","Dalton_4_young",116,"Dalton",4,"young",34.670883,"temperate",1.278,43.22,33.81533646
+"117_young","Dalton_4_young",117,"Dalton",4,"young",34.670883,"temperate",1.097,40.771,37.16590702
+"118_young","Dalton_4_young",118,"Dalton",4,"young",34.670883,"temperate",1.189,40.332,33.92094197
+"119_young","Dalton_6_young",119,"Dalton",6,"young",34.670883,"temperate",1.236,38.937,31.50242718
+"120_young","Dalton_6_young",120,"Dalton",6,"young",34.670883,"temperate",1.05,37.272,35.49714286
+"121_young","Dalton_6_young",121,"Dalton",6,"young",34.670883,"temperate",1.196,39.696,33.19063545
+"122_young","Dalton_8_young",122,"Dalton",8,"young",34.670883,"temperate",1.07,37.233,34.79719626
+"123_young","Dalton_8_young",123,"Dalton",8,"young",34.670883,"temperate",1.043,29.939,28.70469799
+"124_young","Dalton_8_young",124,"Dalton",8,"young",34.670883,"temperate",1.371,41.819,30.50255288
+"125_young","Dalton_9_young",125,"Dalton",9,"young",34.670883,"temperate",1.164,42.076,36.14776632
+"126_young","Dalton_9_young",126,"Dalton",9,"young",34.670883,"temperate",1.732,39.915,23.04561201
+"127_young","Dalton_9_young",127,"Dalton",9,"young",34.670883,"temperate",1.013,34.014,33.5774926
+"128_mature","Gav_1_mature",128,"Gav",1,"mature",8.72883,"tropical",2.794,34.524,12.35647817
+"129_mature","Gav_1_mature",129,"Gav",1,"mature",8.72883,"tropical",1.507,36.045,23.91838089
+"130_mature","Gav_6_mature",130,"Gav",6,"mature",8.72883,"tropical",0.995,25.338,25.46532663
+"131_mature","Gav_6_mature",131,"Gav",6,"mature",8.72883,"tropical",1.662,26.02,15.65463297
+"132_mature","Gav_22_mature",132,"Gav",22,"mature",8.72883,"tropical",2.827,39.318,13.90802971
+"133_mature","Gav_22_mature",133,"Gav",22,"mature",8.72883,"tropical",2.122,37.81,17.81809614
+"134_mature","Gav_22_mature",134,"Gav",22,"mature",8.72883,"tropical",2.321,37.738,16.25937096
+"135_mature","Gav_23_mature",135,"Gav",23,"mature",8.72883,"tropical",2.039,41.516,20.36096126
+"136_mature","Gav_1_mature",136,"Gav",1,"mature",8.72883,"tropical",1.6768,40.8051,24.33510258
+"137_mature","Gav_1_mature",137,"Gav",1,"mature",8.72883,"tropical",2.8436,34.7904,12.23463216
+"138_mature","Gav_1_mature",138,"Gav",1,"mature",8.72883,"tropical",2.8508,35.5674,12.47628736
+"139_mature","Gav_6_mature",139,"Gav",6,"mature",8.72883,"tropical",1.9942,41.8878,21.00481396
+"140_mature","Gav_6_mature",140,"Gav",6,"mature",8.72883,"tropical",1.6189,39.9738,24.69195132
+"141_mature","Gav_6_mature",141,"Gav",6,"mature",8.72883,"tropical",1.506,37.8541,25.13552457
+"142_mature","Gav_23_mature",142,"Gav",23,"mature",8.72883,"tropical",1.8904,39.3014,20.78999154
+"143_mature","Gav_23_mature",143,"Gav",23,"mature",8.72883,"tropical",1.4876,38.655,25.98480774
+"144_mature","Gav_23_mature",144,"Gav",23,"mature",8.72883,"tropical",1.49,37.6909,25.29590604
+"145_young","Gav_1_young",145,"Gav",1,"young",8.72883,"tropical",4.559,42.785,9.384733494
+"146_young","Gav_1_young",146,"Gav",1,"young",8.72883,"tropical",3.572,38.646,10.81914894
+"147_young","Gav_6_young",147,"Gav",6,"young",8.72883,"tropical",2.653,38.465,14.49868074
+"148_young","Gav_6_young",148,"Gav",6,"young",8.72883,"tropical",3.494,39.53,11.31339439
+"149_young","Gav_22_young",149,"Gav",22,"young",8.72883,"tropical",2.77,39.061,14.10144404
+"150_young","Gav_22_young",150,"Gav",22,"young",8.72883,"tropical",3.132,38.421,12.26724138
+"151_young","Gav_22_young",151,"Gav",22,"young",8.72883,"tropical",3.264,39.325,12.04810049
+"152_young","Gav_23_young",152,"Gav",23,"young",8.72883,"tropical",2.753,38.872,14.11986923
+"153_young","Gav_1_young",153,"Gav",1,"young",8.72883,"tropical",2.8846,35.6599,12.3621646
+"154_young","Gav_1_young",154,"Gav",1,"young",8.72883,"tropical",4.6151,43.4792,9.4210743
+"155_young","Gav_1_young",155,"Gav",1,"young",8.72883,"tropical",4.4108,44.6291,10.11814183
+"156_young","Gav_6_young",156,"Gav",6,"young",8.72883,"tropical",2.4075,32.6294,13.55322949
+"157_young","Gav_6_young",157,"Gav",6,"young",8.72883,"tropical",2.2806,37.3451,16.37512058
+"158_young","Gav_6_young",158,"Gav",6,"young",8.72883,"tropical",4.1219,42.4149,10.29013319
+"159_young","Gav_23_young",159,"Gav",23,"young",8.72883,"tropical",3.0899,33.139,10.72494255
+"160_young","Gav_23_young",160,"Gav",23,"young",8.72883,"tropical",3.668,60.0906,16.38238822
+"161_young","Gav_23_young",161,"Gav",23,"young",8.72883,"tropical",3.5328,38.7258,10.96178668
+"162_mature","Gen Butler_1_mature",162,"Gen Butler",1,"mature",38.675517,"temperate",8.604,49.43,5.744537424
+"163_mature","Gen Butler_1_mature",163,"Gen Butler",1,"mature",38.675517,"temperate",8.961,58.788,6.560428524
+"164_mature","Gen Butler_1_mature",164,"Gen Butler",1,"mature",38.675517,"temperate",1.945,38.284,19.68329049
+"165_mature","Gen Butler_2_mature",165,"Gen Butler",2,"mature",38.675517,"temperate",1.494,44.142,29.54618474
+"166_mature","Gen Butler_2_mature",166,"Gen Butler",2,"mature",38.675517,"temperate",5.421,38.936,7.182438664
+"167_mature","Gen Butler_2_mature",167,"Gen Butler",2,"mature",38.675517,"temperate",1.142,34.14,29.89842382
+"168_mature","Gen Butler_3_mature",168,"Gen Butler",3,"mature",38.675517,"temperate",1.351,42.237,31.26350851
+"169_mature","Gen Butler_3_mature",169,"Gen Butler",3,"mature",38.675517,"temperate",1.19,35.55,29.87478992
+"170_mature","Gen Butler_3_mature",170,"Gen Butler",3,"mature",38.675517,"temperate",1.277,38.189,29.90524667
+"171_mature","Gen Butler_7_mature",171,"Gen Butler",7,"mature",38.675517,"temperate",2.563,38.27,14.93250098
+"172_mature","Gen Butler_7_mature",172,"Gen Butler",7,"mature",38.675517,"temperate",2.342,34.5,14.7322801
+"173_mature","Gen Butler_7_mature",173,"Gen Butler",7,"mature",38.675517,"temperate",3.877,65.4,16.86974465
+"174_mature","Gen Butler_9_mature",174,"Gen Butler",9,"mature",38.675517,"temperate",1.623,40.812,25.14602588
+"175_mature","Gen Butler_9_mature",175,"Gen Butler",9,"mature",38.675517,"temperate",1.261,35.799,28.38937351
+"176_mature","Gen Butler_9_mature",176,"Gen Butler",9,"mature",38.675517,"temperate",0.839,27.992,33.36352801
+"177_young","Gen Butler_1_young",177,"Gen Butler",1,"young",38.675517,"temperate",7.968,40.56,5.090486948
+"178_young","Gen Butler_1_young",178,"Gen Butler",1,"young",38.675517,"temperate",7.525,40.767,5.417541528
+"179_young","Gen Butler_1_young",179,"Gen Butler",1,"young",38.675517,"temperate",3.321,26.972,8.121650105
+"180_young","Gen Butler_2_young",180,"Gen Butler",2,"young",38.675517,"temperate",1.581,37.913,23.98039216
+"181_young","Gen Butler_2_young",181,"Gen Butler",2,"young",38.675517,"temperate",5.475,31.393,5.733881279
+"182_young","Gen Butler_2_young",182,"Gen Butler",2,"young",38.675517,"temperate",1.757,36.55,20.80421172
+"183_young","Gen Butler_3_young",183,"Gen Butler",3,"young",38.675517,"temperate",0.443,14.671,33.11738149
+"184_young","Gen Butler_3_young",184,"Gen Butler",3,"young",38.675517,"temperate",1.234,39.02,31.61750405
+"185_young","Gen Butler_3_young",185,"Gen Butler",3,"young",38.675517,"temperate",1.164,37.023,31.80670103
+"186_young","Gen Butler_7_young",186,"Gen Butler",7,"young",38.675517,"temperate",3.583,39.88,11.13117499
+"187_young","Gen Butler_7_young",187,"Gen Butler",7,"young",38.675517,"temperate",2.925,40.059,13.69538462
+"188_young","Gen Butler_7_young",188,"Gen Butler",7,"young",38.675517,"temperate",3.949,41.78,10.57938719
+"189_young","Gen Butler_9_young",189,"Gen Butler",9,"young",38.675517,"temperate",1.441,35.322,24.51214434
+"190_young","Gen Butler_9_young",190,"Gen Butler",9,"young",38.675517,"temperate",1.351,39.772,29.43893412
+"191_young","Gen Butler_9_young",191,"Gen Butler",9,"young",38.675517,"temperate",1.062,39.126,36.84180791
+"192_mature","HV_3_mature",192,"HV",3,"mature",37.1818,"temperate",1.558,41.619,26.71309371
+"193_mature","HV_3_mature",193,"HV",3,"mature",37.1818,"temperate",1.459,41.844,28.67991775
+"194_mature","HV_3_mature",194,"HV",3,"mature",37.1818,"temperate",1.672,39.165,23.42404306
+"195_mature","HV_5_mature",195,"HV",5,"mature",37.1818,"temperate",1.498,36.39,24.29238985
+"196_mature","HV_5_mature",196,"HV",5,"mature",37.1818,"temperate",0.936,27.911,29.81944444
+"197_mature","HV_5_mature",197,"HV",5,"mature",37.1818,"temperate",1.365,41.65,30.51282051
+"198_mature","HV_7_mature",198,"HV",7,"mature",37.1818,"temperate",1.426,37.716,26.44880785
+"199_mature","HV_7_mature",199,"HV",7,"mature",37.1818,"temperate",1.244,35.113,28.22588424
+"200_mature","HV_7_mature",200,"HV",7,"mature",37.1818,"temperate",1.011,31.12,30.77645895
+"201_mature","HV_10_mature",201,"HV",10,"mature",37.1818,"temperate",1.475,39.06,26.4779661
+"202_mature","HV_10_mature",202,"HV",10,"mature",37.1818,"temperate",1.259,38.811,30.8268467
+"203_mature","HV_10_mature",203,"HV",10,"mature",37.1818,"temperate",1.436,42.171,29.36699164
+"204_mature","HV_10_mature",204,"HV",10,"mature",37.1818,"temperate",1.376,40.939,29.75218023
+"205_mature","HV_13_mature",205,"HV",13,"mature",37.1818,"temperate",1.656,46.34,27.98550725
+"206_mature","HV_13_mature",206,"HV",13,"mature",37.1818,"temperate",1.293,37.571,29.05723125
+"207_mature","HV_13_mature",207,"HV",13,"mature",37.1818,"temperate",1.476,41.008,27.78319783
+"208_young","HV_3_young",208,"HV",3,"young",37.1818,"temperate",1.449,30.34,20.93857833
+"209_young","HV_3_young",209,"HV",3,"young",37.1818,"temperate",1.661,37.386,22.50812763
+"210_young","HV_3_young",210,"HV",3,"young",37.1818,"temperate",1.591,33.049,20.77247014
+"211_young","HV_5_young",211,"HV",5,"young",37.1818,"temperate",2.184,36.418,16.67490842
+"212_young","HV_5_young",212,"HV",5,"young",37.1818,"temperate",3.819,41.356,10.82901283
+"213_young","HV_5_young",213,"HV",5,"young",37.1818,"temperate",0.698,20.837,29.85243553
+"214_young","HV_7_young",214,"HV",7,"young",37.1818,"temperate",1.979,40.614,20.5224861
+"215_young","HV_7_young",215,"HV",7,"young",37.1818,"temperate",1.516,40.963,27.02044855
+"216_young","HV_7_young",216,"HV",7,"young",37.1818,"temperate",1.254,35.51,28.31499203
+"217_young","HV_10_young",217,"HV",10,"young",37.1818,"temperate",1.504,39.99,26.59042553
+"218_young","HV_10_young",218,"HV",10,"young",37.1818,"temperate",1.466,40.366,27.53478854
+"219_young","HV_10_young",219,"HV",10,"young",37.1818,"temperate",1.312,39.773,30.31478659
+"220_young","HV_10_young",220,"HV",10,"young",37.1818,"temperate",1.94,39.927,20.58092784
+"221_young","HV_13_young",221,"HV",13,"young",37.1818,"temperate",1.48,40.82,27.58175676
+"222_young","HV_13_young",222,"HV",13,"young",37.1818,"temperate",1.304,38.843,29.78757669
+"223_young","HV_13_young",223,"HV",13,"young",37.1818,"temperate",1.36,39.197,28.82132353
+"224_mature","Hwy 27_1_mature",224,"Hwy 27",1,"mature",26.537067,"subtropical",0.893,33.487,37.49944009
+"225_mature","Hwy 27_2_mature",225,"Hwy 27",2,"mature",26.537067,"subtropical",1.364,40.221,29.48753666
+"226_mature","Hwy 27_2_mature",226,"Hwy 27",2,"mature",26.537067,"subtropical",1.352,43.95,32.50813609
+"227_mature","Hwy 27_2_mature",227,"Hwy 27",2,"mature",26.537067,"subtropical",0.98,37.327,38.08877551
+"228_mature","Hwy 27_3_mature",228,"Hwy 27",3,"mature",26.537067,"subtropical",1.196,40.789,34.10451505
+"229_mature","Hwy 27_6_mature",229,"Hwy 27",6,"mature",26.537067,"subtropical",1.372,36.58,26.66180758
+"230_mature","Hwy 27_6_mature",230,"Hwy 27",6,"mature",26.537067,"subtropical",1.238,38.12,30.7907916
+"231_mature","Hwy 27_6_mature",231,"Hwy 27",6,"mature",26.537067,"subtropical",1.074,37.49,34.90689013
+"232_mature","Hwy 27_8_mature",232,"Hwy 27",8,"mature",26.537067,"subtropical",1.232,39.624,32.16233766
+"233_mature","Hwy 27_8_mature",233,"Hwy 27",8,"mature",26.537067,"subtropical",1.293,37.426,28.94508894
+"234_mature","Hwy 27_1_mature",234,"Hwy 27",1,"mature",26.537067,"subtropical",1.1535,40.0898,34.75491981
+"235_mature","Hwy 27_1_mature",235,"Hwy 27",1,"mature",26.537067,"subtropical",1.1411,39.4204,34.54596442
+"236_mature","Hwy 27_1_mature",236,"Hwy 27",1,"mature",26.537067,"subtropical",0.8007,33.5855,41.94517297
+"237_mature","Hwy 27_3_mature",237,"Hwy 27",3,"mature",26.537067,"subtropical",2.3735,61.671,25.98314725
+"238_mature","Hwy 27_3_mature",238,"Hwy 27",3,"mature",26.537067,"subtropical",1.2864,34.5326,26.84437189
+"239_mature","Hwy 27_3_mature",239,"Hwy 27",3,"mature",26.537067,"subtropical",1.3498,40.4766,29.9871092
+"240_mature","Hwy 27_8_mature",240,"Hwy 27",8,"mature",26.537067,"subtropical",1.109,37.0626,33.41983769
+"241_mature","Hwy 27_8_mature",241,"Hwy 27",8,"mature",26.537067,"subtropical",1.0387,33.7036,32.44786753
+"242_mature","Hwy 27_8_mature",242,"Hwy 27",8,"mature",26.537067,"subtropical",0.947,33.1674,35.02365364
+"243_young","Hwy 27_1_young",243,"Hwy 27",1,"young",26.537067,"subtropical",1.856,38.283,20.62661638
+"244_young","Hwy 27_2_young",244,"Hwy 27",2,"young",26.537067,"subtropical",1.907,38.445,20.15993707
+"245_young","Hwy 27_2_young",245,"Hwy 27",2,"young",26.537067,"subtropical",2.088,39.705,19.0158046
+"246_young","Hwy 27_2_young",246,"Hwy 27",2,"young",26.537067,"subtropical",2.019,40.344,19.98216939
+"247_young","Hwy 27_3_young",247,"Hwy 27",3,"young",26.537067,"subtropical",1.858,37.648,20.26264801
+"248_young","Hwy 27_6_young",248,"Hwy 27",6,"young",26.537067,"subtropical",2.043,36.068,17.65442976
+"249_young","Hwy 27_6_young",249,"Hwy 27",6,"young",26.537067,"subtropical",2.644,39.561,14.96255673
+"250_young","Hwy 27_6_young",250,"Hwy 27",6,"young",26.537067,"subtropical",1.811,39.431,21.77305356
+"251_young","Hwy 27_8_young",251,"Hwy 27",8,"young",26.537067,"subtropical",1.539,39.465,25.64327485
+"252_young","Hwy 27_8_young",252,"Hwy 27",8,"young",26.537067,"subtropical",2.241,37.833,16.88219545
+"253_young","Hwy 27_1_young",253,"Hwy 27",1,"young",26.537067,"subtropical",1.7427,40.1611,23.04533196
+"254_young","Hwy 27_1_young",254,"Hwy 27",1,"young",26.537067,"subtropical",1.7788,37.2519,20.94215201
+"255_young","Hwy 27_1_young",255,"Hwy 27",1,"young",26.537067,"subtropical",1.4324,37.2977,26.03860653
+"256_young","Hwy 27_3_young",256,"Hwy 27",3,"young",26.537067,"subtropical",2.0081,40.6903,20.26308451
+"257_young","Hwy 27_3_young",257,"Hwy 27",3,"young",26.537067,"subtropical",2.2131,42.3154,19.12041932
+"258_young","Hwy 27_3_young",258,"Hwy 27",3,"young",26.537067,"subtropical",2.5209,45.7138,18.13392043
+"259_young","Hwy 27_8_young",259,"Hwy 27",8,"young",26.537067,"subtropical",1.8305,39.3337,21.48795411
+"260_young","Hwy 27_8_young",260,"Hwy 27",8,"young",26.537067,"subtropical",2.133,41.7183,19.55850914
+"261_young","Hwy 27_8_young",261,"Hwy 27",8,"young",26.537067,"subtropical",1.4418,35.2685,24.46143709
+"262_mature","KBS_8_mature",262,"KBS",8,"mature",42.399933,"north temperate",1.397,41.085,29.40944882
+"263_mature","KBS_8_mature",263,"KBS",8,"mature",42.399933,"north temperate",1.762,39.514,22.42565267
+"264_mature","KBS_8_mature",264,"KBS",8,"mature",42.399933,"north temperate",1.541,37.729,24.4834523
+"265_mature","KBS_9_mature",265,"KBS",9,"mature",42.399933,"north temperate",1.487,37.236,25.04102219
+"266_mature","KBS_9_mature",266,"KBS",9,"mature",42.399933,"north temperate",1.219,29.541,24.2337982
+"267_mature","KBS_9_mature",267,"KBS",9,"mature",42.399933,"north temperate",1.521,41.113,27.03024326
+"268_mature","KBS_12_mature",268,"KBS",12,"mature",42.399933,"north temperate",1.409,42.22,29.96096522
+"269_mature","KBS_12_mature",269,"KBS",12,"mature",42.399933,"north temperate",1.266,36.64,28.9399684
+"270_mature","KBS_2_mature",270,"KBS",2,"mature",42.399933,"north temperate",1.3162,34.5834,26.27518614
+"271_mature","KBS_2_mature",271,"KBS",2,"mature",42.399933,"north temperate",1.2373,29.5476,23.88070799
+"272_mature","KBS_2_mature",272,"KBS",2,"mature",42.399933,"north temperate",1.1713,32.8347,28.03269871
+"273_mature","KBS_5_mature",273,"KBS",5,"mature",42.399933,"north temperate",1.6872,40.9058,24.24478426
+"274_mature","KBS_5_mature",274,"KBS",5,"mature",42.399933,"north temperate",1.761,41.5473,23.59301533
+"275_mature","KBS_5_mature",275,"KBS",5,"mature",42.399933,"north temperate",1.0516,30.5293,29.03128566
+"276_mature","KBS_12_mature",276,"KBS",12,"mature",42.399933,"north temperate",0.9454,29.8393,31.562619
+"277_mature","KBS_12_mature",277,"KBS",12,"mature",42.399933,"north temperate",1.3072,38.1697,29.1995869
+"278_mature","KBS_12_mature",278,"KBS",12,"mature",42.399933,"north temperate",1.2275,38.9247,31.7105499
+"279_young","KBS_8_young",279,"KBS",8,"young",42.399933,"north temperate",1.888,37.586,19.90783898
+"280_young","KBS_8_young",280,"KBS",8,"young",42.399933,"north temperate",1.918,37.213,19.40198123
+"281_young","KBS_8_young",281,"KBS",8,"young",42.399933,"north temperate",2.703,38.623,14.28893822
+"282_young","KBS_9_young",282,"KBS",9,"young",42.399933,"north temperate",1.239,38.671,31.21146086
+"283_young","KBS_9_young",283,"KBS",9,"young",42.399933,"north temperate",1.244,36.905,29.66639871
+"284_young","KBS_9_young",284,"KBS",9,"young",42.399933,"north temperate",1.238,39.615,31.99919225
+"285_young","KBS_12_young",285,"KBS",12,"young",42.399933,"north temperate",1.126,37.918,33.6749556
+"286_young","KBS_12_young",286,"KBS",12,"young",42.399933,"north temperate",1.33,37.259,28.01428571
+"287_young","KBS_2_young",287,"KBS",2,"young",42.399933,"north temperate",1.3304,35.7617,26.88041191
+"288_young","KBS_2_young",288,"KBS",2,"young",42.399933,"north temperate",1.8386,49.7318,27.04873273
+"289_young","KBS_2_young",289,"KBS",2,"young",42.399933,"north temperate",1.334,36.5912,27.42968516
+"290_young","KBS_5_young",290,"KBS",5,"young",42.399933,"north temperate",1.6236,41.104,25.31658044
+"291_young","KBS_5_young",291,"KBS",5,"young",42.399933,"north temperate",1.5326,43.558,28.42098395
+"292_young","KBS_5_young",292,"KBS",5,"young",42.399933,"north temperate",1.2236,42.3645,34.62283426
+"293_young","KBS_12_young",293,"KBS",12,"young",42.399933,"north temperate",1.5126,36.5313,24.15132884
+"294_young","KBS_12_young",294,"KBS",12,"young",42.399933,"north temperate",1.7163,41.5643,24.21738624
+"295_young","KBS_12_young",295,"KBS",12,"young",42.399933,"north temperate",1.3743,42.5631,30.97074874
+"296_mature","MacArthur_5_mature",296,"MacArthur",5,"mature",27.177583,"subtropical",0.918,35.34,38.49891068
+"297_mature","MacArthur_5_mature",297,"MacArthur",5,"mature",27.177583,"subtropical",2.485,39.916,16.06277666
+"298_mature","MacArthur_5_mature",298,"MacArthur",5,"mature",27.177583,"subtropical",0.976,39.098,40.05942623
+"299_mature","MacArthur_15_mature",299,"MacArthur",15,"mature",27.177583,"subtropical",2.112,35.71,16.90672348
+"300_mature","MacArthur_15_mature",300,"MacArthur",15,"mature",27.177583,"subtropical",1.81,32.766,18.10276243
+"301_mature","MacArthur_15_mature",301,"MacArthur",15,"mature",27.177583,"subtropical",1.409,35.68,25.32505323
+"302_mature","MacArthur_16_mature",302,"MacArthur",16,"mature",27.177583,"subtropical",1.095,30.78,28.10776256
+"303_mature","MacArthur_22_mature",303,"MacArthur",22,"mature",27.177583,"subtropical",1.267,41.273,32.5753749
+"304_mature","MacArthur_22_mature",304,"MacArthur",22,"mature",27.177583,"subtropical",1.775,38.14,21.48450704
+"305_mature","MacArthur_22_mature",305,"MacArthur",22,"mature",27.177583,"subtropical",1.306,36.12,27.66003063
+"306_mature","MacArthur_5_mature",306,"MacArthur",5,"mature",27.177583,"subtropical",1.495,38.8953,26.01692308
+"307_mature","MacArthur_5_mature",307,"MacArthur",5,"mature",27.177583,"subtropical",0.8574,33.1392,38.65080476
+"308_mature","MacArthur_5_mature",308,"MacArthur",5,"mature",27.177583,"subtropical",1.2813,47.258,36.88285335
+"309_mature","MacArthur_16_mature",309,"MacArthur",16,"mature",27.177583,"subtropical",1.2995,30.7309,23.64824933
+"310_mature","MacArthur_16_mature",310,"MacArthur",16,"mature",27.177583,"subtropical",0.7179,28.0647,39.09277058
+"311_mature","MacArthur_16_mature",311,"MacArthur",16,"mature",27.177583,"subtropical",1.0926,41.0582,37.57843676
+"312_mature","MacArthur_21_mature",312,"MacArthur",21,"mature",27.177583,"subtropical",0.8862,31.3904,35.42134958
+"313_mature","MacArthur_21_mature",313,"MacArthur",21,"mature",27.177583,"subtropical",0.9572,36.6162,38.25344756
+"314_mature","MacArthur_21_mature",314,"MacArthur",21,"mature",27.177583,"subtropical",1.1954,38.0795,31.85502761
+"315_young","MacArthur_5_young",315,"MacArthur",5,"young",27.177583,"subtropical",1.482,38.66,26.08839406
+"316_young","MacArthur_5_young",316,"MacArthur",5,"young",27.177583,"subtropical",2.095,27.237,13.00095465
+"317_young","MacArthur_5_young",317,"MacArthur",5,"young",27.177583,"subtropical",1.693,36.141,21.34731246
+"318_young","MacArthur_15_young",318,"MacArthur",15,"young",27.177583,"subtropical",3.228,40.575,12.5697026
+"319_young","MacArthur_15_young",319,"MacArthur",15,"young",27.177583,"subtropical",3.209,37.905,11.81209099
+"320_young","MacArthur_15_young",320,"MacArthur",15,"young",27.177583,"subtropical",2.527,40.58,16.06015038
+"321_young","MacArthur_16_young",321,"MacArthur",16,"young",27.177583,"subtropical",2.634,39.078,14.83599089
+"322_young","MacArthur_22_young",322,"MacArthur",22,"young",27.177583,"subtropical",1.305,22.606,17.32260536
+"323_young","MacArthur_22_young",323,"MacArthur",22,"young",27.177583,"subtropical",2.953,40.214,13.61801558
+"324_young","MacArthur_22_young",324,"MacArthur",22,"young",27.177583,"subtropical",2.394,41.729,17.43065998
+"325_young","MacArthur_5_young",325,"MacArthur",5,"young",27.177583,"subtropical",1.9814,39.3274,19.84828909
+"326_young","MacArthur_5_young",326,"MacArthur",5,"young",27.177583,"subtropical",1.5719,36.8389,23.43590559
+"327_young","MacArthur_5_young",327,"MacArthur",5,"young",27.177583,"subtropical",1.5796,35.1682,22.26399088
+"328_young","MacArthur_16_young",328,"MacArthur",16,"young",27.177583,"subtropical",2.5415,39.2706,15.4517411
+"329_young","MacArthur_16_young",329,"MacArthur",16,"young",27.177583,"subtropical",1.7185,38.4884,22.39650858
+"330_young","MacArthur_16_young",330,"MacArthur",16,"young",27.177583,"subtropical",1.2934,37.7271,29.16893459
+"331_young","MacArthur_21_young",331,"MacArthur",21,"young",27.177583,"subtropical",2.1323,40.6824,19.07911645
+"332_young","MacArthur_21_young",332,"MacArthur",21,"young",27.177583,"subtropical",1.6606,42.699,25.7129953
+"333_young","MacArthur_21_young",333,"MacArthur",21,"young",27.177583,"subtropical",2.0844,44.4866,21.34264057
+"334_mature","McPhee_1_mature",334,"McPhee",1,"mature",40.971333,"north temperate",1.306,34.146,26.14548239
+"335_mature","McPhee_1_mature",335,"McPhee",1,"mature",40.971333,"north temperate",1.5,39.677,26.45133333
+"336_mature","McPhee_1_mature",336,"McPhee",1,"mature",40.971333,"north temperate",2.228,57.722,25.90754039
+"337_mature","McPhee_2_mature",337,"McPhee",2,"mature",40.971333,"north temperate",0.704,20.222,28.72443182
+"338_mature","McPhee_2_mature",338,"McPhee",2,"mature",40.971333,"north temperate",1.508,46.66,30.94297082
+"339_mature","McPhee_6_mature",339,"McPhee",6,"mature",40.971333,"north temperate",1.276,35.98,28.19905956
+"340_mature","McPhee_6_mature",340,"McPhee",6,"mature",40.971333,"north temperate",1.356,40.46,29.83775811
+"341_mature","McPhee_7_mature",341,"McPhee",7,"mature",40.971333,"north temperate",1.261,37.64,29.85249802
+"342_mature","McPhee_7_mature",342,"McPhee",7,"mature",40.971333,"north temperate",1.242,37.95,30.55233494
+"343_mature","McPhee_7_mature",343,"McPhee",7,"mature",40.971333,"north temperate",1.233,30.33,24.59610706
+"344_mature","McPhee_8_mature",344,"McPhee",8,"mature",40.971333,"north temperate",1.368,39.95,29.20394737
+"345_mature","McPhee_8_mature",345,"McPhee",8,"mature",40.971333,"north temperate",1.582,40.973,25.89949431
+"346_mature","McPhee_2_mature",346,"McPhee",2,"mature",40.971333,"north temperate",1.9246,37.3872,19.42595864
+"347_mature","McPhee_2_mature",347,"McPhee",2,"mature",40.971333,"north temperate",1.4092,40.8786,29.00837355
+"348_mature","McPhee_2_mature",348,"McPhee",2,"mature",40.971333,"north temperate",1.3957,36.8382,26.39406749
+"349_mature","McPhee_6_mature",349,"McPhee",6,"mature",40.971333,"north temperate",1.7935,43.793,24.41761918
+"350_mature","McPhee_6_mature",350,"McPhee",6,"mature",40.971333,"north temperate",1.5797,42.584,26.95701716
+"351_mature","McPhee_6_mature",351,"McPhee",6,"mature",40.971333,"north temperate",1.6839,37.6674,22.36914306
+"352_mature","McPhee_8_mature",352,"McPhee",8,"mature",40.971333,"north temperate",1.236,32.7001,26.45639159
+"353_mature","McPhee_8_mature",353,"McPhee",8,"mature",40.971333,"north temperate",1.8937,29.5357,15.59682104
+"354_mature","McPhee_8_mature",354,"McPhee",8,"mature",40.971333,"north temperate",1.6611,27.1171,16.32478478
+"355_young","McPhee_1_young",355,"McPhee",1,"young",40.971333,"north temperate",1.272,38.016,29.88679245
+"356_young","McPhee_1_young",356,"McPhee",1,"young",40.971333,"north temperate",1.219,40.944,33.58818704
+"357_young","McPhee_1_young",357,"McPhee",1,"young",40.971333,"north temperate",1.423,38.397,26.98313422
+"358_young","McPhee_2_young",358,"McPhee",2,"young",40.971333,"north temperate",1.462,38.283,26.18536252
+"359_young","McPhee_2_young",359,"McPhee",2,"young",40.971333,"north temperate",1.19,38.86,32.65294118
+"360_young","McPhee_6_young",360,"McPhee",6,"young",40.971333,"north temperate",1.243,38.916,31.3081255
+"361_young","McPhee_6_young",361,"McPhee",6,"young",40.971333,"north temperate",1.252,37.642,30.06549521
+"362_young","McPhee_7_young",362,"McPhee",7,"young",40.971333,"north temperate",1.654,44.659,27.00060459
+"363_young","McPhee_7_young",363,"McPhee",7,"young",40.971333,"north temperate",1.248,35.77,28.66185897
+"364_young","McPhee_7_young",364,"McPhee",7,"young",40.971333,"north temperate",0.791,19.89,25.1403287
+"365_young","McPhee_8_young",365,"McPhee",8,"young",40.971333,"north temperate",1.202,28.936,24.07321131
+"366_young","McPhee_8_young",366,"McPhee",8,"young",40.971333,"north temperate",1.265,37.943,29.9944664
+"367_young","McPhee_2_young",367,"McPhee",2,"young",40.971333,"north temperate",2.2149,32.3318,14.59740846
+"368_young","McPhee_2_young",368,"McPhee",2,"young",40.971333,"north temperate",2.155,40.2346,18.67034803
+"369_young","McPhee_2_young",369,"McPhee",2,"young",40.971333,"north temperate",1.3573,42.622,31.40204818
+"370_young","McPhee_6_young",370,"McPhee",6,"young",40.971333,"north temperate",1.3082,38.7091,29.58958875
+"371_young","McPhee_6_young",371,"McPhee",6,"young",40.971333,"north temperate",1.375,43.7222,31.79796364
+"372_young","McPhee_6_young",372,"McPhee",6,"young",40.971333,"north temperate",1.4004,40.2014,28.70708369
+"373_young","McPhee_8_young",373,"McPhee",8,"young",40.971333,"north temperate",1.4797,40.4162,27.31377982
+"374_young","McPhee_8_young",374,"McPhee",8,"young",40.971333,"north temperate",2.485,41.7078,16.78382294
+"375_young","McPhee_8_young",375,"McPhee",8,"young",40.971333,"north temperate",2.8097,41.7189,14.84816884
+"376_mature","OCM_5_mature",376,"OCM",5,"mature",32.34554,"temperate",0.978,34.55,35.33026585
+"377_mature","OCM_5_mature",377,"OCM",5,"mature",32.34554,"temperate",2.223,42.755,19.23301844
+"378_mature","OCM_5_mature",378,"OCM",5,"mature",32.34554,"temperate",1.812,39.771,21.9486755
+"379_mature","OCM_10_mature",379,"OCM",10,"mature",32.34554,"temperate",1.198,41.37,34.52921536
+"380_mature","OCM_10_mature",380,"OCM",10,"mature",32.34554,"temperate",1.528,40.46,26.48102094
+"381_mature","OCM_10_mature",381,"OCM",10,"mature",32.34554,"temperate",1.276,38.82,30.42084639
+"382_mature","OCM_16_mature",382,"OCM",16,"mature",32.34554,"temperate",0.735,18.409,25.0462585
+"383_mature","OCM_16_mature",383,"OCM",16,"mature",32.34554,"temperate",1.215,40.542,33.36790123
+"384_mature","OCM_16_mature",384,"OCM",16,"mature",32.34554,"temperate",1.241,41.261,33.24818695
+"385_mature","OCM_17_mature",385,"OCM",17,"mature",32.34554,"temperate",1.282,40.6,31.66848674
+"386_mature","OCM_17_mature",386,"OCM",17,"mature",32.34554,"temperate",1.196,39.01,32.61287625
+"387_mature","OCM_17_mature",387,"OCM",17,"mature",32.34554,"temperate",1.454,39.439,27.12448418
+"388_mature","OCM_18_mature",388,"OCM",18,"mature",32.34554,"temperate",1.227,40.31,32.85248574
+"389_mature","OCM_18_mature",389,"OCM",18,"mature",32.34554,"temperate",1.202,41.013,34.12063228
+"390_mature","OCM_18_mature",390,"OCM",18,"mature",32.34554,"temperate",1.482,41.91,28.28137652
+"391_young","OCM_5_young",391,"OCM",5,"young",32.34554,"temperate",1.302,39.35,30.2250384
+"392_young","OCM_5_young",392,"OCM",5,"young",32.34554,"temperate",3.537,36.904,10.43370088
+"393_young","OCM_5_young",393,"OCM",5,"young",32.34554,"temperate",3.111,31.75,10.20572163
+"394_young","OCM_10_young",394,"OCM",10,"young",32.34554,"temperate",1.111,39.36,35.43024302
+"395_young","OCM_10_young",395,"OCM",10,"young",32.34554,"temperate",1.955,43.944,22.47774936
+"396_young","OCM_10_young",396,"OCM",10,"young",32.34554,"temperate",1.33,39.618,29.78796992
+"397_young","OCM_16_young",397,"OCM",16,"young",32.34554,"temperate",1.429,40.45,28.30650805
+"398_young","OCM_16_young",398,"OCM",16,"young",32.34554,"temperate",1.092,35.113,32.1547619
+"399_young","OCM_16_young",399,"OCM",16,"young",32.34554,"temperate",1.407,40.587,28.84648188
+"400_young","OCM_17_young",400,"OCM",17,"young",32.34554,"temperate",1.5,39.434,26.28933333
+"401_young","OCM_17_young",401,"OCM",17,"young",32.34554,"temperate",1.044,38.04,36.43582375
+"402_young","OCM_17_young",402,"OCM",17,"young",32.34554,"temperate",1.109,38.237,34.47880974
+"403_young","OCM_18_young",403,"OCM",18,"young",32.34554,"temperate",1.14,40.072,35.15087719
+"404_young","OCM_18_young",404,"OCM",18,"young",32.34554,"temperate",1.387,39.647,28.58471521
+"405_young","OCM_18_young",405,"OCM",18,"young",32.34554,"temperate",0.9,31.78,35.31555556
+"406_mature","Tiri_1_mature",406,"Tiri",1,"mature",10.41549,"tropical",2.364,34.04,14.4001692
+"407_mature","Tiri_1_mature",407,"Tiri",1,"mature",10.41549,"tropical",4.947,41.18,8.323226198
+"408_mature","Tiri_1_mature",408,"Tiri",1,"mature",10.41549,"tropical",5.721,39.826,6.96137039
+"409_mature","Tiri_1_mature",409,"Tiri",1,"mature",10.41549,"tropical",4.237,34.919,8.241444418
+"410_mature","Tiri_5_mature",410,"Tiri",5,"mature",10.41549,"tropical",1.595,36.5,22.8846395
+"411_mature","Tiri_5_mature",411,"Tiri",5,"mature",10.41549,"tropical",1.776,38.155,21.48367117
+"412_mature","Tiri_5_mature",412,"Tiri",5,"mature",10.41549,"tropical",1.849,37.97,20.53542455
+"413_mature","Tiri_12_mature",413,"Tiri",12,"mature",10.41549,"tropical",1.811,19.99,11.03865268
+"414_mature","Tiri_12_mature",414,"Tiri",12,"mature",10.41549,"tropical",1.901,40.055,21.07048922
+"415_mature","Tiri_16_mature",415,"Tiri",16,"mature",10.41549,"tropical",2.053,39.708,19.34145153
+"416_mature","Tiri_16_mature",416,"Tiri",16,"mature",10.41549,"tropical",2.215,37.871,17.09751693
+"417_mature","Tiri_22_mature",417,"Tiri",22,"mature",10.41549,"tropical",1.719,31.52,18.33566027
+"418_mature","Tiri_12_mature",418,"Tiri",12,"mature",10.41549,"tropical",1.881,36.8685,19.60047847
+"419_mature","Tiri_12_mature",419,"Tiri",12,"mature",10.41549,"tropical",1.5365,34.6239,22.53426619
+"420_mature","Tiri_12_mature",420,"Tiri",12,"mature",10.41549,"tropical",1.618,35.8355,22.14802225
+"421_mature","Tiri_16_mature",421,"Tiri",16,"mature",10.41549,"tropical",2.1413,34.6003,16.15854855
+"422_mature","Tiri_16_mature",422,"Tiri",16,"mature",10.41549,"tropical",2.3156,34.3999,14.85571774
+"423_mature","Tiri_16_mature",423,"Tiri",16,"mature",10.41549,"tropical",1.8548,34.0545,18.36020056
+"424_mature","Tiri_22_mature",424,"Tiri",22,"mature",10.41549,"tropical",1.939,37.5619,19.37178958
+"425_mature","Tiri_22_mature",425,"Tiri",22,"mature",10.41549,"tropical",1.9586,38.5898,19.70274686
+"426_mature","Tiri_22_mature",426,"Tiri",22,"mature",10.41549,"tropical",1.3864,31.2745,22.55806405
+"427_young","Tiri_1_young",427,"Tiri",1,"young",10.41549,"tropical",5.242,29.53,5.633346051
+"428_young","Tiri_1_young",428,"Tiri",1,"young",10.41549,"tropical",5.84,33.424,5.723287671
+"429_young","Tiri_1_young",429,"Tiri",1,"young",10.41549,"tropical",7.491,40.358,5.387531705
+"430_young","Tiri_5_young",430,"Tiri",5,"young",10.41549,"tropical",2.205,37.37,16.94965986
+"431_young","Tiri_5_young",431,"Tiri",5,"young",10.41549,"tropical",2.462,40.105,16.28960195
+"432_young","Tiri_5_young",432,"Tiri",5,"young",10.41549,"tropical",2.153,38.278,17.77891314
+"433_young","Tiri_12_young",433,"Tiri",12,"young",10.41549,"tropical",3.999,40.52,10.13353338
+"434_young","Tiri_12_young",434,"Tiri",12,"young",10.41549,"tropical",3.202,40.866,12.76264834
+"435_young","Tiri_16_young",435,"Tiri",16,"young",10.41549,"tropical",2.968,40.022,13.48450135
+"436_young","Tiri_16_young",436,"Tiri",16,"young",10.41549,"tropical",3.052,43.351,14.20412844
+"437_young","Tiri_22_young",437,"Tiri",22,"young",10.41549,"tropical",4.118,41.99,10.19669743
+"438_young","Tiri_12_young",438,"Tiri",12,"young",10.41549,"tropical",2.6355,28.4648,10.80053121
+"439_young","Tiri_12_young",439,"Tiri",12,"young",10.41549,"tropical",3.6448,40.005,10.97591089
+"440_young","Tiri_12_young",440,"Tiri",12,"young",10.41549,"tropical",3.6419,44.431,12.19995058
+"441_young","Tiri_16_young",441,"Tiri",16,"young",10.41549,"tropical",3.4418,41.1825,11.96539601
+"442_young","Tiri_16_young",442,"Tiri",16,"young",10.41549,"tropical",4.379,39.9811,9.130189541
+"443_young","Tiri_16_young",443,"Tiri",16,"young",10.41549,"tropical",2.8564,41.918,14.67511553
+"444_young","Tiri_22_young",444,"Tiri",22,"young",10.41549,"tropical",2.0825,29.8381,14.32801921
+"445_young","Tiri_22_young",445,"Tiri",22,"young",10.41549,"tropical",3.5071,42.352,12.07607425
+"446_young","Tiri_22_young",446,"Tiri",22,"young",10.41549,"tropical",2.674,39.3932,14.73193717
+"447_mature","TT_5_mature",447,"TT",5,"mature",30.673889,"temperate",1.776,56.06,31.56362613
+"448_mature","TT_5_mature",448,"TT",5,"mature",30.673889,"temperate",1.457,42.639,29.26492793
+"449_mature","TT_5_mature",449,"TT",5,"mature",30.673889,"temperate",1.601,48.758,30.4547158
+"450_mature","TT_7_mature",450,"TT",7,"mature",30.673889,"temperate",1.621,46.22,28.51141271
+"451_mature","TT_7_mature",451,"TT",7,"mature",30.673889,"temperate",1.269,41.702,32.86209614
+"452_mature","TT_7_mature",452,"TT",7,"mature",30.673889,"temperate",1.362,38.435,28.2195301
+"453_mature","TT_9_mature",453,"TT",9,"mature",30.673889,"temperate",1.62,42.237,26.07222222
+"454_mature","TT_9_mature",454,"TT",9,"mature",30.673889,"temperate",1.342,42.796,31.88971684
+"455_mature","TT_9_mature",455,"TT",9,"mature",30.673889,"temperate",1.274,39.888,31.30926217
+"456_mature","TT_10_mature",456,"TT",10,"mature",30.673889,"temperate",0.983,36.357,36.98575788
+"457_mature","TT_10_mature",457,"TT",10,"mature",30.673889,"temperate",0.852,33.437,39.24530516
+"458_mature","TT_10_mature",458,"TT",10,"mature",30.673889,"temperate",1.147,41.649,36.31124673
+"459_mature","TT_25_mature",459,"TT",25,"mature",30.673889,"temperate",1.281,46.97,36.66978923
+"460_mature","TT_25_mature",460,"TT",25,"mature",30.673889,"temperate",1.292,40.796,31.57585139
+"461_mature","TT_25_mature",461,"TT",25,"mature",30.673889,"temperate",1.058,44.159,41.73818526
+"462_young","TT_5_young",462,"TT",5,"young",30.673889,"temperate",1.572,38.002,24.17430025
+"463_young","TT_5_young",463,"TT",5,"young",30.673889,"temperate",1.449,38.274,26.41407867
+"464_young","TT_5_young",464,"TT",5,"young",30.673889,"temperate",1.5,38.689,25.79266667
+"465_young","TT_7_young",465,"TT",7,"young",30.673889,"temperate",0.955,25.345,26.53926702
+"466_young","TT_7_young",466,"TT",7,"young",30.673889,"temperate",1.093,31.899,29.18481244
+"467_young","TT_7_young",467,"TT",7,"young",30.673889,"temperate",1.181,33.716,28.54868755
+"468_young","TT_9_young",468,"TT",9,"young",30.673889,"temperate",1.412,38.733,27.43130312
+"469_young","TT_9_young",469,"TT",9,"young",30.673889,"temperate",1.246,39.218,31.47512039
+"470_young","TT_9_young",470,"TT",9,"young",30.673889,"temperate",1.012,34.173,33.76778656
+"471_young","TT_10_young",471,"TT",10,"young",30.673889,"temperate",0.886,35.799,40.40519187
+"472_young","TT_10_young",472,"TT",10,"young",30.673889,"temperate",1.115,40.623,36.43318386
+"473_young","TT_10_young",473,"TT",10,"young",30.673889,"temperate",1.057,37.384,35.36802271
+"474_young","TT_25_young",474,"TT",25,"young",30.673889,"temperate",1.509,37.121,24.59973492
+"475_young","TT_25_young",475,"TT",25,"young",30.673889,"temperate",1.273,36.746,28.86567164
+"476_young","TT_25_young",476,"TT",25,"young",30.673889,"temperate",1.321,35.653,26.98940197
+"477_mature","Whitehall_2_mature",477,"Whitehall",2,"mature",33.895767,"temperate",2.166,60.002,27.70175439
+"478_mature","Whitehall_2_mature",478,"Whitehall",2,"mature",33.895767,"temperate",1.444,39.68,27.48060942
+"479_mature","Whitehall_2_mature",479,"Whitehall",2,"mature",33.895767,"temperate",1.225,38.74,31.62204082
+"480_mature","Whitehall_3_mature",480,"Whitehall",3,"mature",33.895767,"temperate",1.206,37.97,31.4800995
+"481_mature","Whitehall_3_mature",481,"Whitehall",3,"mature",33.895767,"temperate",1.318,39.11,29.67450683
+"482_mature","Whitehall_3_mature",482,"Whitehall",3,"mature",33.895767,"temperate",1.451,46.673,32.16609235
+"483_mature","Whitehall_16_mature",483,"Whitehall",16,"mature",33.895767,"temperate",0.87,35.01,40.23563218
+"484_mature","Whitehall_16_mature",484,"Whitehall",16,"mature",33.895767,"temperate",1.913,49.42,25.83115525
+"485_mature","Whitehall_16_mature",485,"Whitehall",16,"mature",33.895767,"temperate",1.377,40.13,29.14306463
+"486_mature","Whitehall_17_mature",486,"Whitehall",17,"mature",33.895767,"temperate",1.455,41.794,28.72439863
+"487_mature","Whitehall_17_mature",487,"Whitehall",17,"mature",33.895767,"temperate",0.996,26.73,26.83433735
+"488_mature","Whitehall_17_mature",488,"Whitehall",17,"mature",33.895767,"temperate",4.181,45.82,10.95957905
+"489_mature","Whitehall_18_mature",489,"Whitehall",18,"mature",33.895767,"temperate",1.21,30.81,25.46280992
+"490_mature","Whitehall_18_mature",490,"Whitehall",18,"mature",33.895767,"temperate",1.633,49.17,30.11022658
+"491_mature","Whitehall_18_mature",491,"Whitehall",18,"mature",33.895767,"temperate",2.651,35.949,13.56054319
+"492_young","Whitehall_2_young",492,"Whitehall",2,"young",33.895767,"temperate",1.133,38.453,33.93909974
+"493_young","Whitehall_2_young",493,"Whitehall",2,"young",33.895767,"temperate",1.505,41.257,27.41328904
+"494_young","Whitehall_2_young",494,"Whitehall",2,"young",33.895767,"temperate",1.838,39.75,21.6273123
+"495_young","Whitehall_3_young",495,"Whitehall",3,"young",33.895767,"temperate",1.621,37.87,23.36212215
+"496_young","Whitehall_3_young",496,"Whitehall",3,"young",33.895767,"temperate",1.594,41.055,25.75595985
+"497_young","Whitehall_3_young",497,"Whitehall",3,"young",33.895767,"temperate",1.663,37.657,22.64401684
+"498_young","Whitehall_16_young",498,"Whitehall",16,"young",33.895767,"temperate",1.114,39.36,35.32944345
+"499_young","Whitehall_16_young",499,"Whitehall",16,"young",33.895767,"temperate",1.409,28.457,20.19659333
+"500_young","Whitehall_16_young",500,"Whitehall",16,"young",33.895767,"temperate",1.584,37.372,23.59343434
+"501_young","Whitehall_17_young",501,"Whitehall",17,"young",33.895767,"temperate",1.134,38.213,33.69753086
+"502_young","Whitehall_17_young",502,"Whitehall",17,"young",33.895767,"temperate",1.171,39.377,33.62681469
+"503_young","Whitehall_17_young",503,"Whitehall",17,"young",33.895767,"temperate",3.442,38.83,11.28123184
+"504_young","Whitehall_18_young",504,"Whitehall",18,"young",33.895767,"temperate",1.944,38.01,19.54989712
+"505_young","Whitehall_18_young",505,"Whitehall",18,"young",33.895767,"temperate",1.241,40.266,32.44641418
+"506_young","Whitehall_18_young",506,"Whitehall",18,"young",33.895767,"temperate",3.395,39.13,11.5257732
+"507_mature","With_42_mature",507,"With",42,"mature",28.60387,"subtropical",2.884,35.79,12.41019417
+"508_mature","With_42_mature",508,"With",42,"mature",28.60387,"subtropical",3.312,39.89,12.04257246
+"509_mature","With_43_mature",509,"With",43,"mature",28.60387,"subtropical",1.186,37.82,31.88870152
+"510_mature","With_43_mature",510,"With",43,"mature",28.60387,"subtropical",1.321,39.843,30.16124148
+"511_mature","With_43_mature",511,"With",43,"mature",28.60387,"subtropical",1.225,40.54,33.09714286
+"512_mature","With_46_mature",512,"With",46,"mature",28.60387,"subtropical",2.882,29.7,10.30534351
+"513_mature","With_46_mature",513,"With",46,"mature",28.60387,"subtropical",1.249,40.579,32.48919135
+"514_mature","With_46_mature",514,"With",46,"mature",28.60387,"subtropical",4.174,42.17,10.1018208
+"515_mature","With_47_mature",515,"With",47,"mature",28.60387,"subtropical",2.141,43.21,20.18028958
+"516_mature","With_47_mature",516,"With",47,"mature",28.60387,"subtropical",2.28,63.15,27.69561404
+"517_mature","With_48_mature",517,"With",48,"mature",28.60387,"subtropical",1.307,38.64,29.56388676
+"518_mature","With_42_mature",518,"With",42,"mature",28.60387,"subtropical",1.2884,37.6518,29.2236883
+"519_mature","With_42_mature",519,"With",42,"mature",28.60387,"subtropical",1.0607,32.0097,30.17790139
+"520_mature","With_42_mature",520,"With",42,"mature",28.60387,"subtropical",1.139,37.7854,33.17418788
+"521_mature","With_47_mature",521,"With",47,"mature",28.60387,"subtropical",1.4385,36.4269,25.32283629
+"522_mature","With_47_mature",522,"With",47,"mature",28.60387,"subtropical",1.1716,38.2061,32.61019119
+"523_mature","With_47_mature",523,"With",47,"mature",28.60387,"subtropical",1.3305,39.7743,29.89425028
+"524_mature","With_48_mature",524,"With",48,"mature",28.60387,"subtropical",1.554,39.9549,25.71100386
+"525_mature","With_48_mature",525,"With",48,"mature",28.60387,"subtropical",1.1017,36.6794,33.29345557
+"526_mature","With_48_mature",526,"With",48,"mature",28.60387,"subtropical",1.4127,38.9891,27.59899483
+"527_young","With_42_young",527,"With",42,"young",28.60387,"subtropical",4.084,39.26,9.61410382
+"528_young","With_42_young",528,"With",42,"young",28.60387,"subtropical",3.761,37.43,9.951608615
+"529_young","With_43_young",529,"With",43,"young",28.60387,"subtropical",2.147,34.661,16.14392175
+"530_young","With_43_young",530,"With",43,"young",28.60387,"subtropical",1.51,35.854,23.74437086
+"531_young","With_43_young",531,"With",43,"young",28.60387,"subtropical",2.316,39.75,17.16278066
+"532_young","With_46_young",532,"With",46,"young",28.60387,"subtropical",2.325,26.64,11.45892473
+"533_young","With_46_young",533,"With",46,"young",28.60387,"subtropical",1.641,37.561,22.88909202
+"534_young","With_46_young",534,"With",46,"young",28.60387,"subtropical",4.335,38.996,8.99561707
+"535_young","With_47_young",535,"With",47,"young",28.60387,"subtropical",2.893,39.239,13.56342897
+"536_young","With_47_young",536,"With",47,"young",28.60387,"subtropical",2.316,38.62,16.67530225
+"537_young","With_48_young",537,"With",48,"young",28.60387,"subtropical",1.895,36.831,19.43588391
+"538_young","With_42_young",538,"With",42,"young",28.60387,"subtropical",2.001,35.111,17.54672664
+"539_young","With_42_young",539,"With",42,"young",28.60387,"subtropical",2.1111,38.9084,18.43039174
+"540_young","With_42_young",540,"With",42,"young",28.60387,"subtropical",1.6606,37.1418,22.36649404
+"541_young","With_47_young",541,"With",47,"young",28.60387,"subtropical",2.5253,37.3745,14.80002376
+"542_young","With_47_young",542,"With",47,"young",28.60387,"subtropical",2.6946,45.5789,16.91490388
+"543_young","With_47_young",543,"With",47,"young",28.60387,"subtropical",2.1994,40.7153,18.51200327
+"544_young","With_48_young",544,"With",48,"young",28.60387,"subtropical",1.8808,45.9182,24.41418545
+"545_young","With_48_young",545,"With",48,"young",28.60387,"subtropical",1.2596,31.9401,25.35733566
+"546_young","With_48_young",546,"With",48,"young",28.60387,"subtropical",2.0186,39.8273,19.73015952
