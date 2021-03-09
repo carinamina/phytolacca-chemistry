@@ -1,0 +1,493 @@
+"pos_age","line_age","pos","pop","line","age","lat","region","tough"
+"1_young","Gen Butler_2_young",1,"Gen Butler",2,"young",38.675517,"temperate",90
+"2_young","McPhee_8_young",2,"McPhee",8,"young",40.971333,"north temperate",97.5
+"3_young","Whitehall_16_young",3,"Whitehall",16,"young",33.895767,"temperate",142.5
+"4_young","Dalton_2_young",4,"Dalton",2,"young",34.670883,"temperate",90
+"5_young","Tiri_12_young",5,"Tiri",12,"young",10.41549,"tropical",97.5
+"6_young","McPhee_7_young",6,"McPhee",7,"young",40.971333,"north temperate",90
+"7_young","Whitehall_16_young",7,"Whitehall",16,"young",33.895767,"temperate",140
+"8_young","Caesar_3_young",8,"Caesar",3,"young",39.4887,"north temperate",110
+"9_young","OCM_18_young",9,"OCM",18,"young",32.34554,"temperate",115
+"10_young","Hwy 27_1_young",10,"Hwy 27",1,"young",26.537067,"subtropical",170
+"11_young","Dalton_9_young",11,"Dalton",9,"young",34.670883,"temperate",142.5
+"12_young","Tiri_12_young",12,"Tiri",12,"young",10.41549,"tropical",255
+"13_young","With_42_young",13,"With",42,"young",28.60387,"subtropical",112.5
+"14_young","HV_5_young",14,"HV",5,"young",37.1818,"temperate",165
+"15_young","Center Hill_1_young",15,"Center Hill",1,"young",36.06935,"temperate",207.5
+"16_young","HV_5_young",16,"HV",5,"young",37.1818,"temperate",100
+"18_young","OCM_17_young",18,"OCM",17,"young",32.34554,"temperate",137.5
+"19_young","Gen Butler_7_young",19,"Gen Butler",7,"young",38.675517,"temperate",162.5
+"20_young","HV_13_young",20,"HV",13,"young",37.1818,"temperate",152.5
+"21_young","Whitehall_17_young",21,"Whitehall",17,"young",33.895767,"temperate",120
+"22_young","Dalton_2_young",22,"Dalton",2,"young",34.670883,"temperate",147.5
+"23_young","MacArthur_21_young",23,"MacArthur",21,"young",27.177583,"subtropical",117.5
+"24_young","Gav_6_young",24,"Gav",6,"young",8.72883,"tropical",152.5
+"25_young","Caesar_9_young",25,"Caesar",9,"young",39.4887,"north temperate",127.5
+"26_young","Gen Butler_3_young",26,"Gen Butler",3,"young",38.675517,"temperate",175
+"27_young","KBS_12_young",27,"KBS",12,"young",42.399933,"north temperate",117.5
+"28_young","Gav_23_young",28,"Gav",23,"young",8.72883,"tropical",152.5
+"29_young","Dalton_8_young",29,"Dalton",8,"young",34.670883,"temperate",117.5
+"30_young","TT_25_young",30,"TT",25,"young",30.673889,"temperate",125
+"31_young","KBS_8_young",31,"KBS",8,"young",42.399933,"north temperate",112.5
+"32_young","Gen Butler_9_young",32,"Gen Butler",9,"young",38.675517,"temperate",135
+"33_young","McPhee_6_young",33,"McPhee",6,"young",40.971333,"north temperate",105
+"34_young","TT_5_young",34,"TT",5,"young",30.673889,"temperate",100
+"36_young","Whitehall_2_young",36,"Whitehall",2,"young",33.895767,"temperate",112.5
+"37_young","Whitehall_2_young",37,"Whitehall",2,"young",33.895767,"temperate",102.5
+"38_young","Bella_21_young",38,"Bella",21,"young",8.79,"tropical",147.5
+"39_young","OCM_16_young",39,"OCM",16,"young",32.34554,"temperate",117.5
+"40_young","Gav_1_young",40,"Gav",1,"young",8.72883,"tropical",117.5
+"41_young","Hwy 27_3_young",41,"Hwy 27",3,"young",26.537067,"subtropical",90
+"42_young","Hwy 27_3_young",42,"Hwy 27",3,"young",26.537067,"subtropical",107.5
+"43_young","Dalton_8_young",43,"Dalton",8,"young",34.670883,"temperate",127.5
+"44_young","TT_5_young",44,"TT",5,"young",30.673889,"temperate",135
+"45_young","Center Hill_3_young",45,"Center Hill",3,"young",36.06935,"temperate",120
+"46_young","TT_10_young",46,"TT",10,"young",30.673889,"temperate",150
+"47_young","Gav_1_young",47,"Gav",1,"young",8.72883,"tropical",137.5
+"48_young","Whitehall_2_young",48,"Whitehall",2,"young",33.895767,"temperate",145
+"49_young","Tiri_12_young",49,"Tiri",12,"young",10.41549,"tropical",175
+"50_young","Whitehall_17_young",50,"Whitehall",17,"young",33.895767,"temperate",140
+"51_young","Dalton_9_young",51,"Dalton",9,"young",34.670883,"temperate",107.5
+"52_young","With_48_young",52,"With",48,"young",28.60387,"subtropical",117.5
+"53_young","Caesar_5_young",53,"Caesar",5,"young",39.4887,"north temperate",102.5
+"54_young","MacArthur_5_young",54,"MacArthur",5,"young",27.177583,"subtropical",120
+"55_young","Caesar_10_young",55,"Caesar",10,"young",39.4887,"north temperate",165
+"56_young","Center Hill_3_young",56,"Center Hill",3,"young",36.06935,"temperate",122.5
+"57_young","McPhee_7_young",57,"McPhee",7,"young",40.971333,"north temperate",127.5
+"58_young","Center Hill_8_young",58,"Center Hill",8,"young",36.06935,"temperate",122.5
+"59_young","Bella_3_young",59,"Bella",3,"young",8.79,"tropical",130
+"60_young","Caesar_5_young",60,"Caesar",5,"young",39.4887,"north temperate",147.5
+"62_young","Hwy 27_3_young",62,"Hwy 27",3,"young",26.537067,"subtropical",190
+"63_young","With_48_young",63,"With",48,"young",28.60387,"subtropical",142.5
+"64_young","Caesar_5_young",64,"Caesar",5,"young",39.4887,"north temperate",135
+"65_young","Whitehall_2_young",65,"Whitehall",2,"young",33.895767,"temperate",115
+"66_young","Whitehall_3_young",66,"Whitehall",3,"young",33.895767,"temperate",107.5
+"67_young","Gav_1_young",67,"Gav",1,"young",8.72883,"tropical",137.5
+"68_young","OCM_18_young",68,"OCM",18,"young",32.34554,"temperate",122.5
+"69_young","Whitehall_3_young",69,"Whitehall",3,"young",33.895767,"temperate",127.5
+"70_young","Center Hill_2_young",70,"Center Hill",2,"young",36.06935,"temperate",100
+"71_young","Tiri_2_young",71,"Tiri",2,"young",10.41549,"tropical",140
+"72_young","Bella_4_young",72,"Bella",4,"young",8.79,"tropical",152.5
+"73_young","Whitehall_18_young",73,"Whitehall",18,"young",33.895767,"temperate",120
+"74_young","Hwy 27_9_young",74,"Hwy 27",9,"young",26.537067,"subtropical",105
+"75_young","Tiri_1_young",75,"Tiri",1,"young",10.41549,"tropical",192.5
+"77_young","HV_5_young",77,"HV",5,"young",37.1818,"temperate",165
+"79_young","Bella_3_young",79,"Bella",3,"young",8.79,"tropical",147.5
+"80_young","Gav_11_young",80,"Gav",11,"young",8.72883,"tropical",162.5
+"81_young","Tiri_12_young",81,"Tiri",12,"young",10.41549,"tropical",205
+"82_young","Center Hill_1_young",82,"Center Hill",1,"young",36.06935,"temperate",110
+"83_young","OCM_5_young",83,"OCM",5,"young",32.34554,"temperate",145
+"84_young","Whitehall_17_young",84,"Whitehall",17,"young",33.895767,"temperate",105
+"85_young","Whitehall_16_young",85,"Whitehall",16,"young",33.895767,"temperate",187.5
+"86_young","Hwy 27_9_young",86,"Hwy 27",9,"young",26.537067,"subtropical",207.5
+"87_young","HV_10_young",87,"HV",10,"young",37.1818,"temperate",115
+"88_young","Hwy 27_2_young",88,"Hwy 27",2,"young",26.537067,"subtropical",117.5
+"89_young","KBS_5_young",89,"KBS",5,"young",42.399933,"north temperate",152.5
+"90_young","TT_7_young",90,"TT",7,"young",30.673889,"temperate",140
+"91_young","KBS_2_young",91,"KBS",2,"young",42.399933,"north temperate",127.5
+"92_young","HV_10_young",92,"HV",10,"young",37.1818,"temperate",97.5
+"93_young","Caesar_9_young",93,"Caesar",9,"young",39.4887,"north temperate",155
+"94_young","Gen Butler_7_young",94,"Gen Butler",7,"young",38.675517,"temperate",102.5
+"95_young","Gen Butler_2_young",95,"Gen Butler",2,"young",38.675517,"temperate",122.5
+"96_young","With_43_young",96,"With",43,"young",28.60387,"subtropical",107.5
+"97_young","Center Hill_7_young",97,"Center Hill",7,"young",36.06935,"temperate",130
+"98_young","KBS_12_young",98,"KBS",12,"young",42.399933,"north temperate",110
+"99_young","TT_9_young",99,"TT",9,"young",30.673889,"temperate",105
+"100_young","Gen Butler_7_young",100,"Gen Butler",7,"young",38.675517,"temperate",127.5
+"101_young","Whitehall_2_young",101,"Whitehall",2,"young",33.895767,"temperate",102.5
+"102_young","Tiri_5_young",102,"Tiri",5,"young",10.41549,"tropical",107.5
+"103_young","TT_5_young",103,"TT",5,"young",30.673889,"temperate",125
+"104_young","MacArthur_21_young",104,"MacArthur",21,"young",27.177583,"subtropical",117.5
+"105_young","Tiri_5_young",105,"Tiri",5,"young",10.41549,"tropical",140
+"106_young","Dalton_6_young",106,"Dalton",6,"young",34.670883,"temperate",120
+"107_young","KBS_8_young",107,"KBS",8,"young",42.399933,"north temperate",122.5
+"108_young","With_48_young",108,"With",48,"young",28.60387,"subtropical",150
+"109_young","With_47_young",109,"With",47,"young",28.60387,"subtropical",135
+"111_young","McPhee_2_young",111,"McPhee",2,"young",40.971333,"north temperate",95
+"112_young","OCM_17_young",112,"OCM",17,"young",32.34554,"temperate",132.5
+"113_young","Center Hill_8_young",113,"Center Hill",8,"young",36.06935,"temperate",125
+"114_young","McPhee_8_young",114,"McPhee",8,"young",40.971333,"north temperate",157.5
+"115_young","Bella_13_young",115,"Bella",13,"young",8.79,"tropical",142.5
+"116_young","With_47_young",116,"With",47,"young",28.60387,"subtropical",147.5
+"117_young","TT_25_young",117,"TT",25,"young",30.673889,"temperate",172.5
+"118_young","McPhee_8_young",118,"McPhee",8,"young",40.971333,"north temperate",145
+"119_young","KBS_9_young",119,"KBS",9,"young",42.399933,"north temperate",155
+"120_young","KBS_8_young",120,"KBS",8,"young",42.399933,"north temperate",152.5
+"121_young","Gav_23_young",121,"Gav",23,"young",8.72883,"tropical",172.5
+"122_young","Caesar_9_young",122,"Caesar",9,"young",39.4887,"north temperate",165
+"123_young","McPhee_1_young",123,"McPhee",1,"young",40.971333,"north temperate",137.5
+"124_young","TT_5_young",124,"TT",5,"young",30.673889,"temperate",105
+"125_young","OCM_5_young",125,"OCM",5,"young",32.34554,"temperate",137.5
+"126_young","KBS_9_young",126,"KBS",9,"young",42.399933,"north temperate",117.5
+"128_young","Dalton_9_young",128,"Dalton",9,"young",34.670883,"temperate",135
+"129_young","McPhee_7_young",129,"McPhee",7,"young",40.971333,"north temperate",102.5
+"130_young","Hwy 27_6_young",130,"Hwy 27",6,"young",26.537067,"subtropical",130
+"131_young","TT_7_young",131,"TT",7,"young",30.673889,"temperate",117.5
+"132_young","Gav_2_young",132,"Gav",2,"young",8.72883,"tropical",110
+"133_young","MacArthur_15_young",133,"MacArthur",15,"young",27.177583,"subtropical",117.5
+"134_young","MacArthur_22_young",134,"MacArthur",22,"young",27.177583,"subtropical",110
+"135_young","MacArthur_16_young",135,"MacArthur",16,"young",27.177583,"subtropical",125
+"136_young","Tiri_1_young",136,"Tiri",1,"young",10.41549,"tropical",120
+"137_young","Gav_6_young",137,"Gav",6,"young",8.72883,"tropical",150
+"138_young","TT_5_young",138,"TT",5,"young",30.673889,"temperate",102.5
+"139_young","Gav_2_young",139,"Gav",2,"young",8.72883,"tropical",105
+"141_young","Dalton_4_young",141,"Dalton",4,"young",34.670883,"temperate",102.5
+"142_young","Caesar_7_young",142,"Caesar",7,"young",39.4887,"north temperate",105
+"143_young","Tiri_12_young",143,"Tiri",12,"young",10.41549,"tropical",120
+"144_young","OCM_10_young",144,"OCM",10,"young",32.34554,"temperate",117.5
+"145_young","Gav_2_young",145,"Gav",2,"young",8.72883,"tropical",162.5
+"146_young","With_42_young",146,"With",42,"young",28.60387,"subtropical",115
+"147_young","Gav_23_young",147,"Gav",23,"young",8.72883,"tropical",95
+"148_young","Hwy 27_2_young",148,"Hwy 27",2,"young",26.537067,"subtropical",95
+"149_young","McPhee_2_young",149,"McPhee",2,"young",40.971333,"north temperate",132.5
+"150_young","OCM_10_young",150,"OCM",10,"young",32.34554,"temperate",127.5
+"151_young","Bella_2_young",151,"Bella",2,"young",8.79,"tropical",130
+"152_young","Bella_3_young",152,"Bella",3,"young",8.79,"tropical",122.5
+"153_young","Gav_11_young",153,"Gav",11,"young",8.72883,"tropical",142.5
+"154_young","Gav_1_young",154,"Gav",1,"young",8.72883,"tropical",125
+"155_young","MacArthur_16_young",155,"MacArthur",16,"young",27.177583,"subtropical",102.5
+"156_young","HV_3_young",156,"HV",3,"young",37.1818,"temperate",140
+"157_young","HV_3_young",157,"HV",3,"young",37.1818,"temperate",122.5
+"158_young","Hwy 27_6_young",158,"Hwy 27",6,"young",26.537067,"subtropical",127.5
+"159_young","HV_13_young",159,"HV",13,"young",37.1818,"temperate",97.5
+"160_young","KBS_9_young",160,"KBS",9,"young",42.399933,"north temperate",95
+"161_young","OCM_16_young",161,"OCM",16,"young",32.34554,"temperate",95
+"162_young","MacArthur_22_young",162,"MacArthur",22,"young",27.177583,"subtropical",100
+"163_young","Center Hill_2_young",163,"Center Hill",2,"young",36.06935,"temperate",142.5
+"164_young","Hwy 27_8_young",164,"Hwy 27",8,"young",26.537067,"subtropical",105
+"165_young","Dalton_2_young",165,"Dalton",2,"young",34.670883,"temperate",127.5
+"166_young","With_43_young",166,"With",43,"young",28.60387,"subtropical",140
+"167_young","KBS_2_young",167,"KBS",2,"young",42.399933,"north temperate",127.5
+"168_young","Bella_2_young",168,"Bella",2,"young",8.79,"tropical",135
+"169_young","Bella_13_young",169,"Bella",13,"young",8.79,"tropical",90
+"170_young","OCM_18_young",170,"OCM",18,"young",32.34554,"temperate",117.5
+"171_young","OCM_16_young",171,"OCM",16,"young",32.34554,"temperate",110
+"172_young","Bella_21_young",172,"Bella",21,"young",8.79,"tropical",125
+"173_young","Gen Butler_3_young",173,"Gen Butler",3,"young",38.675517,"temperate",102.5
+"174_young","Caesar_3_young",174,"Caesar",3,"young",39.4887,"north temperate",127.5
+"175_young","MacArthur_15_young",175,"MacArthur",15,"young",27.177583,"subtropical",117.5
+"176_young","TT_9_young",176,"TT",9,"young",30.673889,"temperate",110
+"177_young","Hwy 27_8_young",177,"Hwy 27",8,"young",26.537067,"subtropical",90
+"179_young","Gen Butler_1_young",179,"Gen Butler",1,"young",38.675517,"temperate",152.5
+"180_young","Bella_2_young",180,"Bella",2,"young",8.79,"tropical",150
+"181_young","TT_25_young",181,"TT",25,"young",30.673889,"temperate",130
+"182_young","Hwy 27_6_young",182,"Hwy 27",6,"young",26.537067,"subtropical",90
+"183_young","Tiri_2_young",183,"Tiri",2,"young",10.41549,"tropical",105
+"184_young","Bella_21_young",184,"Bella",21,"young",8.79,"tropical",95
+"185_young","Gav_1_young",185,"Gav",1,"young",8.72883,"tropical",150
+"186_young","With_42_young",186,"With",42,"young",28.60387,"subtropical",115
+"187_young","Caesar_7_young",187,"Caesar",7,"young",39.4887,"north temperate",115
+"188_young","Gen Butler_1_young",188,"Gen Butler",1,"young",38.675517,"temperate",95
+"189_young","MacArthur_22_young",189,"MacArthur",22,"young",27.177583,"subtropical",147.5
+"190_young","HV_7_young",190,"HV",7,"young",37.1818,"temperate",140
+"191_young","KBS_8_young",191,"KBS",8,"young",42.399933,"north temperate",110
+"192_young","With_43_young",192,"With",43,"young",28.60387,"subtropical",162.5
+"193_young","Bella_4_young",193,"Bella",4,"young",8.79,"tropical",142.5
+"194_young","Center Hill_1_young",194,"Center Hill",1,"young",36.06935,"temperate",165
+"195_young","Hwy 27_2_young",195,"Hwy 27",2,"young",26.537067,"subtropical",125
+"196_young","OCM_10_young",196,"OCM",10,"young",32.34554,"temperate",170
+"197_young","Gen Butler_9_young",197,"Gen Butler",9,"young",38.675517,"temperate",152.5
+"198_young","Bella_4_young",198,"Bella",4,"young",8.79,"tropical",197.5
+"199_young","Caesar_7_young",199,"Caesar",7,"young",39.4887,"north temperate",117.5
+"200_young","Gav_1_young",200,"Gav",1,"young",8.72883,"tropical",145
+"201_young","TT_9_young",201,"TT",9,"young",30.673889,"temperate",137.5
+"202_young","Dalton_8_young",202,"Dalton",8,"young",34.670883,"temperate",117.5
+"203_young","TT_10_young",203,"TT",10,"young",30.673889,"temperate",102.5
+"204_young","Caesar_3_young",204,"Caesar",3,"young",39.4887,"north temperate",105
+"205_young","Dalton_6_young",205,"Dalton",6,"young",34.670883,"temperate",127.5
+"206_young","McPhee_1_young",206,"McPhee",1,"young",40.971333,"north temperate",105
+"207_young","OCM_5_young",207,"OCM",5,"young",32.34554,"temperate",137.5
+"208_young","Gen Butler_3_young",208,"Gen Butler",3,"young",38.675517,"temperate",112.5
+"209_young","Whitehall_18_young",209,"Whitehall",18,"young",33.895767,"temperate",120
+"210_young","Tiri_12_young",210,"Tiri",12,"young",10.41549,"tropical",105
+"211_young","Tiri_1_young",211,"Tiri",1,"young",10.41549,"tropical",150
+"212_young","Dalton_4_young",212,"Dalton",4,"young",34.670883,"temperate",100
+"213_young","Hwy 27_1_young",213,"Hwy 27",1,"young",26.537067,"subtropical",110
+"214_young","Hwy 27_9_young",214,"Hwy 27",9,"young",26.537067,"subtropical",95
+"215_young","TT_10_young",215,"TT",10,"young",30.673889,"temperate",100
+"217_young","KBS_12_young",217,"KBS",12,"young",42.399933,"north temperate",167.5
+"218_young","Whitehall_18_young",218,"Whitehall",18,"young",33.895767,"temperate",105
+"220_young","MacArthur_15_young",220,"MacArthur",15,"young",27.177583,"subtropical",117.5
+"221_young","Gen Butler_9_young",221,"Gen Butler",9,"young",38.675517,"temperate",137.5
+"222_young","MacArthur_21_young",222,"MacArthur",21,"young",27.177583,"subtropical",120
+"223_young","Gen Butler_1_young",223,"Gen Butler",1,"young",38.675517,"temperate",105
+"224_young","Gen Butler_2_young",224,"Gen Butler",2,"young",38.675517,"temperate",115
+"225_young","Center Hill_7_young",225,"Center Hill",7,"young",36.06935,"temperate",115
+"226_young","HV_7_young",226,"HV",7,"young",37.1818,"temperate",90
+"227_young","McPhee_6_young",227,"McPhee",6,"young",40.971333,"north temperate",97.5
+"228_young","McPhee_6_young",228,"McPhee",6,"young",40.971333,"north temperate",115
+"229_young","KBS_8_young",229,"KBS",8,"young",42.399933,"north temperate",90
+"230_young","Whitehall_3_young",230,"Whitehall",3,"young",33.895767,"temperate",127.5
+"231_young","Dalton_4_young",231,"Dalton",4,"young",34.670883,"temperate",132.5
+"233_young","KBS_5_young",233,"KBS",5,"young",42.399933,"north temperate",110
+"234_young","With_46_young",234,"With",46,"young",28.60387,"subtropical",125
+"235_young","HV_3_young",235,"HV",3,"young",37.1818,"temperate",115
+"236_young","With_47_young",236,"With",47,"young",28.60387,"subtropical",105
+"237_young","Gav_6_young",237,"Gav",6,"young",8.72883,"tropical",122.5
+"238_young","Dalton_6_young",238,"Dalton",6,"young",34.670883,"temperate",90
+"239_young","McPhee_2_young",239,"McPhee",2,"young",40.971333,"north temperate",95
+"240_young","HV_10_young",240,"HV",10,"young",37.1818,"temperate",137.5
+"241_young","MacArthur_5_young",241,"MacArthur",5,"young",27.177583,"subtropical",120
+"242_young","Caesar_10_young",242,"Caesar",10,"young",39.4887,"north temperate",157.5
+"243_young","MacArthur_16_young",243,"MacArthur",16,"young",27.177583,"subtropical",115
+"244_young","KBS_5_young",244,"KBS",5,"young",42.399933,"north temperate",122.5
+"245_young","Center Hill_8_young",245,"Center Hill",8,"young",36.06935,"temperate",95
+"246_young","TT_7_young",246,"TT",7,"young",30.673889,"temperate",115
+"247_young","Center Hill_7_young",247,"Center Hill",7,"young",36.06935,"temperate",152.5
+"248_young","Caesar_10_young",248,"Caesar",10,"young",39.4887,"north temperate",140
+"249_young","OCM_17_young",249,"OCM",17,"young",32.34554,"temperate",127.5
+"250_young","HV_7_young",250,"HV",7,"young",37.1818,"temperate",115
+"251_young","With_46_young",251,"With",46,"young",28.60387,"subtropical",160
+"252_young","Hwy 27_1_young",252,"Hwy 27",1,"young",26.537067,"subtropical",125
+"253_young","McPhee_1_young",253,"McPhee",1,"young",40.971333,"north temperate",115
+"254_young","Tiri_2_young",254,"Tiri",2,"young",10.41549,"tropical",110
+"255_young","With_46_young",255,"With",46,"young",28.60387,"subtropical",110
+"257_young","HV_13_young",257,"HV",13,"young",37.1818,"temperate",110
+"258_young","Center Hill_3_young",258,"Center Hill",3,"young",36.06935,"temperate",102.5
+"259_young","TT_5_young",259,"TT",5,"young",30.673889,"temperate",115
+"1_mature","Gen Butler_2_mature",1,"Gen Butler",2,"mature",38.675517,"temperate",192.5
+"2_mature","McPhee_8_mature",2,"McPhee",8,"mature",40.971333,"north temperate",365
+"3_mature","Whitehall_16_mature",3,"Whitehall",16,"mature",33.895767,"temperate",260
+"4_mature","Dalton_2_mature",4,"Dalton",2,"mature",34.670883,"temperate",180
+"5_mature","Tiri_12_mature",5,"Tiri",12,"mature",10.41549,"tropical",190
+"6_mature","McPhee_7_mature",6,"McPhee",7,"mature",40.971333,"north temperate",217.5
+"7_mature","Whitehall_16_mature",7,"Whitehall",16,"mature",33.895767,"temperate",347.5
+"8_mature","Caesar_3_mature",8,"Caesar",3,"mature",39.4887,"north temperate",322.5
+"9_mature","OCM_18_mature",9,"OCM",18,"mature",32.34554,"temperate",237.5
+"10_mature","Hwy 27_1_mature",10,"Hwy 27",1,"mature",26.537067,"subtropical",320
+"11_mature","Dalton_9_mature",11,"Dalton",9,"mature",34.670883,"temperate",230
+"12_mature","Tiri_12_mature",12,"Tiri",12,"mature",10.41549,"tropical",292.5
+"13_mature","With_42_mature",13,"With",42,"mature",28.60387,"subtropical",310
+"14_mature","HV_5_mature",14,"HV",5,"mature",37.1818,"temperate",282.5
+"15_mature","Center Hill_1_mature",15,"Center Hill",1,"mature",36.06935,"temperate",290
+"16_mature","HV_5_mature",16,"HV",5,"mature",37.1818,"temperate",182.5
+"18_mature","OCM_17_mature",18,"OCM",17,"mature",32.34554,"temperate",197.5
+"19_mature","Gen Butler_7_mature",19,"Gen Butler",7,"mature",38.675517,"temperate",195
+"20_mature","HV_13_mature",20,"HV",13,"mature",37.1818,"temperate",207.5
+"21_mature","Whitehall_17_mature",21,"Whitehall",17,"mature",33.895767,"temperate",210
+"22_mature","Dalton_2_mature",22,"Dalton",2,"mature",34.670883,"temperate",205
+"23_mature","MacArthur_21_mature",23,"MacArthur",21,"mature",27.177583,"subtropical",332.5
+"24_mature","Gav_6_mature",24,"Gav",6,"mature",8.72883,"tropical",267.5
+"25_mature","Caesar_9_mature",25,"Caesar",9,"mature",39.4887,"north temperate",215
+"26_mature","Gen Butler_3_mature",26,"Gen Butler",3,"mature",38.675517,"temperate",265
+"27_mature","KBS_12_mature",27,"KBS",12,"mature",42.399933,"north temperate",250
+"28_mature","Gav_23_mature",28,"Gav",23,"mature",8.72883,"tropical",245
+"29_mature","Dalton_8_mature",29,"Dalton",8,"mature",34.670883,"temperate",222.5
+"30_mature","TT_25_mature",30,"TT",25,"mature",30.673889,"temperate",267.5
+"31_mature","KBS_8_mature",31,"KBS",8,"mature",42.399933,"north temperate",247.5
+"32_mature","Gen Butler_9_mature",32,"Gen Butler",9,"mature",38.675517,"temperate",215
+"33_mature","McPhee_6_mature",33,"McPhee",6,"mature",40.971333,"north temperate",200
+"34_mature","TT_5_mature",34,"TT",5,"mature",30.673889,"temperate",235
+"36_mature","Whitehall_2_mature",36,"Whitehall",2,"mature",33.895767,"temperate",267.5
+"37_mature","Whitehall_2_mature",37,"Whitehall",2,"mature",33.895767,"temperate",207.5
+"38_mature","Bella_21_mature",38,"Bella",21,"mature",8.79,"tropical",257.5
+"39_mature","OCM_16_mature",39,"OCM",16,"mature",32.34554,"temperate",195
+"40_mature","Gav_1_mature",40,"Gav",1,"mature",8.72883,"tropical",192.5
+"41_mature","Hwy 27_3_mature",41,"Hwy 27",3,"mature",26.537067,"subtropical",205
+"42_mature","Hwy 27_3_mature",42,"Hwy 27",3,"mature",26.537067,"subtropical",315
+"43_mature","Dalton_8_mature",43,"Dalton",8,"mature",34.670883,"temperate",202.5
+"44_mature","TT_5_mature",44,"TT",5,"mature",30.673889,"temperate",200
+"45_mature","Center Hill_3_mature",45,"Center Hill",3,"mature",36.06935,"temperate",222.5
+"46_mature","TT_10_mature",46,"TT",10,"mature",30.673889,"temperate",165
+"47_mature","Gav_1_mature",47,"Gav",1,"mature",8.72883,"tropical",210
+"48_mature","Whitehall_2_mature",48,"Whitehall",2,"mature",33.895767,"temperate",192.5
+"49_mature","Tiri_12_mature",49,"Tiri",12,"mature",10.41549,"tropical",205
+"50_mature","Whitehall_17_mature",50,"Whitehall",17,"mature",33.895767,"temperate",185
+"51_mature","Dalton_9_mature",51,"Dalton",9,"mature",34.670883,"temperate",225
+"52_mature","With_48_mature",52,"With",48,"mature",28.60387,"subtropical",222.5
+"53_mature","Caesar_5_mature",53,"Caesar",5,"mature",39.4887,"north temperate",225
+"54_mature","MacArthur_5_mature",54,"MacArthur",5,"mature",27.177583,"subtropical",290
+"55_mature","Caesar_10_mature",55,"Caesar",10,"mature",39.4887,"north temperate",202.5
+"56_mature","Center Hill_3_mature",56,"Center Hill",3,"mature",36.06935,"temperate",190
+"57_mature","McPhee_7_mature",57,"McPhee",7,"mature",40.971333,"north temperate",237.5
+"58_mature","Center Hill_8_mature",58,"Center Hill",8,"mature",36.06935,"temperate",230
+"59_mature","Bella_3_mature",59,"Bella",3,"mature",8.79,"tropical",285
+"60_mature","Caesar_5_mature",60,"Caesar",5,"mature",39.4887,"north temperate",265
+"62_mature","Hwy 27_3_mature",62,"Hwy 27",3,"mature",26.537067,"subtropical",322.5
+"63_mature","With_48_mature",63,"With",48,"mature",28.60387,"subtropical",325
+"64_mature","Caesar_5_mature",64,"Caesar",5,"mature",39.4887,"north temperate",205
+"65_mature","Whitehall_2_mature",65,"Whitehall",2,"mature",33.895767,"temperate",220
+"66_mature","Whitehall_3_mature",66,"Whitehall",3,"mature",33.895767,"temperate",230
+"67_mature","Gav_1_mature",67,"Gav",1,"mature",8.72883,"tropical",270
+"68_mature","OCM_18_mature",68,"OCM",18,"mature",32.34554,"temperate",180
+"69_mature","Whitehall_3_mature",69,"Whitehall",3,"mature",33.895767,"temperate",232.5
+"70_mature","Center Hill_2_mature",70,"Center Hill",2,"mature",36.06935,"temperate",200
+"71_mature","Tiri_2_mature",71,"Tiri",2,"mature",10.41549,"tropical",362.5
+"72_mature","Bella_4_mature",72,"Bella",4,"mature",8.79,"tropical",295
+"73_mature","Whitehall_18_mature",73,"Whitehall",18,"mature",33.895767,"temperate",230
+"74_mature","Hwy 27_9_mature",74,"Hwy 27",9,"mature",26.537067,"subtropical",390
+"75_mature","Tiri_1_mature",75,"Tiri",1,"mature",10.41549,"tropical",227.5
+"77_mature","HV_5_mature",77,"HV",5,"mature",37.1818,"temperate",300
+"79_mature","Bella_3_mature",79,"Bella",3,"mature",8.79,"tropical",262.5
+"80_mature","Gav_11_mature",80,"Gav",11,"mature",8.72883,"tropical",260
+"81_mature","Tiri_12_mature",81,"Tiri",12,"mature",10.41549,"tropical",300
+"82_mature","Center Hill_1_mature",82,"Center Hill",1,"mature",36.06935,"temperate",180
+"83_mature","OCM_5_mature",83,"OCM",5,"mature",32.34554,"temperate",282.5
+"84_mature","Whitehall_17_mature",84,"Whitehall",17,"mature",33.895767,"temperate",212.5
+"85_mature","Whitehall_16_mature",85,"Whitehall",16,"mature",33.895767,"temperate",197.5
+"86_mature","Hwy 27_9_mature",86,"Hwy 27",9,"mature",26.537067,"subtropical",407.5
+"87_mature","HV_10_mature",87,"HV",10,"mature",37.1818,"temperate",227.5
+"88_mature","Hwy 27_2_mature",88,"Hwy 27",2,"mature",26.537067,"subtropical",242.5
+"89_mature","KBS_5_mature",89,"KBS",5,"mature",42.399933,"north temperate",290
+"90_mature","TT_7_mature",90,"TT",7,"mature",30.673889,"temperate",255
+"91_mature","KBS_2_mature",91,"KBS",2,"mature",42.399933,"north temperate",162.5
+"92_mature","HV_10_mature",92,"HV",10,"mature",37.1818,"temperate",247.5
+"93_mature","Caesar_9_mature",93,"Caesar",9,"mature",39.4887,"north temperate",212.5
+"94_mature","Gen Butler_7_mature",94,"Gen Butler",7,"mature",38.675517,"temperate",210
+"95_mature","Gen Butler_2_mature",95,"Gen Butler",2,"mature",38.675517,"temperate",195
+"96_mature","With_43_mature",96,"With",43,"mature",28.60387,"subtropical",252.5
+"97_mature","Center Hill_7_mature",97,"Center Hill",7,"mature",36.06935,"temperate",287.5
+"98_mature","KBS_12_mature",98,"KBS",12,"mature",42.399933,"north temperate",247.5
+"99_mature","TT_9_mature",99,"TT",9,"mature",30.673889,"temperate",250
+"100_mature","Gen Butler_7_mature",100,"Gen Butler",7,"mature",38.675517,"temperate",200
+"101_mature","Whitehall_2_mature",101,"Whitehall",2,"mature",33.895767,"temperate",192.5
+"102_mature","Tiri_5_mature",102,"Tiri",5,"mature",10.41549,"tropical",197.5
+"103_mature","TT_5_mature",103,"TT",5,"mature",30.673889,"temperate",227.5
+"104_mature","MacArthur_21_mature",104,"MacArthur",21,"mature",27.177583,"subtropical",245
+"105_mature","Tiri_5_mature",105,"Tiri",5,"mature",10.41549,"tropical",262.5
+"106_mature","Dalton_6_mature",106,"Dalton",6,"mature",34.670883,"temperate",295
+"107_mature","KBS_8_mature",107,"KBS",8,"mature",42.399933,"north temperate",180
+"108_mature","With_48_mature",108,"With",48,"mature",28.60387,"subtropical",265
+"109_mature","With_47_mature",109,"With",47,"mature",28.60387,"subtropical",275
+"111_mature","McPhee_2_mature",111,"McPhee",2,"mature",40.971333,"north temperate",185
+"112_mature","OCM_17_mature",112,"OCM",17,"mature",32.34554,"temperate",295
+"113_mature","Center Hill_8_mature",113,"Center Hill",8,"mature",36.06935,"temperate",202.5
+"114_mature","McPhee_8_mature",114,"McPhee",8,"mature",40.971333,"north temperate",235
+"115_mature","Bella_13_mature",115,"Bella",13,"mature",8.79,"tropical",215
+"116_mature","With_47_mature",116,"With",47,"mature",28.60387,"subtropical",285
+"117_mature","TT_25_mature",117,"TT",25,"mature",30.673889,"temperate",260
+"118_mature","McPhee_8_mature",118,"McPhee",8,"mature",40.971333,"north temperate",337.5
+"119_mature","KBS_9_mature",119,"KBS",9,"mature",42.399933,"north temperate",255
+"120_mature","KBS_8_mature",120,"KBS",8,"mature",42.399933,"north temperate",250
+"121_mature","Gav_23_mature",121,"Gav",23,"mature",8.72883,"tropical",252.5
+"122_mature","Caesar_9_mature",122,"Caesar",9,"mature",39.4887,"north temperate",290
+"123_mature","McPhee_1_mature",123,"McPhee",1,"mature",40.971333,"north temperate",237.5
+"124_mature","TT_5_mature",124,"TT",5,"mature",30.673889,"temperate",185
+"125_mature","OCM_5_mature",125,"OCM",5,"mature",32.34554,"temperate",240
+"126_mature","KBS_9_mature",126,"KBS",9,"mature",42.399933,"north temperate",252.5
+"128_mature","Dalton_9_mature",128,"Dalton",9,"mature",34.670883,"temperate",205
+"129_mature","McPhee_7_mature",129,"McPhee",7,"mature",40.971333,"north temperate",187.5
+"130_mature","Hwy 27_6_mature",130,"Hwy 27",6,"mature",26.537067,"subtropical",275
+"131_mature","TT_7_mature",131,"TT",7,"mature",30.673889,"temperate",172.5
+"132_mature","Gav_2_mature",132,"Gav",2,"mature",8.72883,"tropical",170
+"133_mature","MacArthur_15_mature",133,"MacArthur",15,"mature",27.177583,"subtropical",200
+"134_mature","MacArthur_22_mature",134,"MacArthur",22,"mature",27.177583,"subtropical",197.5
+"135_mature","MacArthur_16_mature",135,"MacArthur",16,"mature",27.177583,"subtropical",200
+"136_mature","Tiri_1_mature",136,"Tiri",1,"mature",10.41549,"tropical",235
+"137_mature","Gav_6_mature",137,"Gav",6,"mature",8.72883,"tropical",267.5
+"138_mature","TT_5_mature",138,"TT",5,"mature",30.673889,"temperate",215
+"139_mature","Gav_2_mature",139,"Gav",2,"mature",8.72883,"tropical",257.5
+"141_mature","Dalton_4_mature",141,"Dalton",4,"mature",34.670883,"temperate",187.5
+"142_mature","Caesar_7_mature",142,"Caesar",7,"mature",39.4887,"north temperate",275
+"143_mature","Tiri_12_mature",143,"Tiri",12,"mature",10.41549,"tropical",275
+"144_mature","OCM_10_mature",144,"OCM",10,"mature",32.34554,"temperate",240
+"145_mature","Gav_2_mature",145,"Gav",2,"mature",8.72883,"tropical",230
+"146_mature","With_42_mature",146,"With",42,"mature",28.60387,"subtropical",252.5
+"147_mature","Gav_23_mature",147,"Gav",23,"mature",8.72883,"tropical",192.5
+"148_mature","Hwy 27_2_mature",148,"Hwy 27",2,"mature",26.537067,"subtropical",290
+"149_mature","McPhee_2_mature",149,"McPhee",2,"mature",40.971333,"north temperate",197.5
+"150_mature","OCM_10_mature",150,"OCM",10,"mature",32.34554,"temperate",215
+"151_mature","Bella_2_mature",151,"Bella",2,"mature",8.79,"tropical",222.5
+"152_mature","Bella_3_mature",152,"Bella",3,"mature",8.79,"tropical",227.5
+"153_mature","Gav_11_mature",153,"Gav",11,"mature",8.72883,"tropical",205
+"154_mature","Gav_1_mature",154,"Gav",1,"mature",8.72883,"tropical",210
+"155_mature","MacArthur_16_mature",155,"MacArthur",16,"mature",27.177583,"subtropical",247.5
+"156_mature","HV_3_mature",156,"HV",3,"mature",37.1818,"temperate",162.5
+"157_mature","HV_3_mature",157,"HV",3,"mature",37.1818,"temperate",197.5
+"158_mature","Hwy 27_6_mature",158,"Hwy 27",6,"mature",26.537067,"subtropical",292.5
+"159_mature","HV_13_mature",159,"HV",13,"mature",37.1818,"temperate",245
+"160_mature","KBS_9_mature",160,"KBS",9,"mature",42.399933,"north temperate",232.5
+"161_mature","OCM_16_mature",161,"OCM",16,"mature",32.34554,"temperate",165
+"162_mature","MacArthur_22_mature",162,"MacArthur",22,"mature",27.177583,"subtropical",237.5
+"163_mature","Center Hill_2_mature",163,"Center Hill",2,"mature",36.06935,"temperate",162.5
+"164_mature","Hwy 27_8_mature",164,"Hwy 27",8,"mature",26.537067,"subtropical",282.5
+"165_mature","Dalton_2_mature",165,"Dalton",2,"mature",34.670883,"temperate",227.5
+"166_mature","With_43_mature",166,"With",43,"mature",28.60387,"subtropical",310
+"167_mature","KBS_2_mature",167,"KBS",2,"mature",42.399933,"north temperate",227.5
+"168_mature","Bella_2_mature",168,"Bella",2,"mature",8.79,"tropical",297.5
+"169_mature","Bella_13_mature",169,"Bella",13,"mature",8.79,"tropical",250
+"170_mature","OCM_18_mature",170,"OCM",18,"mature",32.34554,"temperate",247.5
+"171_mature","OCM_16_mature",171,"OCM",16,"mature",32.34554,"temperate",315
+"172_mature","Bella_21_mature",172,"Bella",21,"mature",8.79,"tropical",225
+"173_mature","Gen Butler_3_mature",173,"Gen Butler",3,"mature",38.675517,"temperate",192.5
+"174_mature","Caesar_3_mature",174,"Caesar",3,"mature",39.4887,"north temperate",227.5
+"175_mature","MacArthur_15_mature",175,"MacArthur",15,"mature",27.177583,"subtropical",332.5
+"176_mature","TT_9_mature",176,"TT",9,"mature",30.673889,"temperate",267.5
+"177_mature","Hwy 27_8_mature",177,"Hwy 27",8,"mature",26.537067,"subtropical",392.5
+"179_mature","Gen Butler_1_mature",179,"Gen Butler",1,"mature",38.675517,"temperate",182.5
+"180_mature","Bella_2_mature",180,"Bella",2,"mature",8.79,"tropical",200
+"181_mature","TT_25_mature",181,"TT",25,"mature",30.673889,"temperate",290
+"182_mature","Hwy 27_6_mature",182,"Hwy 27",6,"mature",26.537067,"subtropical",305
+"183_mature","Tiri_2_mature",183,"Tiri",2,"mature",10.41549,"tropical",242.5
+"184_mature","Bella_21_mature",184,"Bella",21,"mature",8.79,"tropical",300
+"185_mature","Gav_1_mature",185,"Gav",1,"mature",8.72883,"tropical",292.5
+"186_mature","With_42_mature",186,"With",42,"mature",28.60387,"subtropical",255
+"187_mature","Caesar_7_mature",187,"Caesar",7,"mature",39.4887,"north temperate",215
+"188_mature","Gen Butler_1_mature",188,"Gen Butler",1,"mature",38.675517,"temperate",185
+"189_mature","MacArthur_22_mature",189,"MacArthur",22,"mature",27.177583,"subtropical",197.5
+"190_mature","HV_7_mature",190,"HV",7,"mature",37.1818,"temperate",310
+"191_mature","KBS_8_mature",191,"KBS",8,"mature",42.399933,"north temperate",207.5
+"192_mature","With_43_mature",192,"With",43,"mature",28.60387,"subtropical",320
+"193_mature","Bella_4_mature",193,"Bella",4,"mature",8.79,"tropical",272.5
+"194_mature","Center Hill_1_mature",194,"Center Hill",1,"mature",36.06935,"temperate",295
+"195_mature","Hwy 27_2_mature",195,"Hwy 27",2,"mature",26.537067,"subtropical",325
+"196_mature","OCM_10_mature",196,"OCM",10,"mature",32.34554,"temperate",250
+"197_mature","Gen Butler_9_mature",197,"Gen Butler",9,"mature",38.675517,"temperate",260
+"198_mature","Bella_4_mature",198,"Bella",4,"mature",8.79,"tropical",267.5
+"199_mature","Caesar_7_mature",199,"Caesar",7,"mature",39.4887,"north temperate",310
+"200_mature","Gav_1_mature",200,"Gav",1,"mature",8.72883,"tropical",280
+"201_mature","TT_9_mature",201,"TT",9,"mature",30.673889,"temperate",252.5
+"202_mature","Dalton_8_mature",202,"Dalton",8,"mature",34.670883,"temperate",250
+"203_mature","TT_10_mature",203,"TT",10,"mature",30.673889,"temperate",275
+"204_mature","Caesar_3_mature",204,"Caesar",3,"mature",39.4887,"north temperate",240
+"205_mature","Dalton_6_mature",205,"Dalton",6,"mature",34.670883,"temperate",257.5
+"206_mature","McPhee_1_mature",206,"McPhee",1,"mature",40.971333,"north temperate",167.5
+"207_mature","OCM_5_mature",207,"OCM",5,"mature",32.34554,"temperate",195
+"208_mature","Gen Butler_3_mature",208,"Gen Butler",3,"mature",38.675517,"temperate",305
+"209_mature","Whitehall_18_mature",209,"Whitehall",18,"mature",33.895767,"temperate",240
+"210_mature","Tiri_12_mature",210,"Tiri",12,"mature",10.41549,"tropical",272.5
+"211_mature","Tiri_1_mature",211,"Tiri",1,"mature",10.41549,"tropical",250
+"212_mature","Dalton_4_mature",212,"Dalton",4,"mature",34.670883,"temperate",295
+"213_mature","Hwy 27_1_mature",213,"Hwy 27",1,"mature",26.537067,"subtropical",335
+"214_mature","Hwy 27_9_mature",214,"Hwy 27",9,"mature",26.537067,"subtropical",335
+"215_mature","TT_10_mature",215,"TT",10,"mature",30.673889,"temperate",240
+"217_mature","KBS_12_mature",217,"KBS",12,"mature",42.399933,"north temperate",242.5
+"218_mature","Whitehall_18_mature",218,"Whitehall",18,"mature",33.895767,"temperate",260
+"220_mature","MacArthur_15_mature",220,"MacArthur",15,"mature",27.177583,"subtropical",265
+"221_mature","Gen Butler_9_mature",221,"Gen Butler",9,"mature",38.675517,"temperate",210
+"222_mature","MacArthur_21_mature",222,"MacArthur",21,"mature",27.177583,"subtropical",340
+"223_mature","Gen Butler_1_mature",223,"Gen Butler",1,"mature",38.675517,"temperate",270
+"224_mature","Gen Butler_2_mature",224,"Gen Butler",2,"mature",38.675517,"temperate",285
+"225_mature","Center Hill_7_mature",225,"Center Hill",7,"mature",36.06935,"temperate",305
+"226_mature","HV_7_mature",226,"HV",7,"mature",37.1818,"temperate",235
+"227_mature","McPhee_6_mature",227,"McPhee",6,"mature",40.971333,"north temperate",265
+"228_mature","McPhee_6_mature",228,"McPhee",6,"mature",40.971333,"north temperate",307.5
+"229_mature","KBS_8_mature",229,"KBS",8,"mature",42.399933,"north temperate",285
+"230_mature","Whitehall_3_mature",230,"Whitehall",3,"mature",33.895767,"temperate",290
+"231_mature","Dalton_4_mature",231,"Dalton",4,"mature",34.670883,"temperate",215
+"233_mature","KBS_5_mature",233,"KBS",5,"mature",42.399933,"north temperate",240
+"234_mature","With_46_mature",234,"With",46,"mature",28.60387,"subtropical",285
+"235_mature","HV_3_mature",235,"HV",3,"mature",37.1818,"temperate",222.5
+"236_mature","With_47_mature",236,"With",47,"mature",28.60387,"subtropical",310
+"237_mature","Gav_6_mature",237,"Gav",6,"mature",8.72883,"tropical",290
+"238_mature","Dalton_6_mature",238,"Dalton",6,"mature",34.670883,"temperate",290
+"239_mature","McPhee_2_mature",239,"McPhee",2,"mature",40.971333,"north temperate",280
+"240_mature","HV_10_mature",240,"HV",10,"mature",37.1818,"temperate",312.5
+"241_mature","MacArthur_5_mature",241,"MacArthur",5,"mature",27.177583,"subtropical",385
+"242_mature","Caesar_10_mature",242,"Caesar",10,"mature",39.4887,"north temperate",370
+"243_mature","MacArthur_16_mature",243,"MacArthur",16,"mature",27.177583,"subtropical",370
+"244_mature","KBS_5_mature",244,"KBS",5,"mature",42.399933,"north temperate",300
+"245_mature","Center Hill_8_mature",245,"Center Hill",8,"mature",36.06935,"temperate",337.5
+"246_mature","TT_7_mature",246,"TT",7,"mature",30.673889,"temperate",325
+"247_mature","Center Hill_7_mature",247,"Center Hill",7,"mature",36.06935,"temperate",355
+"248_mature","Caesar_10_mature",248,"Caesar",10,"mature",39.4887,"north temperate",225
+"249_mature","OCM_17_mature",249,"OCM",17,"mature",32.34554,"temperate",277.5
+"250_mature","HV_7_mature",250,"HV",7,"mature",37.1818,"temperate",217.5
+"251_mature","With_46_mature",251,"With",46,"mature",28.60387,"subtropical",335
+"252_mature","Hwy 27_1_mature",252,"Hwy 27",1,"mature",26.537067,"subtropical",310
+"253_mature","McPhee_1_mature",253,"McPhee",1,"mature",40.971333,"north temperate",265
+"254_mature","Tiri_2_mature",254,"Tiri",2,"mature",10.41549,"tropical",280
+"255_mature","With_46_mature",255,"With",46,"mature",28.60387,"subtropical",310
+"257_mature","HV_13_mature",257,"HV",13,"mature",37.1818,"temperate",307.5
+"258_mature","Center Hill_3_mature",258,"Center Hill",3,"mature",36.06935,"temperate",217.5
+"259_mature","TT_5_mature",259,"TT",5,"mature",30.673889,"temperate",200
