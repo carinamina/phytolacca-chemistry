@@ -1,6 +1,6 @@
 Data Processing Workflow
 
-Each raw dataset goes through a numbered Processing script, which outputs two numbered datasets: Processed_Indiv and Processed_Line. Processed_Indiv has individual measurements, or means for any traits measured multiple times per individual (toughness). Processed_Line has line means for traits measured on multiple individuals. LCMS data only has a Processed_Indiv file because only one individual was sampled per line.
+Each raw dataset goes through a numbered Processing script, which outputs two numbered datasets: Processed_Indiv and Processed_Line. Processed_Indiv has individual measurements, or means for any traits measured multiple times per individual (toughness). Processed_Line has line means for traits measured on multiple individuals. LCMS data and ChemSummaries only have Processed_Indiv file because only one individual was sampled for LC/MS per line.
 
 To go from raw to processed, each dataset should end up with the following columns:
 

@@ -1,4 +1,4 @@
-#chemistry data wrangling
+#LC/MS data wrangling
 library(tidyverse)
 
 raw = read.csv("Raw/20180727_LCMS_ReadyForR.csv", header=TRUE)
@@ -171,6 +171,6 @@ normal <- cbind(normal[,1:2],normal[,3:ncol(normal)]/normal$mass_mg) %>% select(
 con_key$age <- plyr::revalue(con_key$age, c("Y" = "young", "M" =  "mature"))
 full <- inner_join(con_key[c("LCMS_ID","pos","pop","line","age","lat","region")], normal, by = "LCMS_ID") %>% select(-LCMS_ID) %>% mutate(pos_age = paste(pos,age,sep="_"),.before=pos) %>% mutate(line_age=paste(paste(pop,line,sep="_"),age,sep="_"),.before=pos)
 
-write.csv(full, "Processing/1a_out_LCMS_Indiv_CB.csv",row.names=F)
+write.csv(full, "Processing/1a_out_LCMS_Indiv.csv",row.names=F)
 
-#rm(list=ls())
+rm(list=ls())

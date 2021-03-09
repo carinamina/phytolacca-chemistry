@@ -1,0 +1,83 @@
+#summarizing LC/MS data into NMDS axes, chemical abundance, chemical richness, and chemical diversity
+
+library(ecodist)
+library(vegan)
+library(ade4)
+library(tidyverse)
+library(ggplot2)
+
+#makes scree plots (takes a few minutes)
+NMDS.scree<-function(x,name) #where x is the name of the data frame variable
+{ 
+  plot(rep(1,10),replicate(10,metaMDS(x,autotransform=F,k=1,trymax=500)$stress),xlim=c(1,11),ylim=c(0,0.3),xlab="# of Dimensions",ylab="Stress",main=name)
+  
+  for (i in 1:10) {
+    points(rep(i+1,10),replicate(10,metaMDS(x,autotransform=F,k=i+1)$stress))
+  }
+}
+
+##Data import for NMDS: get chemicals, subset to young and mature
+
+chem <- read.csv("Processing/1a_out_LCMS_Indiv_CB.csv", header = TRUE)
+#use pop_line_age as unique identifier; they are not repeated
+length(unique(chem$line_age))
+str(chem[,1:9])
+
+##Both ages, all compounds
+chem.mat <- data.matrix(chem[,9:length(chem)])
+#use line_age for identifier
+rownames(chem.mat)<- chem$line_age
+key <- chem[,1:8]
+
+#from chemistry matrix, calculate Shannon diversity, richness, and abundance for each sample
+chem.sums <- data.frame(row.names = row.names(chem.mat))
+#abundance is sum of all compound abundances
+chem.sums$abund <- rowSums(chem.mat)
+hist(chem.sums$abund)
+#richness is number of compounds present. counts the number of zeroes in each row and subtracts from total to calculate richness
+chem.sums$richness <- ncol(chem.mat) - rowSums(chem.mat == 0)
+hist(chem.sums$richness)
+#test code for richness calculation
+# abc <- chem.mat[1:17,1:4]
+# rowSums(abc== 0)
+#Shannon diversity index
+chem.sums$diversity <- diversity(chem.mat)
+hist(chem.sums$diversity)
+
+
+#NMDS
+# make bray curtis distance matrix from data
+dist <-distance(chem.mat,"bray-curtis")
+
+#scree plots
+# setEPS()
+# postscript("FiguresTables/20210308_nmds_scree.eps")
+# NMDS.scree(dist, name = "young and mature leaves")
+# dev.off()
+#this says you want stress to be 0.05-1 https://mb3is.megx.net/gustame/dissimilarity-based-methods/nmds
+#same here https://jonlefcheck.net/2012/10/24/nmds-tutorial-in-r/
+#4 dimensions is less than 0.1 so I'll set k=4 in metaMDS call
+
+nmds<-metaMDS(chem.mat,k=4,trymax=250,distance="bray")
+stressplot(nmds)
+#Large scatter around the line suggests that original dissimilarities are not well preserved in the reduced number of dimensions. https://jonlefcheck.net/2012/10/24/nmds-tutorial-in-r/
+#looks pretty good
+nmds$stress
+#values < 0.05 excellent, < 0.1 good; this is ok at 0.09 (if k = 3, it's .12 and the plot looks slightly messier)
+
+#this extracts scores to a matrix
+scores <- as.data.frame(scores(nmds))
+
+#use key to get other info based on line_age and merge chem.sums with nmds scores
+scores$line_age <- rownames(scores)  # create a column of rownames (line_age)
+chem.sums$line_age <- rownames(chem.sums)
+scores <- merge(chem.sums,scores, by = "line_age")
+scores <- merge(key, scores, by = "line_age")
+head(scores)
+
+write.csv(scores[c(2,1,3:ncol(scores))], file = "Processing/1b_out_ChemSummaries_Indiv.csv", row.names = FALSE )
+
+#some visualization for fun
+#qplot(lat, abund, data=scores, colour=age)
+
+rm(list=ls())
