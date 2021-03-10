@@ -8,7 +8,7 @@ pos_age       Pasted pos_age (only in Processed_Indiv)
 
 line_age      Pasted pop_line_age
 
-pos           Position in the greenhouse; unique identifier WITHIN a trait dataset but do not assume pos 23 in LCMS is the same as pos 23 in palatability because these traits were measured on different cohorts of plants
+pos or CupID           Position in the greenhouse; unique identifier WITHIN a trait dataset but do not assume pos 23 in LCMS is the same as pos 23 in palatability because these traits were measured on different cohorts of plants. For palatability, this is CupID instead, as each cup is a replicate trial of leaves pooled from a maternal line
 
 pop           Population of origin
 
