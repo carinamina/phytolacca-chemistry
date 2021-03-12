@@ -24,3 +24,5 @@ TRAITS        unique columns for each trait dataset
 
 
 In the script combining all traits, the Processed_Line datasets are combined based on line_age and then lat and region are added
+
+There is one unusual output, the 1b_out_OntoSimilarity_Indiv.csv. Unlike all other data, this is not divided into young and mature leaves because each line is the difference in an NMDS axis between young and mature leaves on the same plant.

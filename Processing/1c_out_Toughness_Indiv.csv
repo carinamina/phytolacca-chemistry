@@ -3,14 +3,12 @@
 "2_young","McPhee_8_young",2,"McPhee",8,"young",40.971333,"north temperate",97.5
 "3_young","Whitehall_16_young",3,"Whitehall",16,"young",33.895767,"temperate",142.5
 "4_young","Dalton_2_young",4,"Dalton",2,"young",34.670883,"temperate",90
-"5_young","Tiri_12_young",5,"Tiri",12,"young",10.41549,"tropical",97.5
 "6_young","McPhee_7_young",6,"McPhee",7,"young",40.971333,"north temperate",90
 "7_young","Whitehall_16_young",7,"Whitehall",16,"young",33.895767,"temperate",140
 "8_young","Caesar_3_young",8,"Caesar",3,"young",39.4887,"north temperate",110
 "9_young","OCM_18_young",9,"OCM",18,"young",32.34554,"temperate",115
 "10_young","Hwy 27_1_young",10,"Hwy 27",1,"young",26.537067,"subtropical",170
 "11_young","Dalton_9_young",11,"Dalton",9,"young",34.670883,"temperate",142.5
-"12_young","Tiri_12_young",12,"Tiri",12,"young",10.41549,"tropical",255
 "13_young","With_42_young",13,"With",42,"young",28.60387,"subtropical",112.5
 "14_young","HV_5_young",14,"HV",5,"young",37.1818,"temperate",165
 "15_young","Center Hill_1_young",15,"Center Hill",1,"young",36.06935,"temperate",207.5
@@ -28,15 +26,11 @@
 "28_young","Gav_23_young",28,"Gav",23,"young",8.72883,"tropical",152.5
 "29_young","Dalton_8_young",29,"Dalton",8,"young",34.670883,"temperate",117.5
 "30_young","TT_25_young",30,"TT",25,"young",30.673889,"temperate",125
-"31_young","KBS_8_young",31,"KBS",8,"young",42.399933,"north temperate",112.5
 "32_young","Gen Butler_9_young",32,"Gen Butler",9,"young",38.675517,"temperate",135
 "33_young","McPhee_6_young",33,"McPhee",6,"young",40.971333,"north temperate",105
-"34_young","TT_5_young",34,"TT",5,"young",30.673889,"temperate",100
-"36_young","Whitehall_2_young",36,"Whitehall",2,"young",33.895767,"temperate",112.5
 "37_young","Whitehall_2_young",37,"Whitehall",2,"young",33.895767,"temperate",102.5
 "38_young","Bella_21_young",38,"Bella",21,"young",8.79,"tropical",147.5
 "39_young","OCM_16_young",39,"OCM",16,"young",32.34554,"temperate",117.5
-"40_young","Gav_1_young",40,"Gav",1,"young",8.72883,"tropical",117.5
 "41_young","Hwy 27_3_young",41,"Hwy 27",3,"young",26.537067,"subtropical",90
 "42_young","Hwy 27_3_young",42,"Hwy 27",3,"young",26.537067,"subtropical",107.5
 "43_young","Dalton_8_young",43,"Dalton",8,"young",34.670883,"temperate",127.5
@@ -60,9 +54,7 @@
 "62_young","Hwy 27_3_young",62,"Hwy 27",3,"young",26.537067,"subtropical",190
 "63_young","With_48_young",63,"With",48,"young",28.60387,"subtropical",142.5
 "64_young","Caesar_5_young",64,"Caesar",5,"young",39.4887,"north temperate",135
-"65_young","Whitehall_2_young",65,"Whitehall",2,"young",33.895767,"temperate",115
 "66_young","Whitehall_3_young",66,"Whitehall",3,"young",33.895767,"temperate",107.5
-"67_young","Gav_1_young",67,"Gav",1,"young",8.72883,"tropical",137.5
 "68_young","OCM_18_young",68,"OCM",18,"young",32.34554,"temperate",122.5
 "69_young","Whitehall_3_young",69,"Whitehall",3,"young",33.895767,"temperate",127.5
 "70_young","Center Hill_2_young",70,"Center Hill",2,"young",36.06935,"temperate",100
@@ -116,7 +108,6 @@
 "121_young","Gav_23_young",121,"Gav",23,"young",8.72883,"tropical",172.5
 "122_young","Caesar_9_young",122,"Caesar",9,"young",39.4887,"north temperate",165
 "123_young","McPhee_1_young",123,"McPhee",1,"young",40.971333,"north temperate",137.5
-"124_young","TT_5_young",124,"TT",5,"young",30.673889,"temperate",105
 "125_young","OCM_5_young",125,"OCM",5,"young",32.34554,"temperate",137.5
 "126_young","KBS_9_young",126,"KBS",9,"young",42.399933,"north temperate",117.5
 "128_young","Dalton_9_young",128,"Dalton",9,"young",34.670883,"temperate",135
@@ -133,7 +124,6 @@
 "139_young","Gav_2_young",139,"Gav",2,"young",8.72883,"tropical",105
 "141_young","Dalton_4_young",141,"Dalton",4,"young",34.670883,"temperate",102.5
 "142_young","Caesar_7_young",142,"Caesar",7,"young",39.4887,"north temperate",105
-"143_young","Tiri_12_young",143,"Tiri",12,"young",10.41549,"tropical",120
 "144_young","OCM_10_young",144,"OCM",10,"young",32.34554,"temperate",117.5
 "145_young","Gav_2_young",145,"Gav",2,"young",8.72883,"tropical",162.5
 "146_young","With_42_young",146,"With",42,"young",28.60387,"subtropical",115
@@ -174,13 +164,11 @@
 "182_young","Hwy 27_6_young",182,"Hwy 27",6,"young",26.537067,"subtropical",90
 "183_young","Tiri_2_young",183,"Tiri",2,"young",10.41549,"tropical",105
 "184_young","Bella_21_young",184,"Bella",21,"young",8.79,"tropical",95
-"185_young","Gav_1_young",185,"Gav",1,"young",8.72883,"tropical",150
 "186_young","With_42_young",186,"With",42,"young",28.60387,"subtropical",115
 "187_young","Caesar_7_young",187,"Caesar",7,"young",39.4887,"north temperate",115
 "188_young","Gen Butler_1_young",188,"Gen Butler",1,"young",38.675517,"temperate",95
 "189_young","MacArthur_22_young",189,"MacArthur",22,"young",27.177583,"subtropical",147.5
 "190_young","HV_7_young",190,"HV",7,"young",37.1818,"temperate",140
-"191_young","KBS_8_young",191,"KBS",8,"young",42.399933,"north temperate",110
 "192_young","With_43_young",192,"With",43,"young",28.60387,"subtropical",162.5
 "193_young","Bella_4_young",193,"Bella",4,"young",8.79,"tropical",142.5
 "194_young","Center Hill_1_young",194,"Center Hill",1,"young",36.06935,"temperate",165
@@ -216,7 +204,6 @@
 "226_young","HV_7_young",226,"HV",7,"young",37.1818,"temperate",90
 "227_young","McPhee_6_young",227,"McPhee",6,"young",40.971333,"north temperate",97.5
 "228_young","McPhee_6_young",228,"McPhee",6,"young",40.971333,"north temperate",115
-"229_young","KBS_8_young",229,"KBS",8,"young",42.399933,"north temperate",90
 "230_young","Whitehall_3_young",230,"Whitehall",3,"young",33.895767,"temperate",127.5
 "231_young","Dalton_4_young",231,"Dalton",4,"young",34.670883,"temperate",132.5
 "233_young","KBS_5_young",233,"KBS",5,"young",42.399933,"north temperate",110
@@ -244,19 +231,16 @@
 "255_young","With_46_young",255,"With",46,"young",28.60387,"subtropical",110
 "257_young","HV_13_young",257,"HV",13,"young",37.1818,"temperate",110
 "258_young","Center Hill_3_young",258,"Center Hill",3,"young",36.06935,"temperate",102.5
-"259_young","TT_5_young",259,"TT",5,"young",30.673889,"temperate",115
 "1_mature","Gen Butler_2_mature",1,"Gen Butler",2,"mature",38.675517,"temperate",192.5
 "2_mature","McPhee_8_mature",2,"McPhee",8,"mature",40.971333,"north temperate",365
 "3_mature","Whitehall_16_mature",3,"Whitehall",16,"mature",33.895767,"temperate",260
 "4_mature","Dalton_2_mature",4,"Dalton",2,"mature",34.670883,"temperate",180
-"5_mature","Tiri_12_mature",5,"Tiri",12,"mature",10.41549,"tropical",190
 "6_mature","McPhee_7_mature",6,"McPhee",7,"mature",40.971333,"north temperate",217.5
 "7_mature","Whitehall_16_mature",7,"Whitehall",16,"mature",33.895767,"temperate",347.5
 "8_mature","Caesar_3_mature",8,"Caesar",3,"mature",39.4887,"north temperate",322.5
 "9_mature","OCM_18_mature",9,"OCM",18,"mature",32.34554,"temperate",237.5
 "10_mature","Hwy 27_1_mature",10,"Hwy 27",1,"mature",26.537067,"subtropical",320
 "11_mature","Dalton_9_mature",11,"Dalton",9,"mature",34.670883,"temperate",230
-"12_mature","Tiri_12_mature",12,"Tiri",12,"mature",10.41549,"tropical",292.5
 "13_mature","With_42_mature",13,"With",42,"mature",28.60387,"subtropical",310
 "14_mature","HV_5_mature",14,"HV",5,"mature",37.1818,"temperate",282.5
 "15_mature","Center Hill_1_mature",15,"Center Hill",1,"mature",36.06935,"temperate",290
@@ -274,15 +258,11 @@
 "28_mature","Gav_23_mature",28,"Gav",23,"mature",8.72883,"tropical",245
 "29_mature","Dalton_8_mature",29,"Dalton",8,"mature",34.670883,"temperate",222.5
 "30_mature","TT_25_mature",30,"TT",25,"mature",30.673889,"temperate",267.5
-"31_mature","KBS_8_mature",31,"KBS",8,"mature",42.399933,"north temperate",247.5
 "32_mature","Gen Butler_9_mature",32,"Gen Butler",9,"mature",38.675517,"temperate",215
 "33_mature","McPhee_6_mature",33,"McPhee",6,"mature",40.971333,"north temperate",200
-"34_mature","TT_5_mature",34,"TT",5,"mature",30.673889,"temperate",235
-"36_mature","Whitehall_2_mature",36,"Whitehall",2,"mature",33.895767,"temperate",267.5
 "37_mature","Whitehall_2_mature",37,"Whitehall",2,"mature",33.895767,"temperate",207.5
 "38_mature","Bella_21_mature",38,"Bella",21,"mature",8.79,"tropical",257.5
 "39_mature","OCM_16_mature",39,"OCM",16,"mature",32.34554,"temperate",195
-"40_mature","Gav_1_mature",40,"Gav",1,"mature",8.72883,"tropical",192.5
 "41_mature","Hwy 27_3_mature",41,"Hwy 27",3,"mature",26.537067,"subtropical",205
 "42_mature","Hwy 27_3_mature",42,"Hwy 27",3,"mature",26.537067,"subtropical",315
 "43_mature","Dalton_8_mature",43,"Dalton",8,"mature",34.670883,"temperate",202.5
@@ -306,9 +286,7 @@
 "62_mature","Hwy 27_3_mature",62,"Hwy 27",3,"mature",26.537067,"subtropical",322.5
 "63_mature","With_48_mature",63,"With",48,"mature",28.60387,"subtropical",325
 "64_mature","Caesar_5_mature",64,"Caesar",5,"mature",39.4887,"north temperate",205
-"65_mature","Whitehall_2_mature",65,"Whitehall",2,"mature",33.895767,"temperate",220
 "66_mature","Whitehall_3_mature",66,"Whitehall",3,"mature",33.895767,"temperate",230
-"67_mature","Gav_1_mature",67,"Gav",1,"mature",8.72883,"tropical",270
 "68_mature","OCM_18_mature",68,"OCM",18,"mature",32.34554,"temperate",180
 "69_mature","Whitehall_3_mature",69,"Whitehall",3,"mature",33.895767,"temperate",232.5
 "70_mature","Center Hill_2_mature",70,"Center Hill",2,"mature",36.06935,"temperate",200
@@ -362,7 +340,6 @@
 "121_mature","Gav_23_mature",121,"Gav",23,"mature",8.72883,"tropical",252.5
 "122_mature","Caesar_9_mature",122,"Caesar",9,"mature",39.4887,"north temperate",290
 "123_mature","McPhee_1_mature",123,"McPhee",1,"mature",40.971333,"north temperate",237.5
-"124_mature","TT_5_mature",124,"TT",5,"mature",30.673889,"temperate",185
 "125_mature","OCM_5_mature",125,"OCM",5,"mature",32.34554,"temperate",240
 "126_mature","KBS_9_mature",126,"KBS",9,"mature",42.399933,"north temperate",252.5
 "128_mature","Dalton_9_mature",128,"Dalton",9,"mature",34.670883,"temperate",205
@@ -379,7 +356,6 @@
 "139_mature","Gav_2_mature",139,"Gav",2,"mature",8.72883,"tropical",257.5
 "141_mature","Dalton_4_mature",141,"Dalton",4,"mature",34.670883,"temperate",187.5
 "142_mature","Caesar_7_mature",142,"Caesar",7,"mature",39.4887,"north temperate",275
-"143_mature","Tiri_12_mature",143,"Tiri",12,"mature",10.41549,"tropical",275
 "144_mature","OCM_10_mature",144,"OCM",10,"mature",32.34554,"temperate",240
 "145_mature","Gav_2_mature",145,"Gav",2,"mature",8.72883,"tropical",230
 "146_mature","With_42_mature",146,"With",42,"mature",28.60387,"subtropical",252.5
@@ -420,13 +396,11 @@
 "182_mature","Hwy 27_6_mature",182,"Hwy 27",6,"mature",26.537067,"subtropical",305
 "183_mature","Tiri_2_mature",183,"Tiri",2,"mature",10.41549,"tropical",242.5
 "184_mature","Bella_21_mature",184,"Bella",21,"mature",8.79,"tropical",300
-"185_mature","Gav_1_mature",185,"Gav",1,"mature",8.72883,"tropical",292.5
 "186_mature","With_42_mature",186,"With",42,"mature",28.60387,"subtropical",255
 "187_mature","Caesar_7_mature",187,"Caesar",7,"mature",39.4887,"north temperate",215
 "188_mature","Gen Butler_1_mature",188,"Gen Butler",1,"mature",38.675517,"temperate",185
 "189_mature","MacArthur_22_mature",189,"MacArthur",22,"mature",27.177583,"subtropical",197.5
 "190_mature","HV_7_mature",190,"HV",7,"mature",37.1818,"temperate",310
-"191_mature","KBS_8_mature",191,"KBS",8,"mature",42.399933,"north temperate",207.5
 "192_mature","With_43_mature",192,"With",43,"mature",28.60387,"subtropical",320
 "193_mature","Bella_4_mature",193,"Bella",4,"mature",8.79,"tropical",272.5
 "194_mature","Center Hill_1_mature",194,"Center Hill",1,"mature",36.06935,"temperate",295
@@ -462,7 +436,6 @@
 "226_mature","HV_7_mature",226,"HV",7,"mature",37.1818,"temperate",235
 "227_mature","McPhee_6_mature",227,"McPhee",6,"mature",40.971333,"north temperate",265
 "228_mature","McPhee_6_mature",228,"McPhee",6,"mature",40.971333,"north temperate",307.5
-"229_mature","KBS_8_mature",229,"KBS",8,"mature",42.399933,"north temperate",285
 "230_mature","Whitehall_3_mature",230,"Whitehall",3,"mature",33.895767,"temperate",290
 "231_mature","Dalton_4_mature",231,"Dalton",4,"mature",34.670883,"temperate",215
 "233_mature","KBS_5_mature",233,"KBS",5,"mature",42.399933,"north temperate",240
@@ -490,4 +463,3 @@
 "255_mature","With_46_mature",255,"With",46,"mature",28.60387,"subtropical",310
 "257_mature","HV_13_mature",257,"HV",13,"mature",37.1818,"temperate",307.5
 "258_mature","Center Hill_3_mature",258,"Center Hill",3,"mature",36.06935,"temperate",217.5
-"259_mature","TT_5_mature",259,"TT",5,"mature",30.673889,"temperate",200

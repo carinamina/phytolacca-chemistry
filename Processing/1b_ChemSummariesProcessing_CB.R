@@ -80,7 +80,15 @@ scores$abund <- NULL
 
 write.csv(scores[c(2,1,3:ncol(scores))], file = "Processing/1b_out_ChemSummaries_Indiv.csv", row.names = FALSE )
 
+#For each NMDS axis, add a variable I'll call "ontogenetic similarity" or onto.1, onto.2 etc which is the difference in NMDS scores for young and mature leaves on the same plant (absolute value, because NMDS axes are arbitrary)
+length(unique(scores$pos))
+plant <- scores %>% select(pos,age,NMDS1,NMDS2,NMDS3,NMDS4) %>% reshape(timevar = "age", idvar = "pos", direction = "wide") %>% mutate(onto.1 = abs(NMDS1.mature - NMDS1.young), onto.2 = abs(NMDS2.mature - NMDS2.young), onto.3 = abs(NMDS3.mature - NMDS3.young), onto.4 = abs(NMDS4.mature - NMDS4.young)) %>% right_join(distinct(select(scores,c(pos,pop,line,lat,region))),by="pos") %>% select(pos, pop, line,lat,region, onto.1, onto.2, onto.3, onto.4)
+
+write.csv(plant, "Processing/1b_out_OntoSimilarity_Indiv.csv", row.names = FALSE)
+
+
 #some visualization for fun
 qplot(lat, log.abund, data=scores, colour=age)
+qplot(lat, onto.4, data=plant)
 
 rm(list=ls())

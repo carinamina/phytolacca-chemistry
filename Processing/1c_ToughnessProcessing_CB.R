@@ -1,11 +1,12 @@
 #toughness wrangling
 library(tidyverse)
-raw = read.csv("Raw/20171005_ToughnessAge_RAW.csv", header=TRUE)
+raw = read.csv("Raw/20171005_ToughnessAge_RAW.csv", header=TRUE) %>% mutate(young = (young.1+young.2)/2, mature = (mature.1+mature.2)/2) %>% select(-c(young.1,young.2,mature.1,mature.2))
 str(raw)
-raw$pop <- plyr::revalue(raw$pop, c("Valverde" = "Tiri","Tiri Bulk" = "Tiri", "Hwy 27 bulk" = "Hwy 27", "TT Bulk" = "TT", "Dalton Bulk" = "Dalton", "Gav Bulk" = "Gav", "KBS Bulk" = "KBS", "Whitehall Bulk" = "Whitehall")) 
 
-raw$young = (raw$young.1+raw$young.2)/2
-raw$mature = (raw$mature.1+raw$mature.2)/2
+#remove some lines where we have both bulk and non-bulk from the same maternal line, I don't really think these are a good idea
+raw <- filter(raw, !pop %in% c("Tiri Bulk", "KBS Bulk","TT Bulk","Whitehall Bulk","Gav Bulk"))
+#combine Valverde with Tiri (nearby) and remove bulk label from two others. I am a little nervous about these bulked plants because I don't remember exactly how it was done--did we just use fruits that we found on the plants? How did we know who the father was? But at worst, we would be 
+raw$pop <- plyr::revalue(raw$pop, c("Valverde" = "Tiri", "Hwy 27 bulk" = "Hwy 27", "Dalton Bulk" = "Dalton")) 
 
 lats <- read.csv("Raw/LatsPopsKey.csv", header = TRUE)
 
