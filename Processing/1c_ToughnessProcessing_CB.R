@@ -5,7 +5,7 @@ str(raw)
 
 #remove some lines where we have both bulk and non-bulk from the same maternal line, I don't really think these are a good idea
 raw <- filter(raw, !pop %in% c("Tiri Bulk", "KBS Bulk","TT Bulk","Whitehall Bulk","Gav Bulk"))
-#combine Valverde with Tiri (nearby) and remove bulk label from two others. I am a little nervous about these bulked plants because I don't remember exactly how it was done--did we just use fruits that we found on the plants? How did we know who the father was? But at worst, we would be 
+#combine Valverde with Tiri (nearby) and remove bulk label from two others. I am a little nervous about these bulked plants because I don't remember exactly how it was done--did we just use fruits that we found on the plants? How did we know who the father was? But at worst, if we used fruits without knowing whether they were crossed by stray wasps, we would be eroding population differentiation and adding noise to the data.
 raw$pop <- plyr::revalue(raw$pop, c("Valverde" = "Tiri", "Hwy 27 bulk" = "Hwy 27", "Dalton Bulk" = "Dalton")) 
 
 lats <- read.csv("Raw/LatsPopsKey.csv", header = TRUE)

@@ -38,20 +38,20 @@ key <- left_join(key, leaf[c("pos_age", "mass_mg")], by = "pos_age")
 sum(is.na(key$mass_mg))
 rm(leaf)
 
-#use only constitutive defense samples. Count how many plants per region and population
+#use only constitutive defense samples. Count how many samples per population
 con_key <- key %>% filter(defense == "con") %>% select(-defense)
-con_key %>% count(region)
 con_key %>% count(pop)
 
 # cleaning up population names, adding latitude and region
-#some of the bulk lines have the same number as non-bulk lines from those populations, so append a B to make them unique
-key$line <- ifelse(grepl("Bulk",key$pop, fixed=TRUE) | grepl("bulk",key$pop, fixed=TRUE), paste(key$line, "B",sep=""),key$line)
-#Remove the bulk label so we know which population is which. Would be good to check someday these are no different
-key$pop <- plyr::revalue(key$pop, c("Val" = "Tiri","Tiri Bulk" = "Tiri", "Hwy 27 bulk" = "Hwy 27", "TT Bulk" = "TT", "Dalton Bulk" = "Dalton", "Gav Bulk" = "Gav", "Whitehall Bulk" = "Whitehall","KBS Bulk" = "KBS")) 
-str(key)
+#some of the bulk lines have the same number as non-bulk lines from those populations, so I will remove them as pseudoreplicates. since not every line is represented in the constitutive datasheet, this might not be a problem. These are the ones from the toughness dataset "Tiri 12", "KBS 8","TT 5","Whitehall 2","Gav 1". Only Gav and TT have both the bulk and non-bulk
+sort(unique(paste(con_key$pop,con_key$line,sep="_")))
+con_key <- filter(con_key, !pop %in% c("TT Bulk","Gav Bulk"))
+#combine Valverde with Tiri (nearby) and remove bulk label from three others. I am a little nervous about these bulked plants because I don't remember exactly how it was done--did we just use fruits that we found on the plants? How did we know who the father was? But at worst, if we used fruits without knowing whether they were crossed by stray wasps, we would be eroding population differentiation and adding noise to the data.
+con_key$pop <- plyr::revalue(con_key$pop, c("Val" = "Tiri","Tiri Bulk" = "Tiri", "Hwy 27 bulk" = "Hwy 27", "Dalton Bulk" = "Dalton"))
+str(con_key)
 #get latitude for each population
 lat = read.csv("Raw/LatsPopsKey.csv", header = TRUE)
-key <- left_join(key, lat, by = "pop")
+con_key <- left_join(con_key, lat, by = "pop")
 rm(lat)
 
 #add blanks back
@@ -125,7 +125,7 @@ abund <- left_join(abund, con_key[c("LCMS_ID","age","pop","region","lat")], by =
 
 #how many compounds are highest in the blanks?
 sum(abund$LCMS_ID_max == "XS2_072718_001" | abund$LCMS_ID_max == "XS2_072718_321")
-#128! That's something. List them out:
+#144! That's something. List them out:
 (highestblanks <- abund[which(abund$LCMS_ID_max == "XS2_072718_001" | abund$LCMS_ID_max == "XS2_072718_321"),c("compound")])
 #interesting, many are quite high-retention time. Do I remember correctly that these are lipids and they can gradually gunk up the column?
 
