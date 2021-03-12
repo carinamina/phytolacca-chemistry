@@ -29,18 +29,6 @@ rm(sample.df)
 blanks <- key %>% filter(label == "blank")
 key <- key %>% filter(label != "blank")
 
-
-# cleaning up population names, adding latitude and region
-#some of the bulk lines have the same number as non-bulk lines from those populations, so append a B to make them unique
-key$line <- ifelse(grepl("Bulk",key$pop, fixed=TRUE) | grepl("bulk",key$pop, fixed=TRUE), paste(key$line, "B",sep=""),key$line)
-#Remove the bulk label so we know which population is which. Would be good to check someday these are no different
-key$pop <- plyr::revalue(key$pop, c("Val" = "Tiri","Tiri Bulk" = "Tiri", "Hwy 27 bulk" = "Hwy 27", "TT Bulk" = "TT", "Dalton Bulk" = "Dalton", "Gav Bulk" = "Gav", "Whitehall Bulk" = "Whitehall","KBS Bulk" = "KBS")) 
-str(key)
-#get latitude for each population
-lat = read.csv("Raw/LatsPopsKey.csv", header = TRUE)
-key <- left_join(key, lat, by = "pop")
-rm(lat)
-
 #add data on leaf mass
 leaf <- read.csv("Raw/2017_LCMS_LeafMass_RAW.csv", header=TRUE)
 leaf$pos_age <- as.factor(paste(leaf$pos, toupper(substr(leaf$age, 1, 1)), sep = "_"))
@@ -54,6 +42,17 @@ rm(leaf)
 con_key <- key %>% filter(defense == "con") %>% select(-defense)
 con_key %>% count(region)
 con_key %>% count(pop)
+
+# cleaning up population names, adding latitude and region
+#some of the bulk lines have the same number as non-bulk lines from those populations, so append a B to make them unique
+key$line <- ifelse(grepl("Bulk",key$pop, fixed=TRUE) | grepl("bulk",key$pop, fixed=TRUE), paste(key$line, "B",sep=""),key$line)
+#Remove the bulk label so we know which population is which. Would be good to check someday these are no different
+key$pop <- plyr::revalue(key$pop, c("Val" = "Tiri","Tiri Bulk" = "Tiri", "Hwy 27 bulk" = "Hwy 27", "TT Bulk" = "TT", "Dalton Bulk" = "Dalton", "Gav Bulk" = "Gav", "Whitehall Bulk" = "Whitehall","KBS Bulk" = "KBS")) 
+str(key)
+#get latitude for each population
+lat = read.csv("Raw/LatsPopsKey.csv", header = TRUE)
+key <- left_join(key, lat, by = "pop")
+rm(lat)
 
 #add blanks back
 con_key <- add_row(con_key, LCMS_ID = blanks[,1], label = blanks[,2])
