@@ -50,8 +50,16 @@ names(feat_plot) <- c("features","R^2","SE")
 #python /mnt/home/azodichr/GitHub/ML-Pipeline/ML_regression.py -df mature_20180507 -alg RF -y_name conv -gs T -cv 5 -n 100 -tag chem -feat chem_list.txt
 #python3.8 ...ML_regression.py -df mature_20180507 -alg RF -y_name conv -gs T -cv 5 -n 100 -tag chem -feat chem_list.txt
 
-# ??? !!! date confusion
-system("python3.8 ./chri/ML_regression.py -df ./data_out/mature_20180507 -alg RF -y_name conv -gs T -cv 2 -n 3 -tag chem -feat ./data_out/chem_list.txt")
+chem_palat <- read.csv("Processing/2_out_AllTraits.csv",header=T)
+write(colnames(chem_palat[24:ncol(chem_palat)]),"Analysis/chem_list.txt")
+other_traits <- c("pop","age","lat","region","tough","percent_N","percent_C","C_N","log.abund","richness","diversity")
+write(c(other_traits,colnames(chem_palat[24:ncol(chem_palat)])),"Analysis/all_traits_list.txt")
+
+area_chem_only <- read.table("Processing/2_out_AllTraitsTab.csv",sep="\t")
+
+write.table(drop_na(), "Processing/2_out_AllTraitsTab.csv",row.names=F,sep="\t")
+
+system("python3.8 ./RF_python_scripts/ML_regression.py -df ./Processing/2_out_AllTraitsTab.csv -alg RF -y_name area -gs T -cv 2 -n 3 -tag chem -feat ./Analysis/chem_list_a.txt")
 #system("python3.8 ./chri/ML_regression.py -df ./data_out/mature_20180531 -alg RF -y_name conv -gs T -cv 2 -n 3 -tag chem -feat ./data_out/chem_list.txt")
 
 feat_plot <- rbind(feat_plot,imp_plot("mature_20180507_RF_chem_imp","mature_20180507_RF_chem_results.txt"))
