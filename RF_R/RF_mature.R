@@ -67,6 +67,7 @@ system("python3.9 ./RF_python_scripts/ML_regression.py -df ./RF_R/RF_mature_tab.
 
 #########################
 # visualizing results and removing features for next round
+#########################
 # For each step, need to change 7 things: the inputs for feat_plot (2) and new_list (3) and system (2). The larger, previous number goes in the first three slots, and the smaller new number goes in the last 4.
 
 #this adds results to a dataframe called feat_plot and shows a plot of the importance scores
@@ -170,78 +171,38 @@ system("python3.9 ./RF_python_scripts/ML_regression.py -df ./RF_R/RF_mature_tab.
 new_list("RF_R/mature_4_imp",3,"RF_R/mature_3_features")
 system("python3.9 ./RF_python_scripts/ML_regression.py -df ./RF_R/RF_mature_tab.csv -alg RF -y_name area -gs T -cv 5 -n 100 -save ./RF_R/mature_3 -feat ./RF_R/mature_3_features.txt")
 
-# #special export of the first importance plot
-# # imp <- read.csv("mature_20180507_RF_chem_imp", sep = "\t", header=FALSE)
-# # setEPS()
-# # postscript("20180509_mature_imp.eps")
-# # par(mar=c(5,5,4,2)) 
-# # plot(V2~rownames(imp), data = imp, xlab = "Feature rank", ylab = "Feature importance score (Gini index)", main = "A) Mature-leaf palatability ~ 110 peaks", cex.lab=1.75, cex.axis=1.75, cex.main=1.75, cex.sub=1.75)
-# # dev.off()
-# # rm(imp)
+(feat_plot <- rbind(feat_plot,imp_plot("RF_R/mature_3_imp","RF_R/mature_3_results.txt")))
+
+# # export an importance plot of interest
+imp <- read.csv("RF_R/mature_63_imp", sep = "\t", header=T)
+setEPS()
+postscript("FiguresTables/FigS3A_mature_imp.eps")
+par(mar=c(5,5,4,2))
+plot(mean_imp~rownames(imp), data = imp, xlab = "Feature rank", ylab = "Feature importance score (Gini index)", main = "A) Mature-leaf palatability ~ 63 features", cex.lab=1.75, cex.axis=1.75, cex.main=1.75, cex.sub=1.75)
+dev.off()
+rm(imp)
+
+
+#########################
+# visualize how R^2 changes with the number of features
+#########################
+
+feat_plot
+plot(`R^2` ~ features, data = feat_plot, xlab = "Number of features", ylab = expression("Model "~R^2), main = "B) Feature selection", cex.lab=1.75, cex.axis=1.75, cex.main=1.75, cex.sub=1.75)
+
+#export plot
+setEPS()
+postscript("FiguresTables/FigS3B_mature_R2.eps")
+par(mar=c(5,5,4,2))
+plot(`R^2` ~ features, data = feat_plot, xlab = "Number of features", ylab = expression("Model "~R^2), main = "B) Feature selection", cex.lab=1.75, cex.axis=1.75, cex.main=1.75, cex.sub=1.75)
+dev.off()
+
+#########################
+# run a "final final" model that uses the feature list from the best model but runs it on a larger dataset
+#########################
+
+
 # 
-# feat_plot <- rbind(feat_plot,imp_plot("mature_20180507_RF_chem2_imp","mature_20180507_RF_chem2_results.txt"))
-# #remove 22 again (keep 66)
-# new_list("mature_20180507_RF_chem2_imp",66,"mature_chem3")
-# 
-# feat_plot <- rbind(feat_plot,imp_plot("mature_20180507_RF_chem3_imp","mature_20180507_RF_chem3_results.txt"))
-# #remove 22 again (keep 44)
-# new_list("mature_20180507_RF_chem3_imp",44,"mature_chem4")
-# 
-# feat_plot <- rbind(feat_plot,imp_plot("mature_20180507_RF_chem4_imp","mature_20180507_RF_chem4_results.txt"))
-# #remove 22 again (keep 22)
-# new_list("mature_20180507_RF_chem4_imp",22,"mature_chem5")
-# 
-# feat_plot <- rbind(feat_plot,imp_plot("mature_20180507_RF_chem5_imp","mature_20180507_RF_chem5_results.txt"))
-# #keep half, 11. I tried 6 the first time and it did improve R^2 a bit, but it declined with 5 and 4 so I wondered whether I missed a peak.
-# new_list("mature_20180507_RF_chem5_imp",11,"mature_chem6")
-# 
-# feat_plot <- rbind(feat_plot,imp_plot("mature_20180507_RF_chem6_imp","mature_20180507_RF_chem6_results.txt"))
-# #keep 9
-# new_list("mature_20180507_RF_chem6_imp",9,"mature_chem7")
-# 
-# feat_plot <- rbind(feat_plot,imp_plot("mature_20180507_RF_chem7_imp","mature_20180507_RF_chem7_results.txt"))
-# #keep 8
-# new_list("mature_20180507_RF_chem7_imp",8,"mature_chem8")
-# 
-# feat_plot <- rbind(feat_plot,imp_plot("mature_20180507_RF_chem8_imp","mature_20180507_RF_chem8_results.txt"))
-# #keep 7
-# new_list("mature_20180507_RF_chem8_imp",7,"mature_chem9")
-# 
-# feat_plot <- rbind(feat_plot,imp_plot("mature_20180507_RF_chem9_imp","mature_20180507_RF_chem9_results.txt"))
-# #keep 6
-# new_list("mature_20180507_RF_chem9_imp",6,"mature_chem10")
-# 
-# feat_plot <- rbind(feat_plot,imp_plot("mature_20180507_RF_chem10_imp","mature_20180507_RF_chem10_results.txt"))
-# #keep 5
-# new_list("mature_20180507_RF_chem10_imp",5,"mature_chem11")
-# 
-# feat_plot <- rbind(feat_plot,imp_plot("mature_20180507_RF_chem11_imp","mature_20180507_RF_chem11_results.txt"))
-# #keep 4
-# new_list("mature_20180507_RF_chem11_imp",4,"mature_chem12")
-# 
-# feat_plot <- rbind(feat_plot,imp_plot("mature_20180507_RF_chem12_imp","mature_20180507_RF_chem12_results.txt"))
-# #keep 3
-# new_list("mature_20180507_RF_chem12_imp",3,"mature_chem13")
-# 
-# feat_plot <- rbind(feat_plot,imp_plot("mature_20180507_RF_chem13_imp","mature_20180507_RF_chem13_results.txt"))
-# #keep 2
-# new_list("mature_20180507_RF_chem13_imp",2,"mature_chem14")
-# 
-# feat_plot <- rbind(feat_plot,imp_plot("mature_20180507_RF_chem14_imp","mature_20180507_RF_chem14_results.txt"))
-# #keep 2
-# new_list("mature_20180507_RF_chem14_imp",1,"mature_chem15")
-# 
-# feat_plot <- rbind(feat_plot,imp_plot("mature_20180507_RF_chem15_imp","mature_20180507_RF_chem15_results.txt"))
-# 
-# feat_plot
-# # plot(`R^2` ~ features, data = feat_plot, xlab = "Number of features", ylab = expression("Model "~R^2), main = "B) Feature selection", cex.lab=1.75, cex.axis=1.75, cex.main=1.75, cex.sub=1.75)
-# # setEPS()
-# # postscript("20180509_mature_chem_R.eps")
-# # par(mar=c(5,5,4,2))
-# # plot(`R^2` ~ features, data = feat_plot, xlab = "Number of features", ylab = expression("Model "~R^2), main = "B) Feature selection", cex.lab=1.75, cex.axis=1.75, cex.main=1.75, cex.sub=1.75)
-# # dev.off()
-# 
-# #the winner is 3 compounds! wow! Model #13
 # 
 # #actual v predicted plot for final model
 # # setEPS()
