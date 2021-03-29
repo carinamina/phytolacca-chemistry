@@ -175,7 +175,7 @@ system("python3.9 ./RF_python_scripts/ML_regression.py -df ./RF_R/RF_young_tab.c
 # # export an importance plot of interest
 imp <- read.csv("RF_R/young_63_imp", sep = "\t", header=T)
 setEPS()
-postscript("FiguresTables/FigS3A_young_imp.eps")
+postscript("FiguresTables/FigS2A_young_imp.eps")
 par(mar=c(5,5,4,2))
 plot(mean_imp~rownames(imp), data = imp, xlab = "Feature rank", ylab = "Feature importance score (Gini index)", main = "A) young-leaf palatability ~ 63 features", cex.lab=1.75, cex.axis=1.75, cex.main=1.75, cex.sub=1.75)
 dev.off()
@@ -191,53 +191,20 @@ plot(`R^2` ~ features, data = feat_plot, xlab = "Number of features", ylab = exp
 
 #export plot
 setEPS()
-postscript("FiguresTables/FigS3B_young_R2.eps")
+postscript("FiguresTables/FigS2B_young_R2.eps")
 par(mar=c(5,5,4,2))
 plot(`R^2` ~ features, data = feat_plot, xlab = "Number of features", ylab = expression("Model "~R^2), main = "B) Feature selection", cex.lab=1.75, cex.axis=1.75, cex.main=1.75, cex.sub=1.75)
 dev.off()
 
-#########################
-# run a "final final" model that uses the feature list from the best model but runs it on a larger dataset. also compare models with and without pop.
-#########################
 
-#use feature list from model with 21 features. Might go back and explore the space between 63 and 16 better, but for now this is the best model.
+#I checked, but it only increases the dataset by 1 line to try and use a larger dataset without toughness and carbon. Same for mature.
 
-feat_list <- read.csv("RF_R/young_21_features.txt", header=F)$V1
-
-bigger <- read.csv("Processing/2_out_AllTraits.csv",header=T) %>% filter(age == "young") %>% select(c(pop,line,area,all_of(feat_list)))
-
-#change pop to dummy variable. not sure why I had trouble doing this in the same line as initially creating young
-bigger <- bind_cols(bind_cols(bigger[2:3],as.data.frame(to.dummy(bigger$pop, "pop"))),bigger[4:ncol(bigger)]) %>% select(-pop)
-#check that all lines are unique (this is the unique ID now)
-length(unique(bigger$line)) == nrow(bigger)
-#check where the NAs are and how many samples are lost
-sum(is.na(bigger$"X3.91_1011.4733m.z"))
-nrow(bigger) - nrow(na.omit(bigger))
-#6 area, 3 for LC/MS stuff. 9 rows are lost when NAs are removed...so we gain one datapoint compared to the 74 lines used for all traits. This is definitely not worth the hassle of explaining that we used a "bigger" dataset for the "final" model, but let's see what happens for young before going back and getting rid of this step. The pop thing needs to happen anyway.
-
-
-
-
-
-
-
-
-
-#write the dataset as tab-delimited for python to use, removing NAs
-#write.table(na.omit(bigger), "RF_R/RF_bigger_tab.csv",row.names=F,sep="\t")
-
-# 
-# 
 # #actual v predicted plot for final model
-# # setEPS()
-# # postscript("20180509_young_chem_scores.eps")
-# # par(mar=c(5,5,4,2))
-plot(Y ~ Mean, data = read.csv("RF_R/young_21_scores.txt", sep = "\t", header=TRUE), xlab = "Predicted values", ylab = "Actual values", main = "C) Fit of best model", cex.lab=1.75, cex.axis=1.75, cex.main=1.75, cex.sub=1.75)
-# # dev.off()
-# 
-# rm(feat_plot)
-# ```
-# 
+ setEPS()
+ postscript("FiguresTables/FigS2C_young_fit.eps")
+ par(mar=c(5,5,4,2))
+plot(Y ~ Mean, data = read.csv("RF_R/young_48_scores.txt", sep = "\t", header=TRUE), xlab = "Predicted values", ylab = "Actual values", main = "C) Fit of best model", cex.lab=1.75, cex.axis=1.75, cex.main=1.75, cex.sub=1.75)
+ dev.off()
 # 
 # Feature lists for "pop + chem" model that uses both population and chemistry 
 # ```{r}
