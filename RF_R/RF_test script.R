@@ -1,16 +1,4 @@
-##---
-##title: "RF model selection"
-##author: "Carina Baskett"
-##date: "5/9/2018"
-##output: html_document
-##---
-##model selection for RF analysis of re-aligned chemistry data (the best!)
-##started May 8, 2018
-
-##```{r setup, include=FALSE}
-##knitr::opts_chunk$set(echo = FALSE)
 library(ggplot2)
-#setwd("/Volumes/baskettc/Documents/")
 #will plot sorted importance scores and then output a vector with the number of features, model R^2, and SE of R^2
 imp_plot <- function(imp_file,results_file)
 {
@@ -39,19 +27,18 @@ extract_se <- function(results_file)
   (as.numeric(as.character(results[26,1])))
 }
 
-##```
-
-##Model selection: mature leaf chemistry
-##```{r}
-
 feat_plot <- data.frame(matrix(NA, nrow = 1, ncol = 3))
 names(feat_plot) <- c("features","R^2","SE")
 
-#python /mnt/home/azodichr/GitHub/ML-Pipeline/ML_regression.py -df mature_20180507 -alg RF -y_name conv -gs T -cv 5 -n 100 -tag chem -feat chem_list.txt
-#python3.8 ...ML_regression.py -df mature_20180507 -alg RF -y_name conv -gs T -cv 5 -n 100 -tag chem -feat chem_list.txt
+chem_palat <- read.csv("Processing/2_out_AllTraits.csv",header=T)
+write(colnames(chem_palat[24:74]),"Analysis/test_chem_list.txt")
+#other_traits <- c("pop","age","lat","region","tough","percent_N","percent_C","C_N","log.abund","richness","diversity")
+#write(c(other_traits,colnames(chem_palat[24:ncol(chem_palat)])),"Analysis/all_traits_list.txt")
 
-# ??? !!! date confusion
-system("python3.8 ./chri/ML_regression.py -df ./data_out/mature_20180507 -alg RF -y_name conv -gs T -cv 2 -n 3 -tag chem -feat ./data_out/chem_list.txt")
+#area_chem_only <- read.table("Processing/2_out_AllTraitsTab.csv",sep="\t")
+write.table(chem_palat, "Analysis/2_out_AllTraitsTab.csv",row.names=F,sep="\t")
+
+system("python3.9 ./RF_python_scripts/ML_regression.py -df ./Analysis/2_out_AllTraitsTab.csv -alg RF -y_name area -drop_na True -gs T -cv 2 -n 3 -tag chem -feat ./Analysis/test_chem_list.txt")
 #system("python3.8 ./chri/ML_regression.py -df ./data_out/mature_20180531 -alg RF -y_name conv -gs T -cv 2 -n 3 -tag chem -feat ./data_out/chem_list.txt")
 
 feat_plot <- rbind(feat_plot,imp_plot("mature_20180507_RF_chem_imp","mature_20180507_RF_chem_results.txt"))

@@ -52,10 +52,10 @@ hist(chem.sums$diversity)
 dist <-distance(chem.mat,"bray-curtis")
 
 #scree plots
-# setEPS()
-# postscript("FiguresTables/20210316_nmds_scree.eps")
-# NMDS.scree(dist, name = "young and mature leaves")
-# dev.off()
+setEPS()
+postscript("FiguresTables/FigS1_nmds_scree.eps")
+NMDS.scree(dist, name = "young and mature leaves")
+dev.off()
 #this says you want stress to be 0.05-1 https://mb3is.megx.net/gustame/dissimilarity-based-methods/nmds
 #same here https://jonlefcheck.net/2012/10/24/nmds-tutorial-in-r/
 #4 dimensions is less than 0.1 so I'll set k=4 in metaMDS call (see exact value in a few lines)
