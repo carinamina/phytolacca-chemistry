@@ -58,7 +58,7 @@ NMDS.scree(dist, name = "young and mature leaves")
 dev.off()
 #this says you want stress to be 0.05-1 https://mb3is.megx.net/gustame/dissimilarity-based-methods/nmds
 #same here https://jonlefcheck.net/2012/10/24/nmds-tutorial-in-r/
-#4 dimensions is less than 0.1 so I'll set k=4 in metaMDS call
+#4 dimensions is less than 0.1 so I'll set k=4 in metaMDS call (see exact value in a few lines)
 
 nmds<-metaMDS(chem.mat,k=4,trymax=250,distance="bray")
 stressplot(nmds)
