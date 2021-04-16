@@ -25,12 +25,6 @@ key <- merge(key, read.csv("Raw/LatsPopsKey.csv",header=T),by="pop")
 
 all.traits <- left_join(key,all.traits,by="line_age")
 
-area_chem_only <- all.traits[,c(13,23:1939)]
-
 write.csv(all.traits, "Processing/2_out_AllTraits.csv",row.names=F)
-#write.csv(all.traits, "Processing/2_out_AllTraitsTab.csv",row.names=F,sep="\t")
-write.table(drop_na(all.traits), "Processing/2_out_AllTraitsTab.csv",row.names=F,sep="\t")
-
-write.table(drop_na(area_chem_only), "Processing/2_out_AreaChemTab.csv",row.names=F,sep="\t")
 
 rm(list=ls())

@@ -29,7 +29,7 @@ names(feat_plot) <- c("features","R^2","SE")
 # import all traits and subset to mature leaves, list factors in model
 ###########################
 #read all traits data for mature leaves, each maternal line is a row. leave out extra palatability data and NMDS
-mature <- read.csv("Processing/2_out_AllTraits.csv",header=T) %>% filter(age == "mature") %>%  select(-c(line_age,age,initial,surv,mass_surv,mass_cup,NMDS1,NMDS2,NMDS3,NMDS4))
+mature <- read.csv("Processing/2_out_AllTraits.csv",header=T) %>% filter(age == "mature") %>%  select(-c(line_age,age,initial,surv,mass_surv,mass_cup,NMDS1,NMDS2))
 #change region to dummy variable. not sure why I had trouble doing this in the same line as initially creating mature
 mature <- bind_cols(bind_cols(mature[1:12],as.data.frame(to.dummy(mature$region, "reg"))),mature[13:ncol(mature)]) %>% select(-region)
 #check that all lines are unique (this is the unique ID now)
@@ -184,7 +184,7 @@ rm(imp)
 
 
 #########################
-# visualize how R^2 changes with the number of features
+# visualize model fit: how R^2 changes with the number of features, actual vs predicted plot
 #########################
 
 feat_plot
@@ -197,54 +197,32 @@ par(mar=c(5,5,4,2))
 plot(`R^2` ~ features, data = feat_plot, xlab = "Number of features", ylab = expression("Model "~R^2), main = "B) Feature selection", cex.lab=1.75, cex.axis=1.75, cex.main=1.75, cex.sub=1.75)
 dev.off()
 
-#########################
-# run a "final final" model that uses the feature list from the best model but runs it on a larger dataset. also compare models with and without pop.
-#########################
+#I checked, but it only increases the dataset by 1 line to try and use a larger dataset without toughness and carbon. Same for young
 
-#use feature list from model with 21 features. Might go back and explore the space between 63 and 16 better, but for now this is the best model.
-
-feat_list <- read.csv("RF_R/mature_21_features.txt", header=F)$V1
-
-bigger <- read.csv("Processing/2_out_AllTraits.csv",header=T) %>% filter(age == "mature") %>% select(c(pop,line,area,all_of(feat_list)))
-
-#change pop to dummy variable. not sure why I had trouble doing this in the same line as initially creating mature
-bigger <- bind_cols(bind_cols(bigger[2:3],as.data.frame(to.dummy(bigger$pop, "pop"))),bigger[4:ncol(bigger)]) %>% select(-pop)
-#check that all lines are unique (this is the unique ID now)
-length(unique(bigger$line)) == nrow(bigger)
-#check where the NAs are and how many samples are lost
-sum(is.na(bigger$"X3.91_1011.4733m.z"))
-nrow(bigger) - nrow(na.omit(bigger))
-#6 area, 3 for LC/MS stuff. 9 rows are lost when NAs are removed...so we gain one datapoint compared to the 74 lines used for all traits. This is definitely not worth the hassle of explaining that we used a "bigger" dataset for the "final" model, but let's see what happens for young before going back and getting rid of this step. The pop thing needs to happen anyway.
-
-
-
-
-
-
-
-
-
-#write the dataset as tab-delimited for python to use, removing NAs
-#write.table(na.omit(bigger), "RF_R/RF_bigger_tab.csv",row.names=F,sep="\t")
-
-# 
-# 
-# #actual v predicted plot for final model
-# # setEPS()
-# # postscript("20180509_mature_chem_scores.eps")
-# # par(mar=c(5,5,4,2))
+# #actual v predicted plot for best model
+setEPS()
+postscript("FiguresTables/FigS3C_mature_fit.eps")
+par(mar=c(5,5,4,2))
 plot(Y ~ Mean, data = read.csv("RF_R/mature_21_scores.txt", sep = "\t", header=TRUE), xlab = "Predicted values", ylab = "Actual values", main = "C) Fit of best model", cex.lab=1.75, cex.axis=1.75, cex.main=1.75, cex.sub=1.75)
-# # dev.off()
-# 
-# rm(feat_plot)
-# ```
-# 
-# 
-# Feature lists for "pop + chem" model that uses both population and chemistry 
-# ```{r}
-# x1 <- read.csv("pop_list.txt", sep = "\t", header=FALSE)
-# x2 <- read.csv("mature_chem13.txt", sep = "\t", header=FALSE)
-# write.table(rbind(x1,x2), "mature_chem_pop.txt" , sep = "\t", row.names = FALSE, quote=FALSE, col.names=FALSE )
-# 
-# #python /mnt/home/azodichr/GitHub/ML-Pipeline/ML_regression.py -df mature_20180507 -alg RF -y_name conv -gs T -cv 5 -n 100 -tag chempop -feat mature_chem_pop.txt
-# ```
+dev.off()
+
+##################
+# analyze palatability as a function of pop alone and then pop + chemicals. I probably could have done these wrangling steps at the very beginning but I'm not going back to fix it now after running all those models!
+##################
+
+#create new df from mature with population as a dummy variable (0/1 for each population)
+popdummy <- bind_cols(bind_cols(mature[2:3],as.data.frame(to.dummy(mature$pop,"pop"))),mature[4:ncol(mature)])
+
+#write tab-delimited dataset for python, removing NA
+write.table(na.omit(popdummy), "RF_R/RF_mature_popdummy_tab.csv",row.names=F,sep="\t")
+
+#feature list for model with population only
+poplist <- colnames(popdummy[c(3:18)])
+write(poplist,"RF_R/mature_poponly_features.txt")
+system("python3.9 ./RF_python_scripts/ML_regression.py -df ./RF_R/RF_mature_popdummy_tab.csv -alg RF -y_name area -gs T -cv 5 -n 100 -save ./RF_R/mature_pop -feat ./RF_R/mature_poponly_features.txt")
+
+#feature list for model with population and the features from the best model
+chemlist <- read.csv("RF_R/mature_21_features.txt",sep="\t",header=F)$V1
+write(c(poplist,chemlist),"RF_R/mature_popchem_features.txt")
+system("python3.9 ./RF_python_scripts/ML_regression.py -df ./RF_R/RF_mature_popdummy_tab.csv -alg RF -y_name area -gs T -cv 5 -n 100 -save ./RF_R/mature_popchem -feat ./RF_R/mature_popchem_features.txt")
+

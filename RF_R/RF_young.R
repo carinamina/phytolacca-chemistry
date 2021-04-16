@@ -29,7 +29,7 @@ names(feat_plot) <- c("features","R^2","SE")
 # import all traits and subset to young leaves, list factors in model
 ###########################
 #read all traits data for young leaves, each maternal line is a row. leave out extra palatability data and NMDS
-young <- read.csv("Processing/2_out_AllTraits.csv",header=T) %>% filter(age == "young") %>%  select(-c(line_age,age,initial,surv,mass_surv,mass_cup,NMDS1,NMDS2,NMDS3,NMDS4))
+young <- read.csv("Processing/2_out_AllTraits.csv",header=T) %>% filter(age == "young") %>%  select(-c(line_age,age,initial,surv,mass_surv,mass_cup,NMDS1,NMDS2))
 #change region to dummy variable. not sure why I had trouble doing this in the same line as initially creating young
 young <- bind_cols(bind_cols(young[1:12],as.data.frame(to.dummy(young$region, "reg"))),young[13:ncol(young)]) %>% select(-region)
 #check that all lines are unique (this is the unique ID now)
@@ -183,7 +183,7 @@ rm(imp)
 
 
 #########################
-# visualize how R^2 changes with the number of features
+# visualize model fit: how R^2 changes with the number of features, actual vs predicted plot
 #########################
 
 feat_plot
@@ -205,12 +205,25 @@ dev.off()
  par(mar=c(5,5,4,2))
 plot(Y ~ Mean, data = read.csv("RF_R/young_48_scores.txt", sep = "\t", header=TRUE), xlab = "Predicted values", ylab = "Actual values", main = "C) Fit of best model", cex.lab=1.75, cex.axis=1.75, cex.main=1.75, cex.sub=1.75)
  dev.off()
-# 
-# Feature lists for "pop + chem" model that uses both population and chemistry 
-# ```{r}
-# x1 <- read.csv("pop_list.txt", sep = "\t", header=FALSE)
-# x2 <- read.csv("young_chem13.txt", sep = "\t", header=FALSE)
-# write.table(rbind(x1,x2), "young_chem_pop.txt" , sep = "\t", row.names = FALSE, quote=FALSE, col.names=FALSE )
-# 
-# #python /mnt/home/azodichr/GitHub/ML-Pipeline/ML_regression.py -df young_20180507 -alg RF -y_name conv -gs T -cv 5 -n 100 -tag chempop -feat young_chem_pop.txt
-# ```
+
+ ##################
+ # analyze palatability as a function of pop alone and then pop + chemicals. I probably could have done these wrangling steps at the very beginning but I'm not going back to fix it now after running all those models!
+ ##################
+ 
+ #create new df from young with population as a dummy variable (0/1 for each population)
+ popdummy <- bind_cols(bind_cols(young[2:3],as.data.frame(to.dummy(young$pop,"pop"))),young[4:ncol(young)])
+ 
+ #write tab-delimited dataset for python, removing NA
+ write.table(na.omit(popdummy), "RF_R/RF_young_popdummy_tab.csv",row.names=F,sep="\t")
+ 
+ #feature list for model with population only
+ poplist <- colnames(popdummy[c(3:18)])
+ write(poplist,"RF_R/young_poponly_features.txt")
+ system("python3.9 ./RF_python_scripts/ML_regression.py -df ./RF_R/RF_young_popdummy_tab.csv -alg RF -y_name area -gs T -cv 5 -n 100 -save ./RF_R/young_pop -feat ./RF_R/young_poponly_features.txt")
+ 
+ #feature list for model with population and the features from the best model
+ chemlist <- read.csv("RF_R/young_21_features.txt",sep="\t",header=F)$V1
+ write(c(poplist,chemlist),"RF_R/young_popchem_features.txt")
+ system("python3.9 ./RF_python_scripts/ML_regression.py -df ./RF_R/RF_young_popdummy_tab.csv -alg RF -y_name area -gs T -cv 5 -n 100 -save ./RF_R/young_popchem -feat ./RF_R/young_popchem_features.txt")
+ 
+ 
