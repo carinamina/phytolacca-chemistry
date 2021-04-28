@@ -149,8 +149,8 @@ dev.off()
 #steps: reduce by one-third with each step
 steps_fine = c(22,21,20,19,18,17,16,15,14,13,12,11,10)
 
-new_list("mature_50","maturefine_40")
-new_model("maturefine_40")
+new_list("mature_22","maturefine_21")
+new_model("maturefine_21")
 
 for(i in 2:(length(steps_fine)-1)){
   new_list(paste("maturefine_",steps_fine[i],sep=""),paste("maturefine_",steps_fine[i+1],sep=""))
