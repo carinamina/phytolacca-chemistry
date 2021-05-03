@@ -1,26 +1,26 @@
-pop,lat,region
-Gav,8.72883,tropical
-Bella,8.79,tropical
-Gamboa,9.13667,tropical
-Valverde,10.38177,tropical
-Tiri,10.41549,tropical
-Alberth,10.43741,tropical
-Hwy 27,26.537067,subtropical
-MacArthur,27.177583,subtropical
-Kenansville,27.88125,subtropical
-Cypress,28.51515,subtropical
-With,28.60387,subtropical
-Valerie,29.838117,temperate
-TT,30.673889,temperate
-Camilla,31.157117,temperate
-OCM,32.34554,temperate
-Hwy 19,32.647,temperate
-Eatonton,33.2393,temperate
-Whitehall,33.895767,temperate
-Dalton,34.670883,temperate
-Center Hill,36.06935,temperate
-HV,37.1818,temperate
-Gen Butler,38.675517,temperate
-Caesar,39.4887,north temperate
-McPhee,40.971333,north temperate
-KBS,42.399933,north temperate
+pop,lat,region,long
+Gav,8.72883,tropical,-83.0665
+Bella,8.79,tropical,-83.2
+Gamboa,9.13667,tropical,-79.72358
+Valverde,10.38177,tropical,-84.12392
+Tiri,10.41549,tropical,-84.1215
+Alberth,10.43741,tropical,-84.03226
+Hwy 27,26.537067,subtropical,-80.69487
+MacArthur,27.177583,subtropical,-81.1939
+Kenansville,27.88125,subtropical,-81.052433
+Cypress,28.51515,subtropical,-82.19635
+With,28.60387,subtropical,-82.361
+Valerie,29.838117,temperate,-82.648783
+TT,30.673889,temperate,-84.223056
+Camilla,31.157117,temperate,-84.237083
+OCM,32.34554,temperate,-83.40459
+Hwy 19,32.647,temperate,-84.2543
+Eatonton,33.2393,temperate,-83.433717
+Whitehall,33.895767,temperate,-83.36165
+Dalton,34.670883,temperate,-84.94345
+Center Hill,36.06935,temperate,-85.868617
+HV,37.1818,temperate,-86.042533
+Gen Butler,38.675517,temperate,-85.1603
+Caesar,39.4887,north temperate,-84.05828
+McPhee,40.971333,north temperate,-80.802617
+KBS,42.399933,north temperate,-85.396433

@@ -1,3 +1,7 @@
 pop	population where seeds were collected
 
 lat	latitude of population
+
+region based on regions used in Baskett et al. 2020 Ecological Monographs. Temperate is renamed here "north temperate" and those between north temperate and subtropical are named temperate.
+
+long longitude of population
