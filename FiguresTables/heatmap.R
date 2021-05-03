@@ -39,7 +39,7 @@ sitemap
 palat <- read.csv("Processing/2_out_AllTraits.csv",header=T) %>% select(pop,age,area) %>% group_by(pop,age) %>% summarise(area=mean(area,na.rm=T)) %>% left_join(coord,by="pop")
 
 dots <- ggplot(palat, aes(x=1,y=letter)) +
-  geom_point(aes(size=area)) + 
+  geom_point(aes(size=area)) +
   facet_grid(age~.,scales="free_y") +
   theme_bw() +theme(panel.spacing = unit(.1, "lines"), strip.background = element_blank(),axis.text.x = element_blank(),axis.ticks = element_blank()) +
   xlab(label ="Palatability") +
