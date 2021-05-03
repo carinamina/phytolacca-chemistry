@@ -188,6 +188,12 @@ dev.off()
 
 
 
+##################
+# I tried two different versions of fine steps and wasn't able to beat the R^2 from the big-step model with 15 features. It could either be a lucky list of features, or a lucky way the data was cross-validated. So I will run the same features again to check.
+
+system("python3.9 ./RF_python_scripts/ML_regression.py -df ./RF_R/RF_mature_tab.csv -alg RF -y_name area -gs T -cv 5 -n 100 -save ./RF_R/mature_15_replicate -feat ./RF_R/mature_15_features.txt")
+
+#ok that's crazy, it's the EXACT same results...so the seed must be set somewhere, not random. But I can't find the seed anywhere in the code. Mystery.
 
 
 
@@ -195,7 +201,7 @@ dev.off()
 ##################
 # analyze palatability as a function of pop alone and then pop + chemicals. I probably could have done these wrangling steps at the very beginning but I'm not going back to fix it now after running all those models!
 ##################
-#I checked, but it only increases the dataset by 1 line to try and use a larger dataset without toughness and carbon. Same for mature.
+#I checked, but it only increases the dataset by 1 line to try and use a larger dataset without toughness and carbon, for both leaf ages
 
 #create new df from mature with population as a dummy variable (0/1 for each population)
 popdummy <- bind_cols(bind_cols(mature[2:3],as.data.frame(to.dummy(mature$pop,"pop"))),mature[4:ncol(mature)])

@@ -194,7 +194,9 @@ plot(Y ~ Mean, data = read.csv("RF_R/youngfine_45_scores.txt", sep = "\t", heade
 dev.off()
 
 
-
+#########################
+# Calculate percent variance explained for each feature in final model using LOFO method (leave one feature out)
+#########################
 
 
  ##################

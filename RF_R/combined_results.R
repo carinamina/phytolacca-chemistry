@@ -25,7 +25,7 @@ young[young$feature %in% overlap==T,]
 #two of the top 3 in mature (not #1) are also found in the top third of important chemicals in young leaves. Another is lower on both lists. Otherwise, the compounds found to be important predictors of young and mature leaves are unique to each leaf age.
 rm(overlap)
 ###############
-#how did the non-chemical features rank in the maximal model? And how did the chemicals in the final model rank in the original model? I was going to ask when did the non-chemical features drop out during model selection, but realized that maybe answering this easier question is sufficient. Especially when you see how little the rankings actually change--the original model is not so bad at picking up signal through the noise!
+#how did the non-chemical features rank in the maximal model? And how did the chemicals in the final model rank in the original model? I was going to ask when did the non-chemical features drop out during model selection, but realized that maybe answering this easier question is sufficient. Especially when you see how little the rankings actually change--the original model is amazingly good at picking up signal through the noise!
 ###############
 nonchem <- c("lat", "tough","percent_N","C_N","log.abund","richness","diversity","reg.north_temperate","reg.subtropical","reg.temperate","reg.tropical")
 
@@ -42,7 +42,7 @@ for(i in 1:nrow(orig)){
 }
 rm(maturemax,youngmax,i,nonchem)
 
-orig <- orig %>% select(age,feature,orig_rank,final_rank) %>% mutate(change = orig_rank - final_rank) %>% arrange(orig_rank) %>% arrange(age) %>% rename("Leaf age" = age, Predictor = feature, "Original Rank" = orig_rank, "Final Rank" = final_rank, "Change in Rank" = change)
+orig <- orig %>% select(age,feature,orig_rank,final_rank) %>% mutate(change = orig_rank - final_rank) %>% arrange(orig_rank) %>% arrange(age) %>% rename("Leaf age" = age, Predictor = feature, "Original Rank" = orig_rank, "Final Rank" = final_rank, "Change in Rank" = change) %>% add_column(Class = "", Notes = "")
 #incredible, the top 25 features are the same between the original and final model for young leaves! The order shifts around, but it amazes me that ~1% of the features were picked out as highest importance in the very first model through all that noise
 
 write.csv(orig,"FiguresTables/Table_RF_FirstLastModels.csv",row.names=F)
