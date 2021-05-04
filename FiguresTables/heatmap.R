@@ -30,9 +30,9 @@ sitemap
 # postscript("20190122map.eps", height = 7)
 # sitemap
 # dev.off()
-
+rm(basemap,world)
 #################
-# Panel 2: palatability
+# Panel 2: palatability (dots)
 #################
 #import data. There might be a problem with this that I just realized: I took the log-area eaten for each cup and then a line mean, which was used in RF analysis. Should I have done the log-transformation after taking the means? Shit. Here also I am taking the mean of a log-transformed variable.
 
@@ -47,28 +47,17 @@ dots <- ggplot(palat, aes(x=1,y=letter)) +
 
 dots
 
-#export
-# setEPS()
-# postscript("FiguresTables/HeatMap.eps")
-# dots + theme()
-# dev.off()
-
-
+rm(palat)
 #################
-# Panel 3: heatmap
+# Panel 3: heatmap: all compounds
 #################
 #take log of chemical abundances
 chem <- bind_cols(left_join(chem_raw[1:8],select(coord,c(pop,letter)),by="pop"),log(chem_raw[9:ncol(chem_raw)]+1)) %>% select(-c(pos,line,lat)) 
 
-#%>% arrange(line_age) %>% arrange(desc(lat)) %>% mutate(lat = round(lat, digits = 2))
-#we need two digits for lat to distinguish Bella and Gav
-#chem$lat <- as.character(chem$lat)
-
-#this prepares for the geom_tile. For troubleshooting, use a subset:
+#this prepares for the geom_tile. For troubleshooting, use a subset [1:100}:
 #chem_melt <- melt(chem[1:100])
 chem_melt <- melt(chem)
 head(chem_melt)
-#(lat_order <- rev(levels(as.factor(as.numeric(chem_melt$lat)))))
 chem_melt$age <- as.factor(chem_melt$age) %>% recode(young = "young leaves", mature = "mature leaves")
 
 heat <- ggplot(chem_melt, aes(x=variable,y=pos_age)) + 
@@ -90,3 +79,71 @@ heat
 # heat
 # dev.off()
 
+rm(heat, dots, sitemap, chem_melt)
+
+#################
+# Second figure: heatmap: important compounds
+#################
+#subset chem list to compounds found to be important from RF
+young <- (read.csv("RF_R/youngfine_45_features.txt",sep = "\t", header = F) %>% filter(V1 != "lat") %>% arrange(V1))$V1
+mature <- (read.csv("RF_R/mature_15_features.txt",sep = "\t", header = F) %>% arrange(V1) )$V1
+
+#subset log-abund for each leaf age
+imp_y <- select(chem, c(pos_age, line_age, pop, age, region, letter, young)) %>% filter(age == "young")
+names(imp_y) <- gsub("X", "", names(imp_y))
+imp_m <- select(chem, c(pos_age, line_age, pop, age, region, letter, mature)) %>% filter(age == "mature")
+names(imp_m) <- gsub("X", "", names(imp_m))
+
+#figure for mature leaves
+melt_m <- melt(imp_m)
+head(melt_m)
+heat_m <- ggplot(melt_m, aes(x=variable,y=pos_age)) + 
+  geom_tile(aes(fill=value)) + 
+  scale_fill_viridis(direction=-1) + 
+  facet_grid(letter ~.,scales="free_y",switch="y") + 
+  theme_bw() +
+  theme(axis.text.y = element_blank(), axis.ticks.y = element_blank(), axis.text.x = element_text(angle = 45, hjust = 1), panel.spacing = unit(.1, "lines"), strip.background = element_blank(), strip.text.y.left = element_text(angle = 0))  +
+  xlab(label="LC/MS Peak (from low to high retention time)") + 
+  ylab(label="Site (see map)")
+
+heat_m
+
+#figure for young leaves
+melt_y <- melt(imp_y)
+head(melt_y)
+heat_y <- ggplot(melt_y, aes(x=variable,y=pos_age)) + 
+  geom_tile(aes(fill=value)) + 
+  scale_fill_viridis(direction=-1) + 
+  facet_grid(letter ~.,scales="free_y",switch="y") + 
+  theme_bw() +
+  theme(axis.text.y = element_blank(), axis.ticks.y = element_blank(), axis.text.x = element_text(angle = 45, hjust = 1), panel.spacing = unit(.1, "lines"), strip.background = element_blank(), strip.text.y.left = element_text(angle = 0))  +
+  xlab(label="LC/MS Peak (from low to high retention time)") + 
+  ylab(label="Site (see map)")
+
+heat_y
+
+########## trying to make colored boxes around the site letters
+#I found this example here https://github.com/tidyverse/ggplot2/issues/2096 but I can't get it to work when applying it to heat_y, because I have no idea what it's doing
+p <- ggplot(mpg, aes(displ, cty)) + geom_point() + facet_grid(drv ~ cyl)
+p
+g <- ggplot_gtable(ggplot_build(p))
+strip_both <- which(grepl('strip-', g$layout$name))
+fills <- c("red","green","blue","yellow","red","green","blue","yellow")
+k <- 1
+for (i in strip_both) {
+  j <- which(grepl('rect', g$grobs[[i]]$grobs[[1]]$childrenOrder))
+  g$grobs[[i]]$grobs[[1]]$children[[j]]$gp$fill <- fills[k]
+  k <- k+1
+}
+grid::grid.draw(g)
+
+g <- ggplot_gtable(ggplot_build(heat_y))
+strip_both <- which(grepl('strip-', g$layout$name))
+fills <- c("red","green","blue","yellow","orange","purple","pink","white","red","green","blue","yellow","orange","purple","pink","white")
+k <- 1
+for (i in strip_both) {
+  j <- which(grepl('rect', g$grobs[[i]]$grobs[[1]]$childrenOrder))
+  g$grobs[[i]]$grobs[[1]]$children[[j]]$gp$fill <- fills[k]
+  k <- k+1
+}
+grid::grid.draw(g)
