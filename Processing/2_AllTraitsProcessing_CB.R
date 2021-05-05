@@ -22,8 +22,9 @@ key <- cbind(key, read.table(text = as.character(key$line_age), sep = "_", colCl
 colnames(key)  <- c("line_age","pop","line","age")
 key$line <- paste(key$pop, key$line, sep="_")
 key <- merge(key, read.csv("Raw/LatsPopsKey.csv",header=T),by="pop")
+key$species <- ifelse(key$region == "tropical","PHRI","PHAM")
 
-all.traits <- left_join(key,all.traits,by="line_age")
+all.traits <- left_join(key,all.traits,by="line_age") %>% select(-long)
 
 write.csv(all.traits, "Processing/2_out_AllTraits.csv",row.names=F)
 

@@ -1,4 +1,4 @@
-"line_age","cupID","pop","line","age","lat","region","surv","logarea","old.logarea"
+"line_age","cupID","pop","line","age","lat","region","surv","log.area","old.log.area"
 "Whitehall_18_mature",1,"Whitehall","Whitehall_18","mature",33.895767,"temperate",5,0.617805820435883,0.163653960521078
 "MacArthur_5_mature",2,"MacArthur","MacArthur_5","mature",27.177583,"subtropical",3,0.492462371034798,0.138336281142845
 "Gen Butler_3_mature",3,"Gen Butler","Gen Butler_3","mature",38.675517,"temperate",5,0.66139916256789,0.172414861957647

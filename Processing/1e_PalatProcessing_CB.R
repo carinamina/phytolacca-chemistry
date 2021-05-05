@@ -25,8 +25,6 @@ working <- raw %>% mutate(line = paste(pop,line,sep="_"),
                                         cons_d1+cons_d2+cons_d3+cons_d4+cons_d5+cons_d6+cons_d7+cons_d8,
                                         cons_d1+cons_d3+cons_d5+cons_d7+cons_d9),
                           area = cons*10.080625
-                          #LogAreaCat_day = log(area/initial+1)/duration,
-                          #old.LogArea_cat_day = log(area+1)/initial/duration
                           ) %>% select(-c(cons_d1,cons_d2,cons_d3,cons_d4,cons_d5,cons_d6,cons_d7,cons_d8,cons_d9,surv_d1,surv_d2,surv_d3,surv_d4,surv_d5,surv_d6,surv_d7,surv_d8,surv_d9,cons))
 
 sum(is.na(working$surv))
@@ -36,9 +34,6 @@ sum(is.na(working$area))
 #add latitude and region, re-order
 working <- working %>% left_join(read.csv("Raw/LatsPopsKey.csv",header=T),by="pop") %>% select(line_age, cupID, pop, line, age, lat, region, initial, duration, surv, area)
 
-#LogAreaCat_day: first get area consumed per caterpillar (using initial counts and ignoring caterpillar death). That should have an exponential distribution, so we log-transform it. Then standardize by the experiment duration. 
-#unfortunately, in the Ecology Letters paper, I did log(area)/initial/duration. This might be a problem because initial differs by leaf age, which was an explanatory variable of interest. So I will include a column with the "old calculation" to compare results later during analysis.
-
 #export cup-level data for geographic analysis
 #area clearly has an exponential distribution, which makes sense because cats can eat exponentially more as they grow
 hist(working$area)
@@ -46,21 +41,21 @@ hist(working$area)
 hist(working$area/working$initial)
 #we log-transform that, and THEN standardize by the experiment duration. Unfortunately, in the Ecology Letters paper, I did log(area)/initial/duration. This might be a problem because initial differs by leaf age, which was an explanatory variable of interest. So I will include a column with the "old calculation" to compare results later during analysis.
 #furthermore, we need to do this log-transformation and standardization after taking a mean, not before, so that's why I do it twice: here for the cup-level data and again below for line-level data.
-working_logs <- working %>% mutate(logarea = log(area/initial+1)/duration, old.logarea = log(area+1)/initial/duration) %>% select(-c(area, duration, initial))
+working_logs <- working %>% mutate(log.area = log(area/initial+1)/duration, old.log.area = log(area+1)/initial/duration) %>% select(-c(area, duration, initial))
 write.csv(working_logs,"Processing/1e_out_Palat_Cup.csv",row.names=F)
 
 
 #take line-level means for trait analysis. I won't include the "old" calculations because I think I won't compare them for the line-level analysis. I remove NA bc missing data for one cup shouldn't invalidate a whole line
-line_palat <- working %>% group_by(line_age) %>% summarise(initial = mean(initial), duration = mean(duration), surv = mean(surv), area = mean(area,na.rm=T)) %>% mutate(logarea = log(area/initial+1)/duration) %>% select(-c(area, duration, initial))
+line_palat <- working %>% group_by(line_age) %>% summarise(initial = mean(initial), duration = mean(duration), surv = mean(surv), area = mean(area,na.rm=T)) %>% mutate(log.area = log(area/initial+1)/duration) %>% select(-c(area, duration, initial))
 
 write.csv(line_palat, "Processing/1e_out_Palat_Line.csv", row.names=F)
 
 #some visualization for fun
-qplot(lat, old.logarea, data=working_logs, colour=age)
-qplot(lat, logarea, data=working_logs, colour=age)
+qplot(lat, old.log.area, data=working_logs, colour=age)
+qplot(lat, log.area, data=working_logs, colour=age)
 #visual comparisons of old and new plots of area vs latitude:  the old plots slightly under-estimated the leaf age effect
 #mean leaf area consumed by age for old and new for PHAM (reported in Ecology Letters paper)
-working_logs %>% filter(region != "tropical") %>% group_by(age) %>% summarise(old.logarea = mean(old.logarea,na.rm=T), logarea = mean(logarea,na.rm=T))
+working_logs %>% filter(region != "tropical") %>% group_by(age) %>% summarise(old.log.area = mean(old.log.area,na.rm=T), log.area = mean(log.area,na.rm=T))
 #the numbers for old are within .007 of the numbers in the paper, so it seems that I did a decent job of replicating the calculations (why are they are not identical though, I don't know). The difference between young and mature is actually reversed with the new calculations!
 
 rm(list=ls())
