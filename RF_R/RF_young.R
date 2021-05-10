@@ -45,22 +45,21 @@ new_list <- function(age_oldnum,age_newnum)
 
 new_model <- function(age_newnum)
 {
-  call = paste("python3.9 ./RF_python_scripts/ML_regression.py -df ./RF_R/RF_young_tab.csv -alg RF -y_name area -gs T -cv 5 -n 100 -save ./RF_R/",paste(age_newnum,paste(" -feat ./RF_R/",paste(age_newnum,"_features.txt",sep=""),sep=""),sep=""),sep="")
+  call = paste("python3.9 ./RF_python_scripts/ML_regression.py -df ./RF_R/RF_young_tab.csv -alg RF -y_name log.area -gs T -cv 5 -n 100 -save ./RF_R/",paste(age_newnum,paste(" -feat ./RF_R/",paste(age_newnum,"_features.txt",sep=""),sep=""),sep=""),sep="")
   system(call)
 }
-
-# #tested the functions on some old results
-# (feat_plot <- rbind(feat_plot,imp_plot(age_oldnum = "young_4")))
-# new_list("young_4","young_3")
-# new_model("young_3")
 
 ###########################
 # import all traits and subset to young leaves, list factors in model
 ###########################
 #read all traits data for young leaves, each maternal line is a row. leave out extra palatability data and NMDS
-young <- read.csv("Processing/2_out_AllTraits.csv",header=T) %>% filter(age == "young") %>%  select(-c(line_age,age,initial,surv,mass_surv,mass_cup,NMDS1,NMDS2,percent_C))
-#change region to dummy variable. not sure why I had trouble doing this in the same line as initially creating young
-young <- bind_cols(bind_cols(young[1:11],as.data.frame(to.dummy(young$region, "reg"))),young[12:ncol(young)]) %>% select(-region)
+young <- read.csv("Processing/2_out_AllTraits.csv",header=T) %>% filter(age == "young") %>%  select(-c(line_age,age,surv,NMDS1,NMDS2,percent_C))
+#change region and species to dummy variables. not sure why I had trouble doing this in the same line as initially creating young
+young <- bind_cols(             bind_cols(young[1:12],      
+                                bind_cols(as.data.frame(to.dummy(young$region, "reg")), 
+                                          as.data.frame(to.dummy(young$species,"spp"))     )    ),     
+                      young[13:ncol(young)]) %>% 
+          select(-c(region,species))
 #check that all lines are unique (this is the unique ID now)
 length(unique(young$line)) == nrow(young)
 #check where the NAs are and how many samples are lost
@@ -74,14 +73,14 @@ nrow(young) - nrow(na.omit(young))
 #write the dataset as tab-delimited for python to use, removing NAs
 write.table(na.omit(young), "RF_R/RF_young_tab.csv",row.names=F,sep="\t")
 
-#create feature list, leaving out area (the response) and pop and line
+#create feature list, leaving out log.area (the response) and pop and line
 write(colnames(young[c(3:6,8:ncol(young))]),"RF_R/young_max_features.txt")
 
 
 #########################
 # iterative model runs. could probably make a for loop but it takes many hours (maybe 18?) to run everything, so not great for testing loops!
 #########################
-# For each step, need to change 7 things: the inputs for feat_plot (2) and new_list (3) and system (2). The larger, previous number goes in the first three slots, and the smaller new number goes in the last 4.
+# For each step, need to change 3 things: the larger model is the first in new_list, and the smaller model is the second in new_list and the only in new_model
 
 #steps: reduce by one-third with each step
 steps = c(1929,1286,857,571,381,254,169,113,75,50,33,22,15,10)
@@ -148,17 +147,17 @@ plot(`R^2` ~ features, data = feat_plot, xlab = "Number of features", ylab = exp
 setEPS()
 postscript("FiguresTables/Fig_RF_young_A.eps")
 par(mar=c(5,5,4,2))
-plot(`R^2` ~ features, data = feat_plot, xlab = "Number of features", ylab = expression("Model "~R^2), main = "A) Feature selection: 1928 to 10 features", cex.lab=1.75, cex.axis=1.75, cex.main=1.75, cex.sub=1.75)
+plot(`R^2` ~ features, data = feat_plot, xlab = "Number of features", ylab = expression("Model "~R^2), main = "A) Feature selection: 1929 to 10 features", cex.lab=1.75, cex.axis=1.75, cex.main=1.75, cex.sub=1.75)
 dev.off()
 
 #########################
 # iterative model runs exploring different numbers of features around the peak in R2
 #########################
-#steps: reduce by one-third with each step
-steps_fine = c(75,70,65,60,55,50,45,40,35,30)
+#steps: reduce by five features with each step
+steps_fine = c(50,45,40,35,30,25,24,23,22,21,20)
 
-new_list("young_75","youngfine_70")
-new_model("youngfine_70")
+new_list("young_50","youngfine_45")
+new_model("youngfine_45")
 
 for(i in 2:(length(steps_fine)-1)){
   new_list(paste("youngfine_",steps_fine[i],sep=""),paste("youngfine_",steps_fine[i+1],sep=""))
@@ -177,20 +176,20 @@ for(i in 2:length(steps_fine)){
 }
 feat_plot_fine <- na.omit(feat_plot_fine)
 feat_plot_fine
-plot(`R^2` ~ features, data = feat_plot_fine, xlab = "Number of features", ylab = expression("Model "~R^2), main = "B) Feature selection: 70 to 30 features", cex.lab=1.75, cex.axis=1.75, cex.main=1.75, cex.sub=1.75)
+plot(`R^2` ~ features, data = feat_plot_fine, xlab = "Number of features", ylab = expression("Model "~R^2), main = "B) Feature selection: 45 to 20 features", cex.lab=1.75, cex.axis=1.75, cex.main=1.75, cex.sub=1.75)
 
 #export plot
 setEPS()
 postscript("FiguresTables/Fig_RF_young_B.eps")
 par(mar=c(5,5,4,2))
-plot(`R^2` ~ features, data = feat_plot_fine, xlab = "Number of features", ylab = expression("Model "~R^2), main = "B) Feature selection: 70 to 30 features", cex.lab=1.75, cex.axis=1.75, cex.main=1.75, cex.sub=1.75)
+plot(`R^2` ~ features, data = feat_plot_fine, xlab = "Number of features", ylab = expression("Model "~R^2), main = "B) Feature selection: 45 to 20 features", cex.lab=1.75, cex.axis=1.75, cex.main=1.75, cex.sub=1.75)
 dev.off()
 
 # #actual v predicted plot for final model
 setEPS()
 postscript("FiguresTables/Fig_RF_young_C.eps")
 par(mar=c(5,5,4,2))
-plot(Y ~ Mean, data = read.csv("RF_R/youngfine_45_scores.txt", sep = "\t", header=TRUE), xlab = "Predicted values", ylab = "Actual values", main = "C) Fit of best model", cex.lab=1.75, cex.axis=1.75, cex.main=1.75, cex.sub=1.75)
+plot(Y ~ Mean, data = read.csv("RF_R/youngfine_24_scores.txt", sep = "\t", header=TRUE), xlab = "Predicted values", ylab = "Actual values", main = "C) Fit of best model", cex.lab=1.75, cex.axis=1.75, cex.main=1.75, cex.sub=1.75)
 dev.off()
 
 
@@ -212,11 +211,11 @@ dev.off()
  #feature list for model with population only
  poplist <- colnames(popdummy[c(3:18)])
  write(poplist,"RF_R/young_poponly_features.txt")
- system("python3.9 ./RF_python_scripts/ML_regression.py -df ./RF_R/RF_young_popdummy_tab.csv -alg RF -y_name area -gs T -cv 5 -n 100 -save ./RF_R/young_pop -feat ./RF_R/young_poponly_features.txt")
+ system("python3.9 ./RF_python_scripts/ML_regression.py -df ./RF_R/RF_young_popdummy_tab.csv -alg RF -y_name log.area -gs T -cv 5 -n 100 -save ./RF_R/young_pop -feat ./RF_R/young_poponly_features.txt")
  
  #feature list for model with population and the features from the best model
- chemlist <- read.csv("RF_R/young_21_features.txt",sep="\t",header=F)$V1
+ chemlist <- read.csv("RF_R/youngfine_24_features.txt",sep="\t",header=F)$V1
  write(c(poplist,chemlist),"RF_R/young_popchem_features.txt")
- system("python3.9 ./RF_python_scripts/ML_regression.py -df ./RF_R/RF_young_popdummy_tab.csv -alg RF -y_name area -gs T -cv 5 -n 100 -save ./RF_R/young_popchem -feat ./RF_R/young_popchem_features.txt")
+ system("python3.9 ./RF_python_scripts/ML_regression.py -df ./RF_R/RF_young_popdummy_tab.csv -alg RF -y_name log.area -gs T -cv 5 -n 100 -save ./RF_R/young_popchem -feat ./RF_R/young_popchem_features.txt")
  
  
