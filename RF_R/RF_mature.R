@@ -5,6 +5,18 @@ library(varhandle)
 ###########################
 #set up some functions to save and plot results
 ###########################
+#will plot sorted importance scores and then output a vector with the number of features, model R^2, and SE of R^2
+imp_plot <- function(age_oldnum)
+{
+  #example age_oldnum is "mature_1447"
+  imp_file = paste("RF_R/",paste(age_oldnum,"_imp",sep=""),sep="")
+  results_file = paste("RF_R/",paste(age_oldnum,"_results.txt",sep=""),sep="")
+  imp <- read.csv(imp_file, sep = "\t", header=T)
+  plot(imp$mean_imp ~ rownames(imp))
+  results <- read.csv(results_file, sep = "\t", header=T)
+  (r <- c(nrow(imp),as.numeric(results[24,1]),as.numeric(results[26,1])))
+}
+
 #will make a new list of features to use in the next model, based on a cutoff of the importance file from last model
 new_list <- function(age_oldnum,age_newnum)
 {
@@ -33,29 +45,21 @@ new_list <- function(age_oldnum,age_newnum)
 
 new_model <- function(age_newnum)
 {
-  call = paste("python3.9 ./RF_python_scripts/ML_regression.py -df ./RF_R/RF_mature_tab.csv -alg RF -y_name area -gs T -cv 5 -n 100 -save ./RF_R/",paste(age_newnum,paste(" -feat ./RF_R/",paste(age_newnum,"_features.txt",sep=""),sep=""),sep=""),sep="")
+  call = paste("python3.9 ./RF_python_scripts/ML_regression.py -df ./RF_R/RF_mature_tab.csv -alg RF -y_name log.area -gs T -cv 5 -n 100 -save ./RF_R/",paste(age_newnum,paste(" -feat ./RF_R/",paste(age_newnum,"_features.txt",sep=""),sep=""),sep=""),sep="")
   system(call)
-}
-
-#will plot sorted importance scores and then output a vector with the number of features, model R^2, and SE of R^2
-imp_plot <- function(age_oldnum)
-{
-  #example age_oldnum is "mature_1447"
-  imp_file = paste("RF_R/",paste(age_oldnum,"_imp",sep=""),sep="")
-  results_file = paste("RF_R/",paste(age_oldnum,"_results.txt",sep=""),sep="")
-  imp <- read.csv(imp_file, sep = "\t", header=T)
-  plot(imp$mean_imp ~ rownames(imp))
-  results <- read.csv(results_file, sep = "\t", header=T)
-  (r <- c(nrow(imp),as.numeric(results[24,1]),as.numeric(results[26,1])))
 }
 
 ###########################
 # import all traits and subset to mature leaves, list factors in model
 ###########################
 #read all traits data for mature leaves, each maternal line is a row. leave out extra palatability data and NMDS
-mature <- read.csv("Processing/2_out_AllTraits.csv",header=T) %>% filter(age == "mature") %>%  select(-c(line_age,age,initial,surv,mass_surv,mass_cup,NMDS1,NMDS2,percent_C))
-#change region to dummy variable. not sure why I had trouble doing this in the same line as initially creating mature
-mature <- bind_cols(bind_cols(mature[1:11],as.data.frame(to.dummy(mature$region, "reg"))),mature[12:ncol(mature)]) %>% select(-region)
+mature <- read.csv("Processing/2_out_AllTraits.csv",header=T) %>% filter(age == "mature") %>%  select(-c(line_age,age,surv,NMDS1,NMDS2,percent_C))
+#change region and species to dummy variables. not sure why I had trouble doing this in the same line as initially creating mature
+mature <- bind_cols(             bind_cols(mature[1:12],      
+                                          bind_cols(as.data.frame(to.dummy(mature$region, "reg")), 
+                                                    as.data.frame(to.dummy(mature$species,"spp"))     )    ),     
+                                mature[13:ncol(mature)]) %>% 
+  select(-c(region,species))
 #check that all lines are unique (this is the unique ID now)
 length(unique(mature$line)) == nrow(mature)
 #check where the NAs are and how many samples are lost
@@ -69,16 +73,19 @@ nrow(mature) - nrow(na.omit(mature))
 #write the dataset as tab-delimited for python to use, removing NAs
 write.table(na.omit(mature), "RF_R/RF_mature_tab.csv",row.names=F,sep="\t")
 
-#create feature list, leaving out area (the response) and pop and line
+#create feature list, leaving out log.area (the response) and pop and line
 write(colnames(mature[c(3:6,8:ncol(mature))]),"RF_R/mature_max_features.txt")
 
-new_model("mature_max")
 
 #########################
 # iterative model runs. could probably make a for loop but it takes many hours (maybe 18?) to run everything, so not great for testing loops!
 #########################
+# For each step, need to change 3 things: the larger model is the first in new_list, and the smaller model is the second in new_list and the only in new_model
+
 #steps: reduce by one-third with each step
 steps = c(1929,1286,857,571,381,254,169,113,75,50,33,22,15,10)
+
+new_model("mature_max")
 
 #make a new list
 new_list("mature_max","mature_1286")
@@ -134,25 +141,25 @@ for(i in 1:length(steps_course)){
 }
 feat_plot <- na.omit(feat_plot)
 feat_plot
-plot(`R^2` ~ features, data = feat_plot, xlab = "Number of features", ylab = expression("Model "~R^2), main = "A) Feature selection: 1928 to 10 features", cex.lab=1.75, cex.axis=1.75, cex.main=1.75, cex.sub=1.75)
+plot(`R^2` ~ features, data = feat_plot, xlab = "Number of features", ylab = expression("Model "~R^2), main = "A) Feature selection: 1929 to 10 features", cex.lab=1.75, cex.axis=1.75, cex.main=1.75, cex.sub=1.75)
 
 #export plot
 setEPS()
 postscript("FiguresTables/Fig_RF_mature_A.eps")
 par(mar=c(5,5,4,2))
-plot(`R^2` ~ features, data = feat_plot, xlab = "Number of features", ylab = expression("Model "~R^2), main = "A) Feature selection: 1928 to 10 features", cex.lab=1.75, cex.axis=1.75, cex.main=1.75, cex.sub=1.75)
+plot(`R^2` ~ features, data = feat_plot, xlab = "Number of features", ylab = expression("Model "~R^2), main = "A) Feature selection: 1929 to 10 features", cex.lab=1.75, cex.axis=1.75, cex.main=1.75, cex.sub=1.75)
 dev.off()
 
 #########################
 # iterative model runs exploring different numbers of features around the peak in R2
 #########################
-#steps: reduce by one-third with each step
-steps_fine = c(22,21,20,19,18,17,16,15,14,13,12,11,10)
+#steps: reduce by five features with each step
+steps_fine = c(50,45,40,38,36,35,34,32,30,25,20,15,13,11,10,9,8,7,6)
 
-new_list("mature_22","maturefine_21")
-new_model("maturefine_21")
+new_list("mature_50","maturefine_45")
+new_model("maturefine_45")
 
-for(i in 2:(length(steps_fine)-1)){
+for(i in 14:(length(steps_fine)-1)){
   new_list(paste("maturefine_",steps_fine[i],sep=""),paste("maturefine_",steps_fine[i+1],sep=""))
   new_model(paste("maturefine_",steps_fine[i+1],sep=""))
 }
@@ -169,39 +176,31 @@ for(i in 2:length(steps_fine)){
 }
 feat_plot_fine <- na.omit(feat_plot_fine)
 feat_plot_fine
-plot(`R^2` ~ features, data = feat_plot_fine, xlab = "Number of features", ylab = expression("Model "~R^2), main = "B) Feature selection: 40 to 10 features", cex.lab=1.75, cex.axis=1.75, cex.main=1.75, cex.sub=1.75)
+plot(`R^2` ~ features, data = feat_plot_fine, xlab = "Number of features", ylab = expression("Model "~R^2), main = "B) Feature selection: 45 to 6 features", cex.lab=1.75, cex.axis=1.75, cex.main=1.75, cex.sub=1.75)
 
 #export plot
 setEPS()
 postscript("FiguresTables/Fig_RF_mature_B.eps")
 par(mar=c(5,5,4,2))
-plot(`R^2` ~ features, data = feat_plot_fine, xlab = "Number of features", ylab = expression("Model "~R^2), main = "B) Feature selection: 40 to 10 features", cex.lab=1.75, cex.axis=1.75, cex.main=1.75, cex.sub=1.75)
+plot(`R^2` ~ features, data = feat_plot_fine, xlab = "Number of features", ylab = expression("Model "~R^2), main = "B) Feature selection: 45 to 6 features", cex.lab=1.75, cex.axis=1.75, cex.main=1.75, cex.sub=1.75)
 dev.off()
 
 # #actual v predicted plot for final model
 setEPS()
 postscript("FiguresTables/Fig_RF_mature_C.eps")
 par(mar=c(5,5,4,2))
-plot(Y ~ Mean, data = read.csv("RF_R/maturefine_XX_scores.txt", sep = "\t", header=TRUE), xlab = "Predicted values", ylab = "Actual values", main = "C) Fit of best model", cex.lab=1.75, cex.axis=1.75, cex.main=1.75, cex.sub=1.75)
+plot(Y ~ Mean, data = read.csv("RF_R/maturefine_9_scores.txt", sep = "\t", header=TRUE), xlab = "Predicted values", ylab = "Actual values", main = "C) Fit of best model", cex.lab=1.75, cex.axis=1.75, cex.main=1.75, cex.sub=1.75)
 dev.off()
 
 
-
-
-##################
-# I tried two different versions of fine steps and wasn't able to beat the R^2 from the big-step model with 15 features. It could either be a lucky list of features, or a lucky way the data was cross-validated. So I will run the same features again to check.
-
-system("python3.9 ./RF_python_scripts/ML_regression.py -df ./RF_R/RF_mature_tab.csv -alg RF -y_name area -gs T -cv 5 -n 100 -save ./RF_R/mature_15_replicate -feat ./RF_R/mature_15_features.txt")
-
-#ok that's crazy, it's the EXACT same results...so the seed must be set somewhere, not random. But I can't find the seed anywhere in the code. Mystery.
-
-
+#########################
+# Calculate percent variance explained for each feature in final model using LOFO method (leave one feature out)
+#########################
 
 
 ##################
 # analyze palatability as a function of pop alone and then pop + chemicals. I probably could have done these wrangling steps at the very beginning but I'm not going back to fix it now after running all those models!
 ##################
-#I checked, but it only increases the dataset by 1 line to try and use a larger dataset without toughness and carbon, for both leaf ages
 
 #create new df from mature with population as a dummy variable (0/1 for each population)
 popdummy <- bind_cols(bind_cols(mature[2:3],as.data.frame(to.dummy(mature$pop,"pop"))),mature[4:ncol(mature)])
@@ -212,11 +211,11 @@ write.table(na.omit(popdummy), "RF_R/RF_mature_popdummy_tab.csv",row.names=F,sep
 #feature list for model with population only
 poplist <- colnames(popdummy[c(3:18)])
 write(poplist,"RF_R/mature_poponly_features.txt")
-system("python3.9 ./RF_python_scripts/ML_regression.py -df ./RF_R/RF_mature_popdummy_tab.csv -alg RF -y_name area -gs T -cv 5 -n 100 -save ./RF_R/mature_pop -feat ./RF_R/mature_poponly_features.txt")
+system("python3.9 ./RF_python_scripts/ML_regression.py -df ./RF_R/RF_mature_popdummy_tab.csv -alg RF -y_name log.area -gs T -cv 5 -n 100 -save ./RF_R/mature_pop -feat ./RF_R/mature_poponly_features.txt")
 
 #feature list for model with population and the features from the best model
-chemlist <- read.csv("RF_R/mature_21_features.txt",sep="\t",header=F)$V1
+chemlist <- read.csv("RF_R/maturefine_9_features.txt",sep="\t",header=F)$V1
 write(c(poplist,chemlist),"RF_R/mature_popchem_features.txt")
-system("python3.9 ./RF_python_scripts/ML_regression.py -df ./RF_R/RF_mature_popdummy_tab.csv -alg RF -y_name area -gs T -cv 5 -n 100 -save ./RF_R/mature_popchem -feat ./RF_R/mature_popchem_features.txt")
+system("python3.9 ./RF_python_scripts/ML_regression.py -df ./RF_R/RF_mature_popdummy_tab.csv -alg RF -y_name log.area -gs T -cv 5 -n 100 -save ./RF_R/mature_popchem -feat ./RF_R/mature_popchem_features.txt")
 
 
