@@ -18,10 +18,10 @@ res <- function(results_file)
 }
 
 rsq[1,3:4] = res("RF_R/mature_pop_results.txt")
-rsq[2,3:4] = res("RF_R/mature_21_results.txt")
+rsq[2,3:4] = res("RF_R/maturefine_9_results.txt")
 rsq[3,3:4] = res("RF_R/mature_popchem_results.txt")
 rsq[4,3:4] = res("RF_R/young_pop_results.txt")
-rsq[5,3:4] = res("RF_R/young_48_results.txt")
+rsq[5,3:4] = res("RF_R/youngfine_24_results.txt")
 rsq[6,3:4] = res("RF_R/young_popchem_results.txt")
 
 #plot R^2
@@ -30,12 +30,12 @@ plot = ggplot(rsq,aes(x=model, y=R2, group = sort(age, decreasing = TRUE))) + ge
 vv=plot + xlab("Factors in model")+ylab(expression("Model "~R^2)) + theme_bw() + theme(panel.border = element_blank(), panel.grid.major = element_blank(), panel.grid.minor = element_blank(), axis.line = element_line(colour = "black")) + theme(text = element_text(size = 24)) + scale_x_discrete(limits=c("population","traits","traits\n+\npopulation"))
 vv
 setEPS()
-postscript("FiguresTables/FigS4_RFpop.eps")
+postscript("FiguresTables/Fig_RF_pop.eps")
 vv + theme(legend.position = "none")
 dev.off()
 #this version has legend
 setEPS()
-postscript("FiguresTables/FigS4_RFpop_legend.eps")
+postscript("FiguresTables/Fig_RF_pop_legend.eps")
 vv + labs(fill="Leaf age")
 dev.off()
 
