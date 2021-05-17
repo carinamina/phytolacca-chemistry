@@ -1,538 +1,538 @@
-"line_age","cupID","pop","line","age","lat","region","surv","log.area","old.log.area"
-"Whitehall_18_mature",1,"Whitehall","Whitehall_18","mature",33.895767,"temperate",5,0.617805820435883,0.163653960521078
-"MacArthur_5_mature",2,"MacArthur","MacArthur_5","mature",27.177583,"subtropical",3,0.492462371034798,0.138336281142845
-"Gen Butler_3_mature",3,"Gen Butler","Gen Butler_3","mature",38.675517,"temperate",5,0.66139916256789,0.172414861957647
-"Center Hill_7_mature",4,"Center Hill","Center Hill_7","mature",36.06935,"temperate",5,0.556323416181575,0.151266100188362
-"KBS_9_mature",5,"KBS","KBS_9","mature",42.399933,"north temperate",4,0.580335188283649,0.156109602752044
-"OCM_10_mature",6,"OCM","OCM_10","mature",32.34554,"temperate",3,0.580335188283649,0.156109602752044
-"Dalton_4_mature",7,"Dalton","Dalton_4","mature",34.670883,"temperate",5,0.575383653815745,0.155111450252971
-"KBS_2_mature",8,"KBS","KBS_2","mature",42.399933,"north temperate",5,0.662661850572115,0.172668415883521
-"Center Hill_3_mature",9,"Center Hill","Center Hill_3","mature",36.06935,"temperate",3,0.492462371034798,0.138336281142845
-"Dalton_8_mature",10,"Dalton","Dalton_8","mature",34.670883,"temperate",5,0.683447706393704,0.176840917629905
-"McPhee_8_mature",11,"McPhee","McPhee_8","mature",40.971333,"north temperate",5,0.735717943727224,0.187323899105758
-"OCM_17_mature",12,"OCM","OCM_17","mature",32.34554,"temperate",3,0.567567957622287,0.153535271631648
-"With_43_mature",13,"With","With_43","mature",28.60387,"subtropical",3,0.355096616689481,0.110059514513857
-"Bella_2_mature",14,"Bella","Bella_2","mature",8.79,"tropical",5,0.615994089517553,0.163289518331473
-"HV_3_mature",15,"HV","HV_3","mature",37.1818,"temperate",2,0.570227858763699,0.154071782116046
-"Whitehall_16_mature",16,"Whitehall","Whitehall_16","mature",33.895767,"temperate",5,0.636173107290974,0.167347028341877
-"Bella_3_mature",17,"Bella","Bella_3","mature",8.79,"tropical",5,0.619591667118361,0.164013166230671
-"HV_10_mature",18,"HV","HV_10","mature",37.1818,"temperate",4,0.689673265895927,0.178090145017221
-"McPhee_7_mature",19,"McPhee","McPhee_7","mature",40.971333,"north temperate",4,0.598385806541204,0.159745816399695
-"MacArthur_15_mature",20,"MacArthur","MacArthur_15","mature",27.177583,"subtropical",5,0.559230794363196,0.151852992618629
-"TT_7_mature",21,"TT","TT_7","mature",30.673889,"temperate",5,0.587413084367337,0.157535866666727
-"KBS_8_mature",22,"KBS","KBS_8","mature",42.399933,"north temperate",5,0.656216858539318,0.171374120293972
-"OCM_18_mature",23,"OCM","OCM_18","mature",32.34554,"temperate",5,0.559230794363196,0.151852992618629
-"Caesar_7_mature",24,"Caesar","Caesar_7","mature",39.4887,"north temperate",4,0.731443925725355,0.186467158014716
-"Gav_23_mature",25,"Gav","Gav_23","mature",8.72883,"tropical",5,0.591918401125005,0.158443420510083
-"Hwy 27_6_mature",26,"Hwy 27","Hwy 27_6","mature",26.537067,"subtropical",3,0.403323253092262,0.12009386539504
-"HV_5_mature",27,"HV","HV_5","mature",37.1818,"temperate",3,0.690681368387241,0.178292412801591
-"TT_25_mature",28,"TT","TT_25","mature",30.673889,"temperate",4,0.559230794363196,0.151852992618629
-"With_46_mature",29,"With","With_46","mature",28.60387,"subtropical",3,0.465175893226171,0.132782382195957
-"With_42_mature",30,"With","With_42","mature",28.60387,"subtropical",3,0.452341487297313,0.130162075351277
-"Bella_21_mature",31,"Bella","Bella_21","mature",8.79,"tropical",3,0.403323253092262,0.12009386539504
-"Dalton_9_mature",32,"Dalton","Dalton_9","mature",34.670883,"temperate",3,0.591918401125005,0.158443420510083
-"Gav_22_mature",33,"Gav","Gav_22","mature",8.72883,"tropical",3,0.526575426323448,0.145253109589752
-"Tiri_12_mature",34,"Tiri","Tiri_12","mature",10.41549,"tropical",4,0.637716412964422,0.167657209096086
-"Hwy 27_1_mature",35,"Hwy 27","Hwy 27_1","mature",26.537067,"subtropical",3,0.562072084005125,0.152426422772174
-"Whitehall_3_mature",36,"Whitehall","Whitehall_3","mature",33.895767,"temperate",3,0.501902240985099,0.140252986979132
-"Gav_1_mature",37,"Gav","Gav_1","mature",8.72883,"tropical",3,0.684507070669752,0.177053505390731
-"OCM_5_mature",38,"OCM","OCM_5","mature",32.34554,"temperate",4,0.65753271555448,0.171638395602346
-"Bella_13_mature",39,"Bella","Bella_13","mature",8.79,"tropical",5,0.767676358158242,0.19372814464594
-"McPhee_6_mature",40,"McPhee","McPhee_6","mature",40.971333,"north temperate",5,0.738488201583136,0.187879171482805
-"TT_9_mature",41,"TT","TT_9","mature",30.673889,"temperate",4,0.737801371576933,0.187741505330388
-"Gen Butler_7_mature",42,"Gen Butler","Gen Butler_7","mature",38.675517,"temperate",5,0.797880170773792,0.199778159590887
-"Gen Butler_1_mature",43,"Gen Butler","Gen Butler_1","mature",38.675517,"temperate",4,0.650810376756387,0.170288163811072
-"Hwy 27_2_mature",44,"Hwy 27","Hwy 27_2","mature",26.537067,"subtropical",4,0.628157130014255,0.165735629339528
-"Whitehall_17_mature",45,"Whitehall","Whitehall_17","mature",33.895767,"temperate",5,0.663911910979787,0.172919424023815
-"Gen Butler_9_mature",46,"Gen Butler","Gen Butler_9","mature",38.675517,"temperate",3,0.684507070669752,0.177053505390731
-"MacArthur_22_mature",47,"MacArthur","MacArthur_22","mature",27.177583,"subtropical",5,0.51484661403199,0.142877846615235
-"Tiri_16_mature",48,"Tiri","Tiri_16","mature",10.41549,"tropical",3,0.51484661403199,0.142877846615235
-"Caesar_10_mature",49,"Caesar","Caesar_10","mature",39.4887,"north temperate",5,0.725507951510766,0.185277159722658
-"OCM_16_mature",50,"OCM","OCM_16","mature",32.34554,"temperate",5,0.678011878316266,0.175749986500664
-"MacArthur_16_mature",51,"MacArthur","MacArthur_16","mature",27.177583,"subtropical",5,0.575383653815745,0.155111450252971
-"HV_13_mature",52,"HV","HV_13","mature",37.1818,"temperate",3,0.698466227004198,0.179854210542075
-"Gav_6_mature",53,"Gav","Gav_6","mature",8.72883,"tropical",5,0.587413084367337,0.157535866666727
-"KBS_5_mature",54,"KBS","KBS_5","mature",42.399933,"north temperate",3,NA,NA
-"KBS_12_mature",55,"KBS","KBS_12","mature",42.399933,"north temperate",5,0.604534990352816,0.160983709357325
-"MacArthur_21_mature",56,"MacArthur","MacArthur_21","mature",27.177583,"subtropical",3,0.540676454916478,0.148105266901893
-"With_48_mature",57,"With","With_48","mature",28.60387,"subtropical",3,0.537297505622295,0.147422149365344
-"Tiri_5_mature",58,"Tiri","Tiri_5","mature",10.41549,"tropical",5,0.582739293421334,0.156594121551312
-"Tiri_1_mature",59,"Tiri","Tiri_1","mature",10.41549,"tropical",3,0.572832336628249,0.154597020344272
-"Caesar_9_mature",60,"Caesar","Caesar_9","mature",39.4887,"north temperate",1,0.300649760958813,0.0984924742069596
-"Hwy 27_8_mature",61,"Hwy 27","Hwy 27_8","mature",26.537067,"subtropical",3,0.487460903958378,0.137319847946172
-"Caesar_5_mature",62,"Caesar","Caesar_5","mature",39.4887,"north temperate",4,0.713555874438851,0.182880678056244
-"TT_10_mature",63,"TT","TT_10","mature",30.673889,"temperate",3,0.667588790806968,0.173657672453741
-"Tiri_22_mature",64,"Tiri","Tiri_22","mature",10.41549,"tropical",4,0.650810376756387,0.170288163811072
-"McPhee_2_mature",65,"McPhee","McPhee_2","mature",40.971333,"north temperate",3,0.748361961031203,0.189858060524824
-"With_47_mature",66,"With","With_47","mature",28.60387,"subtropical",4,0.604534990352816,0.160983709357325
-"Center Hill_2_mature",67,"Center Hill","Center Hill_2","mature",36.06935,"temperate",5,0.606519284958356,0.161383083975298
-"Dalton_2_mature",68,"Dalton","Dalton_2","mature",34.670883,"temperate",5,0.675769585305064,0.175299926101796
-"Center Hill_8_mature",69,"Center Hill","Center Hill_8","mature",36.06935,"temperate",5,0.730717162594806,0.186321469277695
-"Dalton_6_mature",70,"Dalton","Dalton_6","mature",34.670883,"temperate",5,0.674633172527986,0.175071820664943
-"TT_5_mature",71,"TT","TT_5","mature",30.673889,"temperate",4,0.689673265895927,0.178090145017221
-"Hwy 27_3_mature",72,"Hwy 27","Hwy 27_3","mature",26.537067,"subtropical",4,0.577883937140472,0.155615507713723
-"Bella_4_mature",73,"Bella","Bella_4","mature",8.79,"tropical",4,0.623088594232942,0.16471645539925
-"Center Hill_1_mature",74,"Center Hill","Center Hill_1","mature",36.06935,"temperate",4,0.649421411860519,0.170009140566921
-"Gen Butler_2_mature",75,"Gen Butler","Gen Butler_2","mature",38.675517,"temperate",5,0.789968808160913,0.198193675632584
-"Whitehall_2_mature",76,"Whitehall","Whitehall_2","mature",33.895767,"temperate",3,0.518879742174096,0.143694934161264
-"HV_7_mature",77,"HV","HV_7","mature",37.1818,"temperate",5,0.810045513053224,0.202214366552928
-"McPhee_1_mature",78,"McPhee","McPhee_1","mature",40.971333,"north temperate",3,0.522786798452517,0.14448615946443
-"Whitehall_18_mature",79,"Whitehall","Whitehall_18","mature",33.895767,"temperate",4,0.570227858763699,0.154071782116046
-"MacArthur_5_mature",80,"MacArthur","MacArthur_5","mature",27.177583,"subtropical",4,0.543966464727055,0.148770213860841
-"Gen Butler_3_mature",81,"Gen Butler","Gen Butler_3","mature",38.675517,"temperate",5,0.648016839589638,0.1697269679813
-"Center Hill_7_mature",82,"Center Hill","Center Hill_7","mature",36.06935,"temperate",3,0.589686039526676,0.157993761632183
-"KBS_9_mature",83,"KBS","KBS_9","mature",42.399933,"north temperate",5,0.681301657271473,0.176410240790972
-"OCM_10_mature",84,"OCM","OCM_10","mature",32.34554,"temperate",5,0.559230794363196,0.151852992618629
-"Dalton_4_mature",85,"Dalton","Dalton_4","mature",34.670883,"temperate",5,0.700338977306702,0.180229877268535
-"KBS_2_mature",86,"KBS","KBS_2","mature",42.399933,"north temperate",5,0.782970607756562,0.196791959054047
-"Center Hill_3_mature",87,"Center Hill","Center Hill_3","mature",36.06935,"temperate",5,0.703096523155546,0.180783000438272
-"Dalton_8_mature",88,"Dalton","Dalton_8","mature",34.670883,"temperate",4,0.714389233076175,0.183047791871404
-"McPhee_8_mature",89,"McPhee","McPhee_8","mature",40.971333,"north temperate",4,0.665149593858414,0.173167936992235
-"OCM_17_mature",90,"OCM","OCM_17","mature",32.34554,"temperate",4,0.634610508832864,0.1670329507035
-"With_43_mature",91,"With","With_43","mature",28.60387,"subtropical",5,0.691681405714225,0.178493057221089
-"Bella_2_mature",92,"Bella","Bella_2","mature",8.79,"tropical",4,0.645159441727251,0.169152884671567
-"HV_3_mature",93,"HV","HV_3","mature",37.1818,"temperate",5,0.741198393588382,0.188422378265757
-"Whitehall_16_mature",94,"Whitehall","Whitehall_16","mature",33.895767,"temperate",4,0.636173107290974,0.167347028341877
-"Bella_3_mature",95,"Bella","Bella_3","mature",8.79,"tropical",4,0.6004693269752,0.160165294957375
-"HV_10_mature",96,"HV","HV_10","mature",37.1818,"temperate",4,0.626490349780038,0.165400500084731
-"McPhee_7_mature",97,"McPhee","McPhee_7","mature",40.971333,"north temperate",1,0.6004693269752,0.160165294957375
-"MacArthur_15_mature",98,"MacArthur","MacArthur_15","mature",27.177583,"subtropical",3,0.403323253092262,0.12009386539504
-"TT_7_mature",99,"TT","TT_7","mature",30.673889,"temperate",4,0.598385806541204,0.159745816399695
-"KBS_8_mature",100,"KBS","KBS_8","mature",42.399933,"north temperate",5,0.683447706393704,0.176840917629905
-"OCM_18_mature",101,"OCM","OCM_18","mature",32.34554,"temperate",5,0.640747011331724,0.16826625854841
-"Caesar_7_mature",102,"Caesar","Caesar_7","mature",39.4887,"north temperate",4,0.680214656100692,0.176192087796952
-"Gav_23_mature",103,"Gav","Gav_23","mature",8.72883,"tropical",5,0.65753271555448,0.171638395602346
-"Hwy 27_6_mature",104,"Hwy 27","Hwy 27_6","mature",26.537067,"subtropical",3,0.482250948546446,0.136260331454295
-"HV_5_mature",105,"HV","HV_5","mature",37.1818,"temperate",4,0.587413084367337,0.157535866666727
-"TT_25_mature",106,"TT","TT_25","mature",30.673889,"temperate",5,0.686599239730858,0.177473333357232
-"With_46_mature",107,"With","With_46","mature",28.60387,"subtropical",4,0.537297505622295,0.147422149365344
-"With_42_mature",108,"With","With_42","mature",28.60387,"subtropical",5,0.608472571751356,0.161776178778351
-"Bella_21_mature",109,"Bella","Bella_21","mature",8.79,"tropical",4,0.547172097291036,0.149417931904688
-"Dalton_9_mature",110,"Dalton","Dalton_9","mature",34.670883,"temperate",3,0.564850223007983,0.152986994427015
-"Gav_22_mature",111,"Gav","Gav_22","mature",8.72883,"tropical",5,0.624801043590217,0.165060817254671
-"Tiri_12_mature",112,"Tiri","Tiri_12","mature",10.41549,"tropical",4,0.639240896449598,0.167963588482561
-"Hwy 27_1_mature",113,"Hwy 27","Hwy 27_1","mature",26.537067,"subtropical",4,0.594111593709345,0.158885134355498
-"Whitehall_3_mature",114,"Whitehall","Whitehall_3","mature",33.895767,"temperate",5,0.645159441727251,0.169152884671567
-"Gav_1_mature",115,"Gav","Gav_1","mature",8.72883,"tropical",5,0.689673265895927,0.178090145017221
-"OCM_5_mature",116,"OCM","OCM_5","mature",32.34554,"temperate",4,0.716039465619448,0.183378705138689
-"Bella_13_mature",117,"Bella","Bella_13","mature",8.79,"tropical",5,0.652184077322019,0.170564107238395
-"McPhee_6_mature",118,"McPhee","McPhee_6","mature",40.971333,"north temperate",5,0.741866858674447,0.188556355580807
-"TT_9_mature",119,"TT","TT_9","mature",30.673889,"temperate",5,0.636173107290974,0.167347028341877
-"Gen Butler_7_mature",120,"Gen Butler","Gen Butler_7","mature",38.675517,"temperate",5,0.668790769363589,0.173898988931706
-"Gen Butler_1_mature",121,"Gen Butler","Gen Butler_1","mature",38.675517,"temperate",0,0.137996611863776,0.0601299521917627
-"Hwy 27_2_mature",122,"Hwy 27","Hwy 27_2","mature",26.537067,"subtropical",4,0.550297572569284,0.150049291340647
-"Whitehall_17_mature",123,"Whitehall","Whitehall_17","mature",33.895767,"temperate",4,0.631425460897497,0.16639270429108
-"Gen Butler_9_mature",124,"Gen Butler","Gen Butler_9","mature",38.675517,"temperate",5,0.665149593858414,0.173167936992235
-"MacArthur_22_mature",125,"MacArthur","MacArthur_22","mature",27.177583,"subtropical",5,0.591918401125005,0.158443420510083
-"Tiri_16_mature",126,"Tiri","Tiri_16","mature",10.41549,"tropical",3,0.60251868755415,0.160577851018466
-"Caesar_10_mature",127,"Caesar","Caesar_10","mature",39.4887,"north temperate",4,0.587413084367337,0.157535866666727
-"OCM_16_mature",128,"OCM","OCM_16","mature",32.34554,"temperate",4,0.610395804934419,0.162163188202238
-"MacArthur_16_mature",129,"MacArthur","MacArthur_16","mature",27.177583,"subtropical",4,0.608472571751356,0.161776178778351
-"HV_13_mature",130,"HV","HV_13","mature",37.1818,"temperate",5,0.756922930340444,0.191573585770078
-"Gav_6_mature",131,"Gav","Gav_6","mature",8.72883,"tropical",2,0.642235194995001,0.168565308037424
-"KBS_5_mature",132,"KBS","KBS_5","mature",42.399933,"north temperate",4,0.668790769363589,0.173898988931706
-"KBS_12_mature",133,"KBS","KBS_12","mature",42.399933,"north temperate",5,0.633028129121113,0.166714877018625
-"MacArthur_21_mature",134,"MacArthur","MacArthur_21","mature",27.177583,"subtropical",2,NA,NA
-"With_48_mature",135,"With","With_48","mature",28.60387,"subtropical",4,0.614155712976966,0.162919684726224
-"Tiri_5_mature",136,"Tiri","Tiri_5","mature",10.41549,"tropical",4,0.612289895331274,0.162544297790021
-"Tiri_1_mature",137,"Tiri","Tiri_1","mature",10.41549,"tropical",5,0.673486333417489,0.174841614764685
-"Caesar_9_mature",138,"Caesar","Caesar_9","mature",39.4887,"north temperate",5,0.760419727046406,0.19227424143857
-"Hwy 27_8_mature",139,"Hwy 27","Hwy 27_8","mature",26.537067,"subtropical",3,0.567567957622287,0.153535271631648
-"Caesar_5_mature",140,"Caesar","Caesar_5","mature",39.4887,"north temperate",4,0.679118119375663,0.175972014403855
-"TT_10_mature",141,"TT","TT_10","mature",30.673889,"temperate",3,0.755735250386444,0.19133560115362
-"Tiri_22_mature",142,"Tiri","Tiri_22","mature",10.41549,"tropical",5,0.734309446387846,0.187041568460861
-"McPhee_2_mature",143,"McPhee","McPhee_2","mature",40.971333,"north temperate",4,0.791770667128386,0.198554563489555
-"With_47_mature",144,"With","With_47","mature",28.60387,"subtropical",4,0.575383653815745,0.155111450252971
-"Center Hill_2_mature",145,"Center Hill","Center Hill_2","mature",36.06935,"temperate",5,0.762132113860869,0.192617340485126
-"Dalton_2_mature",146,"Dalton","Dalton_2","mature",34.670883,"temperate",5,0.687632337606009,0.177680632768855
-"Center Hill_8_mature",147,"Center Hill","Center Hill_8","mature",36.06935,"temperate",4,0.740526334509465,0.188287679083579
-"Dalton_6_mature",148,"Dalton","Dalton_6","mature",34.670883,"temperate",5,0.788600161374015,0.197919549277695
-"TT_5_mature",149,"TT","TT_5","mature",30.673889,"temperate",4,0.704901660797716,0.18114506534426
-"Hwy 27_3_mature",150,"Hwy 27","Hwy 27_3","mature",26.537067,"subtropical",4,0.681301657271473,0.176410240790972
-"Bella_4_mature",151,"Bella","Bella_4","mature",8.79,"tropical",5,0.675769585305064,0.175299926101796
-"Center Hill_1_mature",152,"Center Hill","Center Hill_1","mature",36.06935,"temperate",5,0.698466227004198,0.179854210542075
-"Gen Butler_2_mature",153,"Gen Butler","Gen Butler_2","mature",38.675517,"temperate",5,0.791770667128386,0.198554563489555
-"Whitehall_2_mature",154,"Whitehall","Whitehall_2","mature",33.895767,"temperate",4,0.648016839589638,0.1697269679813
-"HV_7_mature",155,"HV","HV_7","mature",37.1818,"temperate",3,0.671160598416103,0.174374744302356
-"McPhee_1_mature",156,"McPhee","McPhee_1","mature",40.971333,"north temperate",3,0.681301657271473,0.176410240790972
-"Whitehall_18_mature",157,"Whitehall","Whitehall_18","mature",33.895767,"temperate",3,0.621352358776154,0.16436728381169
-"MacArthur_5_mature",158,"MacArthur","MacArthur_5","mature",27.177583,"subtropical",2,0.526575426323448,0.145253109589752
-"Gen Butler_3_mature",159,"Gen Butler","Gen Butler_3","mature",38.675517,"temperate",5,0.686599239730858,0.177473333357232
-"Center Hill_7_mature",160,"Center Hill","Center Hill_7","mature",36.06935,"temperate",4,0.567567957622287,0.153535271631648
-"KBS_9_mature",161,"KBS","KBS_9","mature",42.399933,"north temperate",5,0.721649525251917,0.184503579324583
-"OCM_10_mature",162,"OCM","OCM_10","mature",32.34554,"temperate",3,0.487460903958378,0.137319847946172
-"Dalton_4_mature",163,"Dalton","Dalton_4","mature",34.670883,"temperate",5,0.648016839589638,0.1697269679813
-"KBS_2_mature",164,"KBS","KBS_2","mature",42.399933,"north temperate",5,0.686599239730858,0.177473333357232
-"Center Hill_3_mature",165,"Center Hill","Center Hill_3","mature",36.06935,"temperate",5,0.709303648078614,0.1820279304339
-"Dalton_8_mature",166,"Dalton","Dalton_8","mature",34.670883,"temperate",4,0.646596305203227,0.169441574148461
-"McPhee_8_mature",167,"McPhee","McPhee_8","mature",40.971333,"north temperate",5,0.743851069304207,0.188954032672677
-"OCM_17_mature",168,"OCM","OCM_17","mature",32.34554,"temperate",4,0.547172097291036,0.149417931904688
-"With_43_mature",169,"With","With_43","mature",28.60387,"subtropical",4,0.547172097291036,0.149417931904688
-"Bella_2_mature",170,"Bella","Bella_2","mature",8.79,"tropical",3,0.575383653815745,0.155111450252971
-"HV_3_mature",171,"HV","HV_3","mature",37.1818,"temperate",3,0.689673265895927,0.178090145017221
-"Whitehall_16_mature",172,"Whitehall","Whitehall_16","mature",33.895767,"temperate",3,0.585098031943796,0.157069428266169
-"Bella_3_mature",173,"Bella","Bella_3","mature",8.79,"tropical",5,0.667588790806968,0.173657672453741
-"HV_10_mature",174,"HV","HV_10","mature",37.1818,"temperate",5,0.629801977138373,0.166066325490631
-"McPhee_7_mature",175,"McPhee","McPhee_7","mature",40.971333,"north temperate",4,0.667588790806968,0.173657672453741
-"MacArthur_15_mature",176,"MacArthur","MacArthur_15","mature",27.177583,"subtropical",4,0.51484661403199,0.142877846615235
-"TT_7_mature",177,"TT","TT_7","mature",30.673889,"temperate",4,NA,NA
-"KBS_8_mature",178,"KBS","KBS_8","mature",42.399933,"north temperate",4,0.643705869385089,0.16886082254627
-"OCM_18_mature",179,"OCM","OCM_18","mature",32.34554,"temperate",4,0.646596305203227,0.169441574148461
-"Caesar_7_mature",180,"Caesar","Caesar_7","mature",39.4887,"north temperate",5,0.734309446387846,0.187041568460861
-"Gav_23_mature",181,"Gav","Gav_23","mature",8.72883,"tropical",2,NA,NA
-"Hwy 27_6_mature",182,"Hwy 27","Hwy 27_6","mature",26.537067,"subtropical",4,0.403323253092262,0.12009386539504
-"HV_5_mature",183,"HV","HV_5","mature",37.1818,"temperate",4,0.663911910979787,0.172919424023815
-"TT_25_mature",184,"TT","TT_25","mature",30.673889,"temperate",5,0.650810376756387,0.170288163811072
-"With_46_mature",185,"With","With_46","mature",28.60387,"subtropical",4,0.51484661403199,0.142877846615235
-"With_42_mature",186,"With","With_42","mature",28.60387,"subtropical",5,0.550297572569284,0.150049291340647
-"Bella_21_mature",187,"Bella","Bella_21","mature",8.79,"tropical",2,0.487460903958378,0.137319847946172
-"Dalton_9_mature",188,"Dalton","Dalton_9","mature",34.670883,"temperate",2,0.438036917458215,0.127234621458195
-"Gav_22_mature",189,"Gav","Gav_22","mature",8.72883,"tropical",4,NA,NA
-"Tiri_12_mature",190,"Tiri","Tiri_12","mature",10.41549,"tropical",3,0.591918401125005,0.158443420510083
-"Hwy 27_1_mature",191,"Hwy 27","Hwy 27_1","mature",26.537067,"subtropical",4,0.636173107290974,0.167347028341877
-"Whitehall_3_mature",192,"Whitehall","Whitehall_3","mature",33.895767,"temperate",5,0.623088594232942,0.16471645539925
-"Gav_1_mature",193,"Gav","Gav_1","mature",8.72883,"tropical",4,NA,NA
-"OCM_5_mature",194,"OCM","OCM_5","mature",32.34554,"temperate",4,0.690681368387241,0.178292412801591
-"Bella_13_mature",195,"Bella","Bella_13","mature",8.79,"tropical",5,0.779071595398721,0.196010948158031
-"McPhee_6_mature",196,"McPhee","McPhee_6","mature",40.971333,"north temperate",4,0.782489830538371,0.196695656635184
-"TT_9_mature",197,"TT","TT_9","mature",30.673889,"temperate",3,0.530252594537345,0.145997229852784
-"Gen Butler_7_mature",198,"Gen Butler","Gen Butler_7","mature",38.675517,"temperate",5,0.617805820435883,0.163653960521078
-"Gen Butler_1_mature",199,"Gen Butler","Gen Butler_1","mature",38.675517,"temperate",5,0.797880170773792,0.199778159590887
-"Hwy 27_2_mature",200,"Hwy 27","Hwy 27_2","mature",26.537067,"subtropical",4,0.497271395987218,0.139312998370225
-"Whitehall_17_mature",201,"Whitehall","Whitehall_17","mature",33.895767,"temperate",4,0.640747011331724,0.16826625854841
-"Gen Butler_9_mature",202,"Gen Butler","Gen Butler_9","mature",38.675517,"temperate",4,0.720863339364985,0.184345948751457
-"MacArthur_22_mature",203,"MacArthur","MacArthur_22","mature",27.177583,"subtropical",3,0.543966464727055,0.148770213860841
-"Tiri_16_mature",204,"Tiri","Tiri_16","mature",10.41549,"tropical",2,0.537297505622295,0.147422149365344
-"Caesar_10_mature",205,"Caesar","Caesar_10","mature",39.4887,"north temperate",4,0.621352358776154,0.16436728381169
-"OCM_16_mature",206,"OCM","OCM_16","mature",32.34554,"temperate",2,0.526575426323448,0.145253109589752
-"MacArthur_16_mature",207,"MacArthur","MacArthur_16","mature",27.177583,"subtropical",4,0.640747011331724,0.16826625854841
-"HV_13_mature",208,"HV","HV_13","mature",37.1818,"temperate",4,0.715217072595482,0.183213796019002
-"Gav_6_mature",209,"Gav","Gav_6","mature",8.72883,"tropical",4,0.497271395987218,0.139312998370225
-"KBS_5_mature",210,"KBS","KBS_5","mature",42.399933,"north temperate",4,0.596266968130669,0.159319179062602
-"KBS_12_mature",211,"KBS","KBS_12","mature",42.399933,"north temperate",2,0.482250948546446,0.136260331454295
-"MacArthur_21_mature",212,"MacArthur","MacArthur_21","mature",27.177583,"subtropical",3,0.51484661403199,0.142877846615235
-"With_48_mature",213,"With","With_48","mature",28.60387,"subtropical",3,0.553346801651284,0.15066509815273
-"Tiri_5_mature",214,"Tiri","Tiri_5","mature",10.41549,"tropical",4,0.645159441727251,0.169152884671567
-"Tiri_1_mature",215,"Tiri","Tiri_1","mature",10.41549,"tropical",4,0.628157130014255,0.165735629339528
-"Caesar_9_mature",216,"Caesar","Caesar_9","mature",39.4887,"north temperate",4,0.612289895331274,0.162544297790021
-"Hwy 27_8_mature",217,"Hwy 27","Hwy 27_8","mature",26.537067,"subtropical",4,0.587413084367337,0.157535866666727
-"Caesar_5_mature",218,"Caesar","Caesar_5","mature",39.4887,"north temperate",5,0.649421411860519,0.170009140566921
-"TT_10_mature",219,"TT","TT_10","mature",30.673889,"temperate",2,0.51484661403199,0.142877846615235
-"Tiri_22_mature",220,"Tiri","Tiri_22","mature",10.41549,"tropical",4,0.60251868755415,0.160577851018466
-"McPhee_2_mature",221,"McPhee","McPhee_2","mature",40.971333,"north temperate",2,0.537297505622295,0.147422149365344
-"With_47_mature",222,"With","With_47","mature",28.60387,"subtropical",1,0.201983400024875,0.0763042919742331
-"Center Hill_2_mature",223,"Center Hill","Center Hill_2","mature",36.06935,"temperate",4,0.575383653815745,0.155111450252971
-"Dalton_2_mature",224,"Dalton","Dalton_2","mature",34.670883,"temperate",3,0.589686039526676,0.157993761632183
-"Center Hill_8_mature",225,"Center Hill","Center Hill_8","mature",36.06935,"temperate",5,0.621352358776154,0.16436728381169
-"Dalton_6_mature",226,"Dalton","Dalton_6","mature",34.670883,"temperate",3,0.591918401125005,0.158443420510083
-"TT_5_mature",227,"TT","TT_5","mature",30.673889,"temperate",4,0.550297572569284,0.150049291340647
-"Hwy 27_3_mature",228,"Hwy 27","Hwy 27_3","mature",26.537067,"subtropical",3,0.562072084005125,0.152426422772174
-"Bella_4_mature",229,"Bella","Bella_4","mature",8.79,"tropical",5,0.606519284958356,0.161383083975298
-"Center Hill_1_mature",230,"Center Hill","Center Hill_1","mature",36.06935,"temperate",1,0.51067900585235,0.14203314884745
-"Gen Butler_2_mature",231,"Gen Butler","Gen Butler_2","mature",38.675517,"temperate",4,0.598385806541204,0.159745816399695
-"Whitehall_2_mature",232,"Whitehall","Whitehall_2","mature",33.895767,"temperate",4,0.570227858763699,0.154071782116046
-"HV_7_mature",233,"HV","HV_7","mature",37.1818,"temperate",3,0.553346801651284,0.15066509815273
-"McPhee_1_mature",234,"McPhee","McPhee_1","mature",40.971333,"north temperate",3,0.547172097291036,0.149417931904688
-"Whitehall_18_mature",235,"Whitehall","Whitehall_18","mature",33.895767,"temperate",3,0.572832336628249,0.154597020344272
-"MacArthur_5_mature",236,"MacArthur","MacArthur_5","mature",27.177583,"subtropical",4,0.577883937140472,0.155615507713723
-"Gen Butler_3_mature",237,"Gen Butler","Gen Butler_3","mature",38.675517,"temperate",5,0.699406109316345,0.180042749526113
-"Center Hill_7_mature",238,"Center Hill","Center Hill_7","mature",36.06935,"temperate",4,0.612289895331274,0.162544297790021
-"KBS_9_mature",239,"KBS","KBS_9","mature",42.399933,"north temperate",5,0.66637514192005,0.173414003907925
-"OCM_10_mature",240,"OCM","OCM_10","mature",32.34554,"temperate",5,0.646596305203227,0.169441574148461
-"Dalton_4_mature",241,"Dalton","Dalton_4","mature",34.670883,"temperate",3,0.678011878316266,0.175749986500664
-"KBS_2_mature",242,"KBS","KBS_2","mature",42.399933,"north temperate",3,0.711021935419605,0.182372527727185
-"Center Hill_3_mature",243,"Center Hill","Center Hill_3","mature",36.06935,"temperate",5,0.745804274725436,0.189345482805288
-"Dalton_8_mature",244,"Dalton","Dalton_8","mature",34.670883,"temperate",2,0.604534990352816,0.160983709357325
-"McPhee_8_mature",245,"McPhee","McPhee_8","mature",40.971333,"north temperate",5,0.770358910580228,0.194265570456653
-"OCM_17_mature",246,"OCM","OCM_17","mature",32.34554,"temperate",4,0.663911910979787,0.172919424023815
-"With_43_mature",247,"With","With_43","mature",28.60387,"subtropical",5,0.623088594232942,0.16471645539925
-"Bella_2_mature",248,"Bella","Bella_2","mature",8.79,"tropical",2,0.636173107290974,0.167347028341877
-"HV_3_mature",249,"HV","HV_3","mature",37.1818,"temperate",5,0.76382135918694,0.192955794529368
-"Whitehall_16_mature",250,"Whitehall","Whitehall_16","mature",33.895767,"temperate",2,0.585098031943796,0.157069428266169
-"Bella_3_mature",251,"Bella","Bella_3","mature",8.79,"tropical",5,0.669981299895478,0.174137998315818
-"HV_10_mature",252,"HV","HV_10","mature",37.1818,"temperate",5,0.662661850572115,0.172668415883521
-"McPhee_7_mature",253,"McPhee","McPhee_7","mature",40.971333,"north temperate",4,0.794862741271186,0.199173846730246
-"MacArthur_15_mature",254,"MacArthur","MacArthur_15","mature",27.177583,"subtropical",3,0.487460903958378,0.137319847946172
-"TT_7_mature",255,"TT","TT_7","mature",30.673889,"temperate",5,0.642235194995001,0.168565308037424
-"KBS_8_mature",256,"KBS","KBS_8","mature",42.399933,"north temperate",4,0.634610508832864,0.1670329507035
-"OCM_18_mature",257,"OCM","OCM_18","mature",32.34554,"temperate",4,0.702184083711147,0.180599982443909
-"Caesar_7_mature",258,"Caesar","Caesar_7","mature",39.4887,"north temperate",5,0.808490263692189,0.201902932288526
-"Gav_23_mature",259,"Gav","Gav_23","mature",8.72883,"tropical",4,0.530252594537345,0.145997229852784
-"Hwy 27_6_mature",260,"Hwy 27","Hwy 27_6","mature",26.537067,"subtropical",4,0.654887002187021,0.171107021453891
-"Gav_6_mature",287,"Gav","Gav_6","mature",8.72883,"tropical",5,0.652184077322019,0.170564107238395
-"KBS_5_mature",288,"KBS","KBS_5","mature",42.399933,"north temperate",5,0.660123589243901,0.172158710076675
-"KBS_12_mature",289,"KBS","KBS_12","mature",42.399933,"north temperate",4,0.637716412964422,0.167657209096086
-"MacArthur_21_mature",290,"MacArthur","MacArthur_21","mature",27.177583,"subtropical",4,0.501902240985099,0.140252986979132
-"With_48_mature",291,"With","With_48","mature",28.60387,"subtropical",4,0.570227858763699,0.154071782116046
-"Tiri_5_mature",292,"Tiri","Tiri_5","mature",10.41549,"tropical",5,0.696564991851123,0.179472812564945
-"Tiri_1_mature",293,"Tiri","Tiri_1","mature",10.41549,"tropical",5,0.715217072595482,0.183213796019002
-"Caesar_9_mature",294,"Caesar","Caesar_9","mature",39.4887,"north temperate",5,0.681301657271473,0.176410240790972
-"Hwy 27_8_mature",295,"Hwy 27","Hwy 27_8","mature",26.537067,"subtropical",5,0.640747011331724,0.16826625854841
-"Caesar_5_mature",296,"Caesar","Caesar_5","mature",39.4887,"north temperate",5,0.741198393588382,0.188422378265757
-"TT_10_mature",297,"TT","TT_10","mature",30.673889,"temperate",4,0.811199381598304,0.202445422371369
-"Tiri_22_mature",298,"Tiri","Tiri_22","mature",10.41549,"tropical",5,0.830331627453156,0.206276188412375
-"McPhee_2_mature",299,"McPhee","McPhee_2","mature",40.971333,"north temperate",5,0.665149593858414,0.173167936992235
-"With_47_mature",300,"With","With_47","mature",28.60387,"subtropical",3,0.562072084005125,0.152426422772174
-"Center Hill_2_mature",301,"Center Hill","Center Hill_2","mature",36.06935,"temperate",4,0.621352358776154,0.16436728381169
-"Dalton_2_mature",302,"Dalton","Dalton_2","mature",34.670883,"temperate",4,0.668790769363589,0.173898988931706
-"Center Hill_8_mature",303,"Center Hill","Center Hill_8","mature",36.06935,"temperate",3,0.598385806541204,0.159745816399695
-"Dalton_6_mature",304,"Dalton","Dalton_6","mature",34.670883,"temperate",5,0.723978843055275,0.184970593985438
-"TT_5_mature",305,"TT","TT_5","mature",30.673889,"temperate",4,0.669981299895478,0.174137998315818
-"Hwy 27_3_mature",306,"Hwy 27","Hwy 27_3","mature",26.537067,"subtropical",3,0.680214656100692,0.176192087796952
-"Bella_4_mature",307,"Bella","Bella_4","mature",8.79,"tropical",5,0.612289895331274,0.162544297790021
-"Center Hill_1_mature",308,"Center Hill","Center Hill_1","mature",36.06935,"temperate",3,0.559230794363196,0.151852992618629
-"Gen Butler_2_mature",309,"Gen Butler","Gen Butler_2","mature",38.675517,"temperate",5,0.688656967092985,0.177886227385072
-"Whitehall_2_mature",310,"Whitehall","Whitehall_2","mature",33.895767,"temperate",4,0.51484661403199,0.142877846615235
-"HV_7_mature",311,"HV","HV_7","mature",37.1818,"temperate",5,0.720072177458948,0.184187317972573
-"McPhee_1_mature",312,"McPhee","McPhee_1","mature",40.971333,"north temperate",4,0.685557532320594,0.177264300641234
-"HV_5_mature",339,"HV","HV_5","mature",37.1818,"temperate",4,0.650810376756387,0.170288163811072
-"TT_25_mature",340,"TT","TT_25","mature",30.673889,"temperate",5,0.572832336628249,0.154597020344272
-"With_46_mature",341,"With","With_46","mature",28.60387,"subtropical",3,0.471130533714576,0.133996259979096
-"With_42_mature",342,"With","With_42","mature",28.60387,"subtropical",3,0.465175893226171,0.132782382195957
-"Bella_21_mature",343,"Bella","Bella_21","mature",8.79,"tropical",4,NA,NA
-"Dalton_9_mature",344,"Dalton","Dalton_9","mature",34.670883,"temperate",4,0.482250948546446,0.136260331454295
-"Gav_22_mature",345,"Gav","Gav_22","mature",8.72883,"tropical",4,0.471130533714576,0.133996259979096
-"Tiri_12_mature",346,"Tiri","Tiri_12","mature",10.41549,"tropical",4,0.582739293421334,0.156594121551312
-"Hwy 27_1_mature",347,"Hwy 27","Hwy 27_1","mature",26.537067,"subtropical",4,0.51067900585235,0.14203314884745
-"Whitehall_3_mature",348,"Whitehall","Whitehall_3","mature",33.895767,"temperate",4,0.51484661403199,0.142877846615235
-"Gav_1_mature",349,"Gav","Gav_1","mature",8.72883,"tropical",4,0.626490349780038,0.165400500084731
-"OCM_5_mature",350,"OCM","OCM_5","mature",32.34554,"temperate",5,0.643705869385089,0.16886082254627
-"Bella_13_mature",351,"Bella","Bella_13","mature",8.79,"tropical",4,0.591918401125005,0.158443420510083
-"McPhee_6_mature",352,"McPhee","McPhee_6","mature",40.971333,"north temperate",4,0.619591667118361,0.164013166230671
-"TT_9_mature",353,"TT","TT_9","mature",30.673889,"temperate",5,0.589686039526676,0.157993761632183
-"Gen Butler_7_mature",354,"Gen Butler","Gen Butler_7","mature",38.675517,"temperate",4,0.465175893226171,0.132782382195957
-"Gen Butler_1_mature",355,"Gen Butler","Gen Butler_1","mature",38.675517,"temperate",4,0.672328874882073,0.174609269357827
-"Hwy 27_2_mature",356,"Hwy 27","Hwy 27_2","mature",26.537067,"subtropical",5,0.598385806541204,0.159745816399695
-"Whitehall_17_mature",357,"Whitehall","Whitehall_17","mature",33.895767,"temperate",4,0.660123589243901,0.172158710076675
-"Gen Butler_9_mature",358,"Gen Butler","Gen Butler_9","mature",38.675517,"temperate",5,0.643705869385089,0.16886082254627
-"MacArthur_22_mature",359,"MacArthur","MacArthur_22","mature",27.177583,"subtropical",5,0.518879742174096,0.143694934161264
-"Tiri_16_mature",360,"Tiri","Tiri_16","mature",10.41549,"tropical",5,0.562072084005125,0.152426422772174
-"Caesar_10_mature",361,"Caesar","Caesar_10","mature",39.4887,"north temperate",4,0.653542845415017,0.17083703809641
-"OCM_16_mature",362,"OCM","OCM_16","mature",32.34554,"temperate",4,NA,NA
-"MacArthur_16_mature",363,"MacArthur","MacArthur_16","mature",27.177583,"subtropical",5,0.537297505622295,0.147422149365344
-"HV_13_mature",364,"HV","HV_13","mature",37.1818,"temperate",5,0.729986149263919,0.186174926553266
-"Whitehall_18_young",391,"Whitehall","Whitehall_18","young",33.895767,"temperate",1,0.47451082158652,0.198512977746808
-"MacArthur_5_young",392,"MacArthur","MacArthur_5","young",27.177583,"subtropical",1,0.163613315454888,0.0890814106544632
-"Gen Butler_3_young",393,"Gen Butler","Gen Butler_3","young",38.675517,"temperate",3,0.489153397839364,0.203436811772106
-"Center Hill_7_young",394,"Center Hill","Center Hill_7","young",36.06935,"temperate",2,0.451396752665226,0.190727665002989
-"KBS_9_young",395,"KBS","KBS_9","young",42.399933,"north temperate",2,0.422176287621986,0.180858016276865
-"OCM_10_young",396,"OCM","OCM_10","young",32.34554,"temperate",3,0.382417704708506,0.167363029039402
-"Dalton_4_young",397,"Dalton","Dalton_4","young",34.670883,"temperate",3,0.517282712480959,0.212881383942614
-"KBS_2_young",398,"KBS","KBS_2","young",42.399933,"north temperate",2,0.43774432980871,0.186120631115335
-"Center Hill_3_young",399,"Center Hill","Center Hill_3","young",36.06935,"temperate",3,0.469167295311374,0.196714640290307
-"Dalton_8_young",400,"Dalton","Dalton_8","young",34.670883,"temperate",3,0.497942297657932,0.206389627215147
-"McPhee_8_young",401,"McPhee","McPhee_8","young",40.971333,"north temperate",2,0.565487206480866,0.229032622732255
-"OCM_17_young",402,"OCM","OCM_17","young",32.34554,"temperate",3,0.584473524937315,0.235385384230367
-"With_43_young",403,"With","With_43","young",28.60387,"subtropical",2,0.382417704708506,0.167363029039402
-"Bella_2_young",404,"Bella","Bella_2","young",8.79,"tropical",0,0,0
-"HV_3_young",405,"HV","HV_3","young",37.1818,"temperate",2,0.393768210244118,0.171224870263844
-"Whitehall_16_young",406,"Whitehall","Whitehall_16","young",33.895767,"temperate",3,0.489153397839364,0.203436811772106
-"Bella_3_young",407,"Bella","Bella_3","young",8.79,"tropical",0,0.227096481660709,0.113043395517382
-"HV_10_young",408,"HV","HV_10","young",37.1818,"temperate",2,0.536770219266165,0.219415210225027
-"McPhee_7_young",409,"McPhee","McPhee_7","young",40.971333,"north temperate",3,0.413489682867708,0.177916837622281
-"MacArthur_15_young",410,"MacArthur","MacArthur_15","young",27.177583,"subtropical",1,0.163613315454888,0.0890814106544632
-"TT_7_young",411,"TT","TT_7","young",30.673889,"temperate",2,0.47451082158652,0.198512977746808
-"KBS_8_young",412,"KBS","KBS_8","young",42.399933,"north temperate",3,0.595538933240425,0.239086050333775
-"OCM_18_young",413,"OCM","OCM_18","young",32.34554,"temperate",3,0.548089708592444,0.22320755281886
-"Caesar_7_young",414,"Caesar","Caesar_7","young",39.4887,"north temperate",2,0.536770219266165,0.219415210225027
-"Gav_23_young",415,"Gav","Gav_23","young",8.72883,"tropical",0,0,0
-"Hwy 27_6_young",416,"Hwy 27","Hwy 27_6","young",26.537067,"subtropical",2,0.296673315762684,0.137829894289236
-"HV_5_young",417,"HV","HV_5","young",37.1818,"temperate",2,0.430232745407031,0.183582716183218
-"TT_25_young",418,"TT","TT_25","young",30.673889,"temperate",1,0.36977437379057,0.163051132613121
-"With_46_young",419,"With","With_46","young",28.60387,"subtropical",3,0.296673315762684,0.137829894289236
-"With_42_young",420,"With","With_42","young",28.60387,"subtropical",1,0.26724423196339,0.127472568236169
-"Bella_21_young",421,"Bella","Bella_21","young",8.79,"tropical",0,0.296673315762684,0.137829894289236
-"Dalton_9_young",422,"Dalton","Dalton_9","young",34.670883,"temperate",2,0.457641434695102,0.192832704224115
-"Gav_22_young",423,"Gav","Gav_22","young",8.72883,"tropical",0,0.26724423196339,0.127472568236169
-"Tiri_12_young",424,"Tiri","Tiri_12","young",10.41549,"tropical",0,0.26724423196339,0.127472568236169
-"Hwy 27_1_young",425,"Hwy 27","Hwy 27_1","young",26.537067,"subtropical",0,0.163613315454888,0.0890814106544632
-"Whitehall_3_young",426,"Whitehall","Whitehall_3","young",33.895767,"temperate",0,0.163613315454888,0.0890814106544632
-"Gav_1_young",427,"Gav","Gav_1","young",8.72883,"tropical",0,0,0
-"OCM_5_young",428,"OCM","OCM_5","young",32.34554,"temperate",3,0.550748148549654,0.224097926204981
-"Bella_13_young",429,"Bella","Bella_13","young",8.79,"tropical",0,0,0
-"McPhee_6_young",430,"McPhee","McPhee_6","young",40.971333,"north temperate",3,0.506086665828234,0.209124310293836
-"TT_9_young",431,"TT","TT_9","young",30.673889,"temperate",2,0.555881498774322,0.225816922625443
-"Gen Butler_7_young",432,"Gen Butler","Gen Butler_7","young",38.675517,"temperate",2,0.542574048830594,0.221359899118057
-"Gen Butler_1_young",433,"Gen Butler","Gen Butler_1","young",38.675517,"temperate",2,0.580525832748107,0.234064832047678
-"Hwy 27_2_young",434,"Hwy 27","Hwy 27_2","young",26.537067,"subtropical",2,0.319917441798336,0.145914776602903
-"Whitehall_17_young",435,"Whitehall","Whitehall_17","young",33.895767,"temperate",3,0.648876577123484,0.256909635419148
-"Gen Butler_9_young",436,"Gen Butler","Gen Butler_9","young",38.675517,"temperate",2,0.43774432980871,0.186120631115335
-"MacArthur_22_young",437,"MacArthur","MacArthur_22","young",27.177583,"subtropical",0,0,0
-"Tiri_16_young",438,"Tiri","Tiri_16","young",10.41549,"tropical",0,0.163613315454888,0.0890814106544632
-"Caesar_10_young",439,"Caesar","Caesar_10","young",39.4887,"north temperate",3,0.665958243617857,0.262613778727754
-"OCM_16_young",440,"OCM","OCM_16","young",32.34554,"temperate",3,0.582517210228466,0.234730993348271
-"MacArthur_16_young",441,"MacArthur","MacArthur_16","young",27.177583,"subtropical",3,0.36977437379057,0.163051132613121
-"HV_13_young",442,"HV","HV_13","young",37.1818,"temperate",3,0.668717822168098,0.263535151681588
-"KBS_5_young",443,"KBS","KBS_5","young",42.399933,"north temperate",3,0.393768210244118,0.171224870263844
-"KBS_12_young",444,"KBS","KBS_12","young",42.399933,"north temperate",1,0.413489682867708,0.177916837622281
-"MacArthur_21_young",445,"MacArthur","MacArthur_21","young",27.177583,"subtropical",0,0,0
-"With_48_young",446,"With","With_48","young",28.60387,"subtropical",2,0.319917441798336,0.145914776602903
-"Tiri_5_young",447,"Tiri","Tiri_5","young",10.41549,"tropical",0,0,0
-"Caesar_9_young",448,"Caesar","Caesar_9","young",39.4887,"north temperate",2,0.524165368468156,0.215189791984817
-"Hwy 27_8_young",449,"Hwy 27","Hwy 27_8","young",26.537067,"subtropical",0,0,0
-"Caesar_5_young",450,"Caesar","Caesar_5","young",39.4887,"north temperate",3,0.655209552734861,0.2590246144662
-"TT_10_young",451,"TT","TT_10","young",30.673889,"temperate",3,0.520777324279139,0.214053569576933
-"Tiri_22_young",452,"Tiri","Tiri_22","young",10.41549,"tropical",1,0,0
-"McPhee_2_young",453,"McPhee","McPhee_2","young",40.971333,"north temperate",3,0.633775288278664,0.251865393432476
-"With_47_young",454,"With","With_47","young",28.60387,"subtropical",1,0,0
-"Center Hill_2_young",455,"Center Hill","Center Hill_2","young",36.06935,"temperate",3,0.463553749190146,0.194824508312438
-"Dalton_2_young",456,"Dalton","Dalton_2","young",34.670883,"temperate",2,0.550748148549654,0.224097926204981
-"Center Hill_8_young",457,"Center Hill","Center Hill_8","young",36.06935,"temperate",3,0.632523989992737,0.251447359972296
-"Dalton_6_young",458,"Dalton","Dalton_6","young",34.670883,"temperate",3,0.520777324279139,0.214053569576933
-"TT_5_young",459,"TT","TT_5","young",30.673889,"temperate",2,0.52745315269484,0.216292192374495
-"Hwy 27_3_young",460,"Hwy 27","Hwy 27_3","young",26.537067,"subtropical",2,0.319917441798336,0.145914776602903
-"Center Hill_1_young",461,"Center Hill","Center Hill_1","young",36.06935,"temperate",2,0.506086665828234,0.209124310293836
-"Gen Butler_2_young",462,"Gen Butler","Gen Butler_2","young",38.675517,"temperate",3,0.641000845442146,0.254279104596068
-"Whitehall_2_young",463,"Whitehall","Whitehall_2","young",33.895767,"temperate",3,0.605601473130198,0.242450311883079
-"HV_7_young",464,"HV","HV_7","young",37.1818,"temperate",3,0.616293829648244,0.246024185912046
-"McPhee_1_young",465,"McPhee","McPhee_1","young",40.971333,"north temperate",1,0.355505398284191,0.158170273862173
-"Whitehall_18_young",466,"Whitehall","Whitehall_18","young",33.895767,"temperate",1,0.355505398284191,0.158170273862173
-"MacArthur_5_young",467,"MacArthur","MacArthur_5","young",27.177583,"subtropical",2,0.26724423196339,0.127472568236169
-"Gen Butler_3_young",468,"Gen Butler","Gen Butler_3","young",38.675517,"temperate",0,0.163613315454888,0.0890814106544632
-"Center Hill_7_young",469,"Center Hill","Center Hill_7","young",36.06935,"temperate",2,0.422176287621986,0.180858016276865
-"KBS_9_young",470,"KBS","KBS_9","young",42.399933,"north temperate",2,0.44478009669446,0.188495735493622
-"OCM_10_young",471,"OCM","OCM_10","young",32.34554,"temperate",0,0,0
-"Dalton_4_young",472,"Dalton","Dalton_4","young",34.670883,"temperate",2,0.422176287621986,0.180858016276865
-"KBS_2_young",473,"KBS","KBS_2","young",42.399933,"north temperate",2,0.580525832748107,0.234064832047678
-"Center Hill_3_young",474,"Center Hill","Center Hill_3","young",36.06935,"temperate",1,0.44478009669446,0.188495735493622
-"Dalton_8_young",475,"Dalton","Dalton_8","young",34.670883,"temperate",1,0.404065926942778,0.174721789489385
-"McPhee_8_young",476,"McPhee","McPhee_8","young",40.971333,"north temperate",2,0.489153397839364,0.203436811772106
-"OCM_17_young",477,"OCM","OCM_17","young",32.34554,"temperate",2,0.47451082158652,0.198512977746808
-"With_43_young",478,"With","With_43","young",28.60387,"subtropical",1,0.296673315762684,0.137829894289236
-"Bella_2_young",479,"Bella","Bella_2","young",8.79,"tropical",0,0.163613315454888,0.0890814106544632
-"HV_3_young",480,"HV","HV_3","young",37.1818,"temperate",2,0.430232745407031,0.183582716183218
-"Whitehall_16_young",481,"Whitehall","Whitehall_16","young",33.895767,"temperate",1,0.227096481660709,0.113043395517382
-"Bella_3_young",482,"Bella","Bella_3","young",8.79,"tropical",0,0.227096481660709,0.113043395517382
-"HV_10_young",483,"HV","HV_10","young",37.1818,"temperate",3,0.513674610791531,0.211670883874422
-"McPhee_7_young",484,"McPhee","McPhee_7","young",40.971333,"north temperate",3,0.502089087118207,0.207782202932048
-"MacArthur_15_young",485,"MacArthur","MacArthur_15","young",27.177583,"subtropical",2,0.355505398284191,0.158170273862173
-"TT_7_young",486,"TT","TT_7","young",30.673889,"temperate",2,0.47451082158652,0.198512977746808
-"KBS_8_young",487,"KBS","KBS_8","young",42.399933,"north temperate",3,0.567764265157435,0.229794741115512
-"OCM_18_young",488,"OCM","OCM_18","young",32.34554,"temperate",1,0.339130186552147,0.152547144898367
-"Caesar_7_young",489,"Caesar","Caesar_7","young",39.4887,"north temperate",2,0.509945399749134,0.210419479774
-"Gav_23_young",490,"Gav","Gav_23","young",8.72883,"tropical",0,0.163613315454888,0.0890814106544632
-"Hwy 27_6_young",491,"Hwy 27","Hwy 27_6","young",26.537067,"subtropical",1,0.227096481660709,0.113043395517382
-"HV_5_young",492,"HV","HV_5","young",37.1818,"temperate",2,0.393768210244118,0.171224870263844
-"TT_25_young",493,"TT","TT_25","young",30.673889,"temperate",2,0.382417704708506,0.167363029039402
-"With_46_young",494,"With","With_46","young",28.60387,"subtropical",1,0.227096481660709,0.113043395517382
-"With_42_young",495,"With","With_42","young",28.60387,"subtropical",1,0.163613315454888,0.0890814106544632
-"Bella_21_young",496,"Bella","Bella_21","young",8.79,"tropical",0,0.296673315762684,0.137829894289236
-"Dalton_9_young",497,"Dalton","Dalton_9","young",34.670883,"temperate",3,0.550748148549654,0.224097926204981
-"Gav_22_young",498,"Gav","Gav_22","young",8.72883,"tropical",0,0.163613315454888,0.0890814106544632
-"Tiri_12_young",499,"Tiri","Tiri_12","young",10.41549,"tropical",0,0.163613315454888,0.0890814106544632
-"Hwy 27_1_young",500,"Hwy 27","Hwy 27_1","young",26.537067,"subtropical",1,0.227096481660709,0.113043395517382
-"Whitehall_3_young",501,"Whitehall","Whitehall_3","young",33.895767,"temperate",3,0.413489682867708,0.177916837622281
-"Gav_1_young",502,"Gav","Gav_1","young",8.72883,"tropical",1,0.26724423196339,0.127472568236169
-"OCM_5_young",503,"OCM","OCM_5","young",32.34554,"temperate",3,0.479609116896732,0.200228025275574
-"Bella_13_young",504,"Bella","Bella_13","young",8.79,"tropical",1,0.227096481660709,0.113043395517382
-"McPhee_6_young",505,"McPhee","McPhee_6","young",40.971333,"north temperate",3,0.52745315269484,0.216292192374495
-"TT_9_young",506,"TT","TT_9","young",30.673889,"temperate",3,0.567764265157435,0.229794741115512
-"Gen Butler_7_young",507,"Gen Butler","Gen Butler_7","young",38.675517,"temperate",0,0.26724423196339,0.127472568236169
-"Gen Butler_1_young",508,"Gen Butler","Gen Butler_1","young",38.675517,"temperate",2,0.44478009669446,0.188495735493622
-"Hwy 27_2_young",509,"Hwy 27","Hwy 27_2","young",26.537067,"subtropical",2,0.227096481660709,0.113043395517382
-"Whitehall_17_young",510,"Whitehall","Whitehall_17","young",33.895767,"temperate",2,0.484483705838161,0.201867157710066
-"Gen Butler_9_young",511,"Gen Butler","Gen Butler_9","young",38.675517,"temperate",1,0.26724423196339,0.127472568236169
-"MacArthur_22_young",512,"MacArthur","MacArthur_22","young",27.177583,"subtropical",1,0.227096481660709,0.113043395517382
-"Tiri_16_young",513,"Tiri","Tiri_16","young",10.41549,"tropical",0,0.163613315454888,0.0890814106544632
-"Caesar_10_young",514,"Caesar","Caesar_10","young",39.4887,"north temperate",3,0.542574048830594,0.221359899118057
-"OCM_16_young",515,"OCM","OCM_16","young",32.34554,"temperate",3,0.319917441798336,0.145914776602903
-"MacArthur_16_young",516,"MacArthur","MacArthur_16","young",27.177583,"subtropical",1,0.319917441798336,0.145914776602903
-"HV_13_young",517,"HV","HV_13","young",37.1818,"temperate",2,0.563162504762025,0.228254492023771
-"KBS_5_young",518,"KBS","KBS_5","young",42.399933,"north temperate",2,0.43774432980871,0.186120631115335
-"KBS_12_young",519,"KBS","KBS_12","young",42.399933,"north temperate",3,0.539710024733386,0.220400316830876
-"MacArthur_21_young",520,"MacArthur","MacArthur_21","young",27.177583,"subtropical",0,0,0
-"With_48_young",521,"With","With_48","young",28.60387,"subtropical",1,0.26724423196339,0.127472568236169
-"Tiri_5_young",522,"Tiri","Tiri_5","young",10.41549,"tropical",0,0,0
-"Caesar_9_young",523,"Caesar","Caesar_9","young",39.4887,"north temperate",3,0.545366100513414,0.222295246430588
-"Hwy 27_8_young",524,"Hwy 27","Hwy 27_8","young",26.537067,"subtropical",1,0.227096481660709,0.113043395517382
-"Caesar_5_young",525,"Caesar","Caesar_5","young",39.4887,"north temperate",3,0.530646440649215,0.217362726241895
-"TT_10_young",526,"TT","TT_10","young",30.673889,"temperate",3,0.463553749190146,0.194824508312438
-"Tiri_22_young",527,"Tiri","Tiri_22","young",10.41549,"tropical",1,0.319917441798336,0.145914776602903
-"McPhee_2_young",528,"McPhee","McPhee_2","young",40.971333,"north temperate",3,0.563162504762025,0.228254492023771
-"With_47_young",529,"With","With_47","young",28.60387,"subtropical",0,0,0
-"Center Hill_2_young",530,"Center Hill","Center Hill_2","young",36.06935,"temperate",3,0.493634725458102,0.204942638730141
-"Dalton_2_young",531,"Dalton","Dalton_2","young",34.670883,"temperate",3,0.591971519577117,0.23789311261995
-"Center Hill_8_young",532,"Center Hill","Center Hill_8","young",36.06935,"temperate",2,0.430232745407031,0.183582716183218
-"Dalton_6_young",533,"Dalton","Dalton_6","young",34.670883,"temperate",3,0.558361893346004,0.226647399151134
-"TT_5_young",534,"TT","TT_5","young",30.673889,"temperate",3,0.457641434695102,0.192832704224115
-"Hwy 27_3_young",535,"Hwy 27","Hwy 27_3","young",26.537067,"subtropical",0,0,0
-"Center Hill_1_young",536,"Center Hill","Center Hill_1","young",36.06935,"temperate",3,0.52745315269484,0.216292192374495
-"Gen Butler_2_young",537,"Gen Butler","Gen Butler_2","young",38.675517,"temperate",3,0.550748148549654,0.224097926204981
-"Whitehall_2_young",538,"Whitehall","Whitehall_2","young",33.895767,"temperate",3,0.479609116896732,0.200228025275574
-"HV_7_young",539,"HV","HV_7","young",37.1818,"temperate",3,0.574328163146538,0.231991291187129
-"McPhee_1_young",540,"McPhee","McPhee_1","young",40.971333,"north temperate",1,0.355505398284191,0.158170273862173
-"Whitehall_18_young",541,"Whitehall","Whitehall_18","young",33.895767,"temperate",2,0.43774432980871,0.186120631115335
-"MacArthur_5_young",542,"MacArthur","MacArthur_5","young",27.177583,"subtropical",2,0.227096481660709,0.113043395517382
-"Gen Butler_3_young",543,"Gen Butler","Gen Butler_3","young",38.675517,"temperate",2,0.355505398284191,0.158170273862173
-"Center Hill_7_young",544,"Center Hill","Center Hill_7","young",36.06935,"temperate",3,0.457641434695102,0.192832704224115
-"KBS_9_young",545,"KBS","KBS_9","young",42.399933,"north temperate",2,0.382417704708506,0.167363029039402
-"OCM_10_young",546,"OCM","OCM_10","young",32.34554,"temperate",2,0.355505398284191,0.158170273862173
-"Dalton_4_young",547,"Dalton","Dalton_4","young",34.670883,"temperate",1,0.413489682867708,0.177916837622281
-"KBS_2_young",548,"KBS","KBS_2","young",42.399933,"north temperate",3,0.484483705838161,0.201867157710066
-"Center Hill_3_young",549,"Center Hill","Center Hill_3","young",36.06935,"temperate",3,0.463553749190146,0.194824508312438
-"Dalton_8_young",550,"Dalton","Dalton_8","young",34.670883,"temperate",1,0.296673315762684,0.137829894289236
-"McPhee_8_young",551,"McPhee","McPhee_8","young",40.971333,"north temperate",3,0.463553749190146,0.194824508312438
-"OCM_17_young",552,"OCM","OCM_17","young",32.34554,"temperate",3,0.404065926942778,0.174721789489385
-"With_43_young",553,"With","With_43","young",28.60387,"subtropical",0,0.227096481660709,0.113043395517382
-"Bella_2_young",554,"Bella","Bella_2","young",8.79,"tropical",0,0.296673315762684,0.137829894289236
-"HV_3_young",555,"HV","HV_3","young",37.1818,"temperate",0,0.404065926942778,0.174721789489385
-"Whitehall_16_young",556,"Whitehall","Whitehall_16","young",33.895767,"temperate",1,0.163613315454888,0.0890814106544632
-"Bella_3_young",557,"Bella","Bella_3","young",8.79,"tropical",1,NA,NA
-"HV_10_young",558,"HV","HV_10","young",37.1818,"temperate",1,0.404065926942778,0.174721789489385
-"McPhee_7_young",559,"McPhee","McPhee_7","young",40.971333,"north temperate",1,0.382417704708506,0.167363029039402
-"MacArthur_15_young",560,"MacArthur","MacArthur_15","young",27.177583,"subtropical",2,0.227096481660709,0.113043395517382
-"TT_7_young",561,"TT","TT_7","young",30.673889,"temperate",2,0.469167295311374,0.196714640290307
-"KBS_8_young",562,"KBS","KBS_8","young",42.399933,"north temperate",2,0.451396752665226,0.190727665002989
-"OCM_18_young",563,"OCM","OCM_18","young",32.34554,"temperate",2,0.463553749190146,0.194824508312438
-"Caesar_7_young",564,"Caesar","Caesar_7","young",39.4887,"north temperate",3,0.513674610791531,0.211670883874422
-"Gav_23_young",565,"Gav","Gav_23","young",8.72883,"tropical",0,0,0
-"Hwy 27_6_young",566,"Hwy 27","Hwy 27_6","young",26.537067,"subtropical",1,0.296673315762684,0.137829894289236
-"HV_5_young",567,"HV","HV_5","young",37.1818,"temperate",2,0.533750512866844,0.218403184244954
-"TT_25_young",568,"TT","TT_25","young",30.673889,"temperate",3,0.545366100513414,0.222295246430588
-"With_46_young",569,"With","With_46","young",28.60387,"subtropical",0,0,0
-"With_42_young",570,"With","With_42","young",28.60387,"subtropical",2,0.227096481660709,0.113043395517382
-"Bella_21_young",571,"Bella","Bella_21","young",8.79,"tropical",0,0.26724423196339,0.127472568236169
-"Dalton_9_young",572,"Dalton","Dalton_9","young",34.670883,"temperate",0,0.163613315454888,0.0890814106544632
-"Gav_22_young",573,"Gav","Gav_22","young",8.72883,"tropical",0,0,0
-"Tiri_12_young",574,"Tiri","Tiri_12","young",10.41549,"tropical",2,0.44478009669446,0.188495735493622
-"Hwy 27_1_young",575,"Hwy 27","Hwy 27_1","young",26.537067,"subtropical",3,0.227096481660709,0.113043395517382
-"Whitehall_3_young",576,"Whitehall","Whitehall_3","young",33.895767,"temperate",1,0.506086665828234,0.209124310293836
-"Gav_1_young",577,"Gav","Gav_1","young",8.72883,"tropical",2,0.163613315454888,0.0890814106544632
-"OCM_5_young",578,"OCM","OCM_5","young",32.34554,"temperate",3,0.569995594456051,0.230541492909219
-"Bella_13_young",579,"Bella","Bella_13","young",8.79,"tropical",0,0,0
-"McPhee_6_young",580,"McPhee","McPhee_6","young",40.971333,"north temperate",3,0.588285757674223,0.236660468740289
-"TT_9_young",581,"TT","TT_9","young",30.673889,"temperate",3,0.524165368468156,0.215189791984817
-"Gen Butler_7_young",582,"Gen Butler","Gen Butler_7","young",38.675517,"temperate",2,0.524165368468156,0.215189791984817
-"Gen Butler_1_young",583,"Gen Butler","Gen Butler_1","young",38.675517,"temperate",1,NA,NA
-"Hwy 27_2_young",584,"Hwy 27","Hwy 27_2","young",26.537067,"subtropical",0,0,0
-"Whitehall_17_young",585,"Whitehall","Whitehall_17","young",33.895767,"temperate",1,0.355505398284191,0.158170273862173
-"Gen Butler_9_young",586,"Gen Butler","Gen Butler_9","young",38.675517,"temperate",3,0.506086665828234,0.209124310293836
-"MacArthur_22_young",587,"MacArthur","MacArthur_22","young",27.177583,"subtropical",3,0.163613315454888,0.0890814106544632
-"Tiri_16_young",588,"Tiri","Tiri_16","young",10.41549,"tropical",0,0.227096481660709,0.113043395517382
-"Caesar_10_young",589,"Caesar","Caesar_10","young",39.4887,"north temperate",0,0.163613315454888,0.0890814106544632
-"OCM_16_young",590,"OCM","OCM_16","young",32.34554,"temperate",0,0.355505398284191,0.158170273862173
-"MacArthur_16_young",591,"MacArthur","MacArthur_16","young",27.177583,"subtropical",1,0.163613315454888,0.0890814106544632
-"HV_13_young",592,"HV","HV_13","young",37.1818,"temperate",3,0.626046968933312,0.249283345997645
-"KBS_5_young",593,"KBS","KBS_5","young",42.399933,"north temperate",2,0.536770219266165,0.219415210225027
-"KBS_12_young",594,"KBS","KBS_12","young",42.399933,"north temperate",0,0,0
-"MacArthur_21_young",595,"MacArthur","MacArthur_21","young",27.177583,"subtropical",0,0,0
-"With_48_young",596,"With","With_48","young",28.60387,"subtropical",3,0.319917441798336,0.145914776602903
-"Tiri_5_young",597,"Tiri","Tiri_5","young",10.41549,"tropical",0,0,0
-"Caesar_9_young",598,"Caesar","Caesar_9","young",39.4887,"north temperate",1,0.533750512866844,0.218403184244954
-"Hwy 27_8_young",599,"Hwy 27","Hwy 27_8","young",26.537067,"subtropical",0,0,0
-"Caesar_5_young",600,"Caesar","Caesar_5","young",39.4887,"north temperate",3,0.627372930881507,0.249726382277665
-"TT_10_young",601,"TT","TT_10","young",30.673889,"temperate",3,0.588285757674223,0.236660468740289
-"Tiri_22_young",602,"Tiri","Tiri_22","young",10.41549,"tropical",0,0.227096481660709,0.113043395517382
-"McPhee_2_young",603,"McPhee","McPhee_2","young",40.971333,"north temperate",0,0.163613315454888,0.0890814106544632
-"With_47_young",604,"With","With_47","young",28.60387,"subtropical",1,0.227096481660709,0.113043395517382
-"Center Hill_2_young",605,"Center Hill","Center Hill_2","young",36.06935,"temperate",3,0.576432698800458,0.232695449283213
-"Dalton_2_young",606,"Dalton","Dalton_2","young",34.670883,"temperate",3,0.545366100513414,0.222295246430588
-"Center Hill_8_young",607,"Center Hill","Center Hill_8","young",36.06935,"temperate",2,0.524165368468156,0.215189791984817
-"Dalton_6_young",608,"Dalton","Dalton_6","young",34.670883,"temperate",3,0.588285757674223,0.236660468740289
-"TT_5_young",609,"TT","TT_5","young",30.673889,"temperate",3,0.555881498774322,0.225816922625443
-"Hwy 27_3_young",610,"Hwy 27","Hwy 27_3","young",26.537067,"subtropical",1,0.163613315454888,0.0890814106544632
-"Center Hill_1_young",611,"Center Hill","Center Hill_1","young",36.06935,"temperate",3,0.580525832748107,0.234064832047678
-"Gen Butler_2_young",612,"Gen Butler","Gen Butler_2","young",38.675517,"temperate",2,0.43774432980871,0.186120631115335
-"Whitehall_2_young",613,"Whitehall","Whitehall_2","young",33.895767,"temperate",3,0.484483705838161,0.201867157710066
-"HV_7_young",614,"HV","HV_7","young",37.1818,"temperate",1,0.36977437379057,0.163051132613121
-"McPhee_1_young",615,"McPhee","McPhee_1","young",40.971333,"north temperate",3,0.555881498774322,0.225816922625443
+"line_age","cupID","pop","line","age","lat","region","initial","duration","surv","area","log.area","old.log.area"
+"Whitehall_18_mature",1,"Whitehall","Whitehall_18","mature",33.895767,"temperate",5,8,5,695.563125,0.617805820435883,0.163653960521078
+"MacArthur_5_mature",2,"MacArthur","MacArthur_5","mature",27.177583,"subtropical",5,8,3,252.015625,0.492462371034798,0.138336281142845
+"Gen Butler_3_mature",3,"Gen Butler","Gen Butler_3","mature",38.675517,"temperate",5,8,5,987.90125,0.66139916256789,0.172414861957647
+"Center Hill_7_mature",4,"Center Hill","Center Hill_7","mature",36.06935,"temperate",5,8,5,423.38625,0.556323416181575,0.151266100188362
+"KBS_9_mature",5,"KBS","KBS_9","mature",42.399933,"north temperate",5,8,4,514.111875,0.580335188283649,0.156109602752044
+"OCM_10_mature",6,"OCM","OCM_10","mature",32.34554,"temperate",5,8,3,514.111875,0.580335188283649,0.156109602752044
+"Dalton_4_mature",7,"Dalton","Dalton_4","mature",34.670883,"temperate",5,8,5,493.950625,0.575383653815745,0.155111450252971
+"KBS_2_mature",8,"KBS","KBS_2","mature",42.399933,"north temperate",5,8,5,997.981875,0.662661850572115,0.172668415883521
+"Center Hill_3_mature",9,"Center Hill","Center Hill_3","mature",36.06935,"temperate",5,8,3,252.015625,0.492462371034798,0.138336281142845
+"Dalton_8_mature",10,"Dalton","Dalton_8","mature",34.670883,"temperate",5,8,5,1179.433125,0.683447706393704,0.176840917629905
+"McPhee_8_mature",11,"McPhee","McPhee_8","mature",40.971333,"north temperate",5,8,5,1794.35125,0.735717943727224,0.187323899105758
+"OCM_17_mature",12,"OCM","OCM_17","mature",32.34554,"temperate",5,8,3,463.70875,0.567567957622287,0.153535271631648
+"With_43_mature",13,"With","With_43","mature",28.60387,"subtropical",5,8,3,80.645,0.355096616689481,0.110059514513857
+"Bella_2_mature",14,"Bella","Bella_2","mature",8.79,"tropical",5,8,5,685.4825,0.615994089517553,0.163289518331473
+"HV_3_mature",15,"HV","HV_3","mature",37.1818,"temperate",5,8,2,473.789375,0.570227858763699,0.154071782116046
+"Whitehall_16_mature",16,"Whitehall","Whitehall_16","mature",33.895767,"temperate",5,8,5,806.45,0.636173107290974,0.167347028341877
+"Bella_3_mature",17,"Bella","Bella_3","mature",8.79,"tropical",5,8,5,705.64375,0.619591667118361,0.164013166230671
+"HV_10_mature",18,"HV","HV_10","mature",37.1818,"temperate",5,8,4,1239.916875,0.689673265895927,0.178090145017221
+"McPhee_7_mature",19,"McPhee","McPhee_7","mature",40.971333,"north temperate",5,8,4,594.756875,0.598385806541204,0.159745816399695
+"MacArthur_15_mature",20,"MacArthur","MacArthur_15","mature",27.177583,"subtropical",5,8,5,433.466875,0.559230794363196,0.151852992618629
+"TT_7_mature",21,"TT","TT_7","mature",30.673889,"temperate",5,8,5,544.35375,0.587413084367337,0.157535866666727
+"KBS_8_mature",22,"KBS","KBS_8","mature",42.399933,"north temperate",5,8,5,947.57875,0.656216858539318,0.171374120293972
+"OCM_18_mature",23,"OCM","OCM_18","mature",32.34554,"temperate",5,8,5,433.466875,0.559230794363196,0.151852992618629
+"Caesar_7_mature",24,"Caesar","Caesar_7","mature",39.4887,"north temperate",5,8,4,1733.8675,0.731443925725355,0.186467158014716
+"Gav_23_mature",25,"Gav","Gav_23","mature",8.72883,"tropical",5,8,5,564.515,0.591918401125005,0.158443420510083
+"Hwy 27_6_mature",26,"Hwy 27","Hwy 27_6","mature",26.537067,"subtropical",5,8,3,120.9675,0.403323253092262,0.12009386539504
+"HV_5_mature",27,"HV","HV_5","mature",37.1818,"temperate",5,8,3,1249.9975,0.690681368387241,0.178292412801591
+"TT_25_mature",28,"TT","TT_25","mature",30.673889,"temperate",5,8,4,433.466875,0.559230794363196,0.151852992618629
+"With_46_mature",29,"With","With_46","mature",28.60387,"subtropical",5,8,3,201.6125,0.465175893226171,0.132782382195957
+"With_42_mature",30,"With","With_42","mature",28.60387,"subtropical",5,8,3,181.45125,0.452341487297313,0.130162075351277
+"Bella_21_mature",31,"Bella","Bella_21","mature",8.79,"tropical",5,8,3,120.9675,0.403323253092262,0.12009386539504
+"Dalton_9_mature",32,"Dalton","Dalton_9","mature",34.670883,"temperate",5,8,3,564.515,0.591918401125005,0.158443420510083
+"Gav_22_mature",33,"Gav","Gav_22","mature",8.72883,"tropical",5,8,3,332.660625,0.526575426323448,0.145253109589752
+"Tiri_12_mature",34,"Tiri","Tiri_12","mature",10.41549,"tropical",5,8,4,816.530625,0.637716412964422,0.167657209096086
+"Hwy 27_1_mature",35,"Hwy 27","Hwy 27_1","mature",26.537067,"subtropical",5,8,3,443.5475,0.562072084005125,0.152426422772174
+"Whitehall_3_mature",36,"Whitehall","Whitehall_3","mature",33.895767,"temperate",5,8,3,272.176875,0.501902240985099,0.140252986979132
+"Gav_1_mature",37,"Gav","Gav_1","mature",8.72883,"tropical",5,8,3,1189.51375,0.684507070669752,0.177053505390731
+"OCM_5_mature",38,"OCM","OCM_5","mature",32.34554,"temperate",5,8,4,957.659375,0.65753271555448,0.171638395602346
+"Bella_13_mature",39,"Bella","Bella_13","mature",8.79,"tropical",5,8,5,2318.54375,0.767676358158242,0.19372814464594
+"McPhee_6_mature",40,"McPhee","McPhee_6","mature",40.971333,"north temperate",5,8,5,1834.67375,0.738488201583136,0.187879171482805
+"TT_9_mature",41,"TT","TT_9","mature",30.673889,"temperate",5,8,4,1824.593125,0.737801371576933,0.187741505330388
+"Gen Butler_7_mature",42,"Gen Butler","Gen Butler_7","mature",38.675517,"temperate",5,8,5,2953.623125,0.797880170773792,0.199778159590887
+"Gen Butler_1_mature",43,"Gen Butler","Gen Butler_1","mature",38.675517,"temperate",5,8,4,907.25625,0.650810376756387,0.170288163811072
+"Hwy 27_2_mature",44,"Hwy 27","Hwy 27_2","mature",26.537067,"subtropical",5,8,4,756.046875,0.628157130014255,0.165735629339528
+"Whitehall_17_mature",45,"Whitehall","Whitehall_17","mature",33.895767,"temperate",5,8,5,1008.0625,0.663911910979787,0.172919424023815
+"Gen Butler_9_mature",46,"Gen Butler","Gen Butler_9","mature",38.675517,"temperate",5,8,3,1189.51375,0.684507070669752,0.177053505390731
+"MacArthur_22_mature",47,"MacArthur","MacArthur_22","mature",27.177583,"subtropical",5,8,5,302.41875,0.51484661403199,0.142877846615235
+"Tiri_16_mature",48,"Tiri","Tiri_16","mature",10.41549,"tropical",5,8,3,302.41875,0.51484661403199,0.142877846615235
+"Caesar_10_mature",49,"Caesar","Caesar_10","mature",39.4887,"north temperate",5,8,5,1653.2225,0.725507951510766,0.185277159722658
+"OCM_16_mature",50,"OCM","OCM_16","mature",32.34554,"temperate",5,8,5,1129.03,0.678011878316266,0.175749986500664
+"MacArthur_16_mature",51,"MacArthur","MacArthur_16","mature",27.177583,"subtropical",5,8,5,493.950625,0.575383653815745,0.155111450252971
+"HV_13_mature",52,"HV","HV_13","mature",37.1818,"temperate",5,8,3,1330.6425,0.698466227004198,0.179854210542075
+"Gav_6_mature",53,"Gav","Gav_6","mature",8.72883,"tropical",5,8,5,544.35375,0.587413084367337,0.157535866666727
+"KBS_5_mature",54,"KBS","KBS_5","mature",42.399933,"north temperate",5,8,3,NA,NA,NA
+"KBS_12_mature",55,"KBS","KBS_12","mature",42.399933,"north temperate",5,8,5,624.99875,0.604534990352816,0.160983709357325
+"MacArthur_21_mature",56,"MacArthur","MacArthur_21","mature",27.177583,"subtropical",5,8,3,372.983125,0.540676454916478,0.148105266901893
+"With_48_mature",57,"With","With_48","mature",28.60387,"subtropical",5,8,3,362.9025,0.537297505622295,0.147422149365344
+"Tiri_5_mature",58,"Tiri","Tiri_5","mature",10.41549,"tropical",5,8,5,524.1925,0.582739293421334,0.156594121551312
+"Tiri_1_mature",59,"Tiri","Tiri_1","mature",10.41549,"tropical",5,8,3,483.87,0.572832336628249,0.154597020344272
+"Caesar_9_mature",60,"Caesar","Caesar_9","mature",39.4887,"north temperate",5,8,1,50.403125,0.300649760958813,0.0984924742069596
+"Hwy 27_8_mature",61,"Hwy 27","Hwy 27_8","mature",26.537067,"subtropical",5,8,3,241.935,0.487460903958378,0.137319847946172
+"Caesar_5_mature",62,"Caesar","Caesar_5","mature",39.4887,"north temperate",5,8,4,1502.013125,0.713555874438851,0.182880678056244
+"TT_10_mature",63,"TT","TT_10","mature",30.673889,"temperate",5,8,3,1038.304375,0.667588790806968,0.173657672453741
+"Tiri_22_mature",64,"Tiri","Tiri_22","mature",10.41549,"tropical",5,8,4,907.25625,0.650810376756387,0.170288163811072
+"McPhee_2_mature",65,"McPhee","McPhee_2","mature",40.971333,"north temperate",5,8,3,1985.883125,0.748361961031203,0.189858060524824
+"With_47_mature",66,"With","With_47","mature",28.60387,"subtropical",5,8,4,624.99875,0.604534990352816,0.160983709357325
+"Center Hill_2_mature",67,"Center Hill","Center Hill_2","mature",36.06935,"temperate",5,8,5,635.079375,0.606519284958356,0.161383083975298
+"Dalton_2_mature",68,"Dalton","Dalton_2","mature",34.670883,"temperate",5,8,5,1108.86875,0.675769585305064,0.175299926101796
+"Center Hill_8_mature",69,"Center Hill","Center Hill_8","mature",36.06935,"temperate",5,8,5,1723.786875,0.730717162594806,0.186321469277695
+"Dalton_6_mature",70,"Dalton","Dalton_6","mature",34.670883,"temperate",5,8,5,1098.788125,0.674633172527986,0.175071820664943
+"TT_5_mature",71,"TT","TT_5","mature",30.673889,"temperate",5,8,4,1239.916875,0.689673265895927,0.178090145017221
+"Hwy 27_3_mature",72,"Hwy 27","Hwy 27_3","mature",26.537067,"subtropical",5,8,4,504.03125,0.577883937140472,0.155615507713723
+"Bella_4_mature",73,"Bella","Bella_4","mature",8.79,"tropical",5,8,4,725.805,0.623088594232942,0.16471645539925
+"Center Hill_1_mature",74,"Center Hill","Center Hill_1","mature",36.06935,"temperate",5,8,4,897.175625,0.649421411860519,0.170009140566921
+"Gen Butler_2_mature",75,"Gen Butler","Gen Butler_2","mature",38.675517,"temperate",5,8,5,2772.171875,0.789968808160913,0.198193675632584
+"Whitehall_2_mature",76,"Whitehall","Whitehall_2","mature",33.895767,"temperate",5,8,3,312.499375,0.518879742174096,0.143694934161264
+"HV_7_mature",77,"HV","HV_7","mature",37.1818,"temperate",5,8,5,3256.041875,0.810045513053224,0.202214366552928
+"McPhee_1_mature",78,"McPhee","McPhee_1","mature",40.971333,"north temperate",5,8,3,322.58,0.522786798452517,0.14448615946443
+"Whitehall_18_mature",79,"Whitehall","Whitehall_18","mature",33.895767,"temperate",5,8,4,473.789375,0.570227858763699,0.154071782116046
+"MacArthur_5_mature",80,"MacArthur","MacArthur_5","mature",27.177583,"subtropical",5,8,4,383.06375,0.543966464727055,0.148770213860841
+"Gen Butler_3_mature",81,"Gen Butler","Gen Butler_3","mature",38.675517,"temperate",5,8,5,887.095,0.648016839589638,0.1697269679813
+"Center Hill_7_mature",82,"Center Hill","Center Hill_7","mature",36.06935,"temperate",5,8,3,554.434375,0.589686039526676,0.157993761632183
+"KBS_9_mature",83,"KBS","KBS_9","mature",42.399933,"north temperate",5,8,5,1159.271875,0.681301657271473,0.176410240790972
+"OCM_10_mature",84,"OCM","OCM_10","mature",32.34554,"temperate",5,8,5,433.466875,0.559230794363196,0.151852992618629
+"Dalton_4_mature",85,"Dalton","Dalton_4","mature",34.670883,"temperate",5,8,5,1350.80375,0.700338977306702,0.180229877268535
+"KBS_2_mature",86,"KBS","KBS_2","mature",42.399933,"north temperate",5,8,5,2620.9625,0.782970607756562,0.196791959054047
+"Center Hill_3_mature",87,"Center Hill","Center Hill_3","mature",36.06935,"temperate",5,8,5,1381.045625,0.703096523155546,0.180783000438272
+"Dalton_8_mature",88,"Dalton","Dalton_8","mature",34.670883,"temperate",5,8,4,1512.09375,0.714389233076175,0.183047791871404
+"McPhee_8_mature",89,"McPhee","McPhee_8","mature",40.971333,"north temperate",5,8,4,1018.143125,0.665149593858414,0.173167936992235
+"OCM_17_mature",90,"OCM","OCM_17","mature",32.34554,"temperate",5,8,4,796.369375,0.634610508832864,0.1670329507035
+"With_43_mature",91,"With","With_43","mature",28.60387,"subtropical",5,8,5,1260.078125,0.691681405714225,0.178493057221089
+"Bella_2_mature",92,"Bella","Bella_2","mature",8.79,"tropical",5,8,4,866.93375,0.645159441727251,0.169152884671567
+"HV_3_mature",93,"HV","HV_3","mature",37.1818,"temperate",5,8,5,1874.99625,0.741198393588382,0.188422378265757
+"Whitehall_16_mature",94,"Whitehall","Whitehall_16","mature",33.895767,"temperate",5,8,4,806.45,0.636173107290974,0.167347028341877
+"Bella_3_mature",95,"Bella","Bella_3","mature",8.79,"tropical",5,8,4,604.8375,0.6004693269752,0.160165294957375
+"HV_10_mature",96,"HV","HV_10","mature",37.1818,"temperate",5,8,4,745.96625,0.626490349780038,0.165400500084731
+"McPhee_7_mature",97,"McPhee","McPhee_7","mature",40.971333,"north temperate",5,8,1,604.8375,0.6004693269752,0.160165294957375
+"MacArthur_15_mature",98,"MacArthur","MacArthur_15","mature",27.177583,"subtropical",5,8,3,120.9675,0.403323253092262,0.12009386539504
+"TT_7_mature",99,"TT","TT_7","mature",30.673889,"temperate",5,8,4,594.756875,0.598385806541204,0.159745816399695
+"KBS_8_mature",100,"KBS","KBS_8","mature",42.399933,"north temperate",5,8,5,1179.433125,0.683447706393704,0.176840917629905
+"OCM_18_mature",101,"OCM","OCM_18","mature",32.34554,"temperate",5,8,5,836.691875,0.640747011331724,0.16826625854841
+"Caesar_7_mature",102,"Caesar","Caesar_7","mature",39.4887,"north temperate",5,8,4,1149.19125,0.680214656100692,0.176192087796952
+"Gav_23_mature",103,"Gav","Gav_23","mature",8.72883,"tropical",5,8,5,957.659375,0.65753271555448,0.171638395602346
+"Hwy 27_6_mature",104,"Hwy 27","Hwy 27_6","mature",26.537067,"subtropical",5,8,3,231.854375,0.482250948546446,0.136260331454295
+"HV_5_mature",105,"HV","HV_5","mature",37.1818,"temperate",5,8,4,544.35375,0.587413084367337,0.157535866666727
+"TT_25_mature",106,"TT","TT_25","mature",30.673889,"temperate",5,8,5,1209.675,0.686599239730858,0.177473333357232
+"With_46_mature",107,"With","With_46","mature",28.60387,"subtropical",5,8,4,362.9025,0.537297505622295,0.147422149365344
+"With_42_mature",108,"With","With_42","mature",28.60387,"subtropical",5,8,5,645.16,0.608472571751356,0.161776178778351
+"Bella_21_mature",109,"Bella","Bella_21","mature",8.79,"tropical",5,8,4,393.144375,0.547172097291036,0.149417931904688
+"Dalton_9_mature",110,"Dalton","Dalton_9","mature",34.670883,"temperate",5,8,3,453.628125,0.564850223007983,0.152986994427015
+"Gav_22_mature",111,"Gav","Gav_22","mature",8.72883,"tropical",5,8,5,735.885625,0.624801043590217,0.165060817254671
+"Tiri_12_mature",112,"Tiri","Tiri_12","mature",10.41549,"tropical",5,8,4,826.61125,0.639240896449598,0.167963588482561
+"Hwy 27_1_mature",113,"Hwy 27","Hwy 27_1","mature",26.537067,"subtropical",5,8,4,574.595625,0.594111593709345,0.158885134355498
+"Whitehall_3_mature",114,"Whitehall","Whitehall_3","mature",33.895767,"temperate",5,8,5,866.93375,0.645159441727251,0.169152884671567
+"Gav_1_mature",115,"Gav","Gav_1","mature",8.72883,"tropical",5,8,5,1239.916875,0.689673265895927,0.178090145017221
+"OCM_5_mature",116,"OCM","OCM_5","mature",32.34554,"temperate",5,8,4,1532.255,0.716039465619448,0.183378705138689
+"Bella_13_mature",117,"Bella","Bella_13","mature",8.79,"tropical",5,8,5,917.336875,0.652184077322019,0.170564107238395
+"McPhee_6_mature",118,"McPhee","McPhee_6","mature",40.971333,"north temperate",5,8,5,1885.076875,0.741866858674447,0.188556355580807
+"TT_9_mature",119,"TT","TT_9","mature",30.673889,"temperate",5,8,5,806.45,0.636173107290974,0.167347028341877
+"Gen Butler_7_mature",120,"Gen Butler","Gen Butler_7","mature",38.675517,"temperate",5,8,5,1048.385,0.668790769363589,0.173898988931706
+"Gen Butler_1_mature",121,"Gen Butler","Gen Butler_1","mature",38.675517,"temperate",5,8,0,10.080625,0.137996611863776,0.0601299521917627
+"Hwy 27_2_mature",122,"Hwy 27","Hwy 27_2","mature",26.537067,"subtropical",5,8,4,403.225,0.550297572569284,0.150049291340647
+"Whitehall_17_mature",123,"Whitehall","Whitehall_17","mature",33.895767,"temperate",5,8,4,776.208125,0.631425460897497,0.16639270429108
+"Gen Butler_9_mature",124,"Gen Butler","Gen Butler_9","mature",38.675517,"temperate",5,8,5,1018.143125,0.665149593858414,0.173167936992235
+"MacArthur_22_mature",125,"MacArthur","MacArthur_22","mature",27.177583,"subtropical",5,8,5,564.515,0.591918401125005,0.158443420510083
+"Tiri_16_mature",126,"Tiri","Tiri_16","mature",10.41549,"tropical",5,8,3,614.918125,0.60251868755415,0.160577851018466
+"Caesar_10_mature",127,"Caesar","Caesar_10","mature",39.4887,"north temperate",5,8,4,544.35375,0.587413084367337,0.157535866666727
+"OCM_16_mature",128,"OCM","OCM_16","mature",32.34554,"temperate",5,8,4,655.240625,0.610395804934419,0.162163188202238
+"MacArthur_16_mature",129,"MacArthur","MacArthur_16","mature",27.177583,"subtropical",5,8,4,645.16,0.608472571751356,0.161776178778351
+"HV_13_mature",130,"HV","HV_13","mature",37.1818,"temperate",5,8,5,2127.011875,0.756922930340444,0.191573585770078
+"Gav_6_mature",131,"Gav","Gav_6","mature",8.72883,"tropical",5,8,2,846.7725,0.642235194995001,0.168565308037424
+"KBS_5_mature",132,"KBS","KBS_5","mature",42.399933,"north temperate",5,8,4,1048.385,0.668790769363589,0.173898988931706
+"KBS_12_mature",133,"KBS","KBS_12","mature",42.399933,"north temperate",5,8,5,786.28875,0.633028129121113,0.166714877018625
+"MacArthur_21_mature",134,"MacArthur","MacArthur_21","mature",27.177583,"subtropical",5,8,2,NA,NA,NA
+"With_48_mature",135,"With","With_48","mature",28.60387,"subtropical",5,8,4,675.401875,0.614155712976966,0.162919684726224
+"Tiri_5_mature",136,"Tiri","Tiri_5","mature",10.41549,"tropical",5,8,4,665.32125,0.612289895331274,0.162544297790021
+"Tiri_1_mature",137,"Tiri","Tiri_1","mature",10.41549,"tropical",5,8,5,1088.7075,0.673486333417489,0.174841614764685
+"Caesar_9_mature",138,"Caesar","Caesar_9","mature",39.4887,"north temperate",5,8,5,2187.495625,0.760419727046406,0.19227424143857
+"Hwy 27_8_mature",139,"Hwy 27","Hwy 27_8","mature",26.537067,"subtropical",5,8,3,463.70875,0.567567957622287,0.153535271631648
+"Caesar_5_mature",140,"Caesar","Caesar_5","mature",39.4887,"north temperate",5,8,4,1139.110625,0.679118119375663,0.175972014403855
+"TT_10_mature",141,"TT","TT_10","mature",30.673889,"temperate",5,8,3,2106.850625,0.755735250386444,0.19133560115362
+"Tiri_22_mature",142,"Tiri","Tiri_22","mature",10.41549,"tropical",5,8,5,1774.19,0.734309446387846,0.187041568460861
+"McPhee_2_mature",143,"McPhee","McPhee_2","mature",40.971333,"north temperate",5,8,4,2812.494375,0.791770667128386,0.198554563489555
+"With_47_mature",144,"With","With_47","mature",28.60387,"subtropical",5,8,4,493.950625,0.575383653815745,0.155111450252971
+"Center Hill_2_mature",145,"Center Hill","Center Hill_2","mature",36.06935,"temperate",5,8,5,2217.7375,0.762132113860869,0.192617340485126
+"Dalton_2_mature",146,"Dalton","Dalton_2","mature",34.670883,"temperate",5,8,5,1219.755625,0.687632337606009,0.177680632768855
+"Center Hill_8_mature",147,"Center Hill","Center Hill_8","mature",36.06935,"temperate",5,8,4,1864.915625,0.740526334509465,0.188287679083579
+"Dalton_6_mature",148,"Dalton","Dalton_6","mature",34.670883,"temperate",5,8,5,2741.93,0.788600161374015,0.197919549277695
+"TT_5_mature",149,"TT","TT_5","mature",30.673889,"temperate",5,8,4,1401.206875,0.704901660797716,0.18114506534426
+"Hwy 27_3_mature",150,"Hwy 27","Hwy 27_3","mature",26.537067,"subtropical",5,8,4,1159.271875,0.681301657271473,0.176410240790972
+"Bella_4_mature",151,"Bella","Bella_4","mature",8.79,"tropical",5,8,5,1108.86875,0.675769585305064,0.175299926101796
+"Center Hill_1_mature",152,"Center Hill","Center Hill_1","mature",36.06935,"temperate",5,8,5,1330.6425,0.698466227004198,0.179854210542075
+"Gen Butler_2_mature",153,"Gen Butler","Gen Butler_2","mature",38.675517,"temperate",5,8,5,2812.494375,0.791770667128386,0.198554563489555
+"Whitehall_2_mature",154,"Whitehall","Whitehall_2","mature",33.895767,"temperate",5,8,4,887.095,0.648016839589638,0.1697269679813
+"HV_7_mature",155,"HV","HV_7","mature",37.1818,"temperate",5,8,3,1068.54625,0.671160598416103,0.174374744302356
+"McPhee_1_mature",156,"McPhee","McPhee_1","mature",40.971333,"north temperate",5,8,3,1159.271875,0.681301657271473,0.176410240790972
+"Whitehall_18_mature",157,"Whitehall","Whitehall_18","mature",33.895767,"temperate",5,8,3,715.724375,0.621352358776154,0.16436728381169
+"MacArthur_5_mature",158,"MacArthur","MacArthur_5","mature",27.177583,"subtropical",5,8,2,332.660625,0.526575426323448,0.145253109589752
+"Gen Butler_3_mature",159,"Gen Butler","Gen Butler_3","mature",38.675517,"temperate",5,8,5,1209.675,0.686599239730858,0.177473333357232
+"Center Hill_7_mature",160,"Center Hill","Center Hill_7","mature",36.06935,"temperate",5,8,4,463.70875,0.567567957622287,0.153535271631648
+"KBS_9_mature",161,"KBS","KBS_9","mature",42.399933,"north temperate",5,8,5,1602.819375,0.721649525251917,0.184503579324583
+"OCM_10_mature",162,"OCM","OCM_10","mature",32.34554,"temperate",5,8,3,241.935,0.487460903958378,0.137319847946172
+"Dalton_4_mature",163,"Dalton","Dalton_4","mature",34.670883,"temperate",5,8,5,887.095,0.648016839589638,0.1697269679813
+"KBS_2_mature",164,"KBS","KBS_2","mature",42.399933,"north temperate",5,8,5,1209.675,0.686599239730858,0.177473333357232
+"Center Hill_3_mature",165,"Center Hill","Center Hill_3","mature",36.06935,"temperate",5,8,5,1451.61,0.709303648078614,0.1820279304339
+"Dalton_8_mature",166,"Dalton","Dalton_8","mature",34.670883,"temperate",5,8,4,877.014375,0.646596305203227,0.169441574148461
+"McPhee_8_mature",167,"McPhee","McPhee_8","mature",40.971333,"north temperate",5,8,5,1915.31875,0.743851069304207,0.188954032672677
+"OCM_17_mature",168,"OCM","OCM_17","mature",32.34554,"temperate",5,8,4,393.144375,0.547172097291036,0.149417931904688
+"With_43_mature",169,"With","With_43","mature",28.60387,"subtropical",5,8,4,393.144375,0.547172097291036,0.149417931904688
+"Bella_2_mature",170,"Bella","Bella_2","mature",8.79,"tropical",5,8,3,493.950625,0.575383653815745,0.155111450252971
+"HV_3_mature",171,"HV","HV_3","mature",37.1818,"temperate",5,8,3,1239.916875,0.689673265895927,0.178090145017221
+"Whitehall_16_mature",172,"Whitehall","Whitehall_16","mature",33.895767,"temperate",5,8,3,534.273125,0.585098031943796,0.157069428266169
+"Bella_3_mature",173,"Bella","Bella_3","mature",8.79,"tropical",5,8,5,1038.304375,0.667588790806968,0.173657672453741
+"HV_10_mature",174,"HV","HV_10","mature",37.1818,"temperate",5,8,5,766.1275,0.629801977138373,0.166066325490631
+"McPhee_7_mature",175,"McPhee","McPhee_7","mature",40.971333,"north temperate",5,8,4,1038.304375,0.667588790806968,0.173657672453741
+"MacArthur_15_mature",176,"MacArthur","MacArthur_15","mature",27.177583,"subtropical",5,8,4,302.41875,0.51484661403199,0.142877846615235
+"TT_7_mature",177,"TT","TT_7","mature",30.673889,"temperate",5,8,4,NA,NA,NA
+"KBS_8_mature",178,"KBS","KBS_8","mature",42.399933,"north temperate",5,8,4,856.853125,0.643705869385089,0.16886082254627
+"OCM_18_mature",179,"OCM","OCM_18","mature",32.34554,"temperate",5,8,4,877.014375,0.646596305203227,0.169441574148461
+"Caesar_7_mature",180,"Caesar","Caesar_7","mature",39.4887,"north temperate",5,8,5,1774.19,0.734309446387846,0.187041568460861
+"Gav_23_mature",181,"Gav","Gav_23","mature",8.72883,"tropical",5,8,2,NA,NA,NA
+"Hwy 27_6_mature",182,"Hwy 27","Hwy 27_6","mature",26.537067,"subtropical",5,8,4,120.9675,0.403323253092262,0.12009386539504
+"HV_5_mature",183,"HV","HV_5","mature",37.1818,"temperate",5,8,4,1008.0625,0.663911910979787,0.172919424023815
+"TT_25_mature",184,"TT","TT_25","mature",30.673889,"temperate",5,8,5,907.25625,0.650810376756387,0.170288163811072
+"With_46_mature",185,"With","With_46","mature",28.60387,"subtropical",5,8,4,302.41875,0.51484661403199,0.142877846615235
+"With_42_mature",186,"With","With_42","mature",28.60387,"subtropical",5,8,5,403.225,0.550297572569284,0.150049291340647
+"Bella_21_mature",187,"Bella","Bella_21","mature",8.79,"tropical",5,8,2,241.935,0.487460903958378,0.137319847946172
+"Dalton_9_mature",188,"Dalton","Dalton_9","mature",34.670883,"temperate",5,8,2,161.29,0.438036917458215,0.127234621458195
+"Gav_22_mature",189,"Gav","Gav_22","mature",8.72883,"tropical",5,8,4,NA,NA,NA
+"Tiri_12_mature",190,"Tiri","Tiri_12","mature",10.41549,"tropical",5,8,3,564.515,0.591918401125005,0.158443420510083
+"Hwy 27_1_mature",191,"Hwy 27","Hwy 27_1","mature",26.537067,"subtropical",5,8,4,806.45,0.636173107290974,0.167347028341877
+"Whitehall_3_mature",192,"Whitehall","Whitehall_3","mature",33.895767,"temperate",5,8,5,725.805,0.623088594232942,0.16471645539925
+"Gav_1_mature",193,"Gav","Gav_1","mature",8.72883,"tropical",5,8,4,NA,NA,NA
+"OCM_5_mature",194,"OCM","OCM_5","mature",32.34554,"temperate",5,8,4,1249.9975,0.690681368387241,0.178292412801591
+"Bella_13_mature",195,"Bella","Bella_13","mature",8.79,"tropical",5,8,5,2540.3175,0.779071595398721,0.196010948158031
+"McPhee_6_mature",196,"McPhee","McPhee_6","mature",40.971333,"north temperate",5,8,4,2610.881875,0.782489830538371,0.196695656635184
+"TT_9_mature",197,"TT","TT_9","mature",30.673889,"temperate",5,8,3,342.74125,0.530252594537345,0.145997229852784
+"Gen Butler_7_mature",198,"Gen Butler","Gen Butler_7","mature",38.675517,"temperate",5,8,5,695.563125,0.617805820435883,0.163653960521078
+"Gen Butler_1_mature",199,"Gen Butler","Gen Butler_1","mature",38.675517,"temperate",5,8,5,2953.623125,0.797880170773792,0.199778159590887
+"Hwy 27_2_mature",200,"Hwy 27","Hwy 27_2","mature",26.537067,"subtropical",5,8,4,262.09625,0.497271395987218,0.139312998370225
+"Whitehall_17_mature",201,"Whitehall","Whitehall_17","mature",33.895767,"temperate",5,8,4,836.691875,0.640747011331724,0.16826625854841
+"Gen Butler_9_mature",202,"Gen Butler","Gen Butler_9","mature",38.675517,"temperate",5,8,4,1592.73875,0.720863339364985,0.184345948751457
+"MacArthur_22_mature",203,"MacArthur","MacArthur_22","mature",27.177583,"subtropical",5,8,3,383.06375,0.543966464727055,0.148770213860841
+"Tiri_16_mature",204,"Tiri","Tiri_16","mature",10.41549,"tropical",5,8,2,362.9025,0.537297505622295,0.147422149365344
+"Caesar_10_mature",205,"Caesar","Caesar_10","mature",39.4887,"north temperate",5,8,4,715.724375,0.621352358776154,0.16436728381169
+"OCM_16_mature",206,"OCM","OCM_16","mature",32.34554,"temperate",5,8,2,332.660625,0.526575426323448,0.145253109589752
+"MacArthur_16_mature",207,"MacArthur","MacArthur_16","mature",27.177583,"subtropical",5,8,4,836.691875,0.640747011331724,0.16826625854841
+"HV_13_mature",208,"HV","HV_13","mature",37.1818,"temperate",5,8,4,1522.174375,0.715217072595482,0.183213796019002
+"Gav_6_mature",209,"Gav","Gav_6","mature",8.72883,"tropical",5,8,4,262.09625,0.497271395987218,0.139312998370225
+"KBS_5_mature",210,"KBS","KBS_5","mature",42.399933,"north temperate",5,8,4,584.67625,0.596266968130669,0.159319179062602
+"KBS_12_mature",211,"KBS","KBS_12","mature",42.399933,"north temperate",5,8,2,231.854375,0.482250948546446,0.136260331454295
+"MacArthur_21_mature",212,"MacArthur","MacArthur_21","mature",27.177583,"subtropical",5,8,3,302.41875,0.51484661403199,0.142877846615235
+"With_48_mature",213,"With","With_48","mature",28.60387,"subtropical",5,8,3,413.305625,0.553346801651284,0.15066509815273
+"Tiri_5_mature",214,"Tiri","Tiri_5","mature",10.41549,"tropical",5,8,4,866.93375,0.645159441727251,0.169152884671567
+"Tiri_1_mature",215,"Tiri","Tiri_1","mature",10.41549,"tropical",5,8,4,756.046875,0.628157130014255,0.165735629339528
+"Caesar_9_mature",216,"Caesar","Caesar_9","mature",39.4887,"north temperate",5,8,4,665.32125,0.612289895331274,0.162544297790021
+"Hwy 27_8_mature",217,"Hwy 27","Hwy 27_8","mature",26.537067,"subtropical",5,8,4,544.35375,0.587413084367337,0.157535866666727
+"Caesar_5_mature",218,"Caesar","Caesar_5","mature",39.4887,"north temperate",5,8,5,897.175625,0.649421411860519,0.170009140566921
+"TT_10_mature",219,"TT","TT_10","mature",30.673889,"temperate",5,8,2,302.41875,0.51484661403199,0.142877846615235
+"Tiri_22_mature",220,"Tiri","Tiri_22","mature",10.41549,"tropical",5,8,4,614.918125,0.60251868755415,0.160577851018466
+"McPhee_2_mature",221,"McPhee","McPhee_2","mature",40.971333,"north temperate",5,8,2,362.9025,0.537297505622295,0.147422149365344
+"With_47_mature",222,"With","With_47","mature",28.60387,"subtropical",5,8,1,20.16125,0.201983400024875,0.0763042919742331
+"Center Hill_2_mature",223,"Center Hill","Center Hill_2","mature",36.06935,"temperate",5,8,4,493.950625,0.575383653815745,0.155111450252971
+"Dalton_2_mature",224,"Dalton","Dalton_2","mature",34.670883,"temperate",5,8,3,554.434375,0.589686039526676,0.157993761632183
+"Center Hill_8_mature",225,"Center Hill","Center Hill_8","mature",36.06935,"temperate",5,8,5,715.724375,0.621352358776154,0.16436728381169
+"Dalton_6_mature",226,"Dalton","Dalton_6","mature",34.670883,"temperate",5,8,3,564.515,0.591918401125005,0.158443420510083
+"TT_5_mature",227,"TT","TT_5","mature",30.673889,"temperate",5,8,4,403.225,0.550297572569284,0.150049291340647
+"Hwy 27_3_mature",228,"Hwy 27","Hwy 27_3","mature",26.537067,"subtropical",5,8,3,443.5475,0.562072084005125,0.152426422772174
+"Bella_4_mature",229,"Bella","Bella_4","mature",8.79,"tropical",5,8,5,635.079375,0.606519284958356,0.161383083975298
+"Center Hill_1_mature",230,"Center Hill","Center Hill_1","mature",36.06935,"temperate",5,8,1,292.338125,0.51067900585235,0.14203314884745
+"Gen Butler_2_mature",231,"Gen Butler","Gen Butler_2","mature",38.675517,"temperate",5,8,4,594.756875,0.598385806541204,0.159745816399695
+"Whitehall_2_mature",232,"Whitehall","Whitehall_2","mature",33.895767,"temperate",5,8,4,473.789375,0.570227858763699,0.154071782116046
+"HV_7_mature",233,"HV","HV_7","mature",37.1818,"temperate",5,8,3,413.305625,0.553346801651284,0.15066509815273
+"McPhee_1_mature",234,"McPhee","McPhee_1","mature",40.971333,"north temperate",5,8,3,393.144375,0.547172097291036,0.149417931904688
+"Whitehall_18_mature",235,"Whitehall","Whitehall_18","mature",33.895767,"temperate",5,8,3,483.87,0.572832336628249,0.154597020344272
+"MacArthur_5_mature",236,"MacArthur","MacArthur_5","mature",27.177583,"subtropical",5,8,4,504.03125,0.577883937140472,0.155615507713723
+"Gen Butler_3_mature",237,"Gen Butler","Gen Butler_3","mature",38.675517,"temperate",5,8,5,1340.723125,0.699406109316345,0.180042749526113
+"Center Hill_7_mature",238,"Center Hill","Center Hill_7","mature",36.06935,"temperate",5,8,4,665.32125,0.612289895331274,0.162544297790021
+"KBS_9_mature",239,"KBS","KBS_9","mature",42.399933,"north temperate",5,8,5,1028.22375,0.66637514192005,0.173414003907925
+"OCM_10_mature",240,"OCM","OCM_10","mature",32.34554,"temperate",5,8,5,877.014375,0.646596305203227,0.169441574148461
+"Dalton_4_mature",241,"Dalton","Dalton_4","mature",34.670883,"temperate",5,8,3,1129.03,0.678011878316266,0.175749986500664
+"KBS_2_mature",242,"KBS","KBS_2","mature",42.399933,"north temperate",5,8,3,1471.77125,0.711021935419605,0.182372527727185
+"Center Hill_3_mature",243,"Center Hill","Center Hill_3","mature",36.06935,"temperate",5,8,5,1945.560625,0.745804274725436,0.189345482805288
+"Dalton_8_mature",244,"Dalton","Dalton_8","mature",34.670883,"temperate",5,8,2,624.99875,0.604534990352816,0.160983709357325
+"McPhee_8_mature",245,"McPhee","McPhee_8","mature",40.971333,"north temperate",5,8,5,2368.946875,0.770358910580228,0.194265570456653
+"OCM_17_mature",246,"OCM","OCM_17","mature",32.34554,"temperate",5,8,4,1008.0625,0.663911910979787,0.172919424023815
+"With_43_mature",247,"With","With_43","mature",28.60387,"subtropical",5,8,5,725.805,0.623088594232942,0.16471645539925
+"Bella_2_mature",248,"Bella","Bella_2","mature",8.79,"tropical",5,8,2,806.45,0.636173107290974,0.167347028341877
+"HV_3_mature",249,"HV","HV_3","mature",37.1818,"temperate",5,8,5,2247.979375,0.76382135918694,0.192955794529368
+"Whitehall_16_mature",250,"Whitehall","Whitehall_16","mature",33.895767,"temperate",5,8,2,534.273125,0.585098031943796,0.157069428266169
+"Bella_3_mature",251,"Bella","Bella_3","mature",8.79,"tropical",5,8,5,1058.465625,0.669981299895478,0.174137998315818
+"HV_10_mature",252,"HV","HV_10","mature",37.1818,"temperate",5,8,5,997.981875,0.662661850572115,0.172668415883521
+"McPhee_7_mature",253,"McPhee","McPhee_7","mature",40.971333,"north temperate",5,8,4,2883.05875,0.794862741271186,0.199173846730246
+"MacArthur_15_mature",254,"MacArthur","MacArthur_15","mature",27.177583,"subtropical",5,8,3,241.935,0.487460903958378,0.137319847946172
+"TT_7_mature",255,"TT","TT_7","mature",30.673889,"temperate",5,8,5,846.7725,0.642235194995001,0.168565308037424
+"KBS_8_mature",256,"KBS","KBS_8","mature",42.399933,"north temperate",5,8,4,796.369375,0.634610508832864,0.1670329507035
+"OCM_18_mature",257,"OCM","OCM_18","mature",32.34554,"temperate",5,8,4,1370.965,0.702184083711147,0.180599982443909
+"Caesar_7_mature",258,"Caesar","Caesar_7","mature",39.4887,"north temperate",5,8,5,3215.719375,0.808490263692189,0.201902932288526
+"Gav_23_mature",259,"Gav","Gav_23","mature",8.72883,"tropical",5,8,4,342.74125,0.530252594537345,0.145997229852784
+"Hwy 27_6_mature",260,"Hwy 27","Hwy 27_6","mature",26.537067,"subtropical",5,8,4,937.498125,0.654887002187021,0.171107021453891
+"Gav_6_mature",287,"Gav","Gav_6","mature",8.72883,"tropical",5,8,5,917.336875,0.652184077322019,0.170564107238395
+"KBS_5_mature",288,"KBS","KBS_5","mature",42.399933,"north temperate",5,8,5,977.820625,0.660123589243901,0.172158710076675
+"KBS_12_mature",289,"KBS","KBS_12","mature",42.399933,"north temperate",5,8,4,816.530625,0.637716412964422,0.167657209096086
+"MacArthur_21_mature",290,"MacArthur","MacArthur_21","mature",27.177583,"subtropical",5,8,4,272.176875,0.501902240985099,0.140252986979132
+"With_48_mature",291,"With","With_48","mature",28.60387,"subtropical",5,8,4,473.789375,0.570227858763699,0.154071782116046
+"Tiri_5_mature",292,"Tiri","Tiri_5","mature",10.41549,"tropical",5,8,5,1310.48125,0.696564991851123,0.179472812564945
+"Tiri_1_mature",293,"Tiri","Tiri_1","mature",10.41549,"tropical",5,8,5,1522.174375,0.715217072595482,0.183213796019002
+"Caesar_9_mature",294,"Caesar","Caesar_9","mature",39.4887,"north temperate",5,8,5,1159.271875,0.681301657271473,0.176410240790972
+"Hwy 27_8_mature",295,"Hwy 27","Hwy 27_8","mature",26.537067,"subtropical",5,8,5,836.691875,0.640747011331724,0.16826625854841
+"Caesar_5_mature",296,"Caesar","Caesar_5","mature",39.4887,"north temperate",5,8,5,1874.99625,0.741198393588382,0.188422378265757
+"TT_10_mature",297,"TT","TT_10","mature",30.673889,"temperate",5,8,4,3286.28375,0.811199381598304,0.202445422371369
+"Tiri_22_mature",298,"Tiri","Tiri_22","mature",10.41549,"tropical",5,8,5,3830.6375,0.830331627453156,0.206276188412375
+"McPhee_2_mature",299,"McPhee","McPhee_2","mature",40.971333,"north temperate",5,8,5,1018.143125,0.665149593858414,0.173167936992235
+"With_47_mature",300,"With","With_47","mature",28.60387,"subtropical",5,8,3,443.5475,0.562072084005125,0.152426422772174
+"Center Hill_2_mature",301,"Center Hill","Center Hill_2","mature",36.06935,"temperate",5,8,4,715.724375,0.621352358776154,0.16436728381169
+"Dalton_2_mature",302,"Dalton","Dalton_2","mature",34.670883,"temperate",5,8,4,1048.385,0.668790769363589,0.173898988931706
+"Center Hill_8_mature",303,"Center Hill","Center Hill_8","mature",36.06935,"temperate",5,8,3,594.756875,0.598385806541204,0.159745816399695
+"Dalton_6_mature",304,"Dalton","Dalton_6","mature",34.670883,"temperate",5,8,5,1633.06125,0.723978843055275,0.184970593985438
+"TT_5_mature",305,"TT","TT_5","mature",30.673889,"temperate",5,8,4,1058.465625,0.669981299895478,0.174137998315818
+"Hwy 27_3_mature",306,"Hwy 27","Hwy 27_3","mature",26.537067,"subtropical",5,8,3,1149.19125,0.680214656100692,0.176192087796952
+"Bella_4_mature",307,"Bella","Bella_4","mature",8.79,"tropical",5,8,5,665.32125,0.612289895331274,0.162544297790021
+"Center Hill_1_mature",308,"Center Hill","Center Hill_1","mature",36.06935,"temperate",5,8,3,433.466875,0.559230794363196,0.151852992618629
+"Gen Butler_2_mature",309,"Gen Butler","Gen Butler_2","mature",38.675517,"temperate",5,8,5,1229.83625,0.688656967092985,0.177886227385072
+"Whitehall_2_mature",310,"Whitehall","Whitehall_2","mature",33.895767,"temperate",5,8,4,302.41875,0.51484661403199,0.142877846615235
+"HV_7_mature",311,"HV","HV_7","mature",37.1818,"temperate",5,8,5,1582.658125,0.720072177458948,0.184187317972573
+"McPhee_1_mature",312,"McPhee","McPhee_1","mature",40.971333,"north temperate",5,8,4,1199.594375,0.685557532320594,0.177264300641234
+"HV_5_mature",339,"HV","HV_5","mature",37.1818,"temperate",5,8,4,907.25625,0.650810376756387,0.170288163811072
+"TT_25_mature",340,"TT","TT_25","mature",30.673889,"temperate",5,8,5,483.87,0.572832336628249,0.154597020344272
+"With_46_mature",341,"With","With_46","mature",28.60387,"subtropical",5,8,3,211.693125,0.471130533714576,0.133996259979096
+"With_42_mature",342,"With","With_42","mature",28.60387,"subtropical",5,8,3,201.6125,0.465175893226171,0.132782382195957
+"Bella_21_mature",343,"Bella","Bella_21","mature",8.79,"tropical",5,8,4,NA,NA,NA
+"Dalton_9_mature",344,"Dalton","Dalton_9","mature",34.670883,"temperate",5,8,4,231.854375,0.482250948546446,0.136260331454295
+"Gav_22_mature",345,"Gav","Gav_22","mature",8.72883,"tropical",5,8,4,211.693125,0.471130533714576,0.133996259979096
+"Tiri_12_mature",346,"Tiri","Tiri_12","mature",10.41549,"tropical",5,8,4,524.1925,0.582739293421334,0.156594121551312
+"Hwy 27_1_mature",347,"Hwy 27","Hwy 27_1","mature",26.537067,"subtropical",5,8,4,292.338125,0.51067900585235,0.14203314884745
+"Whitehall_3_mature",348,"Whitehall","Whitehall_3","mature",33.895767,"temperate",5,8,4,302.41875,0.51484661403199,0.142877846615235
+"Gav_1_mature",349,"Gav","Gav_1","mature",8.72883,"tropical",5,8,4,745.96625,0.626490349780038,0.165400500084731
+"OCM_5_mature",350,"OCM","OCM_5","mature",32.34554,"temperate",5,8,5,856.853125,0.643705869385089,0.16886082254627
+"Bella_13_mature",351,"Bella","Bella_13","mature",8.79,"tropical",5,8,4,564.515,0.591918401125005,0.158443420510083
+"McPhee_6_mature",352,"McPhee","McPhee_6","mature",40.971333,"north temperate",5,8,4,705.64375,0.619591667118361,0.164013166230671
+"TT_9_mature",353,"TT","TT_9","mature",30.673889,"temperate",5,8,5,554.434375,0.589686039526676,0.157993761632183
+"Gen Butler_7_mature",354,"Gen Butler","Gen Butler_7","mature",38.675517,"temperate",5,8,4,201.6125,0.465175893226171,0.132782382195957
+"Gen Butler_1_mature",355,"Gen Butler","Gen Butler_1","mature",38.675517,"temperate",5,8,4,1078.626875,0.672328874882073,0.174609269357827
+"Hwy 27_2_mature",356,"Hwy 27","Hwy 27_2","mature",26.537067,"subtropical",5,8,5,594.756875,0.598385806541204,0.159745816399695
+"Whitehall_17_mature",357,"Whitehall","Whitehall_17","mature",33.895767,"temperate",5,8,4,977.820625,0.660123589243901,0.172158710076675
+"Gen Butler_9_mature",358,"Gen Butler","Gen Butler_9","mature",38.675517,"temperate",5,8,5,856.853125,0.643705869385089,0.16886082254627
+"MacArthur_22_mature",359,"MacArthur","MacArthur_22","mature",27.177583,"subtropical",5,8,5,312.499375,0.518879742174096,0.143694934161264
+"Tiri_16_mature",360,"Tiri","Tiri_16","mature",10.41549,"tropical",5,8,5,443.5475,0.562072084005125,0.152426422772174
+"Caesar_10_mature",361,"Caesar","Caesar_10","mature",39.4887,"north temperate",5,8,4,927.4175,0.653542845415017,0.17083703809641
+"OCM_16_mature",362,"OCM","OCM_16","mature",32.34554,"temperate",5,8,4,NA,NA,NA
+"MacArthur_16_mature",363,"MacArthur","MacArthur_16","mature",27.177583,"subtropical",5,8,5,362.9025,0.537297505622295,0.147422149365344
+"HV_13_mature",364,"HV","HV_13","mature",37.1818,"temperate",5,8,5,1713.70625,0.729986149263919,0.186174926553266
+"Whitehall_18_young",391,"Whitehall","Whitehall_18","young",33.895767,"temperate",3,9,1,211.693125,0.47451082158652,0.198512977746808
+"MacArthur_5_young",392,"MacArthur","MacArthur_5","young",27.177583,"subtropical",3,9,1,10.080625,0.163613315454888,0.0890814106544632
+"Gen Butler_3_young",393,"Gen Butler","Gen Butler_3","young",38.675517,"temperate",3,9,3,241.935,0.489153397839364,0.203436811772106
+"Center Hill_7_young",394,"Center Hill","Center Hill_7","young",36.06935,"temperate",3,9,2,171.370625,0.451396752665226,0.190727665002989
+"KBS_9_young",395,"KBS","KBS_9","young",42.399933,"north temperate",3,9,2,131.048125,0.422176287621986,0.180858016276865
+"OCM_10_young",396,"OCM","OCM_10","young",32.34554,"temperate",3,9,3,90.725625,0.382417704708506,0.167363029039402
+"Dalton_4_young",397,"Dalton","Dalton_4","young",34.670883,"temperate",3,9,3,312.499375,0.517282712480959,0.212881383942614
+"KBS_2_young",398,"KBS","KBS_2","young",42.399933,"north temperate",3,9,2,151.209375,0.43774432980871,0.186120631115335
+"Center Hill_3_young",399,"Center Hill","Center Hill_3","young",36.06935,"temperate",3,9,3,201.6125,0.469167295311374,0.196714640290307
+"Dalton_8_young",400,"Dalton","Dalton_8","young",34.670883,"temperate",3,9,3,262.09625,0.497942297657932,0.206389627215147
+"McPhee_8_young",401,"McPhee","McPhee_8","young",40.971333,"north temperate",3,9,2,483.87,0.565487206480866,0.229032622732255
+"OCM_17_young",402,"OCM","OCM_17","young",32.34554,"temperate",3,9,3,574.595625,0.584473524937315,0.235385384230367
+"With_43_young",403,"With","With_43","young",28.60387,"subtropical",3,9,2,90.725625,0.382417704708506,0.167363029039402
+"Bella_2_young",404,"Bella","Bella_2","young",8.79,"tropical",3,9,0,0,0,0
+"HV_3_young",405,"HV","HV_3","young",37.1818,"temperate",3,9,2,100.80625,0.393768210244118,0.171224870263844
+"Whitehall_16_young",406,"Whitehall","Whitehall_16","young",33.895767,"temperate",3,9,3,241.935,0.489153397839364,0.203436811772106
+"Bella_3_young",407,"Bella","Bella_3","young",8.79,"tropical",3,9,0,20.16125,0.227096481660709,0.113043395517382
+"HV_10_young",408,"HV","HV_10","young",37.1818,"temperate",3,9,2,372.983125,0.536770219266165,0.219415210225027
+"McPhee_7_young",409,"McPhee","McPhee_7","young",40.971333,"north temperate",3,9,3,120.9675,0.413489682867708,0.177916837622281
+"MacArthur_15_young",410,"MacArthur","MacArthur_15","young",27.177583,"subtropical",3,9,1,10.080625,0.163613315454888,0.0890814106544632
+"TT_7_young",411,"TT","TT_7","young",30.673889,"temperate",3,9,2,211.693125,0.47451082158652,0.198512977746808
+"KBS_8_young",412,"KBS","KBS_8","young",42.399933,"north temperate",3,9,3,635.079375,0.595538933240425,0.239086050333775
+"OCM_18_young",413,"OCM","OCM_18","young",32.34554,"temperate",3,9,3,413.305625,0.548089708592444,0.22320755281886
+"Caesar_7_young",414,"Caesar","Caesar_7","young",39.4887,"north temperate",3,9,2,372.983125,0.536770219266165,0.219415210225027
+"Gav_23_young",415,"Gav","Gav_23","young",8.72883,"tropical",3,9,0,0,0,0
+"Hwy 27_6_young",416,"Hwy 27","Hwy 27_6","young",26.537067,"subtropical",3,9,2,40.3225,0.296673315762684,0.137829894289236
+"HV_5_young",417,"HV","HV_5","young",37.1818,"temperate",3,9,2,141.12875,0.430232745407031,0.183582716183218
+"TT_25_young",418,"TT","TT_25","young",30.673889,"temperate",3,9,1,80.645,0.36977437379057,0.163051132613121
+"With_46_young",419,"With","With_46","young",28.60387,"subtropical",3,9,3,40.3225,0.296673315762684,0.137829894289236
+"With_42_young",420,"With","With_42","young",28.60387,"subtropical",3,9,1,30.241875,0.26724423196339,0.127472568236169
+"Bella_21_young",421,"Bella","Bella_21","young",8.79,"tropical",3,9,0,40.3225,0.296673315762684,0.137829894289236
+"Dalton_9_young",422,"Dalton","Dalton_9","young",34.670883,"temperate",3,9,2,181.45125,0.457641434695102,0.192832704224115
+"Gav_22_young",423,"Gav","Gav_22","young",8.72883,"tropical",3,9,0,30.241875,0.26724423196339,0.127472568236169
+"Tiri_12_young",424,"Tiri","Tiri_12","young",10.41549,"tropical",3,9,0,30.241875,0.26724423196339,0.127472568236169
+"Hwy 27_1_young",425,"Hwy 27","Hwy 27_1","young",26.537067,"subtropical",3,9,0,10.080625,0.163613315454888,0.0890814106544632
+"Whitehall_3_young",426,"Whitehall","Whitehall_3","young",33.895767,"temperate",3,9,0,10.080625,0.163613315454888,0.0890814106544632
+"Gav_1_young",427,"Gav","Gav_1","young",8.72883,"tropical",3,9,0,0,0,0
+"OCM_5_young",428,"OCM","OCM_5","young",32.34554,"temperate",3,9,3,423.38625,0.550748148549654,0.224097926204981
+"Bella_13_young",429,"Bella","Bella_13","young",8.79,"tropical",3,9,0,0,0,0
+"McPhee_6_young",430,"McPhee","McPhee_6","young",40.971333,"north temperate",3,9,3,282.2575,0.506086665828234,0.209124310293836
+"TT_9_young",431,"TT","TT_9","young",30.673889,"temperate",3,9,2,443.5475,0.555881498774322,0.225816922625443
+"Gen Butler_7_young",432,"Gen Butler","Gen Butler_7","young",38.675517,"temperate",3,9,2,393.144375,0.542574048830594,0.221359899118057
+"Gen Butler_1_young",433,"Gen Butler","Gen Butler_1","young",38.675517,"temperate",3,9,2,554.434375,0.580525832748107,0.234064832047678
+"Hwy 27_2_young",434,"Hwy 27","Hwy 27_2","young",26.537067,"subtropical",3,9,2,50.403125,0.319917441798336,0.145914776602903
+"Whitehall_17_young",435,"Whitehall","Whitehall_17","young",33.895767,"temperate",3,9,3,1028.22375,0.648876577123484,0.256909635419148
+"Gen Butler_9_young",436,"Gen Butler","Gen Butler_9","young",38.675517,"temperate",3,9,2,151.209375,0.43774432980871,0.186120631115335
+"MacArthur_22_young",437,"MacArthur","MacArthur_22","young",27.177583,"subtropical",3,9,0,0,0,0
+"Tiri_16_young",438,"Tiri","Tiri_16","young",10.41549,"tropical",3,9,0,10.080625,0.163613315454888,0.0890814106544632
+"Caesar_10_young",439,"Caesar","Caesar_10","young",39.4887,"north temperate",3,9,3,1199.594375,0.665958243617857,0.262613778727754
+"OCM_16_young",440,"OCM","OCM_16","young",32.34554,"temperate",3,9,3,564.515,0.582517210228466,0.234730993348271
+"MacArthur_16_young",441,"MacArthur","MacArthur_16","young",27.177583,"subtropical",3,9,3,80.645,0.36977437379057,0.163051132613121
+"HV_13_young",442,"HV","HV_13","young",37.1818,"temperate",3,9,3,1229.83625,0.668717822168098,0.263535151681588
+"KBS_5_young",443,"KBS","KBS_5","young",42.399933,"north temperate",3,9,3,100.80625,0.393768210244118,0.171224870263844
+"KBS_12_young",444,"KBS","KBS_12","young",42.399933,"north temperate",3,9,1,120.9675,0.413489682867708,0.177916837622281
+"MacArthur_21_young",445,"MacArthur","MacArthur_21","young",27.177583,"subtropical",3,9,0,0,0,0
+"With_48_young",446,"With","With_48","young",28.60387,"subtropical",3,9,2,50.403125,0.319917441798336,0.145914776602903
+"Tiri_5_young",447,"Tiri","Tiri_5","young",10.41549,"tropical",3,9,0,0,0,0
+"Caesar_9_young",448,"Caesar","Caesar_9","young",39.4887,"north temperate",3,9,2,332.660625,0.524165368468156,0.215189791984817
+"Hwy 27_8_young",449,"Hwy 27","Hwy 27_8","young",26.537067,"subtropical",3,9,0,0,0,0
+"Caesar_5_young",450,"Caesar","Caesar_5","young",39.4887,"north temperate",3,9,3,1088.7075,0.655209552734861,0.2590246144662
+"TT_10_young",451,"TT","TT_10","young",30.673889,"temperate",3,9,3,322.58,0.520777324279139,0.214053569576933
+"Tiri_22_young",452,"Tiri","Tiri_22","young",10.41549,"tropical",3,9,1,0,0,0
+"McPhee_2_young",453,"McPhee","McPhee_2","young",40.971333,"north temperate",3,9,3,897.175625,0.633775288278664,0.251865393432476
+"With_47_young",454,"With","With_47","young",28.60387,"subtropical",3,9,1,0,0,0
+"Center Hill_2_young",455,"Center Hill","Center Hill_2","young",36.06935,"temperate",3,9,3,191.531875,0.463553749190146,0.194824508312438
+"Dalton_2_young",456,"Dalton","Dalton_2","young",34.670883,"temperate",3,9,2,423.38625,0.550748148549654,0.224097926204981
+"Center Hill_8_young",457,"Center Hill","Center Hill_8","young",36.06935,"temperate",3,9,3,887.095,0.632523989992737,0.251447359972296
+"Dalton_6_young",458,"Dalton","Dalton_6","young",34.670883,"temperate",3,9,3,322.58,0.520777324279139,0.214053569576933
+"TT_5_young",459,"TT","TT_5","young",30.673889,"temperate",3,9,2,342.74125,0.52745315269484,0.216292192374495
+"Hwy 27_3_young",460,"Hwy 27","Hwy 27_3","young",26.537067,"subtropical",3,9,2,50.403125,0.319917441798336,0.145914776602903
+"Center Hill_1_young",461,"Center Hill","Center Hill_1","young",36.06935,"temperate",3,9,2,282.2575,0.506086665828234,0.209124310293836
+"Gen Butler_2_young",462,"Gen Butler","Gen Butler_2","young",38.675517,"temperate",3,9,3,957.659375,0.641000845442146,0.254279104596068
+"Whitehall_2_young",463,"Whitehall","Whitehall_2","young",33.895767,"temperate",3,9,3,695.563125,0.605601473130198,0.242450311883079
+"HV_7_young",464,"HV","HV_7","young",37.1818,"temperate",3,9,3,766.1275,0.616293829648244,0.246024185912046
+"McPhee_1_young",465,"McPhee","McPhee_1","young",40.971333,"north temperate",3,9,1,70.564375,0.355505398284191,0.158170273862173
+"Whitehall_18_young",466,"Whitehall","Whitehall_18","young",33.895767,"temperate",3,9,1,70.564375,0.355505398284191,0.158170273862173
+"MacArthur_5_young",467,"MacArthur","MacArthur_5","young",27.177583,"subtropical",3,9,2,30.241875,0.26724423196339,0.127472568236169
+"Gen Butler_3_young",468,"Gen Butler","Gen Butler_3","young",38.675517,"temperate",3,9,0,10.080625,0.163613315454888,0.0890814106544632
+"Center Hill_7_young",469,"Center Hill","Center Hill_7","young",36.06935,"temperate",3,9,2,131.048125,0.422176287621986,0.180858016276865
+"KBS_9_young",470,"KBS","KBS_9","young",42.399933,"north temperate",3,9,2,161.29,0.44478009669446,0.188495735493622
+"OCM_10_young",471,"OCM","OCM_10","young",32.34554,"temperate",3,9,0,0,0,0
+"Dalton_4_young",472,"Dalton","Dalton_4","young",34.670883,"temperate",3,9,2,131.048125,0.422176287621986,0.180858016276865
+"KBS_2_young",473,"KBS","KBS_2","young",42.399933,"north temperate",3,9,2,554.434375,0.580525832748107,0.234064832047678
+"Center Hill_3_young",474,"Center Hill","Center Hill_3","young",36.06935,"temperate",3,9,1,161.29,0.44478009669446,0.188495735493622
+"Dalton_8_young",475,"Dalton","Dalton_8","young",34.670883,"temperate",3,9,1,110.886875,0.404065926942778,0.174721789489385
+"McPhee_8_young",476,"McPhee","McPhee_8","young",40.971333,"north temperate",3,9,2,241.935,0.489153397839364,0.203436811772106
+"OCM_17_young",477,"OCM","OCM_17","young",32.34554,"temperate",3,9,2,211.693125,0.47451082158652,0.198512977746808
+"With_43_young",478,"With","With_43","young",28.60387,"subtropical",3,9,1,40.3225,0.296673315762684,0.137829894289236
+"Bella_2_young",479,"Bella","Bella_2","young",8.79,"tropical",3,9,0,10.080625,0.163613315454888,0.0890814106544632
+"HV_3_young",480,"HV","HV_3","young",37.1818,"temperate",3,9,2,141.12875,0.430232745407031,0.183582716183218
+"Whitehall_16_young",481,"Whitehall","Whitehall_16","young",33.895767,"temperate",3,9,1,20.16125,0.227096481660709,0.113043395517382
+"Bella_3_young",482,"Bella","Bella_3","young",8.79,"tropical",3,9,0,20.16125,0.227096481660709,0.113043395517382
+"HV_10_young",483,"HV","HV_10","young",37.1818,"temperate",3,9,3,302.41875,0.513674610791531,0.211670883874422
+"McPhee_7_young",484,"McPhee","McPhee_7","young",40.971333,"north temperate",3,9,3,272.176875,0.502089087118207,0.207782202932048
+"MacArthur_15_young",485,"MacArthur","MacArthur_15","young",27.177583,"subtropical",3,9,2,70.564375,0.355505398284191,0.158170273862173
+"TT_7_young",486,"TT","TT_7","young",30.673889,"temperate",3,9,2,211.693125,0.47451082158652,0.198512977746808
+"KBS_8_young",487,"KBS","KBS_8","young",42.399933,"north temperate",3,9,3,493.950625,0.567764265157435,0.229794741115512
+"OCM_18_young",488,"OCM","OCM_18","young",32.34554,"temperate",3,9,1,60.48375,0.339130186552147,0.152547144898367
+"Caesar_7_young",489,"Caesar","Caesar_7","young",39.4887,"north temperate",3,9,2,292.338125,0.509945399749134,0.210419479774
+"Gav_23_young",490,"Gav","Gav_23","young",8.72883,"tropical",3,9,0,10.080625,0.163613315454888,0.0890814106544632
+"Hwy 27_6_young",491,"Hwy 27","Hwy 27_6","young",26.537067,"subtropical",3,9,1,20.16125,0.227096481660709,0.113043395517382
+"HV_5_young",492,"HV","HV_5","young",37.1818,"temperate",3,9,2,100.80625,0.393768210244118,0.171224870263844
+"TT_25_young",493,"TT","TT_25","young",30.673889,"temperate",3,9,2,90.725625,0.382417704708506,0.167363029039402
+"With_46_young",494,"With","With_46","young",28.60387,"subtropical",3,9,1,20.16125,0.227096481660709,0.113043395517382
+"With_42_young",495,"With","With_42","young",28.60387,"subtropical",3,9,1,10.080625,0.163613315454888,0.0890814106544632
+"Bella_21_young",496,"Bella","Bella_21","young",8.79,"tropical",3,9,0,40.3225,0.296673315762684,0.137829894289236
+"Dalton_9_young",497,"Dalton","Dalton_9","young",34.670883,"temperate",3,9,3,423.38625,0.550748148549654,0.224097926204981
+"Gav_22_young",498,"Gav","Gav_22","young",8.72883,"tropical",3,9,0,10.080625,0.163613315454888,0.0890814106544632
+"Tiri_12_young",499,"Tiri","Tiri_12","young",10.41549,"tropical",3,9,0,10.080625,0.163613315454888,0.0890814106544632
+"Hwy 27_1_young",500,"Hwy 27","Hwy 27_1","young",26.537067,"subtropical",3,9,1,20.16125,0.227096481660709,0.113043395517382
+"Whitehall_3_young",501,"Whitehall","Whitehall_3","young",33.895767,"temperate",3,9,3,120.9675,0.413489682867708,0.177916837622281
+"Gav_1_young",502,"Gav","Gav_1","young",8.72883,"tropical",3,9,1,30.241875,0.26724423196339,0.127472568236169
+"OCM_5_young",503,"OCM","OCM_5","young",32.34554,"temperate",3,9,3,221.77375,0.479609116896732,0.200228025275574
+"Bella_13_young",504,"Bella","Bella_13","young",8.79,"tropical",3,9,1,20.16125,0.227096481660709,0.113043395517382
+"McPhee_6_young",505,"McPhee","McPhee_6","young",40.971333,"north temperate",3,9,3,342.74125,0.52745315269484,0.216292192374495
+"TT_9_young",506,"TT","TT_9","young",30.673889,"temperate",3,9,3,493.950625,0.567764265157435,0.229794741115512
+"Gen Butler_7_young",507,"Gen Butler","Gen Butler_7","young",38.675517,"temperate",3,9,0,30.241875,0.26724423196339,0.127472568236169
+"Gen Butler_1_young",508,"Gen Butler","Gen Butler_1","young",38.675517,"temperate",3,9,2,161.29,0.44478009669446,0.188495735493622
+"Hwy 27_2_young",509,"Hwy 27","Hwy 27_2","young",26.537067,"subtropical",3,9,2,20.16125,0.227096481660709,0.113043395517382
+"Whitehall_17_young",510,"Whitehall","Whitehall_17","young",33.895767,"temperate",3,9,2,231.854375,0.484483705838161,0.201867157710066
+"Gen Butler_9_young",511,"Gen Butler","Gen Butler_9","young",38.675517,"temperate",3,9,1,30.241875,0.26724423196339,0.127472568236169
+"MacArthur_22_young",512,"MacArthur","MacArthur_22","young",27.177583,"subtropical",3,9,1,20.16125,0.227096481660709,0.113043395517382
+"Tiri_16_young",513,"Tiri","Tiri_16","young",10.41549,"tropical",3,9,0,10.080625,0.163613315454888,0.0890814106544632
+"Caesar_10_young",514,"Caesar","Caesar_10","young",39.4887,"north temperate",3,9,3,393.144375,0.542574048830594,0.221359899118057
+"OCM_16_young",515,"OCM","OCM_16","young",32.34554,"temperate",3,9,3,50.403125,0.319917441798336,0.145914776602903
+"MacArthur_16_young",516,"MacArthur","MacArthur_16","young",27.177583,"subtropical",3,9,1,50.403125,0.319917441798336,0.145914776602903
+"HV_13_young",517,"HV","HV_13","young",37.1818,"temperate",3,9,2,473.789375,0.563162504762025,0.228254492023771
+"KBS_5_young",518,"KBS","KBS_5","young",42.399933,"north temperate",3,9,2,151.209375,0.43774432980871,0.186120631115335
+"KBS_12_young",519,"KBS","KBS_12","young",42.399933,"north temperate",3,9,3,383.06375,0.539710024733386,0.220400316830876
+"MacArthur_21_young",520,"MacArthur","MacArthur_21","young",27.177583,"subtropical",3,9,0,0,0,0
+"With_48_young",521,"With","With_48","young",28.60387,"subtropical",3,9,1,30.241875,0.26724423196339,0.127472568236169
+"Tiri_5_young",522,"Tiri","Tiri_5","young",10.41549,"tropical",3,9,0,0,0,0
+"Caesar_9_young",523,"Caesar","Caesar_9","young",39.4887,"north temperate",3,9,3,403.225,0.545366100513414,0.222295246430588
+"Hwy 27_8_young",524,"Hwy 27","Hwy 27_8","young",26.537067,"subtropical",3,9,1,20.16125,0.227096481660709,0.113043395517382
+"Caesar_5_young",525,"Caesar","Caesar_5","young",39.4887,"north temperate",3,9,3,352.821875,0.530646440649215,0.217362726241895
+"TT_10_young",526,"TT","TT_10","young",30.673889,"temperate",3,9,3,191.531875,0.463553749190146,0.194824508312438
+"Tiri_22_young",527,"Tiri","Tiri_22","young",10.41549,"tropical",3,9,1,50.403125,0.319917441798336,0.145914776602903
+"McPhee_2_young",528,"McPhee","McPhee_2","young",40.971333,"north temperate",3,9,3,473.789375,0.563162504762025,0.228254492023771
+"With_47_young",529,"With","With_47","young",28.60387,"subtropical",3,9,0,0,0,0
+"Center Hill_2_young",530,"Center Hill","Center Hill_2","young",36.06935,"temperate",3,9,3,252.015625,0.493634725458102,0.204942638730141
+"Dalton_2_young",531,"Dalton","Dalton_2","young",34.670883,"temperate",3,9,3,614.918125,0.591971519577117,0.23789311261995
+"Center Hill_8_young",532,"Center Hill","Center Hill_8","young",36.06935,"temperate",3,9,2,141.12875,0.430232745407031,0.183582716183218
+"Dalton_6_young",533,"Dalton","Dalton_6","young",34.670883,"temperate",3,9,3,453.628125,0.558361893346004,0.226647399151134
+"TT_5_young",534,"TT","TT_5","young",30.673889,"temperate",3,9,3,181.45125,0.457641434695102,0.192832704224115
+"Hwy 27_3_young",535,"Hwy 27","Hwy 27_3","young",26.537067,"subtropical",3,9,0,0,0,0
+"Center Hill_1_young",536,"Center Hill","Center Hill_1","young",36.06935,"temperate",3,9,3,342.74125,0.52745315269484,0.216292192374495
+"Gen Butler_2_young",537,"Gen Butler","Gen Butler_2","young",38.675517,"temperate",3,9,3,423.38625,0.550748148549654,0.224097926204981
+"Whitehall_2_young",538,"Whitehall","Whitehall_2","young",33.895767,"temperate",3,9,3,221.77375,0.479609116896732,0.200228025275574
+"HV_7_young",539,"HV","HV_7","young",37.1818,"temperate",3,9,3,524.1925,0.574328163146538,0.231991291187129
+"McPhee_1_young",540,"McPhee","McPhee_1","young",40.971333,"north temperate",3,9,1,70.564375,0.355505398284191,0.158170273862173
+"Whitehall_18_young",541,"Whitehall","Whitehall_18","young",33.895767,"temperate",3,9,2,151.209375,0.43774432980871,0.186120631115335
+"MacArthur_5_young",542,"MacArthur","MacArthur_5","young",27.177583,"subtropical",3,9,2,20.16125,0.227096481660709,0.113043395517382
+"Gen Butler_3_young",543,"Gen Butler","Gen Butler_3","young",38.675517,"temperate",3,9,2,70.564375,0.355505398284191,0.158170273862173
+"Center Hill_7_young",544,"Center Hill","Center Hill_7","young",36.06935,"temperate",3,9,3,181.45125,0.457641434695102,0.192832704224115
+"KBS_9_young",545,"KBS","KBS_9","young",42.399933,"north temperate",3,9,2,90.725625,0.382417704708506,0.167363029039402
+"OCM_10_young",546,"OCM","OCM_10","young",32.34554,"temperate",3,9,2,70.564375,0.355505398284191,0.158170273862173
+"Dalton_4_young",547,"Dalton","Dalton_4","young",34.670883,"temperate",3,9,1,120.9675,0.413489682867708,0.177916837622281
+"KBS_2_young",548,"KBS","KBS_2","young",42.399933,"north temperate",3,9,3,231.854375,0.484483705838161,0.201867157710066
+"Center Hill_3_young",549,"Center Hill","Center Hill_3","young",36.06935,"temperate",3,9,3,191.531875,0.463553749190146,0.194824508312438
+"Dalton_8_young",550,"Dalton","Dalton_8","young",34.670883,"temperate",3,9,1,40.3225,0.296673315762684,0.137829894289236
+"McPhee_8_young",551,"McPhee","McPhee_8","young",40.971333,"north temperate",3,9,3,191.531875,0.463553749190146,0.194824508312438
+"OCM_17_young",552,"OCM","OCM_17","young",32.34554,"temperate",3,9,3,110.886875,0.404065926942778,0.174721789489385
+"With_43_young",553,"With","With_43","young",28.60387,"subtropical",3,9,0,20.16125,0.227096481660709,0.113043395517382
+"Bella_2_young",554,"Bella","Bella_2","young",8.79,"tropical",3,9,0,40.3225,0.296673315762684,0.137829894289236
+"HV_3_young",555,"HV","HV_3","young",37.1818,"temperate",3,9,0,110.886875,0.404065926942778,0.174721789489385
+"Whitehall_16_young",556,"Whitehall","Whitehall_16","young",33.895767,"temperate",3,9,1,10.080625,0.163613315454888,0.0890814106544632
+"Bella_3_young",557,"Bella","Bella_3","young",8.79,"tropical",3,9,1,NA,NA,NA
+"HV_10_young",558,"HV","HV_10","young",37.1818,"temperate",3,9,1,110.886875,0.404065926942778,0.174721789489385
+"McPhee_7_young",559,"McPhee","McPhee_7","young",40.971333,"north temperate",3,9,1,90.725625,0.382417704708506,0.167363029039402
+"MacArthur_15_young",560,"MacArthur","MacArthur_15","young",27.177583,"subtropical",3,9,2,20.16125,0.227096481660709,0.113043395517382
+"TT_7_young",561,"TT","TT_7","young",30.673889,"temperate",3,9,2,201.6125,0.469167295311374,0.196714640290307
+"KBS_8_young",562,"KBS","KBS_8","young",42.399933,"north temperate",3,9,2,171.370625,0.451396752665226,0.190727665002989
+"OCM_18_young",563,"OCM","OCM_18","young",32.34554,"temperate",3,9,2,191.531875,0.463553749190146,0.194824508312438
+"Caesar_7_young",564,"Caesar","Caesar_7","young",39.4887,"north temperate",3,9,3,302.41875,0.513674610791531,0.211670883874422
+"Gav_23_young",565,"Gav","Gav_23","young",8.72883,"tropical",3,9,0,0,0,0
+"Hwy 27_6_young",566,"Hwy 27","Hwy 27_6","young",26.537067,"subtropical",3,9,1,40.3225,0.296673315762684,0.137829894289236
+"HV_5_young",567,"HV","HV_5","young",37.1818,"temperate",3,9,2,362.9025,0.533750512866844,0.218403184244954
+"TT_25_young",568,"TT","TT_25","young",30.673889,"temperate",3,9,3,403.225,0.545366100513414,0.222295246430588
+"With_46_young",569,"With","With_46","young",28.60387,"subtropical",3,9,0,0,0,0
+"With_42_young",570,"With","With_42","young",28.60387,"subtropical",3,9,2,20.16125,0.227096481660709,0.113043395517382
+"Bella_21_young",571,"Bella","Bella_21","young",8.79,"tropical",3,9,0,30.241875,0.26724423196339,0.127472568236169
+"Dalton_9_young",572,"Dalton","Dalton_9","young",34.670883,"temperate",3,9,0,10.080625,0.163613315454888,0.0890814106544632
+"Gav_22_young",573,"Gav","Gav_22","young",8.72883,"tropical",3,9,0,0,0,0
+"Tiri_12_young",574,"Tiri","Tiri_12","young",10.41549,"tropical",3,9,2,161.29,0.44478009669446,0.188495735493622
+"Hwy 27_1_young",575,"Hwy 27","Hwy 27_1","young",26.537067,"subtropical",3,9,3,20.16125,0.227096481660709,0.113043395517382
+"Whitehall_3_young",576,"Whitehall","Whitehall_3","young",33.895767,"temperate",3,9,1,282.2575,0.506086665828234,0.209124310293836
+"Gav_1_young",577,"Gav","Gav_1","young",8.72883,"tropical",3,9,2,10.080625,0.163613315454888,0.0890814106544632
+"OCM_5_young",578,"OCM","OCM_5","young",32.34554,"temperate",3,9,3,504.03125,0.569995594456051,0.230541492909219
+"Bella_13_young",579,"Bella","Bella_13","young",8.79,"tropical",3,9,0,0,0,0
+"McPhee_6_young",580,"McPhee","McPhee_6","young",40.971333,"north temperate",3,9,3,594.756875,0.588285757674223,0.236660468740289
+"TT_9_young",581,"TT","TT_9","young",30.673889,"temperate",3,9,3,332.660625,0.524165368468156,0.215189791984817
+"Gen Butler_7_young",582,"Gen Butler","Gen Butler_7","young",38.675517,"temperate",3,9,2,332.660625,0.524165368468156,0.215189791984817
+"Gen Butler_1_young",583,"Gen Butler","Gen Butler_1","young",38.675517,"temperate",3,9,1,NA,NA,NA
+"Hwy 27_2_young",584,"Hwy 27","Hwy 27_2","young",26.537067,"subtropical",3,9,0,0,0,0
+"Whitehall_17_young",585,"Whitehall","Whitehall_17","young",33.895767,"temperate",3,9,1,70.564375,0.355505398284191,0.158170273862173
+"Gen Butler_9_young",586,"Gen Butler","Gen Butler_9","young",38.675517,"temperate",3,9,3,282.2575,0.506086665828234,0.209124310293836
+"MacArthur_22_young",587,"MacArthur","MacArthur_22","young",27.177583,"subtropical",3,9,3,10.080625,0.163613315454888,0.0890814106544632
+"Tiri_16_young",588,"Tiri","Tiri_16","young",10.41549,"tropical",3,9,0,20.16125,0.227096481660709,0.113043395517382
+"Caesar_10_young",589,"Caesar","Caesar_10","young",39.4887,"north temperate",3,9,0,10.080625,0.163613315454888,0.0890814106544632
+"OCM_16_young",590,"OCM","OCM_16","young",32.34554,"temperate",3,9,0,70.564375,0.355505398284191,0.158170273862173
+"MacArthur_16_young",591,"MacArthur","MacArthur_16","young",27.177583,"subtropical",3,9,1,10.080625,0.163613315454888,0.0890814106544632
+"HV_13_young",592,"HV","HV_13","young",37.1818,"temperate",3,9,3,836.691875,0.626046968933312,0.249283345997645
+"KBS_5_young",593,"KBS","KBS_5","young",42.399933,"north temperate",3,9,2,372.983125,0.536770219266165,0.219415210225027
+"KBS_12_young",594,"KBS","KBS_12","young",42.399933,"north temperate",3,9,0,0,0,0
+"MacArthur_21_young",595,"MacArthur","MacArthur_21","young",27.177583,"subtropical",3,9,0,0,0,0
+"With_48_young",596,"With","With_48","young",28.60387,"subtropical",3,9,3,50.403125,0.319917441798336,0.145914776602903
+"Tiri_5_young",597,"Tiri","Tiri_5","young",10.41549,"tropical",3,9,0,0,0,0
+"Caesar_9_young",598,"Caesar","Caesar_9","young",39.4887,"north temperate",3,9,1,362.9025,0.533750512866844,0.218403184244954
+"Hwy 27_8_young",599,"Hwy 27","Hwy 27_8","young",26.537067,"subtropical",3,9,0,0,0,0
+"Caesar_5_young",600,"Caesar","Caesar_5","young",39.4887,"north temperate",3,9,3,846.7725,0.627372930881507,0.249726382277665
+"TT_10_young",601,"TT","TT_10","young",30.673889,"temperate",3,9,3,594.756875,0.588285757674223,0.236660468740289
+"Tiri_22_young",602,"Tiri","Tiri_22","young",10.41549,"tropical",3,9,0,20.16125,0.227096481660709,0.113043395517382
+"McPhee_2_young",603,"McPhee","McPhee_2","young",40.971333,"north temperate",3,9,0,10.080625,0.163613315454888,0.0890814106544632
+"With_47_young",604,"With","With_47","young",28.60387,"subtropical",3,9,1,20.16125,0.227096481660709,0.113043395517382
+"Center Hill_2_young",605,"Center Hill","Center Hill_2","young",36.06935,"temperate",3,9,3,534.273125,0.576432698800458,0.232695449283213
+"Dalton_2_young",606,"Dalton","Dalton_2","young",34.670883,"temperate",3,9,3,403.225,0.545366100513414,0.222295246430588
+"Center Hill_8_young",607,"Center Hill","Center Hill_8","young",36.06935,"temperate",3,9,2,332.660625,0.524165368468156,0.215189791984817
+"Dalton_6_young",608,"Dalton","Dalton_6","young",34.670883,"temperate",3,9,3,594.756875,0.588285757674223,0.236660468740289
+"TT_5_young",609,"TT","TT_5","young",30.673889,"temperate",3,9,3,443.5475,0.555881498774322,0.225816922625443
+"Hwy 27_3_young",610,"Hwy 27","Hwy 27_3","young",26.537067,"subtropical",3,9,1,10.080625,0.163613315454888,0.0890814106544632
+"Center Hill_1_young",611,"Center Hill","Center Hill_1","young",36.06935,"temperate",3,9,3,554.434375,0.580525832748107,0.234064832047678
+"Gen Butler_2_young",612,"Gen Butler","Gen Butler_2","young",38.675517,"temperate",3,9,2,151.209375,0.43774432980871,0.186120631115335
+"Whitehall_2_young",613,"Whitehall","Whitehall_2","young",33.895767,"temperate",3,9,3,231.854375,0.484483705838161,0.201867157710066
+"HV_7_young",614,"HV","HV_7","young",37.1818,"temperate",3,9,1,80.645,0.36977437379057,0.163051132613121
+"McPhee_1_young",615,"McPhee","McPhee_1","young",40.971333,"north temperate",3,9,3,443.5475,0.555881498774322,0.225816922625443

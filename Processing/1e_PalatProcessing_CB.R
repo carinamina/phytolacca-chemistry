@@ -41,7 +41,7 @@ hist(working$area)
 hist(working$area/working$initial)
 #we log-transform that, and THEN standardize by the experiment duration. Unfortunately, in the Ecology Letters paper, I did log(area)/initial/duration. This might be a problem because initial differs by leaf age, which was an explanatory variable of interest. So I will include a column with the "old calculation" to compare results later during analysis.
 #furthermore, we need to do this log-transformation and standardization after taking a mean, not before, so that's why I do it twice: here for the cup-level data and again below for line-level data.
-working_logs <- working %>% mutate(log.area = log(area/initial+1)/duration, old.log.area = log(area+1)/initial/duration) %>% select(-c(area, duration, initial))
+working_logs <- working %>% mutate(log.area = log(area/initial+1)/duration, old.log.area = log(area+1)/initial/duration)
 write.csv(working_logs,"Processing/1e_out_Palat_Cup.csv",row.names=F)
 
 
