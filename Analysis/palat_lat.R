@@ -9,6 +9,7 @@ library(multcomp)
 library(ggplot2)
 library(tidyverse)
 library(ggh4x)
+library(lsmeans)
 
 lme_results <- function(lme_model)
 {
@@ -68,6 +69,9 @@ lme_results(pham)
 #assumption fitting is ok, a bit of a long tail in the normality of residuals but this assumption is fairly robust. using pop_age in weights argument doesn't change it much
 (s <- lme_slopes(pham))
 #very significant lat*age and slopes are quite different
+
+#Note May 19: I belatedly realized I could probably transform area in the formula (log(area/initial+1)/duration). Results are virtually identical to above. I thought this would be helpful because I could get lsmeans and not worry about the log-mean issue, but turns out you can't get lsmeans for a blocking factor, only fixed categorical effects, so I decided to not change anything.
+
 rm(pham)
 #regional analysis with tropical plants
 #####################
