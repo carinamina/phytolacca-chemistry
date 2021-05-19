@@ -4,17 +4,8 @@
 ###############
 #setup
 ###############
-# library(afex)
-# library(pbkrtest)
-# library(MuMIn)
-# library(arm)
-# library(effects)
-# library(lsmeans)
-# library(car)
 library(nlme)
-# library(bbmle)
 library(multcomp)
-# library(plyr)
 library(ggplot2)
 library(tidyverse)
 library(ggh4x)
@@ -47,6 +38,9 @@ lme_slopes <- function(lme_model)
   return(slopes)
 }
 
+###############
+#import data
+###############
 palat <- na.omit(read.csv("Processing/1e_out_Palat_Cup.csv", header = TRUE))
 #omitting NA removes 10 lines
 str(palat)
