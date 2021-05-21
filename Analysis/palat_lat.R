@@ -9,7 +9,7 @@ library(multcomp)
 library(ggplot2)
 library(tidyverse)
 library(ggh4x)
-library(lsmeans)
+#library(lsmeans)
 
 lme_results <- function(lme_model)
 {
@@ -90,19 +90,24 @@ summary(tuk)          # standard display
 # opar <- par(mai=c(2,2,2,2))
 # plot(tuk.cld,las=2)
 # par(opar)
-rm(palat, trop, tuk, trop_int)
+rm(trop, tuk, trop_int)
 
 ######################
 #plots 
-#it's very confusing, this whole business about log(mean) versus mean(log). I want to plot the population means and SE because jittering points that represent lines or cups makes the latitude distribution look much more continuous than it really is. I tried to get population mean from the original, untransformed area, but then how do you log-transform and then standardize SE by initial and duration?! I think the best will be to calculate mean and standard error of the line-level data (?!)
+#it's very confusing, this whole business about log(mean) versus mean(log). 
+#Katka Bodova, who is much better than math than me, gave me this advice
+#"This is something I did multiple times. If your natural variable is log(area/initial)/duration then you compute std as you did. But you are saying that your natural variable is log(mean_area/initial)/duration so to get a std on this variable you need to use one of the methods that estimates variation of this complex variable. The best methods to use are leave-one-out (or leave-p-out) https://en.wikipedia.org/wiki/Cross-validation_(statistics) or jackknife https://en.wikipedia.org/wiki/Jackknife_resampling "
+#So I should be calculating means and standard error from log-transformed data for these plots, therefore I should use log.area from the cup-level data and calculate mean/SE as needed
 ######################
 #first calculate population means and regional means
-palat_line <- na.omit(read.csv("Processing/2_out_AllTraits.csv",header=T) %>% select(pop,line_age,line,age,lat,region,species,log.area))
+#palat_line <- na.omit(read.csv("Processing/2_out_AllTraits.csv",header=T) %>% select(pop,line_age,line,age,lat,region,species,log.area))
 
-palat_pop <- palat_line %>% mutate(pop_age = paste(pop,age,sep="_")) %>% group_by(pop_age,region,age,species) %>% summarise(area_mean = mean(log.area,na.rm=T), area_sd = sd(log.area,na.rm=T), area_n = length(pop_age), area_se = area_sd/sqrt(area_n), lat = mean(lat)) %>% select(-c(area_n,area_sd))
+palat$species = ifelse(palat$region == "tropical","PHRI","PHAM")
+
+palat_pop <- palat %>% mutate(pop_age = paste(pop,age,sep="_")) %>% group_by(pop_age,region,age,species) %>% summarise(area_mean = mean(log.area,na.rm=T), area_sd = sd(log.area,na.rm=T), area_n = length(pop_age), area_se = area_sd/sqrt(area_n), lat = mean(lat)) %>% select(-c(area_n,area_sd))
 palat_pop$species = factor(palat_pop$species, levels=c("PHRI","PHAM"))
 
-palat_region <- palat_line %>% mutate(region.age = paste(region,age,sep=".")) %>% group_by(region.age,region,age,species) %>% summarise(area_mean = mean(log.area,na.rm=T), lat.mean = mean(lat), lat.min = min(lat), lat.max = max(lat))
+palat_region <- palat %>% mutate(region.age = paste(region,age,sep=".")) %>% group_by(region.age,region,age,species) %>% summarise(area_mean = mean(log.area,na.rm=T), lat.min = min(lat), lat.max = max(lat), lat.middle = mean(c(lat.min,lat.max)))
 
 #here would be the time to compare means between regions
 
@@ -112,10 +117,10 @@ tukey <- as.data.frame(tuk.cld$mcletters$Letters)
 colnames(tukey) <- "letter"
 tukey <-tukey %>% add_column(region.age = rownames(tukey)) %>% right_join(palat_region,by="region.age") %>% mutate(plot_y = area_mean+0.11)
 tukey$species = factor(tukey$species, levels=c("PHRI","PHAM"))
-tukey[tukey$region=="temperate",c("lat.mean","lat.min","lat.max","plot_y")] = NA
+tukey[tukey$region=="temperate",c("lat.middle","lat.min","lat.max","plot_y")] = NA
 tukey
 
-rm(tuk.cld,palat_line,palat_region)
+rm(tuk.cld,palat_region)
 
 ######################
 #faceting
@@ -124,8 +129,8 @@ fac = ggplot(palat_pop,aes(x=lat, y=area_mean,group=region))+
   geom_errorbar(aes(ymin=area_mean-area_se, ymax=area_mean+area_se),width=.2,size=.4) +
   scale_shape_manual(values=c(19,1),name="Leaf age") + 
   scale_colour_manual(values=c("steelblue1","navyblue","grey","maroon2")) +
-  geom_text(data = tukey, aes(x = lat.mean, y = plot_y, label = letter,color = region), size = 6) +
-  geom_segment(data = tukey, aes(x = lat.min, xend = lat.max, y = plot_y-.025, yend = plot_y-.025, color = region)) +
+  geom_text(data = tukey, aes(x = lat.middle, y = plot_y, label = letter), size = 6) +
+  geom_segment(data = tukey, aes(x = lat.min, xend = lat.max, y = plot_y-.025, yend = plot_y-.025)) +
   facet_grid(.~species,scales="free_x",switch="x") +
   force_panelsizes(cols = c(0.3, 1), rows = c(1.3), respect = TRUE) +
   facetted_pos_scales(x = list(scale_x_continuous(breaks = c(9, 10), limits = c(8.4,10.7))),NULL) +
@@ -152,7 +157,7 @@ vv = ggplot(palat_pop,aes(x=lat, y=area_mean,group=region))+
   geom_point(size=4,stroke=2,aes(shape = age, color=region)) + 
   geom_errorbar(aes(ymin=area_mean-area_se, ymax=area_mean+area_se),width=.2,size=.4) +
   scale_shape_manual(values=c(19,1)) + 
-  geom_text(data = tukey, aes(x = lat.mean, y = plot_y, label = letter,color = region), size = 6) +
+  geom_text(data = tukey, aes(x = lat.middle, y = plot_y, label = letter,color = region), size = 6) +
   scale_colour_manual(values=c("steelblue1","navyblue","grey","maroon2")) +
   theme_bw() + theme(panel.border = element_blank(), panel.grid.major = element_blank(), panel.grid.minor = element_blank(), axis.line = element_line(colour = "black"),text = element_text(size = 20), legend.position = "none") + 
   ylab(bquote('ln(leaf area consumed ('~mm^2*'))')) + 
