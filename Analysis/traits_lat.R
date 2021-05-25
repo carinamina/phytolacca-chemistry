@@ -17,135 +17,60 @@ library(ggh4x)
 #I'll try and write functions for everything to minimize pasting big blocks.
 
 ###############
-#import data, check out boxplots, calculate population and regional means
+#import data, check out boxplots
 ###############
-#need to start over with this and actually combine the datasets in long format (with a "trait" and "value" column) before doing anything else. It's going to make everything more efficient (getting means, making summary tables, plotting, running models) to just have one big dataset. But it's a big investment!
-
-
-
-
-
-
-
-
-
-all.traits <- read.csv("Processing/2_out_AllTraits.csv",header=T)[1:16] %>% select(-c(surv,log.area,percent_C))
-trait_list <- names(all.traits)[8:ncol(all.traits)]
-all.traits$pop_age <- as.factor(paste(all.traits$pop, all.traits$age, sep = "_"))
-
-#get min, middle, and max latitude by region for plotting purposes
-lat_regions <- all.traits %>% group_by(region) %>% 
-  summarise(lat.min = min(lat), 
-            lat.max = max(lat),
-            lat.middle = mean(c(lat.min,lat.max)))
-
-#check for heterogeneity of variance in each trait
-# par(mfrow=c(2,3))
-# #young
-# for (i in 1:length(trait_list)){
-#   plotdata.y <- subset(all.traits, all.traits$age == "young")
-#   plotdata.y <- cbind(all.traits[, colnames(all.traits)%in%trait_list[i]], all.traits[1])
-#   boxplot(plotdata.y[,1]~plotdata.y[,2],
-#           data=na.omit(plotdata.y),
-#           main=paste(trait_list[i],"by pop_young"), 
-#           xlab="population" ,
-#           ylab = trait_list[i])
-#   rm(plotdata.y,i)
-# }
-# for (i in 1:length(trait_list)){  
-#   plotdata.m <- subset(all.traits, all.traits$age == "mature")
-#   plotdata.m <- cbind(all.traits[, colnames(all.traits)%in%trait_list[i]], all.traits[1])
-#   boxplot(plotdata.m[,1]~plotdata.m[,2],
-#           data=na.omit(plotdata.m),
-#           main=paste(trait_list[i],"by pop_mature"), 
-#           xlab="population" ,
-#           ylab = trait_list[i])
-#   rm(plotdata.m,i)
-# }
-#percent_N, C_N, diversity look like there will be problems with heterogeneity of variance. tough, log.abund, richness might be ok.
-rm(all.traits)
-#par(mfrow=c(1,1))
-
-chem <- read.csv("Processing/1b_out_ChemSummaries_Indiv.csv", header=T)
+chem <- read.csv("Processing/1b_out_ChemSummaries_Indiv.csv", header=T) %>% select(-c(NMDS1,NMDS2))
 length(unique(chem$line_age)) == nrow(chem)
-chem$reg_age <- interaction(chem$region, chem$age)
-chem$species = ifelse(chem$region == "tropical","PHRI","PHAM")
+chem <- reshape(chem, varying = c("log.abund","richness","diversity"), times = c("log.abund","richness","diversity"), v.names = "value", timevar = "trait", direction = "long") %>% select(-id) %>% remove_rownames() %>% select(trait,pos,age,pos_age,line,line_age,pop,lat,region,value)
 
-chem_region <- chem %>% mutate(region.age = paste(region,age,sep=".")) %>% 
-  group_by(region.age) %>% 
-  summarise(log.abund = mean(log.abund), 
-            richness = mean(richness),
-            diversity = mean(diversity))
-
-chem_pop <- chem %>% mutate(pop_age = paste(pop,age,sep="_")) %>% 
-  group_by(pop_age,region,age,species) %>% 
-  summarise(lat = mean(lat),
-            log.abund_mean = mean(log.abund), 
-            log.abund_sd = sd(log.abund), 
-            log.abund_n = length(pop_age), 
-            log.abund_se = log.abund_sd/sqrt(log.abund_n), 
-            richness_mean = mean(richness), 
-            richness_sd = sd(richness), 
-            richness_n = length(pop_age), 
-            richness_se = richness_sd/sqrt(richness_n),
-            diversity_mean = mean(diversity), 
-            diversity_sd = sd(diversity), 
-            diversity_n = length(pop_age), 
-            diversity_se = diversity_sd/sqrt(diversity_n)) %>% 
-  select(-c(log.abund_n,log.abund_sd,richness_n,richness_sd,diversity_n,diversity_sd))
-
-
-tough <- read.csv("Processing/1c_out_Toughness_Indiv.csv", header=T)
+tough <- read.csv("Processing/1c_out_Toughness_Indiv.csv", header=T)  %>% rename(value = tough) %>% add_column(trait = "tough") %>% select(trait,pos,age,pos_age,line,line_age,pop,lat,region,value)
 length(unique(tough$line_age)) == nrow(tough) #multiple indiv per line
 length(unique(tough$pos_age)) == nrow(tough)
-tough$reg_age <- interaction(tough$region, tough$age)
-tough$species = ifelse(tough$region == "tropical","PHRI","PHAM")
 
-tough_region <- tough %>% mutate(region.age = paste(region,age,sep=".")) %>% 
-  group_by(region.age) %>% 
-  summarise(tough = mean(tough))
-
-tough_pop <- tough %>% mutate(pop_age = paste(pop,age,sep="_")) %>% 
-  group_by(pop_age) %>% 
-  summarise(tough_mean = mean(tough), 
-            tough_sd = sd(tough), 
-            tough_n = length(pop_age), 
-            tough_se = tough_sd/sqrt(tough_n)) %>% 
-  select(-c(tough_n,tough_sd))
-
-cn <- read.csv("Processing/1d_out_CarbonNitrogen_Indiv.csv", header=T)
+cn <- read.csv("Processing/1d_out_CarbonNitrogen_Indiv.csv", header=T) %>% select(-c(percent_C))
 length(unique(cn$line_age)) == nrow(cn) #multiple indiv per line
 length(unique(cn$pos_age)) == nrow(cn)
-cn$reg_age <- interaction(cn$region, cn$age)
-cn$species = ifelse(cn$region == "tropical","PHRI","PHAM")
+cn <- reshape(cn, varying = c("percent_N","C_N"), times = c("percent_N","C_N"), v.names = "value", timevar = "trait", direction = "long") %>% select(-id) %>% remove_rownames() %>% select(trait,pos,age,pos_age,line,line_age,pop,lat,region,value)
 
-cn_region <- cn %>% mutate(region.age = paste(region,age,sep=".")) %>% 
-  group_by(region.age) %>% 
-  summarise(percent_N = mean(percent_N), C_N = mean(C_N))
+#combine trait datasets and tweak some column formats
+names(chem) == names(tough)
+names(chem) == names(cn)
+all.traits <- na.omit(bind_rows(chem,bind_rows(tough,cn)) %>% mutate(species = ifelse(region == "tropical","PHRI","PHAM"), .before="value"))
+all.traits$pop_age <- as.factor(paste(all.traits$pop, all.traits$age, sep = "_"))
+all.traits$reg_age <- interaction(all.traits$region, all.traits$age)
+#switches the order of the species, which is needed way down the line for plotting PHRI on the left of PHAM
+all.traits$species = factor(all.traits$species, levels=c("PHRI","PHAM"))
+all.traits$age <- as.factor(all.traits$age)
+all.traits$region <- as.factor(all.traits$region)
+rm(chem,cn,tough)
 
-cn_pop <- cn %>% mutate(pop_age = paste(pop,age,sep="_")) %>% 
-  group_by(pop_age) %>% 
-  summarise(percent_N_mean = mean(percent_N), 
-            percent_N_sd = sd(percent_N), 
-            percent_N_n = length(pop_age), 
-            percent_N_se = percent_N_sd/sqrt(percent_N_n), 
-            C_N_mean = mean(C_N), 
-            C_N_sd = sd(C_N), 
-            C_N_n = length(pop_age), 
-            C_N_se = C_N_sd/sqrt(C_N_n)) %>% 
-  select(-c(percent_N_n,percent_N_sd,C_N_n,C_N_sd))
+#get trait list vector
+trait_list <- unique(all.traits$trait)
 
-#combine data
-reg.means <- as.data.frame(left_join(left_join(chem_region,cn_region),tough_region))
-reg.means <- reshape(reg.means, varying = colnames(reg.means)[2:ncol(reg.means)], v.names = "mean", timevar = "trait", times = colnames(reg.means)[2:ncol(reg.means)], direction = "long") %>% select(-id) %>% remove_rownames()
+#check for heterogeneity of variance in each trait
+par(mfrow=c(2,3))
+#young
+for (i in 1:length(trait_list)){
+  plotdata.y <- subset(all.traits, all.traits$age == "young" & all.traits$trait == trait_list[i])
+  boxplot(value~pop,
+          data=plotdata.y,
+          main=paste(trait_list[i],"by pop_young"),
+          xlab="population" ,
+          ylab = trait_list[i])
+  rm(plotdata.y,i)
+}
+for (i in 1:length(trait_list)){
+  plotdata.y <- subset(all.traits, all.traits$age == "mature" & all.traits$trait == trait_list[i])
+  boxplot(value~pop,
+          data=plotdata.y,
+          main=paste(trait_list[i],"by pop_mature"),
+          xlab="population" ,
+          ylab = trait_list[i])
+  rm(plotdata.y,i)
+}
+#percent_N, C_N, diversity, log.abund look like there will be problems with heterogeneity of variance. tough, richness might be ok.
+par(mfrow=c(1,1))
 
-
-pop.means <- as.data.frame(left_join(chem_pop,left_join(tough_pop,cn_pop)))
-#pop.means <- reshape(pop.means, varying = colnames(pop.means)[2:ncol(reg.means)], v.names = "mean", timevar = "trait", times = colnames(reg.means)[2:ncol(reg.means)], direction = "long") %>% select(-id) %>% remove_rownames()
-
-pop.means$species = factor(pop.means$species, levels=c("PHRI","PHAM"))
-
-rm(chem_region,cn_region,tough_region)
 
 ################
 # functions and results table setup
@@ -170,9 +95,9 @@ all.stats <- data.frame(trait = sort(rep(trait_list,6)),
                         predictor="",stringsAsFactors=FALSE) %>% 
   add_column(numDF=NA,denDF=NA, "F-value"=NA, "p-value"=NA)
 
-#adds ANOVA results of a model to the summary table which has already been created. Need to write 
-#all.stats <- ano_table(a,b,c)
-extract_stats <- function(response_string, species_string, lme_model,placeholder)
+#adds ANOVA results of a model to the summary table which has already been created. Need to call as 
+#all.stats <- extract_stats(a,b,c)
+extract_stats <- function(response_string, species_string, lme_model, placeholder)
 {
   ano <- as.data.frame(anova(lme_model))[2:4,] %>% rownames_to_column(var = "predictor") %>% add_column(trait = response_string, species = species_string, .before = "predictor") 
   all.stats[all.stats$trait == response_string & all.stats$species == species_string,] <- ano
@@ -181,28 +106,23 @@ extract_stats <- function(response_string, species_string, lme_model,placeholder
 }
 
 #creates summary table with all PHAM slopes
-all.slopes <- data.frame(trait = sort(rep(trait_list,4))) %>% add_column(species = "", age = "", m = NA, b = NA)
+all.slopes <- data.frame(trait = sort(rep(trait_list,4))) %>% add_column(species = rep(c("PHRI","PHRI","PHAM","PHAM"),6), age = "", m = NA, b = NA)
 all.slopes$species = factor(all.slopes$species, levels=c("PHRI","PHAM"))
 
-#creates summary table with all the PHRI tukey comparisons. it also includes the regional means for each trait, which are helpful for calculating effect sizes and necessary for figuring out where to place letters on plots
-all.tukey <- data.frame(trait = sort(rep(trait_list,6)), 
-                        region = rep(rep(c("north temperate","subtropical","tropical"),2),6), 
-                        age = rep(sort(rep(c("mature","young"),3) ),6)
-) %>%
-  mutate(species = ifelse(region == "tropical","PHRI","PHAM")) %>%
-  left_join(lat_regions, by="region") %>%
-  mutate(region.age = paste(region,age,sep=".")) %>%
-  left_join(reg.means) %>%
-  add_column(letter = "", letter_y = NA) 
-all.tukey$species = factor(all.tukey$species, levels=c("PHRI","PHAM"))
+#creates summary table with all the PHRI tukey comparisons. it also includes the regional means for each trait, which are helpful for calculating effect sizes and necessary for figuring out where to place letters on plots. Latitude is also needed for where to put letters and lines.
+all.tukey <- as.data.frame(all.traits %>% mutate(region.age = paste(region,age,sep=".")) %>%
+  group_by(trait, region.age,region,age,species) %>%
+  filter(region != "temperate") %>%
+  summarise(lat.min = min(lat), lat.max = max(lat), lat.middle = mean(c(lat.min,lat.max)), mean = mean(value)) %>%
+  add_column(letter = "", letter_y = NA, segment_y = NA) )
 
 #adds slopes to summary table which has already been created. For now I will keep this simple and assume a significant interaction; if not, it can be changed in all.slopes
-#For PHAM, need to call as all.slopes <- extract_param(a,b,c,d) where d = 0 or NULL, whatever
+#For PHAM, need to call as all.slopes <- extract_param(a,b,c,d) where d = 0 or NULL
 #For PHRI, need to call as all.tukey <- extract_param(a,b,c,d)
-extract_param <- function(response_string,species,lme_model,letter_y_constant)
+extract_param <- function(response_string,species,lme_model,letter_y_constant,segment_y_constant)
 {
   if(species == "PHAM"){
-  slopes = data.frame(species = c("PHRI","PHRI","PHAM","PHAM"),age = c("mature","young"), m = c(0,0,NA,NA), b = c(1,1,NA,NA))
+  slopes = data.frame(species = c("PHRI","PHRI","PHAM","PHAM"),age = c("mature","young"), m = c(0,0,NA,NA), b = c(0,0,NA,NA))
   slopes$species = factor(slopes$species, levels=c("PHRI","PHAM"))
   #mature slope
   slopes[3,3] = summary(lme_model)$coef$fixed[2]
@@ -219,15 +139,15 @@ extract_param <- function(response_string,species,lme_model,letter_y_constant)
   rm(slopes)
   }
   else if (species == "PHRI"){
-    interaction_model <- update(lme_model, fixed = paste(response_string,"~ reg_age"))
+    interaction_model <- update(lme_model, fixed = "value ~ reg_age")
     tuk <- glht(interaction_model, linfct=mcp(reg_age="Tukey"))
     (tuk.cld <- cld(tuk))   # letters
-    #convert the Tukey letter results to a dataframe for plotting letters. this seems incredibly clunky but I like being sure that I'm not just inserting letters in the larger summary data without merging somehow; they could be in the wrong order
+    #convert the Tukey letter results to a dataframe for plotting letters. this seems clunky but I like being sure that I'm not just inserting letters in the larger summary data without merging somehow; they could be in the wrong order
     tukey <- as.data.frame(tuk.cld$mcletters$Letters) %>%
       `colnames<-`("letter") %>%
       rownames_to_column(var = "region.age")
     tukey <- left_join(all.tukey[all.tukey$trait == response_string,1:9] ,tukey,by="region.age")  %>%
-      mutate(letter_y = mean + letter_y_constant)
+      mutate(letter_y = mean + letter_y_constant, segment_y = letter_y - segment_y_constant)
     
     all.tukey[all.tukey$trait == response_string,] = tukey
     return(all.tukey)
@@ -238,79 +158,254 @@ extract_param <- function(response_string,species,lme_model,letter_y_constant)
   }
 }
 
+#calculate population means, jigger lat by 0.3 for young leaves so error bars of young and mature don't overlap
+pop.means <- as.data.frame(all.traits %>% group_by(trait,pop_age,region,age,species) %>%
+                             summarise(lat = mean(lat),
+                                       trait.mean = mean(value),
+                                       trait.sd = sd(value),
+                                       trait.n = length(pop_age),
+                                       trait.se = trait.sd/sqrt(trait.n)) %>%
+                             mutate(lat = ifelse(age == "young",lat-0.3,lat)) %>%
+                             select(-c(trait.sd,trait.n)))
+
+#function to make standardized plot for each response
+facet_plot <- function(response_string, ylabel_string){
+  vv = ggplot(pop.means[pop.means$trait == response_string,],aes(x=lat, y=trait.mean,group=region))+  
+    geom_point(size=3,stroke=1,aes(shape = age, color=region)) + 
+    geom_errorbar(aes(ymin=trait.mean-trait.se, ymax=trait.mean+trait.se),width=.2,size=.4) +
+    scale_shape_manual(values=c(19,1),name="Leaf age") + 
+    scale_colour_manual(values=c("steelblue1","navyblue","grey","maroon2")) +
+    geom_text(data = all.tukey[all.tukey$trait == response_string,], aes(x = lat.middle, y = letter_y, label = letter), size = 6) +
+    geom_segment(data = all.tukey[all.tukey$trait == response_string,], aes(x = lat.min-0.3, xend = lat.max, y = segment_y, yend = segment_y)) +
+    facet_grid(.~species,scales="free_x",switch="x") +
+    force_panelsizes(cols = c(0.3, 1), rows = c(1.3), respect = TRUE) +
+    facetted_pos_scales(x = list(scale_x_continuous(breaks = c(9, 10), limits = c(8.1,10.7))),NULL) +
+    geom_abline(data=all.slopes[all.slopes$trait == response_string,], aes(slope=m,intercept=b,linetype = age)) +
+    scale_linetype_manual(values=c("solid", "dashed"),name="Leaf age") +
+    theme_bw() + theme(panel.grid.major = element_blank(), panel.spacing = unit(0.2, "lines"), panel.grid.minor = element_blank(), axis.line = element_line(colour = "black"),text = element_text(size = 20), strip.background = element_blank(),strip.placement="outside",legend.position = "none") + 
+    ylab(ylabel_string) + 
+    xlab(expression("Latitude (\u00B0N)"))
+  vv
+}
+
 
 #################
-# CHEMISTRY: ABUNDANCE, DIVERSITY, AND RICHNESS
 #################
-#MODELS.
+# MODELS AND PLOTS
+#################
+#################
+
+#################
+#CHEMICAL ABUNDANCE
+#################
 #latitudinal gradient with PHAM
-abund.pham <- lme(log.abund ~ lat*age , random=~1|pop, method = "REML", data=chem[chem$lat>20,], weights=varIdent(form=~1|pop))
+abund.pham <- lme(value ~ lat*age , random=~1|pop, method = "REML", data=droplevels(all.traits[all.traits$lat>20 & all.traits$trait == "log.abund",]), weights=varIdent(form=~1|pop))
 #weights argument necessary to deal with fan-shaped residuals
 lme_output(abund.pham) #lat and age are significant but not lat*age
 (all.stats <- extract_stats("log.abund", "PHAM", abund.pham))
 (all.slopes <- extract_param("log.abund", "PHAM", abund.pham))
-#lat and age are significant but not their interaction, so use the mature slope for both leaf ages, with different intercepts
+#lat and age are significant but not their interaction. But if I use the mature slope for both, the fit looks weird because the slopes and intercepts are fit with the lat*age term in the model. Not sure yet how to deal with this properly
 # all.slopes[all.slopes$trait == "log.abund" & all.slopes$species == "PHAM" & all.slopes$age == "young" ,4] = all.slopes[all.slopes$trait == "log.abund" & all.slopes$species == "PHAM" & all.slopes$age == "mature" ,4]
 # all.slopes
 rm(abund.pham)
 
 #regional analysis with PHRI
-abund.phri <- lme(log.abund ~ region*age , random=~1|pop, method = "REML", data=droplevels(chem[chem$region!="temperate",]), weights=varIdent(form=~1|pop))
+abund.phri <- lme(value ~ region*age , random=~1|pop, method = "REML", data=droplevels(all.traits[all.traits$region != "temperate" & all.traits$trait == "log.abund",]), weights=varIdent(form=~1|pop))
 lme_output(abund.phri) #significant region*age
 #I wouldn't say residuals are fan-shaped without the pop weights, but the assumption-fitting does look a little nicer with those weights
 (all.stats <- extract_stats("log.abund","PHRI", abund.phri))
 #tukey test for interaction
-(all.tukey <- extract_param("log.abund","PHRI",abund.phri,0.4))
+(all.tukey <- extract_param("log.abund","PHRI",abund.phri,0.4,0.1))
+rm(abund.phri)
 
-#PLOT.
+(abund <- facet_plot("log.abund","Chemical log-abundance"))
+
+setEPS()
+postscript("FiguresTables/Fig_Geography_Abund.eps", height = 5, width = 5)
+abund
+dev.off()
+rm(abund)
+
+#################
+#CHEMICAL DIVERSITY
+#################
+div.pham <- lme(value ~ lat*age , random=~1|pop, method = "REML", data=droplevels(all.traits[all.traits$lat>20 & all.traits$trait == "diversity",]), weights=varIdent(form=~1|pop))
+#weights argument improves assumption-fitting
+lme_output(div.pham) #significant lat*age
+(all.stats <- extract_stats("diversity", "PHAM", div.pham))
+(all.slopes <- extract_param("diversity", "PHAM", div.pham))
+rm(div.pham)
+
+div.phri <- lme(value ~ region + age + region:age , random=~1|pop, method = "REML", data=droplevels(all.traits[all.traits$region != "temperate" & all.traits$trait == "diversity",]), weights=varIdent(form=~1|pop))
+lme_output(div.phri) #only region is significant
+#I wouldn't say residuals are fan-shaped without the pop weights, but the assumption-fitting does look a little nicer with those weights. Long tail in the normal plot though
+(all.stats <- extract_stats("diversity","PHRI", div.phri))
+#tukey test for region only
+tuk <- glht(div.phri, linfct=mcp(region="Tukey"))
+(tuk.cld <- cld(tuk))
+tukey <- as.data.frame(tuk.cld$mcletters$Letters) %>%
+  `colnames<-`("letter") %>%
+  rownames_to_column(var = "region")
+tukey <- left_join(all.tukey[all.tukey$trait == "diversity",1:9] ,tukey,by="region")  %>%
+  mutate(letter_y = mean + 0.25, segment_y = letter_y - 0.04) %>% filter(age == "mature")
+all.tukey[all.tukey$trait == "diversity" & all.tukey$age == "mature",] = tukey
+all.tukey
+
+(diversity <- facet_plot("diversity","Chemical diversity"))
+rm(tukey, tuk, tuk.cld,div.phri)
+
+setEPS()
+postscript("FiguresTables/Fig_Geography_Diversity.eps", height = 5, width = 5)
+diversity
+dev.off()
+rm(diversity)
+
+#################
+#CHEMICAL RICHNESS
+#################
+richness.pham <- lme(value ~ lat*age , random=~1|pop, method = "REML", data=droplevels(all.traits[all.traits$lat>20 & all.traits$trait == "richness",]))
+#weights argument does not improve assumption-fitting
+lme_output(richness.pham) #nothing is significant
+(all.stats <- extract_stats("richness", "PHAM", richness.pham))
+rm(richness.pham)
+
+richness.phri <- lme(value ~ region + age + region:age , random=~1|pop, method = "REML", data=droplevels(all.traits[all.traits$region != "temperate" & all.traits$trait == "richness",]))
+#weights argument does not improve assumption-fitting
+lme_output(richness.phri) #significant region*age
+(all.stats <- extract_stats("richness","PHRI", richness.phri))
+(all.tukey <- extract_param("richness","PHRI", richness.phri,150,25))
+#manually move three of the lower tukey bars/letters to below instead of above the regions
+all.tukey[all.tukey$trait == "richness" & (all.tukey$region.age == "tropical.mature" | all.tukey$region.age == "subtropical.young" | all.tukey$region.age == "north temperate.young"),11] = c(575,655,725)
+all.tukey[all.tukey$trait == "richness" & (all.tukey$region.age == "tropical.mature" | all.tukey$region.age == "subtropical.young" | all.tukey$region.age == "north temperate.young"),12] = c(575,655,725)+25
+rm(richness.phri)
+
+(richness <- facet_plot("richness","Chemical richness"))
+
+setEPS()
+postscript("FiguresTables/Fig_Geography_Richness.eps", height = 5, width = 5)
+richness
+dev.off()
+rm(richness)
+
+#################
+#LEAF TOUGHNESS: now we need to nest line in pop
+#################
+ctrl <- lmeControl(opt = 'optim')
+tough.pham <- lme(value ~ lat*age , random=~1|pop/line, method = "REML", data=droplevels(all.traits[all.traits$lat>20 & all.traits$trait == "tough",]), weights=varIdent(form=~1|pop_age), control = ctrl)
+#weights pop_age needed to deal with fan-shaped residuals
+lme_output(tough.pham) #lat*age is sig
+(all.stats <- extract_stats("tough", "PHAM", tough.pham))
+(all.slopes <- extract_param("tough", "PHAM", tough.pham))
+rm(tough.pham)
+
+tough.phri <- lme(value ~ region + age + region:age , random=~1|pop/line, method = "REML", data=droplevels(all.traits[all.traits$region != "temperate" & all.traits$trait == "tough",]), weights=varIdent(form=~1|pop_age), control = ctrl)
+#weights pop_age needed to deal with fan-shaped residuals
+lme_output(tough.phri) #significant region*age
+(all.stats <- extract_stats("tough","PHRI", tough.phri))
+(all.tukey <- extract_param("tough","PHRI", tough.phri,50,10))
+rm(tough.phri,ctrl)
+
+(tough <- facet_plot("tough","Toughness (g force)"))
+
+setEPS()
+postscript("FiguresTables/Fig_Geography_Toughness.eps", height = 5, width = 5)
+tough
+dev.off()
+rm(tough)
+
+#################
+#PERCENT NITROGEN: nest line in pop
+#################
+ctrl <- lmeControl(opt = 'optim')
+percent_N.pham <- lme(value ~ lat*age , random=~1|pop/line, method = "REML", data=droplevels(all.traits[all.traits$lat>20 & all.traits$trait == "percent_N",]), weights=varIdent(form=~1|pop_age), control = ctrl)
+#weights pop_age needed to deal with fan-shaped residuals. still a long tail in normal plot but we have some weirdly high values
+lme_output(percent_N.pham) #lat*age is sig
+(all.stats <- extract_stats("percent_N", "PHAM", percent_N.pham))
+(all.slopes <- extract_param("percent_N", "PHAM", percent_N.pham))
+rm(percent_N.pham)
+
+percent_N.phri <- lme(value ~ region + age + region:age , random=~1|pop/line, method = "REML", data=droplevels(all.traits[all.traits$region != "temperate" & all.traits$trait == "percent_N",]), weights=varIdent(form=~1|pop))
+#weights pop needed to deal with fan-shaped residuals (but not pop_age)
+lme_output(percent_N.phri) #significant region*age
+(all.stats <- extract_stats("percent_N","PHRI", percent_N.phri))
+(all.tukey <- extract_param("percent_N","PHRI", percent_N.phri,.75,0.15))
+rm(percent_N.phri,ctrl)
+
+#manually move some of the tukey bars and letters
+all.tukey[all.tukey$trait == "percent_N" & all.tukey$age == "mature" ,11] = c(1.1,0.9,1.6)
+all.tukey[all.tukey$trait == "percent_N" & all.tukey$age == "mature" ,12] = c(1.1,0.9,1.6) + 0.15
+all.tukey[all.tukey$trait == "percent_N" & all.tukey$region.age == "north temperate.mature",10] = "ab (M)"
+all.tukey[all.tukey$trait == "percent_N" & all.tukey$region.age == "north temperate.young",10] = "ab (Y)"
+all.tukey[all.tukey$trait == "percent_N" & all.tukey$region.age == "north temperate.young",11] = 3
+all.tukey[all.tukey$trait == "percent_N" & all.tukey$region.age == "north temperate.young",12] = 3 - 0.15
+
+(percent_N <- facet_plot("percent_N","% Nitrogen"))
+
+setEPS()
+postscript("FiguresTables/Fig_Geography_Nitrogen.eps", height = 5, width = 5)
+percent_N
+dev.off()
+rm(percent_N)
+
+#################
+#CARBON:NITROGEN: nest line in pop
+#################
+ctrl <- lmeControl(opt = 'optim')
+C_N.pham <- lme(value ~ lat*age , random=~1|pop/line, method = "REML", data=droplevels(all.traits[all.traits$lat>20 & all.traits$trait == "C_N",]))
+#weights argument not needed
+lme_output(C_N.pham) #lat*age is sig
+(all.stats <- extract_stats("C_N", "PHAM", C_N.pham))
+(all.slopes <- extract_param("C_N", "PHAM", C_N.pham))
+#rm(C_N.pham)
+
+C_N.phri <- lme(value ~ region + age + region:age , random=~1|pop/line, method = "REML", data=droplevels(all.traits[all.traits$region != "temperate" & all.traits$trait == "C_N",]), weights=varIdent(form=~1|pop))
+#weights pop needed to deal with fan-shaped residuals (but not pop_age)
+lme_output(C_N.phri) #significant region*age
+(all.stats <- extract_stats("C_N","PHRI", C_N.phri))
+(all.tukey <- extract_param("C_N","PHRI", C_N.phri,6,1))
+#rm(C_N.phri)
+
+#manually move some of the tukey bars and letters
+all.tukey[all.tukey$trait == "C_N" & all.tukey$age == "young" ,11] = c(17,14,8)
+all.tukey[all.tukey$trait == "C_N" & all.tukey$age == "young" ,12] = c(17,14,8) + 1
+all.tukey[all.tukey$trait == "C_N" & all.tukey$region.age == "north temperate.mature",10] = "c (M)"
+all.tukey[all.tukey$trait == "C_N" & all.tukey$region.age == "north temperate.young",10] = "c (Y)"
+
+(C_N <- facet_plot("C_N","Carbon:Nitrogen"))
+
+setEPS()
+postscript("FiguresTables/Fig_Geography_CN.eps", height = 5, width = 5)
+C_N
+dev.off()
+rm(C_N)
 
 
-#--------------could make a function(dataframe, yvar, ylabel, plot_segment_constant, final export name)
-plot_interactions <- function(pop_df, yvar, ){
-fac = ggplot(pop_df,aes(x=lat, y=log.abund_mean,group=region))+  
-  geom_point(size=3,stroke=1,aes(shape = age, color=region)) + 
-  geom_errorbar(aes(ymin=log.abund_mean-log.abund_se, ymax=log.abund_mean+log.abund_se),width=.2,size=.4) +
-  scale_shape_manual(values=c(19,1),name="Leaf age") + 
-  scale_colour_manual(values=c("steelblue1","navyblue","grey","maroon2")) +
-  geom_text(data = all.tukey[all.tukey$trait == "log.abund",], aes(x = lat.middle, y = letter_y, label = letter), size = 6) +
-  geom_segment(data = all.tukey[all.tukey$trait == "log.abund",], aes(x = lat.min, xend = lat.max, y = letter_y-.1, yend = letter_y-.1)) +
-  facet_grid(.~species,scales="free_x",switch="x") +
-  force_panelsizes(cols = c(0.3, 1), rows = c(1.3), respect = TRUE) +
-  facetted_pos_scales(x = list(scale_x_continuous(breaks = c(9, 10), limits = c(8.4,10.7))),NULL) +
-  geom_abline(data=all.slopes[all.slopes$trait == "log.abund",], aes(slope=m,intercept=b,linetype = age)) +
-  scale_linetype_manual(values=c("solid", "dashed"),name="Leaf age") +
-  theme_bw() + theme(panel.grid.major = element_blank(), panel.spacing = unit(0.2, "lines"), panel.grid.minor = element_blank(), axis.line = element_line(colour = "black"),text = element_text(size = 20), strip.background = element_blank(),strip.placement="outside",legend.position = "none") + 
-  ylab("LC/MS peak log-abundance") + 
-  xlab(expression("Latitude (\u00B0N)"))
-fac
 
-# setEPS()
-# postscript("FiguresTables/ChemAbund_Lat.eps", height = 5, width = 5)
+
+
+
+
+
+
+
+
+
+
+# #original plotting code
+# fac = ggplot(pop.means[pop.means$trait == "diversity",],aes(x=lat, y=trait.mean,group=region))+
+#   geom_point(size=3,stroke=1,aes(shape = age, color=region)) +
+#   geom_errorbar(aes(ymin=trait.mean-trait.se, ymax=trait.mean+trait.se),width=.2,size=.4) +
+#   scale_shape_manual(values=c(19,1),name="Leaf age") +
+#   scale_colour_manual(values=c("steelblue1","navyblue","grey","maroon2")) +
+#   geom_text(data = all.tukey[all.tukey$trait == "diversity",], aes(x = lat.middle, y = letter_y, label = letter), size = 6) +
+#   geom_segment(data = all.tukey[all.tukey$trait == "diversity",], aes(x = lat.min, xend = lat.max, y = letter_y-.02, yend = letter_y-.02)) +
+#   facet_grid(.~species,scales="free_x",switch="x") +
+#   force_panelsizes(cols = c(0.3, 1), rows = c(1.3), respect = TRUE) +
+#   facetted_pos_scales(x = list(scale_x_continuous(breaks = c(9, 10), limits = c(8.4,10.7))),NULL) +
+#   geom_abline(data=all.slopes[all.slopes$trait == "diversity",], aes(slope=m,intercept=b,linetype = age)) +
+#   scale_linetype_manual(values=c("solid", "dashed"),name="Leaf age") +
+#   theme_bw() + theme(panel.grid.major = element_blank(), panel.spacing = unit(0.2, "lines"), panel.grid.minor = element_blank(), axis.line = element_line(colour = "black"),text = element_text(size = 20), strip.background = element_blank(),strip.placement="outside",legend.position = "none") +
+#   ylab("Chemical diversity (Shannon index)") +
+#   xlab(expression("Latitude (\u00B0N)"))
 # fac
-# dev.off()
-}
 
-
-
-
-fac = ggplot(chem_pop,aes(x=lat, y=yval,group=region))+  
-  geom_point(size=3,stroke=1,aes(shape = age, color=region)) + 
-  geom_errorbar(aes(ymin=log.abund_mean-log.abund_se, ymax=log.abund_mean+log.abund_se),width=.2,size=.4) +
-  scale_shape_manual(values=c(19,1),name="Leaf age") + 
-  scale_colour_manual(values=c("steelblue1","navyblue","grey","maroon2")) +
-  geom_text(data = all.tukey[all.tukey$trait == "log.abund",], aes(x = lat.middle, y = letter_y, label = letter), size = 6) +
-  geom_segment(data = all.tukey[all.tukey$trait == "log.abund",], aes(x = lat.min, xend = lat.max, y = letter_y-.1, yend = letter_y-.1)) +
-  facet_grid(.~species,scales="free_x",switch="x") +
-  force_panelsizes(cols = c(0.3, 1), rows = c(1.3), respect = TRUE) +
-  facetted_pos_scales(x = list(scale_x_continuous(breaks = c(9, 10), limits = c(8.4,10.7))),NULL) +
-  geom_abline(data=all.slopes[all.slopes$trait == "log.abund",], aes(slope=m,intercept=b,linetype = age)) +
-  scale_linetype_manual(values=c("solid", "dashed"),name="Leaf age") +
-  theme_bw() + theme(panel.grid.major = element_blank(), panel.spacing = unit(0.2, "lines"), panel.grid.minor = element_blank(), axis.line = element_line(colour = "black"),text = element_text(size = 20), strip.background = element_blank(),strip.placement="outside",legend.position = "none") + 
-  ylab("LC/MS peak log-abundance") + 
-  xlab(expression("Latitude (\u00B0N)"))
-fac
-
-# setEPS()
-# postscript("FiguresTables/ChemAbund_Lat.eps", height = 5, width = 5)
-# fac
-# dev.off()
