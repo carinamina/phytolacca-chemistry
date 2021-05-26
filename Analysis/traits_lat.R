@@ -9,6 +9,7 @@ library(multcomp)
 library(ggplot2)
 library(tidyverse)
 library(ggh4x)
+library(cowplot)
 
 ##############
 # Notes and structure of analysis
@@ -99,7 +100,7 @@ all.stats <- data.frame(trait = sort(rep(trait_list,6)),
 #all.stats <- extract_stats(a,b,c)
 extract_stats <- function(response_string, species_string, lme_model, placeholder)
 {
-  ano <- as.data.frame(anova(lme_model))[2:4,] %>% rownames_to_column(var = "predictor") %>% add_column(trait = response_string, species = species_string, .before = "predictor") 
+  ano <- as.data.frame(anova(lme_model, type = "marginal", test= "F"))[2:4,] %>% rownames_to_column(var = "predictor") %>% add_column(trait = response_string, species = species_string, .before = "predictor") 
   all.stats[all.stats$trait == response_string & all.stats$species == species_string,] <- ano
   return(all.stats)
   rm(ano)
@@ -182,7 +183,7 @@ facet_plot <- function(response_string, ylabel_string){
     facetted_pos_scales(x = list(scale_x_continuous(breaks = c(9, 10), limits = c(8.1,10.7))),NULL) +
     geom_abline(data=all.slopes[all.slopes$trait == response_string,], aes(slope=m,intercept=b,linetype = age)) +
     scale_linetype_manual(values=c("solid", "dashed"),name="Leaf age") +
-    theme_bw() + theme(panel.grid.major = element_blank(), panel.spacing = unit(0.2, "lines"), panel.grid.minor = element_blank(), axis.line = element_line(colour = "black"),text = element_text(size = 20), strip.background = element_blank(),strip.placement="outside",legend.position = "none") + 
+    theme_bw() + theme(panel.grid.major = element_blank(), panel.spacing = unit(0.2, "lines"), panel.grid.minor = element_blank(), axis.line = element_line(colour = "black"),text = element_text(size = 20), strip.background = element_blank(),strip.placement="outside",legend.position = "none", panel.background = element_rect(colour=NA, fill = "transparent"), plot.background = element_rect(colour=NA, fill = "transparent"), plot.margin = unit(c(0.1, 0.1, 0.1, 0.1), "in")) +
     ylab(ylabel_string) + 
     xlab(expression("Latitude (\u00B0N)"))
   vv
@@ -380,13 +381,91 @@ dev.off()
 rm(C_N)
 
 
+################
+# a bit of table formatting
+################
+form.stats <- all.stats %>% mutate("d.f." = paste(numDF,denDF,sep=","),.before = "p-value") %>% 
+  select(-c(numDF,denDF))
+#formats the F and p to round and keep trailing zeros
+form.stats$"F-value" <- sprintf("%.2f", round(form.stats$"F-value",2))
+form.stats$"p-value" <- ifelse(form.stats$"p-value" < 0.001, "< 0.001", sprintf("%.3f", round(form.stats$"p-value",3) ) )
+#format traits and predictors, sort by trait in the order I like and then by species
+form.stats$predictor <- plyr::revalue(as.factor(form.stats$predictor), replace = c("lat" = "Latitude", "lat:age" = "Lat x Age", "region" = "Region", "age" = "Leaf age", "region:age" = "Reg x Age"))
+form.stats$trait <- plyr::revalue(as.factor(form.stats$trait), replace = c("C_N" = "Carbon:Nitrogen", "diversity" = "Chemical diversity", "log.abund" = "Chemical abundance", "percent_N" = "% Nitrogen", "richness" = "Chemical richness", "tough" = "Leaf toughness"))
+form.stats$trait = factor(form.stats$trait, levels=c("Chemical abundance","Chemical richness","Chemical diversity","Leaf toughness","% Nitrogen","Carbon:Nitrogen"))
+form.stats <- form.stats %>% arrange(trait) %>% arrange(species) %>% rename(Trait = trait, Species = species, "Fixed effect" = predictor, "F" = "F-value", "p" = "p-value")
+
+#export so I can make it wide with an extra header of species in excel (not sure how to do that here)
+write.csv(form.stats, "FiguresTables/Table_Geography_Traits.csv",row.names=F)
+
+################
+# multipanel figure
+###############
+#remove x axis labels and just keep ticks for four
+#adding a negative plot margin to the theme does get rid of some white space in individual plots (weirdly only top or bottom; if you change both to -0.5, it's like they are back to 0 again), but I tried adding it to these and building the multipanel and it doesn't change anything.
+#+ theme(axis.title.x = element_blank(), axis.text.x = element_blank(), strip.text.x = element_blank(), plot.margin = unit(c(-.5, 0, 0, 0), "in"))
+multi_abund <- facet_plot("log.abund","Chemical log-abundance") + theme(axis.title.x = element_blank(), axis.text.x = element_blank(), strip.text.x = element_blank()) 
+multi_richness <- facet_plot("richness","Chemical richness") + theme(axis.title.x = element_blank(), axis.text.x = element_blank(), strip.text.x = element_blank()) 
+multi_diversity <- facet_plot("diversity","Chemical diversity") + theme(axis.title.x = element_blank(), axis.text.x = element_blank(), strip.text.x = element_blank()) 
+multi_tough <- facet_plot("tough","Toughness (g force)") + theme(axis.title.x = element_blank(), axis.text.x = element_blank(), strip.text.x = element_blank()) 
+multi_percent_N <- facet_plot("percent_N","% Nitrogen")
+multi_C_N <- facet_plot("C_N","Carbon:Nitrogen")
 
 
+multipanel <- plot_grid(multi_abund,multi_richness,multi_diversity,multi_tough,multi_percent_N,multi_C_N, nrow = 3, ncol = 2, align = "hv", labels = "AUTO")
+save_plot("FiguresTables/Fig_Geography_All.pdf", multipanel, ncol = 2, nrow =3, base_height = 5, base_width = 5)
+
+############### examples for multipanels
+#https://github.com/wilkelab/cowplot/issues/31
+# p1 <- qplot(1:10, 1:10) + theme(plot.margin = unit(c(0, 0, 0, 0), "cm"))
+# p2 <- qplot(1:10, (1:10)^2) + theme(plot.margin = unit(c(0, 0, 0, 0), "cm"))
+# plot_grid(p1, p2, p1, p2, p1, p2, p1, p2, p1, p2, p1, p2)
+# 
+# https://wilkelab.org/cowplot/reference/save_plot.html
+# p1 <- ggplot(mpg, aes(x = cty, y = hwy, color = factor(cyl))) +
+#   geom_point(size = 2) +
+#   theme_half_open()
+# 
+# file1 <- tempfile("file1", fileext = ".png")
+# file2 <- tempfile("file2", fileext = ".png")
+# save_plot(file1, p1)
+# # same as file1 but determine base_width given base_height
+# save_plot(file2, p1, base_height = NULL, base_width = 6)
+# 
+# # save a single plot without legend, adjust aspect ratio
+# x <- (1:100)/10
+# p3 <- ggplot(data.frame(x = x, y = x*sin(x)), aes(x, y)) +
+#   geom_line() +
+#   theme_minimal_hgrid()
+# save_plot("FiguresTables/example1.pdf", p3, base_asp = 1.1)
+# 
+# # now combine with a second plot and save
+# p3b <- ggplot(data.frame(x = x, y = cos(x)+x), aes(x, y)) +
+#   geom_line() +
+#   theme_minimal_hgrid()
+# p4 <- plot_grid(p3, p3b, labels = "AUTO")
+# save_plot("FiguresTables/example2.pdf", p4, ncol = 2, base_asp = 1.1)
 
 
-
-
-
+#this didn't quite work
+# https://stackoverflow.com/questions/55151531/ggplot2-arrange-multiple-plots-all-the-same-size-no-gaps-in-between
+# allplotslist <- align_plots(multi_abund, multi_richness, multi_diversity, multi_tough, multi_percent_N, multi_C_N, align = "hv")
+# #(x co-ord, y co-ord, width, height)
+# multipanel <- ggdraw() + 
+#   draw_plot(allplotslist[[5]], 0,   0,   0.4, 0.4) + 
+#   draw_plot(allplotslist[[6]], 0.375, 0,   0.4, 0.4) + 
+#   draw_plot(allplotslist[[3]], 0,   0.31, 0.4, 0.4) +
+#   draw_plot(allplotslist[[4]], 0.375, 0.31, 0.4, 0.4) + 
+#   draw_plot(allplotslist[[1]], 0,   0.62, 0.4, 0.4) + 
+#   draw_plot(allplotslist[[2]], 0.375, 0.62,   0.4, 0.4) 
+# multipanel
+# 
+# save_plot("FiguresTables/Fig_Geography_All.pdf", multipanel, ncol = 2, nrow = 3, base_height = 5, base_width = 5)
+# 
+# setEPS()
+# postscript("FiguresTables/Fig_Geography_All.eps", height = 15, width = 12)
+# multipanel
+# dev.off()
 
 
 
@@ -404,8 +483,11 @@ rm(C_N)
 #   facetted_pos_scales(x = list(scale_x_continuous(breaks = c(9, 10), limits = c(8.4,10.7))),NULL) +
 #   geom_abline(data=all.slopes[all.slopes$trait == "diversity",], aes(slope=m,intercept=b,linetype = age)) +
 #   scale_linetype_manual(values=c("solid", "dashed"),name="Leaf age") +
-#   theme_bw() + theme(panel.grid.major = element_blank(), panel.spacing = unit(0.2, "lines"), panel.grid.minor = element_blank(), axis.line = element_line(colour = "black"),text = element_text(size = 20), strip.background = element_blank(),strip.placement="outside",legend.position = "none") +
+#   theme_bw() + theme(panel.grid.major = element_blank(), panel.spacing = unit(0.2, "lines"), panel.grid.minor = element_blank(), axis.line = element_line(colour = "black"),text = element_text(size = 20), strip.background = element_blank(),strip.placement="outside",legend.position = "top") +
 #   ylab("Chemical diversity (Shannon index)") +
 #   xlab(expression("Latitude (\u00B0N)"))
 # fac
-
+# setEPS()
+# postscript("FiguresTables/Fig_Geography_Key.eps", height = 8, width = 12)
+# fac
+# dev.off()
