@@ -227,6 +227,24 @@ abund
 dev.off()
 rm(abund)
 
+#comparing means for Results
+#young vs mature in PHAM
+all.traits %>% filter(trait == "log.abund", species == "PHAM", age == "young") %>% summarise(mean = mean(value))/
+  all.traits %>% filter(trait == "log.abund", species == "PHAM", age == "mature") %>% summarise(mean = mean(value))
+#young vs mature in PHRI
+all.traits %>% filter(trait == "log.abund", species == "PHRI", age == "young") %>% summarise(mean = mean(value))/
+  all.traits %>% filter(trait == "log.abund", species == "PHRI", age == "mature") %>% summarise(mean = mean(value))
+#north temperate mature vs. tropical&subtropical mature
+all.traits %>% filter(trait == "log.abund", region=="north temperate", age == "mature") %>% summarise(mean = mean(value))/
+  ((all.traits %>% filter(trait == "log.abund", region=="tropical", age == "mature") %>% summarise(mean = mean(value)) +
+  all.traits %>% filter(trait == "log.abund", region=="subtropical", age == "mature") %>% summarise(mean = mean(value)))/2)
+#north temperate young vs. subtropical young
+all.traits %>% filter(trait == "log.abund", region=="north temperate", age == "young") %>% summarise(mean = mean(value))/
+  all.traits %>% filter(trait == "log.abund", region=="subtropical", age == "young") %>% summarise(mean = mean(value))
+#north temperate young vs. tropical young
+all.traits %>% filter(trait == "log.abund", region=="north temperate", age == "young") %>% summarise(mean = mean(value))/
+  all.traits %>% filter(trait == "log.abund", region=="tropical", age == "young") %>% summarise(mean = mean(value))
+
 #################
 #CHEMICAL DIVERSITY
 #################
@@ -261,6 +279,12 @@ diversity
 dev.off()
 rm(diversity)
 
+#comparing means for Results
+#tropical&subtropical vs. north temperate
+((all.traits %>% filter(trait == "diversity", region=="tropical") %>% summarise(mean = mean(value)) +
+      all.traits %>% filter(trait == "diversity", region=="subtropical") %>% summarise(mean = mean(value)))/2)/
+  all.traits %>% filter(trait == "diversity", region=="north temperate") %>% summarise(mean = mean(value))
+
 #################
 #CHEMICAL RICHNESS
 #################
@@ -288,6 +312,14 @@ richness
 dev.off()
 rm(richness)
 
+#comparing means for Results
+#tropical young vs tropical mature
+all.traits %>% filter(trait == "richness", region=="tropical", age == "young") %>% summarise(mean = mean(value))/
+    all.traits %>% filter(trait == "richness", region=="tropical", age == "mature") %>% summarise(mean = mean(value))
+#north temperate mature vs young
+all.traits %>% filter(trait == "richness", region=="north temperate", age == "mature") %>% summarise(mean = mean(value))/
+  all.traits %>% filter(trait == "richness", region=="north temperate", age == "young") %>% summarise(mean = mean(value))
+
 #################
 #LEAF TOUGHNESS: now we need to nest line in pop
 #################
@@ -313,6 +345,12 @@ postscript("FiguresTables/Fig_Geography_Toughness.eps", height = 5, width = 5)
 tough
 dev.off()
 rm(tough)
+
+#comparing means for Results
+#subtropical mature vs. tropical and north temperate mature
+all.traits %>% filter(trait == "tough", region=="subtropical", age == "mature") %>% summarise(mean = mean(value))/
+  ((all.traits %>% filter(trait == "tough", region=="tropical", age == "mature") %>% summarise(mean = mean(value)) +
+      all.traits %>% filter(trait == "tough", region=="north temperate", age == "mature") %>% summarise(mean = mean(value)))/2)
 
 #################
 #PERCENT NITROGEN: nest line in pop
@@ -348,6 +386,15 @@ percent_N
 dev.off()
 rm(percent_N)
 
+#comparing means for Results
+#tropical young vs. tropical mature and subtropical young
+all.traits %>% filter(trait == "percent_N", region=="tropical", age == "young") %>% summarise(mean = mean(value))/
+  ((all.traits %>% filter(trait == "percent_N", region=="subtropical", age == "young") %>% summarise(mean = mean(value)) +
+      all.traits %>% filter(trait == "percent_N", region=="tropical", age == "mature") %>% summarise(mean = mean(value)))/2)
+#subtropical young vs. subtropical mature
+all.traits %>% filter(trait == "percent_N", region=="subtropical", age == "young") %>% summarise(mean = mean(value))/
+  all.traits %>% filter(trait == "percent_N", region=="subtropical", age == "mature") %>% summarise(mean = mean(value))
+
 #################
 #CARBON:NITROGEN: nest line in pop
 #################
@@ -379,6 +426,11 @@ postscript("FiguresTables/Fig_Geography_CN.eps", height = 5, width = 5)
 C_N
 dev.off()
 rm(C_N)
+
+#comparing means for Results
+#north temperate young vs. subtropical young
+all.traits %>% filter(trait == "C_N", region=="north temperate", age == "young") %>% summarise(mean = mean(value))/
+  all.traits %>% filter(trait == "C_N", region=="subtropical", age == "young") %>% summarise(mean = mean(value))
 
 
 ################
