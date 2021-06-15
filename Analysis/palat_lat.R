@@ -104,12 +104,29 @@ rm(trop, tuk, trop_int)
 
 palat$species = ifelse(palat$region == "tropical","PHRI","PHAM")
 
+#comparing means for Results
+#north temperate young vs. tropical&subtropical young
+palat %>% filter(region=="north temperate", age == "young") %>% summarise(mean = mean(log.area))/
+  ((palat %>% filter(region=="subtropical", age == "young") %>% summarise(mean = mean(log.area)) +
+      palat %>% filter(region=="tropical", age == "young") %>% summarise(mean = mean(log.area)))/2)
+#tropical and north temperate mature vs. subtropical mature
+((palat %>% filter(region=="north temperate", age == "mature") %>% summarise(mean = mean(log.area)) +
+      palat %>% filter(region=="tropical", age == "mature") %>% summarise(mean = mean(log.area)))/2)/
+  palat %>% filter(region=="subtropical", age == "mature") %>% summarise(mean = mean(log.area))
+#tropical mature vs young
+palat %>% filter(region=="tropical", age == "mature") %>% summarise(mean = mean(log.area))/
+  palat %>% filter(region=="tropical", age == "young") %>% summarise(mean = mean(log.area))
+#subtropical mature vs young
+palat %>% filter(region=="subtropical", age == "mature") %>% summarise(mean = mean(log.area))/
+  palat %>% filter(region=="subtropical", age == "young") %>% summarise(mean = mean(log.area))
+#temperate mature vs young
+palat %>% filter(region=="north temperate", age == "mature") %>% summarise(mean = mean(log.area))/
+  palat %>% filter(region=="north temperate", age == "young") %>% summarise(mean = mean(log.area))
+
 palat_pop <- palat %>% mutate(pop_age = paste(pop,age,sep="_")) %>% group_by(pop_age,region,age,species) %>% summarise(area_mean = mean(log.area,na.rm=T), area_sd = sd(log.area,na.rm=T), area_n = length(pop_age), area_se = area_sd/sqrt(area_n), lat = mean(lat)) %>% select(-c(area_n,area_sd))
 palat_pop$species = factor(palat_pop$species, levels=c("PHRI","PHAM"))
 
 palat_region <- palat %>% mutate(region.age = paste(region,age,sep=".")) %>% group_by(region.age,region,age,species) %>% summarise(area_mean = mean(log.area,na.rm=T), lat.min = min(lat), lat.max = max(lat), lat.middle = mean(c(lat.min,lat.max)))
-
-#here would be the time to compare means between regions
 
 
 #convert the Tukey letter results to a dataframe for plotting letters
