@@ -35,11 +35,16 @@ postscript("FiguresTables/SamplingMap.eps", height = 10)
 sitemap
 dev.off()
 
-sitemap_key = basemap + geom_point(data = coord, aes(x = long, y = lat, color = region), size = 4) + scale_color_manual("Region" ,values = c("steelblue1","gray44","navyblue","maroon2"),breaks=c("north temperate","temperate","subtropical","tropical")) + xlab("Longitude") + ylab("Latitude")
+sitemap_key = basemap + geom_point(data = coord, aes(x = long, y = lat, color = region), size = 4) + scale_color_manual("Region" ,values = c("steelblue1","gray44","navyblue","maroon2"),breaks=c("north temperate","temperate","subtropical","tropical")) + xlab("Longitude") + ylab("Latitude") #+ theme(legend.position = "top")
 sitemap_key
 
 setEPS()
 postscript("FiguresTables/SamplingMapKey.eps", height = 10)
+sitemap_key
+dev.off()
+
+setEPS()
+postscript("FiguresTables/RegionKey_horiz.eps", height = 10)
 sitemap_key
 dev.off()
 
