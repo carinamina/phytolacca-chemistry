@@ -1,6 +1,7 @@
 library(ggplot2)
 library(tidyverse)
 library(varhandle)
+library(cowplot)
 
 ###########################
 #set up some functions to save and plot results
@@ -147,7 +148,7 @@ plot(`R^2` ~ features, data = feat_plot, xlab = "Number of features", ylab = exp
 setEPS()
 postscript("FiguresTables/Fig_RF_mature_A.eps")
 par(mar=c(5,5,4,2))
-plot(`R^2` ~ features, data = feat_plot, xlab = "Number of features", ylab = expression("Model "~R^2), main = "A) Feature selection: 1929 to 10 features", cex.lab=1.75, cex.axis=1.75, cex.main=1.75, cex.sub=1.75)
+plot(`R^2` ~ features, data = feat_plot, xlab = "Number of predictors", ylab = expression("Model "~R^2), main = "A) Model selection: 1929 to 10 predictors", cex.lab=1.75, cex.axis=1.75, cex.main=1.75, cex.sub=1.75)
 dev.off()
 
 #########################
@@ -176,20 +177,20 @@ for(i in 2:length(steps_fine)){
 }
 feat_plot_fine <- na.omit(feat_plot_fine)
 feat_plot_fine
-plot(`R^2` ~ features, data = feat_plot_fine, xlab = "Number of features", ylab = expression("Model "~R^2), main = "B) Feature selection: 45 to 6 features", cex.lab=1.75, cex.axis=1.75, cex.main=1.75, cex.sub=1.75)
+plot(`R^2` ~ features, data = feat_plot_fine, xlab = "Number of predictors", ylab = expression("Model "~R^2), main = "B) Feature selection: 45 to 6 features", cex.lab=1.75, cex.axis=1.75, cex.main=1.75, cex.sub=1.75)
 
 #export plot
 setEPS()
 postscript("FiguresTables/Fig_RF_mature_B.eps")
 par(mar=c(5,5,4,2))
-plot(`R^2` ~ features, data = feat_plot_fine, xlab = "Number of features", ylab = expression("Model "~R^2), main = "B) Feature selection: 45 to 6 features", cex.lab=1.75, cex.axis=1.75, cex.main=1.75, cex.sub=1.75)
+plot(`R^2` ~ features, data = feat_plot_fine, xlab = "Number of predictors", ylab = expression("Model "~R^2), main = "B) Model selection: 45 to 6 predictors", cex.lab=1.75, cex.axis=1.75, cex.main=1.75, cex.sub=1.75)
 dev.off()
 
 # #actual v predicted plot for final model
 setEPS()
 postscript("FiguresTables/Fig_RF_mature_C.eps")
 par(mar=c(5,5,4,2))
-plot(Y ~ Mean, data = read.csv("RF_R/maturefine_9_scores.txt", sep = "\t", header=TRUE), xlab = "Predicted values", ylab = "Actual values", main = "C) Fit of best model", cex.lab=1.75, cex.axis=1.75, cex.main=1.75, cex.sub=1.75)
+plot(Y ~ Mean, data = read.csv("RF_R/maturefine_9_scores.txt", sep = "\t", header=TRUE), xlab = "Predicted values", ylab = "Actual values", main = "C) Fit of best model (9 predictors)", cex.lab=1.75, cex.axis=1.75, cex.main=1.75, cex.sub=1.75)
 dev.off()
 
 
@@ -218,4 +219,27 @@ chemlist <- read.csv("RF_R/maturefine_9_features.txt",sep="\t",header=F)$V1
 write(c(poplist,chemlist),"RF_R/mature_popchem_features.txt")
 system("python3.9 ./RF_python_scripts/ML_regression.py -df ./RF_R/RF_mature_popdummy_tab.csv -alg RF -y_name log.area -gs T -cv 5 -n 100 -save ./RF_R/mature_popchem -feat ./RF_R/mature_popchem_features.txt")
 
+#################
+#combine three figures into one panel (to go to the right of young leaves, letters are B,D,F)
 
+plotB = ggplot(data=feat_plot,aes(x=features, y=`R^2`))+  
+  geom_point(size=3, shape = 1) +
+  theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), axis.line = element_line(colour = "black"),text = element_text(size = 16), panel.background = element_rect(colour=NA, fill = "transparent"), plot.background = element_rect(colour=NA, fill = "transparent"), plot.margin = unit(c(0, 0.3, 0, 0), "in")) +
+  ylab(expression("Model "~R^2)) + 
+  xlab("Number of predictors")
+
+plotD = ggplot(data=feat_plot_fine,aes(x=features, y=`R^2`))+  
+  geom_point(size=3, shape = 1) +
+  theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), axis.line = element_line(colour = "black"),text = element_text(size = 16), panel.background = element_rect(colour=NA, fill = "transparent"), plot.background = element_rect(colour=NA, fill = "transparent")) +
+  ylab(expression("Model "~R^2)) + 
+  xlab("Number of predictors")
+
+plotF = ggplot(data=read.csv("RF_R/maturefine_9_scores.txt", sep = "\t", header=TRUE),aes(x=Mean, y=Y))+  
+  geom_point(size=3, shape = 1) +
+  theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), axis.line = element_line(colour = "black"),text = element_text(size = 16), panel.background = element_rect(colour=NA, fill = "transparent"), plot.background = element_rect(colour=NA, fill = "transparent")) +
+  ylab("Actual values") + 
+  xlab("Predicted values")
+
+
+multipanel <- plot_grid(plotB,plotD,plotF, nrow = 3, ncol = 1, align = "hv", labels = c("B","D","F"))
+save_plot("FiguresTables/Fig_RF_mature_combined.pdf", multipanel, ncol = 1, nrow =3, base_height = 4, base_width = 4)

@@ -1,6 +1,7 @@
 library(ggplot2)
 library(tidyverse)
 library(varhandle)
+library(cowplot)
 
 ###########################
 #set up some functions to save and plot results
@@ -218,4 +219,27 @@ dev.off()
  write(c(poplist,chemlist),"RF_R/young_popchem_features.txt")
  system("python3.9 ./RF_python_scripts/ML_regression.py -df ./RF_R/RF_young_popdummy_tab.csv -alg RF -y_name log.area -gs T -cv 5 -n 100 -save ./RF_R/young_popchem -feat ./RF_R/young_popchem_features.txt")
  
+ #################
+ #combine three figures into one panel (to go to the right of young leaves, letters are B,D,F)
  
+ plotA = ggplot(data=feat_plot,aes(x=features, y=`R^2`))+  
+   geom_point(size=3, shape = 1) +
+   theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), axis.line = element_line(colour = "black"),text = element_text(size = 16), panel.background = element_rect(colour=NA, fill = "transparent"), plot.background = element_rect(colour=NA, fill = "transparent"), plot.margin = unit(c(0, 0.3, 0, 0), "in")) +
+   ylab(expression("Model "~R^2)) + 
+   xlab("Number of predictors")
+ 
+ plotC = ggplot(data=feat_plot_fine,aes(x=features, y=`R^2`))+  
+   geom_point(size=3, shape = 1) +
+   theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), axis.line = element_line(colour = "black"),text = element_text(size = 16), panel.background = element_rect(colour=NA, fill = "transparent"), plot.background = element_rect(colour=NA, fill = "transparent")) +
+   ylab(expression("Model "~R^2)) + 
+   xlab("Number of predictors")
+ 
+ plotE = ggplot(data=read.csv("RF_R/youngfine_24_scores.txt", sep = "\t", header=TRUE),aes(x=Mean, y=Y))+  
+   geom_point(size=3, shape = 1) +
+   theme_bw() + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), axis.line = element_line(colour = "black"),text = element_text(size = 16), panel.background = element_rect(colour=NA, fill = "transparent"), plot.background = element_rect(colour=NA, fill = "transparent")) +
+   ylab("Actual values") + 
+   xlab("Predicted values")
+ 
+ 
+ multipanel <- plot_grid(plotA,plotC,plotE, nrow = 3, ncol = 1, align = "hv", labels = c("A","C","E"))
+ save_plot("FiguresTables/Fig_RF_young_combined.pdf", multipanel, ncol = 1, nrow =3, base_height = 4, base_width = 4)
